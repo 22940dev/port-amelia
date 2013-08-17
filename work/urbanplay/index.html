@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+    <meta content = "width = 480,initial-scale = 0.65, user-scalable = no" name = "viewport" />
+		<title> UrbanPlay </title>
+        
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="cssjs/UrbanPLAYstyles.css" />
+        <link rel="stylesheet" type="text/css" href="jquery.mobile-1.0rc1/jquery.mobile-1.0rc1.css" />
+        <!-- countdown-->
+        <link rel="Stylesheet" type="text/css" href="cssjs/main.css"></link> 
+		
+        	
+			
+       	<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="jquery.mobile-1.0rc1/jquery.mobile-1.0rc1.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="location.js"></script>
+        <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <!-- countdown stuff-->
+		<script language="Javascript" type="text/javascript" src="cssjs/jquery.lwtCountdown-1.0.js"></script>
+		<script language="Javascript" type="text/javascript" src="cssjs/misc.js"></script>
+        
+        
+        <!-- image scroller from http://cssglobe.com/post/4004/easy-slider-15-the-easiest-jquery-plugin-for-sliding -->
+		<script type="text/javascript" src="easySlider1.7.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){	
+				$("#slider").easySlider({
+					auto: true, 
+					continuous: true
+				});
+			});	
+		</script>
+        
+        <script type="text/javascript">
+			$(document).ready(function(){	
+				$("#slider2").easySlider({
+					auto: true, 
+					continuous: true
+				});
+			});	
+		</script>
+        
+        
+        <!--countdown http://www.littlewebthings.com/projects/countdown/example/?style=light -->
+        <script language="javascript" type="text/javascript">
+			jQuery(document).ready(function() {
+				$('#countdown_dashboard').countDown({
+					targetDate: {
+						'day': 		10,
+						'month': 	12,
+						'year': 	2011,
+						'hour': 	11,
+						'min': 		0,
+						'sec': 		0
+					}
+				});
+				
+				$('#email_field').focus(email_focus).blur(email_blur);
+				$('#subscribe_form').bind('submit', function() { return false; });
+			});
+		</script>
+			
+        <!-- Code to get the screen width -->
+		<script type="text/javascript">
+		function getWindowWidth() {
+			var myWidth = 0;
+			if( typeof( window.innerWidth ) == 'number' ) {
+				//Non-IE
+				myWidth = window.innerWidth;
+			} else if( document.documentElement &&  document.documentElement.clientWidth  && document.documentElement.clientHeight ) {
+				//IE 6+ in 'standards compliant mode'
+				myWidth = document.documentElement.clientWidth;
+			} else if( document.body && document.body.clientWidth && document.body.clientHeight ) {
+				//IE 4 compatible
+				myWidth = document.body.clientWidth;
+			}
+			return myWidth;
+		}
+		
+		
+		function firstLoad() {
+			var images = document.getElementsByClassName("logo_image");
+			var width = getWindowWidth();
+			
+			for (var i = 0; i < images.length; i++) {
+				var img = images[i];
+				img.width = width - (width*0.065);	
+			}
+		}
+		</script>
+        
+	</head>
+	
+    
+    
+    
+    
+	<body onLoad="javascript:firstLoad()" onload="initialize()">
+	
+	<!-- HOME PAGE -->
+		<div data-role="page" id="homePage" data-theme="a">
+        	            
+            <div data-role="header" data-theme="a" class="centeredContent">
+            	<img src="images/logos/Logo.png" width="290px" class="logo_image"/>
+            </div>
+            
+            <div data-role="content" class="centeredContentUp">
+            	               
+                <h2>Hello, User!</h2>
+				<h3>Feel like exploring<br>something new?</h3>
+            
+            	<a href="#chocoholicsAnonymous" data-role="button" data-theme="e">Today's Mission</a>
+                <a href="#searchPage" data-role="button" data-theme="c">Search</a>
+				<a href="#balconyBar" data-role="button" data-theme="c">Surprise Me!</a>
+                                
+			</div>
+						
+			
+			<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" class="ui-btn-active" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div>
+        
+	
+	<!-- SEARCH PAGE -->
+		<div data-role="page" id="searchPage" data-theme="a">
+		
+			<div data-role="header" data-theme="a">
+				<a href="#homePage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+			
+			<div data-role="content" class="centeredContent">
+			<h2>What are you in the mood for?</h2>
+			
+				<!-- <ul id="Search">
+					<ui><label for="Search"></label>
+                    <input type="search" name="SEARCH" id="SEARCH" >
+					<a href="#resultsPage"></a></ui>
+				</ul> -->
+                
+                <div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<!-- <legend>Venue Search:</legend> -->
+
+					<!-- <label for="select-choice-venue">Type of Venue</label> -->
+					<select name="select-choice-venue" id="select-choice-venue" data-theme="c">
+						<option>What type of venue?</option>
+						<option value="bar">Bar</option>
+                        <option value="cafe">Cafe</option>
+                        <option value="restaurant">Restaurant</option>
+                        <option value="park">Park</option>
+                        <option value="random">Random</option>
+					</select>
+
+					<!-- <label for="select-choice-location">Location</label> -->
+					<select name="select-choice-location" id="select-choice-location" data-theme="c">
+						<option>Whereabouts?</option>
+                        <option value="CurrentLocation">Current Location</option>
+						<option value="Broadway">Broadway</option>
+                        <option value="Central">Central</option>                        
+                        <option value="Chinatown">Chinatown</option>
+                        <option value="CircularQuay">Circular Quay</option>
+                        <option value="DarlingHarbour">Darling Harbour</option>
+                        <option value="EastSydney">East Sydney</option>
+                        <option value="KingsCross">Kings Cross</option>
+                        <option value="RailwaySquare">Railway Square</option>
+                        <option value="Wynyard">Wynyard</option>
+					</select>
+
+					<!-- <label for="select-choice-year">Year</label> -->
+					<select name="select-choice-year" id="select-choice-year" data-theme="c">
+						<option>Spending money?</option>
+						<option value="$">$</option>
+                        <option value="$$">$$</option>
+                        <option value="$$$">$$$</option>
+                        <option value="$$$$">$$$$</option>
+					</select>
+                    
+                    <!-- I can't figure out how to make a proper submit button just link to another page -->
+                    <!-- <button type="submit" data-theme="e">Submit</button> -->
+                    <a href="#resultsPage" data-role="button" data-theme="e">Submit</a>
+                    
+					</fieldset>
+				</div>
+				
+			</div>
+			
+		<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" class="ui-btn-active" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->	
+		
+		</div>
+        
+	
+	<!-- CHECK-IN PAGE-->	
+		<div data-role="page" id="checkInPage" data-theme="a">
+			
+            <div data-role="header" data-theme="a">
+				<a href="#homePage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+            
+    		<div data-role="content" data-theme="a">            
+            	<ul data-role="listview" class="resultList" data-theme="a">
+					<li><input type="search" name="search" id="search" value="" /></li>
+                    <li><a href="#balconyBar">Balcony Bar<span class="ui-li-count">0.1 km</span></a></li>
+                    <li><a href="#stitchBar">Stitch Bar<span class="ui-li-count">0.2 km</span></a></li>
+                    <li><a href="#maxBrenner">Max Brenner<span class="ui-li-count">0.3 km</span></a></li>
+                    <li><a href="#">San Churro<span class="ui-li-count">0.4 km</span></a></li>
+				</ul>                
+            </div>
+            
+            <div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" class="ui-btn-active" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+		</div>	
+        
+        
+	<!--PROFILE PAGE-->
+		<div data-role="page" id="profilePage" data-theme="a">
+        	
+            <div data-role="header" data-theme="a">
+				<a href="#homePage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+            
+            <div data-role="content" >
+            	<div class="ui-grid-a">
+					<div class="ui-block-a"><img src="images/defaultUser.png" width="130px"></div>
+					<div class="ui-block-b">
+                    	<h3>Hey, User!</h3>
+                        <p><strong>Rank:</strong> Rookie</p>
+                        <p><strong>Score:</strong> 230 points</p>
+                    </div>
+				</div>
+                
+                
+                <h3>Completed Missions</h3>
+                <ul data-role="listview" class="resultList" data-theme="e">
+                    <li><a href="#caffeineJunkie">Caffeine Junkie</a></li>
+				</ul>
+                
+                <br>
+                
+                <a href="#friendsPage" data-role="button" data-theme="a">Friends</a>
+                <a href="#resultsPage" data-role="button" data-theme="a">Favourite Places</a>
+				<a href="#" data-role="button" data-theme="a">Current Missions</a>
+            </div>
+        	
+            <div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" class="ui-btn-active" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+        </div>
+        
+        
+	<!-- PLACES PAGE (I.E. ALL THE PLACES) -->
+		<div data-role="page" id="placesPage" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#homePage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+            
+            <div data-role="content" id="placesList">
+				<ul data-role="listview" class="placesList">
+					<li><a href="#"> <img src="images/ivy.jpg" class="ul-li-icon ui-li-thumb"/>Ivy<span class="ui-li-count">1 km</span></a></li>
+					<li><a href="#"> <img src="images/breadsticks.jpg" class="ul-li-icon ui-li-thumb"/>Breadstix<span class="ui-li-count">2 km</span></a></li>
+					<li><a href="#"> <img src="images/coffee-bean.jpg" class="ul-li-icon ui-li-thumb"/>Coffee Bean<span class="ui-li-count">3 km</span></a></li>
+					<li><a href="#"> <img src="images/redfern_park.jpg" class="ul-li-icon ui-li-thumb"/>Redfern Park<span class="ui-li-count">4 km</span></a></li>
+				</ul>
+			</div>
+        	
+            <div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>
+        
+     
+     <!-- PLACE PAGE (BALCONY BAR) -->
+		<div data-role="page" id="balconyBar" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#resultsPage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+            
+            <div data-role="content">
+	            <img src="images/places/balconyBarLogo_white.png" height="60px">
+                <img src="images/places/balconyBar2.jpg" width="410" class="logo_image">
+                <a href="#" data-role="button" data-theme="e">Check-In</a>
+                <a href="#" data-role="button" data-theme="e">Upload a Photo</a>
+                <p>With stylish decor and a relaxed theme, Balcony Bar is the perfect venue for intimate gatherings, functions and events. 
+                Spread over three floors, Balcony Bar gives you everything you want in a sophisticated, stylish setting. Enjoy a fine Australian 
+                wine, beer or cocktail with friends while tantalising your taste buds over our modern Australian cuisine.</p>
+                <p>46 Erskine Street, Sydney NSW</p>
+                <iframe class="logo_image" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=balcony+bar&amp;aq=&amp;sll=-33.86746,151.20577&amp;sspn=0.012739,0.022724&amp;vpsrc=0&amp;gl=au&amp;ie=UTF8&amp;hq=balcony+bar&amp;hnear=&amp;t=m&amp;ll=-33.86746,151.20577&amp;spn=0.012739,0.022724&amp;output=embed"></iframe>
+                <a href="#" data-role="button" data-theme="c">Get Directions</a>               
+            </div>
+        	
+            <div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>
+        
+        
+    <!-- PLACE PAGE (STITCH BAR) -->
+		<div data-role="page" id="stitchBar" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#resultsPage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+            
+            <div data-role="content">
+	            <img src="images/places/stitchBarLogo.png" height="60px">
+                <img src="images/places/stitchBar3.jpg" width="410px" class="logo_image">
+                <a href="#" data-role="button" data-theme="e">Check-In</a>
+                <a href="#" data-role="button" data-theme="e">Upload a Photo</a>
+                <p>With stylish decor and a relaxed theme, Balcony Bar is the perfect venue for intimate gatherings, functions and events. 
+                Spread over three floors, Balcony Bar gives you everything you want in a sophisticated, stylish setting. Enjoy a fine Australian 
+                wine, beer or cocktail with friends while tantalising your taste buds over our modern Australian cuisine.</p> 
+                <p>61 York Street, Sydney NSW</p>
+                <iframe class="logo_image" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.au/maps?ie=UTF8&amp;q=stitch+bar&amp;fb=1&amp;gl=au&amp;hq=stitch+bar&amp;hnear=0x6b129838f39a743f:0x3017d681632a850,Sydney,+New+South+Wales&amp;cid=0,0,7025479367827988521&amp;t=m&amp;vpsrc=0&amp;iwloc=A&amp;ll=-33.86746,151.20577&amp;spn=0.006295,0.006295&amp;output=embed"></iframe>
+                <a href="#" data-role="button" data-theme="c">Get Directions</a>            
+            </div>
+        	
+            <div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>
+    
+    
+    <!-- PLACE PAGE (MAX BRENNER) -->
+		<div data-role="page" id="maxBrenner" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#chocoholicsAnonymous" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+            
+            <div data-role="content" id="content" class="centeredContentUp">
+	            <h2>Max Brenner</h2>
+                
+                
+            
+                <img src="images/places/maxBrenner3.jpg" width="410px" class="logo_image">
+                <a href="#" data-role="button" data-theme="e">Check-In</a>
+                <a href="#" data-role="button" data-theme="e">Upload a Photo</a>
+                <p><a href="#chocoholicsAnonymous" data-role="button" data-theme="e" id="missionButton" data-inline="true">Missions</a></p>
+                <p>Max Brenner, the bald man, is creating a new chocolate culture. We invite you to watch, smell, taste & feel Max's chocolate love story.</p>
+                <p>Shop MG 24, Metcentre, 273 George Street NSW</p>
+                <iframe class="logo_image" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Max+Brenner+Chocolate+Bar,+George+Street,+Sydney,+New+South+Wales&amp;aq=1&amp;sll=-33.870441,151.206618&amp;sspn=0.012739,0.022724&amp;vpsrc=0&amp;ie=UTF8&amp;hq=Max+Brenner+Chocolate+Bar,&amp;hnear=George+St,+Sydney+New+South+Wales&amp;ll=-33.870433,151.206615&amp;spn=0.007189,0.006295&amp;t=m&amp;output=embed"></iframe>
+                <a href="#directionsMB" data-role="button" data-theme="c">Get Directions</a>
+            </div>
+        	
+            <div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>    
+        
+        
+	<!-- MISSIONS PAGE (I.E. ALL THE MISSIONS) -->
+		<div data-role="page" id="missionsPage" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#homePage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+            
+            <div data-role="content">
+            	<ul data-role="listview" class="missionsList" data-theme="a">
+					<li><a href="#chocoholicsAnonymous"> <img src="images/missions/chocolate.png" class="ul-li-icon ui-li-thumb"/>Chocoholics Anonymous</a></li>
+                    <li data-theme="b"><a href="#caffeineJunkie"> <img src="images/missions/coffee.png" class="ul-li-icon ui-li-thumb" />Caffeine Junkie</a></li>
+                    <li><a href="#"> <img src="images/missions/beer.png" class="ul-li-icon ui-li-thumb"/>Ye Old Sydney Pub</a></li>
+                    <li><a href="#"> <img src="images/missions/footprints.png" class="ul-li-icon ui-li-thumb"/>Walkabout</a></li>
+                    <li><a href="#"> <img src="images/missions/city.png" class="ul-li-icon ui-li-thumb"/>Urban Factor</a></li>
+                    <li><a href="#"> <img src="images/missions/couch.png" class="ul-li-icon ui-li-thumb"/>Lazy Days</a></li>
+                    <li><a href="#"> <img src="images/missions/cocktail.png" class="ul-li-icon ui-li-thumb"/>Hidden Cocktail</a></li>
+                    <li><a href="#"> <img src="images/missions/cupcake.png" class="ul-li-icon ui-li-thumb"/>Sweetie Pie</a></li>
+				</ul>
+            </div>
+        	
+            <div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" class="ui-btn-active" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>
+        
+        
+     <!-- MISSION PAGE (CAFFEINE JUNKIE) -->
+		<div data-role="page" id="caffeineJunkie" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#missionsPage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></h1>
+			</div>
+            
+            <div data-role="content">
+                <div class="ui-grid-a">
+					<div class="ui-block-a"><img src="images/missions/coffee.png" width="130px"></div>
+					<div class="ui-block-b">
+                    	<h2>Caffiene Junkie</h2>
+                        <p><strong>Status:</strong> Completed</p>
+                    </div>
+				</div>
+               
+               <div class="Button">
+               <a href="#mbCaffeineJunkie" data-role="button" data-theme="e" id="missionButton">Mission Brief</a>
+               <a href="#" data-role="button" data-theme="c" id="missionButton">Mission Already Completed</a>
+				</div>
+                
+                <!-- scroller for images -->
+                <div id="container">
+                <div id="slider">
+					<ul>				
+						<li><a href="#"><img src="images/missions/caffieneAddict2.jpg"  /></a></li>
+						<li><a href="#"><img src="images/missions/caffieneAddict3.jpg"  /></a></li>
+						<li><a href="#"><img src="images/missions/caffieneAddict4.jpg"  /></a></li>
+						<li><a href="#"><img src="images/missions/caffieneAddict2.jpg"  /></a></li>
+						<li><a href="#"><img src="images/missions/caffieneAddict2.jpg"  /></a></li>			
+					</ul>
+				</div>
+             	</div>
+                
+                <h3>Stats</h3>
+                <ul data-role="listview" class="resultList" data-theme="a">
+					<li><a href="#"><img src="images/defaultUser.png" class="ul-li-icon ui-li-thumb"/><h3>First to Complete</h3><p>User 1</p></a></li>
+                    <li><a href="#"><img src="images/defaultUser.png" class="ul-li-icon ui-li-thumb"/><h3>Fastest Agent</h3><p>User 2</p></a></li>
+                    <li><a href="#"><img src="images/defaultUser.png" class="ul-li-icon ui-li-thumb"/><h3>Fastest of Your Friends</h3><p>User 3</p></a></li>
+				</ul>
+                
+            </div>
+        	
+            <div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" class="ui-btn-active" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>
+    
+    <!--- MISSION BRIEF PAGE (CAFFIENE JUNKIE) -->
+    	<div data-role="page" id="mbCaffeineJunkie" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#missionsPage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></h1>
+			</div>
+			
+			<div data-role="content" class="centeredContentUp">
+				<h3><strong>Target:</strong> Coffee shops of Sydney</h3>
+				<p><strong>Objective:</strong> Infiltrate at least 5 of the following coffee shops and let your presence be known by checking in and uploading a picture!</p>
+                </br></br>
+				
+				<ul data-role="listview" data-split-icon="gear" data-theme="a" data-split-theme="a">
+                <li><a href="#"> <img src="images/missions/twoBlackSheep.png" class="ul-li-icon ui-li-thumb"/><h3>Two Black Sheep</h3><p>580 George Street, Sydney NSW</p></a></li>
+                <li><a href="#"> <img src="images/missions/cbd.png" class="ul-li-icon ui-li-thumb"/><h3>Central Baking Depot</h3><p>37-39 Erskine St, Sydney NSW</p></a></li>
+                <li><a href="#"> <img src="images/missions/shirtBar.png" class="ul-li-icon ui-li-thumb"/><h3>Shirt Bar</h3><p>7 Sussex Lane, Sydney NSW</p></a></li>
+                <li><a href="#"> <img src="images/missions/cafeCreAsion.png" class="ul-li-icon ui-li-thumb"/><h3>Cafe Cre Asion</h3><p>21 Alberta St, Sydney NSW</p></a></li>
+                <li><a href="#"> <img src="images/missions/viaDelCorso.png" class="ul-li-icon ui-li-thumb"/><h3>Via Del Corso</h3><p>188 Pitt Street, Sydney NSW</p></a></li>
+                </ul>
+			</div>
+			
+	
+			
+			<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" class="ui-btn-active" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>
+    
+    
+    <!-- MISSION PAGE (CHOCOHOLICS ANONYMOUS) -->
+		
+            <div data-role="page" id="chocoholicsAnonymous" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#missionsPage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></h1>
+			</div>
+            
+            <div data-role="content">
+                <div class="ui-grid-a">
+					<div class="ui-block-a"><img src="images/missions/chocolate.png" width="130px"></div>
+					<div class="ui-block-b">
+                    	<h2>Chocoholics Anonymous</h2>
+                        <p><strong>Status:</strong> Uncompleted</p>
+                    </div>
+				</div>
+               
+               <div class="Button">
+               <a href="#mbChocoholicsAnonymous" data-role="button" data-theme="e" id="missionButton">Mission Brief</a>
+               <a href="#acceptMission" data-role="button" data-theme="e" id="missionButton">Accept Mission</a>
+				</div>
+                
+                <!-- scroller for images -->
+                <div id="container">
+                <div id="slider2">
+					<ul>				
+						<li><a href="#"><img src="images/missions/chocoholic2.jpg"  /></a></li>
+						<li><a href="#"><img src="images/missions/chocoholic3.jpg"  /></a></li>
+						<li><a href="#"><img src="images/missions/chocoholic4.jpg"  /></a></li>	
+					</ul>
+				</div>
+             	</div>
+                
+                <h3>Stats</h3>
+                <ul data-role="listview" class="resultList" data-theme="a">
+					<li><a href="#"><img src="images/defaultUser.png" class="ul-li-icon ui-li-thumb"/><h3>First to Complete</h3><p>User 1</p></a></li>
+                    <li><a href="#"><img src="images/defaultUser.png" class="ul-li-icon ui-li-thumb"/><h3>Fastest Agent</h3><p>User 2</p></a></li>
+                    <li><a href="#"><img src="images/defaultUser.png" class="ul-li-icon ui-li-thumb"/><h3>Fastest of Your Friends</h3><p>User 3</p></a></li>
+				</ul>
+                
+            </div>
+        	
+            <div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" class="ui-btn-active" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>
+		
+    
+    
+    <!--- MISSION BRIEF PAGE (CHOCOHOLICS ANONYMOUS) -->
+    	<div data-role="page" id="mbChocoholicsAnonymous" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#missionsPage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></h1>
+			</div>
+			
+			<div data-role="content" class="centeredContentUp">
+				<h3><strong>Target:</strong> Chocolate shops of Sydney</h3>
+				<p><strong>Objective:</strong> Infiltrate at least 4 of the following chocolate shops and let your presence be known by checking in and uploading a picture!</p>
+                </br></br>
+								
+				<ul data-role="listview" data-split-icon="gear" data-theme="a" data-split-theme="a">
+                	<li><a href="#maxBrenner"> <img src="images/missions/maxBrenner.png" class="ul-li-icon ui-li-thumb"/><h3>Max Brenner</h3><p>Metcentre, 273 George Street, Sydney NSW</p></a></li>
+                	<li><a href="#"> <img src="images/missions/sanChurro.png" class="ul-li-icon ui-li-thumb"/><h3>San Churro</h3><p>47 Glebe Point Road, Glebe NSW</p></a></li>
+                	<li><a href="#"> <img src="images/missions/lindt.png" class="ul-li-icon ui-li-thumb"/><h3>Lindt Chocolate Cafe</h3><p>53 Martin Place, Sydney NSW</p></a></li>
+                	<li><a href="#"> <img src="images/missions/guylian.png" class="ul-li-icon ui-li-thumb"/><h3>Guylian Belgian Chocolate Cafe</h3><p>Opera Quays, 3 Macquarie Street, Sydney NSW</p></a></li>
+                </ul>
+			</div>
+			
+	
+			
+			<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" class="ui-btn-active" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>
+    
+    
+    <!--- ACCEPT MISSION PAGE -->
+    	<div data-role="page" id="acceptMission" data-theme="a">
+        
+        	<div data-role="header" data-theme="a">
+				<a href="#missionsPage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></h1>
+			</div>
+			
+			<div data-role="content" class="centeredContent">
+               	<h2>Challenge Accepted!</h2>
+                <h4>Your time begins now. You must visit all 4 chocolate shops within two weeks. To make it count, you need to check-in to the places you go and upload a photo of your experience.</h4>
+                
+               <!-- <div class="ui-grid-a">
+					<div class="ui-block-a">
+                    	<p>Time remaining:</p>
+                    </div>
+					<div class="ui-block-b">
+                    	<h3>13 days<br>23 hours<br>59 minutes</h3>
+                    </div>
+				</div>-->
+                
+                <!-- Countdown dashboard start -->
+		<div id="countdown">
+			<div class="dash days_dash">
+				<span class="dash_title">days</span>
+				<div class="digitL">1</div>
+				<div class="digitR">3</div>
+			</div>
+
+			<div class="dash hours_dash">
+				<span class="dash_title">hours</span>
+				<div class="digitL">2</div>
+				<div class="digitR">3</div>
+			</div>
+
+			<div class="dash minutes_dash">
+				<span class="dash_title">minutes</span>
+				<div class="digitL">5</div>
+				<div class="digitR">9</div>
+			</div>
+		</div>
+
+
+		</div>
+		<!-- Countdown dashboard end -->
+                
+                                
+				<a href="#friendsPage" data-role="button" data-theme="e" id="missionButton">Ask Friends for Back-Up</a><br>
+			</div>
+		
+			
+			<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" class="ui-btn-active" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+            
+		</div>
+            
+        
+	<!-- RESULTS PAGE-->
+		<div data-role="page" id="resultsPage" data-theme="a">
+		
+			<div data-role="header" data-theme="a">
+				<a href="#homePage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+			
+			<div data-role="content" id="resultList" data-theme="a">
+				<ul data-role="listview" class="resultList" data-theme="a">
+					<li><a href="#balconyBar"> <img src="images/places/balconyBar3.jpg" class="ul-li-icon ui-li-thumb"/>Balcony Bar<span class="ui-li-count">1 km</span></a></li>
+                    <li><a href="#stitchBar"> <img src="images/places/stitchBar2.jpg" class="ul-li-icon ui-li-thumb"/>Stitch Bar<span class="ui-li-count">1 km</span></a></li>
+				</ul>
+			</div>
+			
+			<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+			
+		</div>
+        
+        
+        <!-- FRIENDS PAGE (ASK FOR BACKUP) -->
+		<div data-role="page" id="friendsPage" data-theme="a">
+		
+			<div data-role="header" data-theme="a">
+				<a href="#homePage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+			
+			<div data-role="content" id="resultList" data-theme="a">
+				<ul data-role="listview" class="resultList" data-theme="a">
+					<li><a href="#"><img src="images/defaultUser.png" class="ul-li-icon ui-li-thumb"/>Friend 1</a></li>
+                    <li><a href="#"><img src="images/defaultUser.png" class="ul-li-icon ui-li-thumb"/>Friend 2</a></li>
+				</ul>
+			</div>
+			
+			<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+			
+		</div>
+        
+         <!-- Directions Page -->
+		<div data-role="page" id="directionsMB" data-theme="a">
+		
+			<div data-role="header" data-theme="a">
+				<a href="#homePage" data-rel="back" data-direction="reverse" data-inline="true" data-role="button" data-icon="arrow-l">Back</a>
+				<h1><a href="#home"><img src="images/logos/logo_header_bar.png" width="150px" padding="0px"></a></h1>
+			</div>
+			
+			<div id="content">
+            	<img src="images/places/maxBrennerDirections.png" width="300px" padding="0px" class="img-center">
+                </br>
+                <img src="images/places/maxBrennerDirections2.png" width="300px" padding="0px"class="img-center">
+            </div>
+			
+			<div data-role="footer" id="footer" data-theme="c" data-position="fixed">
+				<div data-role="navbar" class="footer_nav" data-grid="d">
+					<ul>
+						<li><a href="#homePage" id="home" data-icon="custom">Home</a></li>
+						<li><a href="#searchPage" id="search" data-icon="custom">Search</a></li>
+						<li><a href="#checkInPage" id="checkIn" data-icon="custom">Check-In</a></li>
+						<li><a href="#missionsPage" id="missions" data-icon="custom">Missions</a></li>
+                        <li><a href="#profilePage" id="profile" data-icon="custom">You</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div><!-- /footer -->
+			
+		</div>
+        
+	</body>
+
+</html>
