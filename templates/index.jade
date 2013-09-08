@@ -10,12 +10,8 @@ html(lang="en")
 		script(src='http://code.jquery.com/ui/1.10.3/jquery-ui.js')
 		script
 			$(function() {
-				$( "#accordion" ).accordion({
-				collapsible: true,
-				active: false
+				$( "#tabs" ).tabs();
 				});
-				});
-
 
 	body
 		section.intro
@@ -39,37 +35,69 @@ html(lang="en")
 					a(href='mailto:amelialewis01@gmail.com')
 						i.icon-envelope-alt.icon-2x
 
+		section.about
+			h2 A little about me
+
+			div#about-me
+				h3 Hello
+				p I design things
+
 		section.projects
-			div#accordion
-				h3.little-boxes.heading Little Boxes
-				div.little-boxes.content
+			h2 Some things I've made
+
+			div#tabs
+				ul
+					li
+						a(href='#tabs-1') Tab 1
+					li
+						a(href='#tabs-2') Tab 1
+					li
+						a(href='#tabs-3') Tab 1
+
+				div#tabs-1
+					p hello
+
+				div#tabs-2
+					p hello
+
+				div#tabs-3
+					p hello
+
+			div#little-boxes.project
+				h3.heading Little Boxes
+				div.content
 					p Little Boxes is an interactive digital art installation created in a group as part of a Human Computer Experience Design Studio. It is a reflection on history. It aims to reconcile personal narratives to the reporting of events; intermingling statuses, photos and tweets with news, movies and songs of the past. Various wooden boxes of different sizes, shapes and designs are scattered through the space, each with their own screen stored inside.
 					p Essentially acting as a digital time capsule, Little Boxes allows the viewer to explore their own personal digital history through the past. As the work evolves, each of the viewers' personal narratives adds to a collective history. The work explores the act of sharing our digital stories: as memory itself becomes digitised, how will this affect our personal narratives and our identities?
 					p Little Boxes is made using HTML and websocket technologies, and an Arduino on an iMac, iPod touches, iPads and a tablet PC.
 
-				h3.momo.heading Momo Brasserie
-				div.momo.content
+			div#momo.project
+				h3.heading Momo Brasserie
+				div.content
 					p I designed and developed the website and manage the social media channels for Momo Brasserie, a new Sydney restaurant.
 
-				h3.transport.heading Unified Public Transport System for Sydney
-				div.transport.content
+			div#transport.project
+				h3.heading Unified Public Transport System for Sydney
+				div.content
 					p A group project involving the redesign of Sydney's public transport ticketing system and user interfaces.
 					p We produced designs for a smart card system, a mobile app, a ticketing machine and tickets with a major focus on improving the user experience for both experienced and novice users.
 					p Our group came in 1st place, recognised by Cubic.
 
-				h3.multitouch.heading Multitouch
-				div.multitouch.content
+			div#multitouch.project
+				h3.heading Multitouch
+				div.content
 					p This multitouch touchtable application allows the user to explore the world's highest grossing movies of all time. The user is able to see how much each movie grossed, various connections between the series, the movies' trailers as well as some other information.
 					p The app was built in Processing, using the TuioZones, oscP5 and GSVideo libraries, with the data being imported from an XML file.
 
-				h3.unicef.heading Unicef Mobile Site
-				div.unicef.content
+			div#unicef.project
+				h3.heading Unicef Mobile Site
+				div.content
 					p I designed a website for Unicef optimised for mobile devices. The brief wanted us to make it as easy as possible for users to donate on the go, as well as sign up for a newsletter and learn more about the top 10 causes.
 					p My design was chosen as the best in the class, in terms of mobile optimisation.
 					p N.B. This is very much a prototype, a lot of the links don't go anywhere.
 
-				h3.urbanplay.heading UrbanPlay
-				div.urbanplay.content
+			div#urbanplay.project
+				h3.heading UrbanPlay
+				div.content
 					p UrbanPlay is a mobile web app designed for The City of Sydney to help people living in, and visitors to, Sydney find various "hidden spaces" like bars, restaurants and chill-out spots. We designed the app to have a gamification element, where users could check-in to the places they went, accumulating points and unlocking new spaces.
 					p The app was built using jQuery mobile and HTML5.
 					p N.B. This is also very much a prototype.

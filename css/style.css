@@ -1,11 +1,14 @@
 body {
   margin: 0;
   font-family: "Muli";
-  background: #222222; }
+  background: #333333; }
 
 /* ---------- INTRO ---------- */
 .intro {
-  padding: 60px 0; }
+  padding: 60px 0;
+  position: fixed;
+  width: 100%;
+  top: 0; }
   .intro .container {
     width: 60%;
     margin: 0 auto;
@@ -19,7 +22,8 @@ body {
     .intro .container h2 {
       font-weight: 300;
       font-size: 22px;
-      margin-top: 6px; }
+      margin-top: 6px;
+      color: white; }
     .intro .container .social i {
       margin: 0 10px;
       color: white;
@@ -39,44 +43,62 @@ body {
     .intro .container .social i.icon-envelope-alt:hover {
       color: #dd4b39; }
 
-/* ---------- PROJECTS ---------- */
-.projects #accordion {
-  font-family: "Muli"; }
-  .projects #accordion .heading {
+/* ---------- ABOUT ME ---------- */
+.about {
+  font-family: "Muli";
+  background: #ecf0f1;
+  margin-top: 259px;
+  position: relative; }
+  .about h2 {
+    background: #e74c3c;
     color: white;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px 0 13px 0;
+    margin: 0;
+    border-bottom: 7px solid #c0392b; }
+  .about #about-me {
+    padding: 2em; }
+
+/* ---------- PROJECTS ---------- */
+.projects {
+  font-family: "Muli";
+  background: #ecf0f1;
+  position: relative; }
+  .projects h2 {
+    background: #f1c40f;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px 0 13px 0;
+    margin: 0;
+    border-bottom: 7px solid #f39c12; }
+  .projects .project {
+    padding: 2em; }
+  .projects .heading {
+    color: #333333;
     border: none;
     margin-top: 0;
-    border-radius: 0;
-    padding: 1em 0.5em 1em 2em; }
-    .projects #accordion .heading .ui-accordion-header-icon {
-      right: 0.5em; }
-  .projects #accordion .content {
-    color: white;
+    border-radius: 0; }
+  .projects .content {
+    color: #333333;
     border: none;
     border-radius: 0; }
-  .projects #accordion .little-boxes.heading {
-    background: #c0392b; }
-  .projects #accordion .little-boxes.content {
-    background: #e74c3c; }
-  .projects #accordion .momo.heading {
-    background: #f39c12; }
-  .projects #accordion .momo.content {
-    background: #f1c40f; }
-  .projects #accordion .transport.heading {
-    background: #2ecc71; }
-  .projects #accordion .transport.content {
-    background: #2ecc71; }
-  .projects #accordion .multitouch.heading {
-    background: #9b59b6; }
-  .projects #accordion .multitouch.content {
-    background: #9b59b6; }
-  .projects #accordion .unicef.heading {
-    background: #3498db; }
-  .projects #accordion .unicef.content {
-    background: #3498db; }
-  .projects #accordion .urbanplay.heading {
-    background: #7f8c8d; }
-  .projects #accordion .urbanplay.content {
-    background: #7f8c8d; }
 
+/*	#little-boxes
+ *
+ * #momo
+ *
+ * #transport
+ *
+ * #multitouch
+ *
+ * #unicef
+ *
+ * #urbanplay */
 /* ---------- FOOTER ---------- */
+.footer {
+  position: fixed;
+  width: 100%; }
