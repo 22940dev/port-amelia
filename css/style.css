@@ -5,8 +5,9 @@ body {
 
 /* ---------- INTRO ---------- */
 .intro {
-  padding: 60px 0;
+  padding: 20px 0;
   position: fixed;
+  z-index: 5;
   width: 100%;
   top: 0;
   background: #333333; }
@@ -22,120 +23,126 @@ body {
       margin-top: 0;
       font-family: "Montserrat";
       text-transform: uppercase;
-      text-shadow: 0 2px 1px black; }
-    .intro .container h2 {
+      text-shadow: 0 2px 1px black;
+      float: left;
+      font-size: 30px; }
+    .intro .container .bio {
       font-weight: 300;
       font-size: 22px;
-      margin-top: 6px;
       color: white;
-      font-family: "Muli"; }
-    .intro .container .social i {
-      margin: 0 10px;
-      color: white;
-      text-decoration: none;
-      text-shadow: 0 2px 1px black;
-      transition: color 0.15s ease-in-out;
-      -moz-transition: color 0.15s ease-in-out;
-      -webkit-transition: color 0.15s ease-in-out; }
-    .intro .container .social i.icon-facebook:hover {
-      color: #3b5998; }
-    .intro .container .social i.icon-twitter:hover {
-      color: #4099ff; }
-    .intro .container .social i.icon-instagram:hover {
-      color: #517fa4; }
-    .intro .container .social i.icon-pinterest:hover {
-      color: #cb2027; }
-    .intro .container .social i.icon-tumblr:hover {
-      color: #32506d; }
-    .intro .container .social i.icon-linkedin:hover {
-      color: #007bb6; }
-    .intro .container .social i.icon-envelope-alt:hover {
-      color: #dd4b39; }
+      font-family: "Muli";
+      text-transform: none;
+      text-shadow: none;
+      padding: 0 0 9px 0; }
+    .intro .container .social {
+      float: right; }
+      .intro .container .social i {
+        font-size: 24px;
+        line-height: 37px;
+        margin: 0 5px;
+        color: white;
+        text-decoration: none;
+        text-shadow: 0 2px 1px black;
+        transition: color 0.15s ease-in-out;
+        -moz-transition: color 0.15s ease-in-out;
+        -webkit-transition: color 0.15s ease-in-out; }
+      .intro .container .social i.icon-facebook:hover {
+        color: #3b5998; }
+      .intro .container .social i.icon-twitter:hover {
+        color: #4099ff; }
+      .intro .container .social i.icon-instagram:hover {
+        color: #517fa4; }
+      .intro .container .social i.icon-pinterest:hover {
+        color: #cb2027; }
+      .intro .container .social i.icon-tumblr:hover {
+        color: #32506d; }
+      .intro .container .social i.icon-linkedin:hover {
+        color: #007bb6; }
+      .intro .container .social i.icon-envelope-alt:hover {
+        color: #dd4b39; }
 
 /* ---------- ABOUT ME ---------- */
 .about {
   font-family: "Muli";
-  margin-top: 252px;
+  margin-top: 77px;
   position: relative;
-  background: #ecf0f1; }
+  background: #777777;
+  padding: 20px 0;
+  color: white; }
   .about h2 {
-    background: #e74c3c;
+    /*background: #e74c3c */
     color: white;
     text-align: center;
     font-family: "Montserrat";
     text-transform: uppercase;
     width: 100%;
-    padding: 20px 0 13px 0;
+    padding-top: 20px;
     margin: 0;
-    border-bottom: 7px solid #c0392b;
-    text-shadow: 0 2px 1px #c0392b; }
+    /*border-bottom: 7px solid #c0392b */
+    text-shadow: 0 2px 1px #333333;
+    font-size: 24px; }
   .about #about-me {
     width: 80%;
     margin: 0 auto;
     text-align: center; }
-    .about #about-me p {
-      padding-bottom: 20px; }
 
 /* ---------- PROJECTS ---------- */
 .projects {
   font-family: "Muli";
-  background: #ecf0f1;
+  background: #f5f7f7;
   position: relative; }
-  .projects h2 {
-    background: #f1c40f;
-    color: white;
-    text-align: center;
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    width: 100%;
-    padding: 20px 0 13px 0;
-    margin: -16px 0 0 0;
-    border-bottom: 7px solid #f39c12;
-    text-shadow: 0 2px 1px #f39c12; }
-  .projects #projects-intro {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center; }
   .projects .project {
-    clear: both; }
-    .projects .project h3 {
-      text-align: center;
-      font-family: "Montserrat";
-      text-transform: uppercase;
-      background: #95a5a6;
-      border-bottom: 5px solid #7f8c8d;
-      text-shadow: 0 2px 1px #7f8c8d;
-      padding: 15px 0 10px 0;
-      color: white;
-      margin: 0; }
+    clear: both;
+    min-height: 365px; }
     .projects .project .content {
-      padding: 0 100px; }
-    .projects .project .text img, .projects .project .image img {
-      height: 300px;
-      border-radius: 10px;
-      margin: 30px;
-      border-bottom: 5px solid #7f8c8d; }
+      padding: 0 220px; }
     .projects .project .text {
-      width: 60%;
+      width: 480px;
       text-align: justify;
       padding: 30px 0;
       -webkit-display: box;
       -webkit-box-align: center;
       -webkit-box-pack: center; }
+      .projects .project .text h3 {
+        text-align: center;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        /*background: #95a5a6 */
+        /*border-bottom: 5px solid #7f8c8d */
+        text-shadow: 0 2px 1px white;
+        padding: 15px 0 10px 0;
+        color: #f1c40f;
+        margin: 0 auto;
+        font-size: 24px; }
     .projects .project .image {
-      width: 40%;
+      width: 480px;
       text-align: center; }
+      .projects .project .image img {
+        height: 300px;
+        border-radius: 10px;
+        margin: 30px; }
     .projects .project .left {
       float: left; }
     .projects .project .right {
       float: right; }
-  .projects #little-boxes {
-    margin-top: 5px; }
+  .projects #momo, .projects #multitouch {
+    background: #ecf0f1; }
+  .projects #litte-boxes .text {
+    float: left; }
+  .projects #litte-boxes .image {
+    float: right; }
 
 /* ---------- FOOTER ---------- */
 .footer {
-  position: fixed;
-  width: 100%; }
+  width: 100%;
+  background: #555555;
+  color: white;
+  padding: 10px 0; }
+  .footer .container {
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    text-align: center; }
 
 .fadeIn {
   animation-name: fadeIn;
