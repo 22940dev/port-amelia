@@ -4,6 +4,18 @@
 	background: #f5f7f7
 	position: relative
 
+	.header
+		background: #fff
+
+		h2
+			text-align: center
+			font-family: 'Montserrat'
+			text-transform: uppercase
+			padding: 15px 0
+			color: #3498db
+			margin: 0 auto
+			font-size: 24px	
+
 	.project
 		clear: both
 		min-height: 365px
@@ -15,15 +27,14 @@
 			width: 480px
 			text-align: center
 			padding: 30px 0
+			display: inline-block
 
 			h3
 				text-align: center
 				font-family: 'Montserrat'
 				text-transform: uppercase
-				/*background: #95a5a6*/
-				/*border-bottom: 5px solid #7f8c8d*/
 				text-shadow: 0 1px 3px #fff
-				padding: 15px 0 10px 0
+				padding: 15px 0 0 0
 				color: #f1c40f
 				margin: 0 auto
 				font-size: 24px	
@@ -51,6 +62,13 @@
 		.image
 			width: 480px
 			text-align: center
+			display: inline-block
+
+			&:nth-child(odd)
+				float: left
+
+			&:nth-child(even)
+				float: right
 
 			img
 				height: 300px
@@ -58,14 +76,12 @@
 				margin: 30px
 				box-shadow: 0 1px 3px #fff
 
-		.left
-			float: left
-
-		.right
-			float: right
 
 	#momo, #multitouch
 		background: #ecf0f1
+
+		.image
+			float: left
 
 	#transport
 		h3
