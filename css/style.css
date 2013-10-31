@@ -92,25 +92,41 @@ body {
   font-family: "Muli";
   margin-top: 77px;
   position: relative;
-  background: #777777;
+  background: url("../css/images/header-bg.png") no-repeat;
+  background-size: 100%;
   padding: 20px 0;
-  color: white; }
-  .about h2 {
-    /*background: #e74c3c */
-    color: white;
-    text-align: center;
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    width: 100%;
-    padding-top: 20px;
-    margin: 0;
-    /*border-bottom: 7px solid #c0392b */
-    text-shadow: 0 2px 1px #333333;
-    font-size: 24px; }
+  color: white;
+  min-height: 400px;
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: box;
+  box-pack: center;
+  box-align: center; }
   .about #about-me {
-    width: 50%;
-    margin: 0 auto;
+    width: 31%;
     text-align: center; }
+    .about #about-me h2 {
+      color: white;
+      text-align: center;
+      font-family: "Montserrat";
+      text-transform: uppercase;
+      width: 100%;
+      /*padding-top: 20px */
+      margin: 0;
+      text-shadow: 0 2px 1px #333333;
+      font-size: 24px; }
+    .about #about-me .break {
+      margin-top: 40px; }
+    .about #about-me img {
+      width: 50px;
+      height: 50px; }
 
 /* ---------- PROJECTS ---------- */
 .projects {
