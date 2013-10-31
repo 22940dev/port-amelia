@@ -17,8 +17,7 @@ body {
     color: white;
     text-align: center; }
     .intro .container h1 {
-      font-weight: 400;
-      font-size: 40px;
+      font-weight: 700;
       margin-bottom: 0;
       margin-top: 0;
       font-family: "Montserrat";
@@ -36,30 +35,57 @@ body {
       padding: 0 0 9px 0; }
     .intro .container .social {
       float: right; }
-      .intro .container .social i {
-        font-size: 24px;
-        line-height: 37px;
-        margin: 0 5px;
-        color: white;
-        text-decoration: none;
-        text-shadow: 0 2px 1px black;
-        transition: color 0.15s ease-in-out;
-        -moz-transition: color 0.15s ease-in-out;
-        -webkit-transition: color 0.15s ease-in-out; }
-      .intro .container .social i.icon-facebook:hover {
-        color: #3b5998; }
-      .intro .container .social i.icon-twitter:hover {
-        color: #4099ff; }
-      .intro .container .social i.icon-instagram:hover {
-        color: #517fa4; }
-      .intro .container .social i.icon-pinterest:hover {
-        color: #cb2027; }
-      .intro .container .social i.icon-tumblr:hover {
-        color: #32506d; }
-      .intro .container .social i.icon-linkedin:hover {
-        color: #007bb6; }
-      .intro .container .social i.icon-envelope-alt:hover {
-        color: #dd4b39; }
+      .intro .container .social ul {
+        list-style-type: none;
+        margin: 0;
+        /* */ }
+        .intro .container .social ul li {
+          display: inline-block; }
+          .intro .container .social ul li i {
+            font-size: 24px;
+            line-height: 37px;
+            margin: 0 5px;
+            color: white;
+            text-decoration: none;
+            text-shadow: 0 2px 1px black;
+            transition: color 0.15s ease-in-out;
+            -moz-transition: color 0.15s ease-in-out;
+            -webkit-transition: color 0.15s ease-in-out; }
+          .intro .container .social ul li i.icon-facebook:hover {
+            color: #3b5998; }
+          .intro .container .social ul li i.icon-twitter:hover {
+            color: #4099ff; }
+          .intro .container .social ul li i.icon-instagram:hover {
+            color: #517fa4; }
+          .intro .container .social ul li i.icon-pinterest:hover {
+            color: #cb2027; }
+          .intro .container .social ul li i.icon-tumblr:hover {
+            color: #32506d; }
+          .intro .container .social ul li i.icon-linkedin:hover {
+            color: #007bb6; }
+          .intro .container .social ul li i.icon-envelope-alt:hover {
+            color: #dd4b39; }
+        .intro .container .social ul li:nth-of-type(1) {
+          animation-delay: 0.6s;
+          -webkit-animation-delay: 0.6s; }
+        .intro .container .social ul li:nth-of-type(2) {
+          animation-delay: 0.5s;
+          -webkit-animation-delay: 0.5s; }
+        .intro .container .social ul li:nth-of-type(3) {
+          animation-delay: 0.4s;
+          -webkit-animation-delay: 0.4s; }
+        .intro .container .social ul li:nth-of-type(4) {
+          animation-delay: 0.3s;
+          -webkit-animation-delay: 0.3s; }
+        .intro .container .social ul li:nth-of-type(5) {
+          animation-delay: 0.2s;
+          -webkit-animation-delay: 0.2s; }
+        .intro .container .social ul li:nth-of-type(6) {
+          animation-delay: 0.1s;
+          -webkit-animation-delay: 0.1s; }
+        .intro .container .social ul li:nth-of-type(7) {
+          animation-delay: 0s;
+          -webkit-animation-delay: 0s; }
 
 /* ---------- ABOUT ME ---------- */
 .about {
@@ -182,21 +208,49 @@ body {
         text-decoration: underline;
         color: red; }
 
-.fadeIn {
-  animation-name: fadeIn;
-  -webkit-animation-name: fadeIn;
-  animation-duration: 1.5s;
-  -webkit-animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
-  visibility: visible !important; }
-
-@keyframes fadeIn {
+/* ---------- ANIMATIONS ---------- */
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
 
   100% {
     opacity: 1; } }
 
-.twitter .timeline-header {
-  display: none; }
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important; }
+
+@-webkit-keyframes dropIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-400px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px); } }
+
+.dropIn {
+  animation-name: dropIn;
+  -webkit-animation-name: dropIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important; }
+
+/* ---------- MEDIA QUERIES ---------- */
+@media all and (max-width: 699px) and (min-width: 320px) {
+  .intro h1 {
+    float: none; }
+  .intro .social {
+    float: none; }
+    .intro .social ul {
+      padding: none; }
+
+  .projects .project .content {
+    padding: 0 113px; } }
