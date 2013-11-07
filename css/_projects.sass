@@ -18,16 +18,37 @@
 
 	.project
 		clear: both
-		min-height: 365px
+		padding: 20px 0 30px 0
+
+		/* Internet Explorer 10 */
+		display:-ms-flexbox
+		-ms-flex-pack:center
+		-ms-flex-align:center
+
+		/* Firefox */
+		display:-moz-box
+		-moz-box-pack:center
+		-moz-box-align:center
+
+		/* Safari, Opera, and Chrome */
+		display:-webkit-box
+		-webkit-box-pack:center
+		-webkit-box-align:center
+
+		/* W3C */
+		display:box
+		box-pack:center
+		box-align:center
 
 		.content
-			padding: 0 220px
+			width: 50%
+			margin: 0 auto
 
 		.text
-			width: 480px
+			width: 100%
 			text-align: center
-			padding: 30px 0
-			display: inline-block
+			/*padding: 30px 0*/
+			display: block
 
 			h3
 				text-align: center
@@ -37,14 +58,10 @@
 				padding: 15px 0 0 0
 				color: #f1c40f
 				margin: 0 auto
-				font-size: 24px	
-
-			p
-				text-align: justify
+				font-size: 24px
 
 			.buttons
 				text-align: center
-				margin-top: 35px
 
 				a
 					padding: 15px 40px 12px 40px
@@ -56,32 +73,30 @@
 					text-decoration: none
 					text-transform: uppercase
 					font-family: 'Montserrat'
-					margin-left: 10px
-					margin-right: 10px
+					margin: 5px 10px 20px 10px
+					display: inline-block
+
+				a:hover
+					background: #f75545
+					transition: background .15s ease-in-out
+					-moz-transition: background .15s ease-in-out
+					-webkit-transition: background .15s ease-in-out
 
 		.image
-			width: 480px
+			width: 100%
 			text-align: center
-			display: inline-block
-
-			&:nth-child(odd)
-				float: left
-
-			&:nth-child(even)
-				float: right
+			display: block
 
 			img
 				height: 300px
-				border-radius: 10px
-				margin: 30px
-				box-shadow: 0 1px 3px #fff
+				/*box-shadow: 0 1px 3px #fff*/
 
 
 	#momo, #multitouch
 		background: #ecf0f1
 
-		.image
-			float: left
+		/*.image
+			float: left*/
 
 	#transport
 		h3
