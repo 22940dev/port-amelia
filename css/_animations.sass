@@ -1,4 +1,13 @@
 /* ---------- ANIMATIONS ---------- */
+
+/* ----- Fade In ----- */
+
+@keyframes fadeIn
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+
 @-webkit-keyframes fadeIn
 	0%
 		opacity: 0
@@ -17,6 +26,15 @@
 
 	visibility: visible !important
 
+/* ----- Drop In ----- */
+
+@keyframes dropIn
+	0%
+		opacity: 0
+		-webkit-transform: translateY(-400px)
+	100%
+		opacity: 1
+		-webkit-transform: translateY(0px)
 
 @-webkit-keyframes dropIn
 	0%
@@ -38,15 +56,7 @@
 
 	visibility: visible !importantv
 
-.pulse
-	animation-name: pulse
-	-webkit-animation-name: pulse
-
-	animation-duration: 1.5s
-	-webkit-animation-duration: 1.5s
-
-	animation-iteration-count: infinite
-	-webkit-animation-iteration-count: infinite
+/* ----- Pulse ----- */
 
 @keyframes pulse
 	0%
@@ -73,3 +83,13 @@
 	100%
 		-webkit-transform: scale(0.8)
 		opacity: 0.8
+
+.pulse
+	animation-name: pulse
+	-webkit-animation-name: pulse
+
+	animation-duration: 1.5s
+	-webkit-animation-duration: 1.5s
+
+	animation-iteration-count: infinite
+	-webkit-animation-iteration-count: infinite

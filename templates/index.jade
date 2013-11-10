@@ -3,16 +3,20 @@ html(lang="en")
 	head
 		title Amelia Lewis
 		link(type='text/css', rel='stylesheet', href='../css/style.css')
+		link(type='text/css', rel='stylesheet', href='../css/lightbox.css')
+		//- link(type='text/css', rel='stylesheet', href='../css/screen.css')
 		link(rel='stylesheet', href='../css/font/font-awesome/css/font-awesome.min.css')
 		link(type='text/css', rel='stylesheet', href='http://fonts.googleapis.com/css?family=Muli:300|Montserrat:700')
-		link(type='text/css', rel='stylesheet', href='http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css')
 		link(rel='icon', type='image/png', href='http://www.amelialewis.com.au/css/images/favicon.png')
+		// script(src='js/modernizr.custom.js')
+		script(src='../js/jquery-1.10.2.min.js')
+		script(src='../js/lightbox-2.6.min.js')
 
 	body
 		section.intro
 			div.container
-				h1 Amelia Lewis
-				//- h2.bio Designer, nerd, muso, online-shopoholic
+				a(href='index.html')
+					h1 Amelia Lewis
 
 				div.social
 					ul
@@ -44,17 +48,17 @@ html(lang="en")
 				h2 i'm a ux + ui designer
 				p I have a Bachelor in Design Computing from The University of Sydney, and currently work as a mobile app and web designer for a small company in Manly, Sydney.
 				p.break Here are some projects I've made
-				a.pulse(href='#projects')
+				a.pulse
 					img(src='../css/images/down-arrow.png')	
 
-		section#projects.projects
+		section.projects
 			div#little-boxes.project
 				div.content
 					div.text
 						h3.heading Little Boxes
 						p Little Boxes is an interactive digital art installation created in a group as part of a Human Computer Experience Design Studio. It is a reflection on history. It aims to reconcile personal narratives to the reporting of events; intermingling statuses, photos and tweets with news, movies and songs of the past. Various wooden boxes of different sizes, shapes and designs are scattered through the space, each with their own screen stored inside.
-						//- p Essentially acting as a digital time capsule, Little Boxes allows the viewer to explore their own personal digital history through the past. As the work evolves, each of the viewers' personal narratives adds to a collective history. The work explores the act of sharing our digital stories: as memory itself becomes digitised, how will this affect our personal narratives and our identities?
-						//- p Little Boxes is made using HTML and websocket technologies, and an Arduino on an iMac, iPod touches, iPads and a tablet PC.
+						p Essentially acting as a digital time capsule, Little Boxes allows the viewer to explore their own personal digital history through the past. As the work evolves, each of the viewers' personal narratives adds to a collective history. The work explores the act of sharing our digital stories: as memory itself becomes digitised, how will this affect our personal narratives and our identities?
+						p Little Boxes is made using HTML5 and websocket technologies, and an Arduino on an iMac, iPod touches, iPads and a tablet PC.
 						div.buttons
 							a(href='#' target='_blank') More Info
 					div.image
@@ -77,7 +81,7 @@ html(lang="en")
 						p A group project involving the redesign of Sydney's public transport ticketing system and user interfaces. We produced designs for a smart card system, a mobile app, a ticketing machine and tickets with a major focus on improving the user experience for both experienced and novice users.
 						p Our group came in 1st place, recognised by Cubic.
 						div.buttons
-							a(href='http://cargocollective.com/amelialewis/Interaction-Design-Unified-Public-Transport-System' target='_blank') More Info
+							a(href='transport.html') More Info
 							a(href='http://sydney.edu.au/news/architecture/274.html?newsstoryid=10795' target='_blank') Cubic Article
 							a(href='http://sydney.edu.au/news/architecture/274.html?newsstoryid=10838' target='_blank') Usyd Article
 					div.image
@@ -102,7 +106,7 @@ html(lang="en")
 						p I designed a website for Unicef optimised for mobile devices. The brief wanted us to make it as easy as possible for users to donate on the go, as well as sign up for a newsletter and learn more about the top 10 causes.
 						p My design was chosen as the best in the class, in terms of mobile optimisation.
 						div.buttons
-							a(href='#' target='_blank') Website
+							a(href='unicef.html') Website
 					div.image
 						img(src='../css/images/unicef-outline.png')	
 
