@@ -414,3 +414,20 @@ body {
   .project-page img {
     height: 120px;
     margin: 10px 5px; }
+  .project-page .phone-bg {
+    background: url("../css/images/iphone.png") no-repeat;
+    background-size: 55%;
+    background-position: 50%;
+    height: 770px; }
+    .project-page .phone-bg .unicef-screen {
+      background: white;
+      height: 504px;
+      width: 284px;
+      position: relative;
+      left: 218px;
+      top: 134px;
+      overflow: scroll;
+      padding: 0; }
+      .project-page .phone-bg .unicef-screen img {
+        width: 270px;
+        height: 1225px; }
