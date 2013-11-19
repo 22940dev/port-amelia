@@ -1,16 +1,48 @@
 /* ---------- MEDIA QUERIES ---------- */
 @media only screen and (max-device-width: 480px)
 	.intro
-		h1
-			float: none
+		position: relative
+		min-height: 60px
 
-		.social
-			float: none
+		.container
+			a
+				text-decoration: none
 
-			ul
-				padding: none
+			h1
+				float: none !important
+				font-size: 22px
+
+			.social
+				float: none !important
+
+				ul
+					padding: 0
+
+					li
+						i
+							font-size: 20px
+
+	.about
+		margin-top: 0
+		min-height: 250px
+		background-size: 100% 100%
+
+		#about-me
+			width: 90%
 
 	.projects
 		.project
 			.content
-				padding: 0 113px
+				width: 96%
+				padding: 0 10px
+
+	.project-header
+		margin-top: 0 !important
+		min-height: 120px !important
+		background-size: 300% 100% !important
+
+	.project-page
+		padding: 5px !important
+
+		#content
+			width: 90% !important

@@ -23,6 +23,7 @@ body {
       font-family: "Montserrat";
       text-transform: uppercase;
       text-shadow: 0 2px 1px black;
+      text-decoration: none;
       float: left;
       font-size: 30px;
       color: white; }
@@ -195,8 +196,7 @@ body {
       text-align: center;
       display: block; }
       .projects .project .image img {
-        height: 300px;
-        /*box-shadow: 0 1px 3px #fff */ }
+        height: 300px; }
   .projects #momo, .projects #multitouch {
     background: #ecf0f1;
     /*.image
@@ -284,7 +284,7 @@ body {
 /* ----- Pulse ----- */
 @keyframes pulse {
   0% {
-    transform: scale(0.8);
+    transform: scale(0.95);
     opacity: 0.8; }
 
   50% {
@@ -292,12 +292,12 @@ body {
     opacity: 1; }
 
   100% {
-    transform: scale(0.8);
+    transform: scale(0.95);
     opacity: 0.8; } }
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-transform: scale(0.8);
+    -webkit-transform: scale(0.95);
     opacity: 0.8; }
 
   50% {
@@ -305,7 +305,7 @@ body {
     opacity: 1; }
 
   100% {
-    -webkit-transform: scale(0.8);
+    -webkit-transform: scale(0.95);
     opacity: 0.8; } }
 
 .pulse {
@@ -318,15 +318,41 @@ body {
 
 /* ---------- MEDIA QUERIES ---------- */
 @media only screen and (max-device-width: 480px) {
-  .intro h1 {
-    float: none; }
-  .intro .social {
-    float: none; }
-    .intro .social ul {
-      padding: none; }
+  .intro {
+    position: relative;
+    min-height: 60px; }
+    .intro .container a {
+      text-decoration: none; }
+    .intro .container h1 {
+      float: none !important;
+      font-size: 22px; }
+    .intro .container .social {
+      float: none !important; }
+      .intro .container .social ul {
+        padding: 0; }
+        .intro .container .social ul li i {
+          font-size: 20px; }
+
+  .about {
+    margin-top: 0;
+    min-height: 250px;
+    background-size: 100% 100%; }
+    .about #about-me {
+      width: 90%; }
 
   .projects .project .content {
-    padding: 0 113px; } }
+    width: 96%;
+    padding: 0 10px; }
+
+  .project-header {
+    margin-top: 0 !important;
+    min-height: 120px !important;
+    background-size: 300% 100% !important; }
+
+  .project-page {
+    padding: 5px !important; }
+    .project-page #content {
+      width: 90% !important; } }
 /* ---------- PROJECT PAGES ---------- */
 .project-header {
   font-family: "Muli";
@@ -367,6 +393,10 @@ body {
 
 .project-header.unicef {
   background: url("../css/images/unicef-header.png") no-repeat;
+  background-size: 100% 180px; }
+
+.project-header.little-boxes {
+  background: url("../css/images/little-boxes-header.png") no-repeat;
   background-size: 100%; }
 
 .project-page {
@@ -416,18 +446,28 @@ body {
     margin: 10px 5px; }
   .project-page .phone-bg {
     background: url("../css/images/iphone.png") no-repeat;
-    background-size: 55%;
+    background-size: 394px;
     background-position: 50%;
-    height: 770px; }
+    height: 770px;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: box;
+    box-pack: center;
+    box-align: center; }
     .project-page .phone-bg .unicef-screen {
       background: white;
       height: 504px;
       width: 284px;
-      position: relative;
-      left: 218px;
-      top: 134px;
       overflow: scroll;
       padding: 0; }
       .project-page .phone-bg .unicef-screen img {
-        width: 270px;
-        height: 1225px; }
+        width: 284px;
+        height: 1295px;
+        margin: 0; }

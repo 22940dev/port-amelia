@@ -40,10 +40,14 @@
 
 .project-header.transport
 	background: url('../css/images/transport-header2.png') no-repeat
-	background-size: 100%
+	background-size: 100% 
 
 .project-header.unicef
 	background: url('../css/images/unicef-header.png') no-repeat
+	background-size: 100% 180px
+
+.project-header.little-boxes
+	background: url('../css/images/little-boxes-header.png') no-repeat
 	background-size: 100%
 
 .project-page
@@ -102,20 +106,34 @@
 
 	.phone-bg
 		background: url('../css/images/iphone.png') no-repeat
-		background-size: 55%
+		background-size: 394px
 		background-position: 50%
 		height: 770px
+
+		display: -ms-flexbox
+		-ms-flex-pack: center
+		-ms-flex-align: center
+
+		display: -moz-box
+		-moz-box-pack: center
+		-moz-box-align: center
+
+		display: -webkit-box
+		-webkit-box-pack: center
+		-webkit-box-align: center
+
+		display: box
+		box-pack: center
+		box-align: center
 
 		.unicef-screen
 			background: #fff
 			height: 504px
 			width: 284px
-			position: relative
-			left: 218px
-			top: 134px
 			overflow: scroll
 			padding: 0
 
 			img
-				width: 270px
-				height: 1225px
+				width: 284px
+				height: 1295px
+				margin: 0
