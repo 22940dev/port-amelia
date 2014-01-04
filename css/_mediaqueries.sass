@@ -1,16 +1,30 @@
 /* ---------- MEDIA QUERIES ---------- */
-@media only screen and (max-device-width: 480px)
+@media only screen and (max-device-width: 1000px)
+	.projects
+		.project
+			.content
+				width: 80%
+
+
+@media only screen and (max-device-width: 400px)
+	html, body, section
+		width: 100%
+
 	.intro
 		position: relative
 		min-height: 60px
 
 		.container
+			width: 100%
+			margin: 0
+
 			a
 				text-decoration: none
 
 			h1
 				float: none !important
-				font-size: 22px
+				font-size: 2em
+				margin-bottom: 15px
 
 			.social
 				float: none !important
@@ -20,12 +34,14 @@
 
 					li
 						i
-							font-size: 20px
+							font-size: 2em
+							margin: 0 10px
 
 	.about
 		margin-top: 0
 		min-height: 250px
-		background-size: 100% 100%
+		background-size: cover
+		text-shadow: 0 1px 1px #333
 
 		#about-me
 			width: 90%
@@ -33,13 +49,12 @@
 	.projects
 		.project
 			.content
-				width: 96%
-				padding: 0 10px
+				width: 100%
 
 	.project-header
 		margin-top: 0 !important
 		min-height: 120px !important
-		background-size: 300% 100% !important
+		background-size: cover
 
 	.project-page
 		padding: 5px !important

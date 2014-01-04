@@ -95,7 +95,7 @@ body {
   margin-top: 77px;
   position: relative;
   background: url("../css/images/header-bg.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 20px 0;
   color: white;
   min-height: 400px;
@@ -124,6 +124,8 @@ body {
       margin: 0;
       text-shadow: 0 2px 1px #333333;
       font-size: 24px; }
+    .about #about-me p {
+      text-shadow: 0 2px 1px #333333; }
     .about #about-me .break {
       margin-top: 40px; }
     .about #about-me img {
@@ -317,37 +319,48 @@ body {
   -webkit-animation-iteration-count: infinite; }
 
 /* ---------- MEDIA QUERIES ---------- */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 1000px) {
+  .projects .project .content {
+    width: 80%; } }
+@media only screen and (max-device-width: 400px) {
+  html, body, section {
+    width: 100%; }
+
   .intro {
     position: relative;
     min-height: 60px; }
-    .intro .container a {
-      text-decoration: none; }
-    .intro .container h1 {
-      float: none !important;
-      font-size: 22px; }
-    .intro .container .social {
-      float: none !important; }
-      .intro .container .social ul {
-        padding: 0; }
-        .intro .container .social ul li i {
-          font-size: 20px; }
+    .intro .container {
+      width: 100%;
+      margin: 0; }
+      .intro .container a {
+        text-decoration: none; }
+      .intro .container h1 {
+        float: none !important;
+        font-size: 2em;
+        margin-bottom: 15px; }
+      .intro .container .social {
+        float: none !important; }
+        .intro .container .social ul {
+          padding: 0; }
+          .intro .container .social ul li i {
+            font-size: 2em;
+            margin: 0 10px; }
 
   .about {
     margin-top: 0;
     min-height: 250px;
-    background-size: 100% 100%; }
+    background-size: cover;
+    text-shadow: 0 1px 1px #333333; }
     .about #about-me {
       width: 90%; }
 
   .projects .project .content {
-    width: 96%;
-    padding: 0 10px; }
+    width: 100%; }
 
   .project-header {
     margin-top: 0 !important;
     min-height: 120px !important;
-    background-size: 300% 100% !important; }
+    background-size: cover; }
 
   .project-page {
     padding: 5px !important; }
@@ -389,15 +402,15 @@ body {
 
 .project-header.transport {
   background: url("../css/images/transport-header2.png") no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
 
 .project-header.unicef {
   background: url("../css/images/unicef-header.png") no-repeat;
-  background-size: 100% 180px; }
+  background-size: cover; }
 
 .project-header.little-boxes {
   background: url("../css/images/little-boxes-header.png") no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
 
 .project-page {
   font-family: "Muli";
