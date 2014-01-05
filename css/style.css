@@ -67,34 +67,35 @@ p {
 .what-i-do {
   background: white;
   color: #555555;
-  min-height: 500px; }
+  /*min-height: 500px */ }
   .what-i-do .skills-container {
     width: 900px;
     margin: 0 auto; }
     .what-i-do .skills-container .skill {
       display: inline-block;
-      margin: 20px 30px;
+      margin: 0 30px 20px 30px;
       color: #777777;
       vertical-align: top; }
       .what-i-do .skills-container .skill p:first-of-type {
         text-transform: uppercase; }
       .what-i-do .skills-container .skill img {
         width: 100px; }
-    .what-i-do .skills-container .skill:hover p:first-of-type {
-      color: #e74c3c;
-      transition: color 0.15s ease;
-      -moz-transition: color 0.15s ease;
-      -webkit-transition: color 0.15s ease; }
-    .what-i-do .skills-container .skill:hover img {
-      padding-top: 2px;
-      transition: padding-top 0.15s ease;
-      -moz-transition: padding-top 0.15s ease;
-      -webkit-transition: padding-top 0.15s ease; }
-    .what-i-do .skills-container .skill:hover p:last-of-type {
-      padding-top: 2px;
-      transition: padding-top 0.15s ease;
-      -moz-transition: padding-top 0.15s ease;
-      -webkit-transition: padding-top 0.15s ease; }
+    .what-i-do .skills-container .skill:hover {
+      /*img*/
+       * /*padding-top: 2px*/
+       * /*transition: padding-top .15s ease*/
+       * /*-moz-transition: padding-top .15s ease*/
+       * /*-webkit-transition: padding-top .15s ease */
+      /*p:last-of-type*/
+       * /*padding-top: 2px*/
+       * /*transition: padding-top .15s ease*/
+       * /*-moz-transition: padding-top .15s ease*/
+       * /*-webkit-transition: padding-top .15s ease */ }
+      .what-i-do .skills-container .skill:hover p:first-of-type {
+        color: #e74c3c;
+        transition: color 0.15s ease;
+        -moz-transition: color 0.15s ease;
+        -webkit-transition: color 0.15s ease; }
 
 .recent-work {
   background: #f1f1f1;
@@ -168,6 +169,8 @@ p {
           display: none; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
       width: 100%; }
+      html .what-i-do .skills-container .skill, body .what-i-do .skills-container .skill {
+        margin: 0 40px 20px 40px; }
     html .recent-work .projects-container, body .recent-work .projects-container {
       width: 100%; }
     html .contact p, body .contact p {
