@@ -6,41 +6,25 @@
 //- cd Sites
 //- jade -w Amelia-Lewis
 
-//- ul
-//- 	li
-//- 		a(href='https://www.facebook.com/lewis.amelia', target='_blank')
-//- 			i.icon-facebook
-//- 	li
-//- 		a(href='https://twitter.com/Amelia_Lewis', target='_blank')
-//- 			i.icon-twitter
-//- 	li
-//- 		a(href='http://instagram.com/amelia_lewis', target='_blank')
-//- 			i.icon-instagram
-//- 	li
-//- 		a(href='http://pinterest.com/lewisamelia/', target='_blank')
-//- 			i.icon-pinterest
-//- 	li
-//- 		a(href='http://meelz-on-wheels.tumblr.com/', target='_blank')
-//- 			i.icon-tumblr
-//- 	li
-//- 		a(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank')
-//- 			i.icon-linkedin
-//- 	li
-//- 		a(href='mailto:amelialewis01@gmail.com')
-//- 			i.icon-envelope-alt
-
 
 doctype 5
 html(lang="en")
 	head
 		title Amelia Lewis
+		
 		link(type='text/css', rel='stylesheet', href='css/style.css')
-		link(rel='stylesheet', href='css/font/font-awesome/css/font-awesome.min.css')
+		link(type='text/css', rel='stylesheet', href='css/lightbox.css')
 		link(type='text/css', rel='stylesheet', href='http://fonts.googleapis.com/css?family=Pacifico|Montserrat')
+
 		link(rel='icon', type='image/png', href='http://www.amelialewis.com.au/css/images/favicon.png')
+		
 		meta(name='viewport' content='width=device-width')
-		script(src='http://code.jquery.com/jquery-latest.min.js')
+		
+		script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
 		script(type='text/javascript', src='js/ease.js')
+		script(type='text/javascript', src='js/modernizr.custom.js')
+		script(type='text/javascript', src='js/jquery-1.10.2.min.js')
+		script(type='text/javascript', src='js/lightbox-2.6.min.js')
 
 
 	body
@@ -78,27 +62,49 @@ html(lang="en")
 
 				.projects-container
 					.project.gcg
-						img(src='images/gcg.png')
+						a(href='images/gcg.png', data-lightbox='gcg')
+							img(src='images/gcg.png')
 						p Glenda Graff Website
 
 					.project.momo
-						img(src='images/momo.png')
+						a(href='images/momo-1.png', data-lightbox='momo')
+							img(src='images/momo-1.png')
+						a.hidden(href='images/momo-2.png', data-lightbox='momo')
+							img.hidden(src='images/momo-2.png')
+						a.hidden(href='images/momo-3.png', data-lightbox='momo')
+							img.hidden(src='images/momo-3.png')
 						p Momo Brasserie Website
 
 					.project.little-boxes
-						img(src='images/little-boxes.png')
+						a(href='images/little-boxes-1.png', data-lightbox='little-boxes')
+							img(src='images/little-boxes-1.png')
+						a.hidden(href='images/little-boxes-2.png', data-lightbox='little-boxes')
+							img.hidden(src='images/little-boxes-2.png')
+						a.hidden(href='images/little-boxes-3.png', data-lightbox='little-boxes')
+							img.hidden(src='images/little-boxes-3.png')
+						a.hidden(href='images/little-boxes-4.png', data-lightbox='little-boxes')
+							img.hidden(src='images/little-boxes-4.png')
+						a.hidden(href='images/little-boxes-5.png', data-lightbox='little-boxes')
+							img.hidden(src='images/little-boxes-5.png')
 						p Little Boxes
 
 					.project.transport
-						img(src='images/transport.png')
+						a(href='images/transport-1.png', data-lightbox='transport')
+							img(src='images/transport-1.png')
+						a.hidden(href='images/transport-2.png', data-lightbox='transport')
+							img.hidden(src='images/transport-2.png')
+						a.hidden(href='images/transport-3.png', data-lightbox='transport')
+							img.hidden(src='images/transport-3.png')
 						p Sydney Public Transport
 
 					.project.multitouch
-						img(src='images/multitouch.png')
+						a(href='images/multitouch.png', data-lightbox='multitouch')
+							img(src='images/multitouch.png')
 						p Multitouch Application
 
 					.project.unicef
-						img(src='images/unicef.png')
+						a(href='images/unicef.png', data-lightbox='unicef')
+							img(src='images/unicef.png')
 						p Unicef Mobile Website
 
 		section.contact

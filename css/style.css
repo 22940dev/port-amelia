@@ -115,6 +115,8 @@ p {
       .recent-work .projects-container .project p {
         text-transform: uppercase;
         color: #777777; }
+      .recent-work .projects-container .project .hidden {
+        display: none; }
     .recent-work .projects-container .project:hover p {
       color: #e74c3c;
       transition: color 0.15s ease-in-out;
