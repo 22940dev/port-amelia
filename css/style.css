@@ -82,7 +82,8 @@ p {
       .what-i-do .skills-container .skill p:first-of-type {
         text-transform: uppercase; }
       .what-i-do .skills-container .skill img {
-        width: 170px; }
+        width: 170px;
+        opacity: 0.7; }
     .what-i-do .skills-container .skill:hover {
       /*img*/
        * /*padding-top: 2px*/
@@ -94,7 +95,12 @@ p {
        * /*transition: padding-top .15s ease*/
        * /*-moz-transition: padding-top .15s ease*/
        * /*-webkit-transition: padding-top .15s ease */ }
-      .what-i-do .skills-container .skill:hover p:first-of-type {
+      .what-i-do .skills-container .skill:hover img {
+        opacity: 1;
+        transition: opacity 0.15s ease;
+        -moz-transition: opacity 0.15s ease;
+        -webkit-transition: opacity 0.15s ease; }
+      .what-i-do .skills-container .skill:hover p {
         color: #e74c3c;
         transition: color 0.15s ease;
         -moz-transition: color 0.15s ease;
