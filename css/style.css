@@ -7,25 +7,27 @@ body {
     padding: 30px 0; }
 
 h1 {
-  font-size: 40px;
-  font-weight: 700; }
+  font-size: 4em;
+  font-weight: 400;
+  font-family: "Pacifico";
+  margin-bottom: 0; }
 
 h2 {
-  font-size: 26px;
+  font-size: 1.6em;
   font-weight: 400; }
 
 h3 {
-  font-size: 26px;
+  font-size: 1.6em;
   font-weight: 700;
   text-transform: uppercase; }
 
 h4 {
-  font-size: 22px;
+  font-size: 1.2em;
   font-weight: 700;
   margin: 0; }
 
 p {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400; }
 
 .intro {
@@ -57,9 +59,10 @@ p {
       transform: rotate(180deg);
       -webkit-transform: rotate(180deg);
       -moz-transform: rotate(180deg);
-      margin-top: 50px; }
+      margin-top: 40px;
+      opacity: 0.7; }
     .intro .intro-content .arrow-down:hover img {
-      opacity: 0.7;
+      opacity: 1;
       transition: opacity 0.15s ease-in-out;
       -moz-transition: opacity 0.15s ease-in-out;
       -webkit-transition: opacity 0.15s ease-in-out; }
@@ -133,17 +136,19 @@ p {
     .contact .social a img {
       width: 50px;
       height: 50px;
-      margin: 0 7px; }
+      margin: 0 7px;
+      opacity: 0.8; }
     .contact .social a:hover img {
-      opacity: 0.7;
+      opacity: 1;
       transition: opacity 0.15s ease-in-out;
       -moz-transition: opacity 0.15s ease-in-out;
       -webkit-transition: opacity 0.15s ease-in-out; }
   .contact a.arrow-up img {
     width: 50px;
-    height: 50px; }
+    height: 50px;
+    opacity: 0.7; }
   .contact a.arrow-up:hover img {
-    opacity: 0.7;
+    opacity: 1;
     transition: opacity 0.15s ease-in-out;
     -moz-transition: opacity 0.15s ease-in-out;
     -webkit-transition: opacity 0.15s ease-in-out; }
@@ -163,13 +168,13 @@ p {
   html, body {
     width: auto; }
     html h1, body h1 {
-      font-size: 24px; }
+      font-size: 3em; }
     html h2, html h3, body h2, body h3 {
-      font-size: 20px; }
+      font-size: 1.3em; }
     html h4, body h4 {
-      font-size: 18px; }
+      font-size: 1.1em; }
     html p, body p {
-      font-size: 14px; }
+      font-size: 0.9em; }
     html .intro, body .intro {
       height: 300px; }
       html .intro .intro-content, body .intro .intro-content {
