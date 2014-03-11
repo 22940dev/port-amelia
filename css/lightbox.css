@@ -11,8 +11,8 @@ body:after {
   left: 0;
   z-index: 9999;
   background-color: black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
   display: none;
 }
 
@@ -60,7 +60,7 @@ body:after {
 /* line 47, ../sass/lightbox.sass */
 .lb-loader {
   position: absolute;
-  top: 43%;
+  top: 50%;
   left: 0%;
   height: 25%;
   width: 100%;
@@ -113,7 +113,7 @@ body:after {
 }
 /* line 87, ../sass/lightbox.sass */
 .lb-prev:hover {
-  background: url(../images/prev.png) left 48% no-repeat;
+  background: url(../images/prev.png) left 50% no-repeat;
 }
 
 /* line 90, ../sass/lightbox.sass */
@@ -123,7 +123,7 @@ body:after {
 }
 /* line 93, ../sass/lightbox.sass */
 .lb-next:hover {
-  background: url(../images/next.png) right 48% no-repeat;
+  background: url(../images/next.png) right 50% no-repeat;
 }
 
 /* line 96, ../sass/lightbox.sass */
@@ -157,7 +157,7 @@ body:after {
   float: left;
   text-align: left;
   line-height: 1.1em;
-  display: none;
+  /*display: none;*/
 }
 /* line 111, ../sass/lightbox.sass */
 .lb-data .lb-caption {
@@ -168,10 +168,11 @@ body:after {
 /* line 115, ../sass/lightbox.sass */
 .lb-data .lb-number {
   display: block;
+  font-family: 'Montserrat';
   clear: left;
   padding-bottom: 1em;
   font-size: 12px;
-  color: #999999;
+  color: rgba(255, 255, 255, 0.8);
 }
 /* line 121, ../sass/lightbox.sass */
 .lb-data .lb-close {
@@ -186,6 +187,7 @@ body:after {
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
+  display: none;
 }
 /* line 130, ../sass/lightbox.sass */
 .lb-data .lb-close:hover {

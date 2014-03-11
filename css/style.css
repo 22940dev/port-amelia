@@ -49,23 +49,27 @@ p {
   box-pack: center;
   box-align: center; }
   .intro .intro-content {
-    width: 480px;
+    width: 470px;
     text-shadow: 0 0 60px black;
     color: white;
     text-align: center; }
-    .intro .intro-content .arrow-down img {
-      width: 50px;
-      height: 50px;
-      transform: rotate(180deg);
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      margin-top: 40px;
-      opacity: 0.7; }
-    .intro .intro-content .arrow-down:hover img {
-      opacity: 1;
-      transition: opacity 0.15s ease-in-out;
-      -moz-transition: opacity 0.15s ease-in-out;
-      -webkit-transition: opacity 0.15s ease-in-out; }
+    .intro .intro-content a {
+      color: white;
+      text-decoration: none; }
+    .intro .intro-content a:hover {
+      text-decoration: underline;
+      transition: text-decoration 0.15s ease-in-out;
+      -moz-transition: text-decoration 0.15s ease-in-out;
+      -webkit-transition: text-decoration 0.15s ease-in-out; }
+    .intro .intro-content .arrow-down {
+      color: rgba(255, 255, 255, 0.6);
+      display: inline-block;
+      margin: 10px 5px 0; }
+    .intro .intro-content .arrow-down:hover {
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.15s ease-in-out;
+      -moz-transition: color 0.15s ease-in-out;
+      -webkit-transition: color 0.15s ease-in-out; }
 
 .what-i-do {
   background: white;
@@ -121,6 +125,11 @@ p {
       .recent-work .projects-container .project p {
         text-transform: uppercase;
         color: #777777; }
+        .recent-work .projects-container .project p .external-link {
+          color: #777777;
+          text-decoration: none; }
+          .recent-work .projects-container .project p .external-link i {
+            margin-left: 10px; }
       .recent-work .projects-container .project .hidden {
         display: none; }
     .recent-work .projects-container .project:hover p {
@@ -128,6 +137,11 @@ p {
       transition: color 0.15s ease-in-out;
       -moz-transition: color 0.15s ease-in-out;
       -webkit-transition: color 0.15s ease-in-out; }
+      .recent-work .projects-container .project:hover p .external-link {
+        color: #e74c3c;
+        transition: color 0.15s ease-in-out;
+        -moz-transition: color 0.15s ease-in-out;
+        -webkit-transition: color 0.15s ease-in-out; }
 
 .contact {
   background: #e74c3c;
@@ -141,25 +155,37 @@ p {
   .contact .social {
     margin-top: 40px;
     margin-bottom: 80px; }
-    .contact .social a img {
-      width: 50px;
-      height: 50px;
-      margin: 0 7px;
-      opacity: 0.8; }
-    .contact .social a:hover img {
-      opacity: 1;
-      transition: opacity 0.15s ease-in-out;
-      -moz-transition: opacity 0.15s ease-in-out;
-      -webkit-transition: opacity 0.15s ease-in-out; }
-  .contact a.arrow-up img {
-    width: 50px;
-    height: 50px;
-    opacity: 0.7; }
-  .contact a.arrow-up:hover img {
-    opacity: 1;
-    transition: opacity 0.15s ease-in-out;
-    -moz-transition: opacity 0.15s ease-in-out;
-    -webkit-transition: opacity 0.15s ease-in-out; }
+    .contact .social a {
+      color: #e74c3c;
+      display: inline-block;
+      margin: 0 5px; }
+      .contact .social a .social-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.8);
+        position: relative; }
+        .contact .social a .social-icon i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          -webkit-transform: translateY(-50%) translateX(-50%);
+          -moz-transform: translateY(-50%) translateX(-50%); }
+    .contact .social a:hover .social-icon {
+      background: white;
+      transition: background 0.15s ease-in-out;
+      -moz-transition: background 0.15s ease-in-out;
+      -webkit-transition: background 0.15s ease-in-out; }
+  .contact .arrow-up {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin: 10px 5px 0; }
+  .contact .arrow-up:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.15s ease-in-out;
+    -moz-transition: color 0.15s ease-in-out;
+    -webkit-transition: color 0.15s ease-in-out; }
   .contact .copyright {
     font-size: 14px; }
 

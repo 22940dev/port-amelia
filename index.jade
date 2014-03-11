@@ -9,132 +9,179 @@
 
 doctype 5
 html(lang="en")
-	head
-		title Amelia Lewis
-		
-		link(type='text/css', rel='stylesheet', href='css/style.css')
-		link(type='text/css', rel='stylesheet', href='css/lightbox.css')
-		link(type='text/css', rel='stylesheet', href='http://fonts.googleapis.com/css?family=Pacifico|Montserrat')
+  head
+    title Amelia Lewis
+    
+    link(type='text/css', rel='stylesheet', href='css/style.css')
+    link(type='text/css', rel='stylesheet', href='css/lightbox.css')
+    link(type='text/css', rel='stylesheet', href='http://fonts.googleapis.com/css?family=Pacifico|Montserrat')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+    link(rel='icon', type='image/png', href='http://www.amelialewis.com.au/css/images/favicon.png')
+    
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    
+    script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+    script(type='text/javascript', src='js/ease.js')
+    script(type='text/javascript', src='js/modernizr.custom.js')
+    script(type='text/javascript', src='js/jquery-1.10.2.min.js')
+    script(type='text/javascript', src='js/lightbox-2.6.min.js')
 
-		link(rel='icon', type='image/png', href='http://www.amelialewis.com.au/css/images/favicon.png')
-		
-		meta(name='viewport' content='width=device-width')
-		
-		script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
-		script(type='text/javascript', src='js/ease.js')
-		script(type='text/javascript', src='js/modernizr.custom.js')
-		script(type='text/javascript', src='js/jquery-1.10.2.min.js')
-		script(type='text/javascript', src='js/lightbox-2.6.min.js')
 
+  body
+    section#top.intro
+      .intro-content
+        h1 Hello!
+        h2 My name is Amelia Lewis and I'm a UX + UI designer working at 
+          | 
+          a(href='http://www.creativelicence.com.au', target='_blank') Creative Licence Digital
+          |  in Sydney.
+        a(href='#middle').arrow-down
+          i.fa.fa-chevron-circle-down.fa-3x
 
-	body
-		section#top.intro
-			.intro-content
-				h1 Hello!
-				h2 My name is Amelia Lewis and I'm a UX + UI designer living in Sydney.
-				a(href='#middle').arrow-down
-					img(src='images/arrow.png')
+    section#middle.what-i-do
+      .what-i-do-content
+        h3 What I Do
 
-		section#middle.what-i-do
-			.what-i-do-content
-				h3 What I Do
+        .skills-container
+          .skill.art-direction
+            p Art Direction
+            img(src='images/art-direction.png')
 
-				.skills-container
-					.skill.art-direction
-						p Art Direction
-						img(src='images/art-direction.png')
+          .skill.ux-design
+            p UX Design
+            img(src='images/ux-design.png')
 
-					.skill.ux-design
-						p UX Design
-						img(src='images/ux-design.png')
+          .skill.interface-design
+            p Interface Design
+            img(src='images/interface-design.png')
 
-					.skill.interface-design
-						p Interface Design
-						img(src='images/interface-design.png')
+          .skill.front-end-web-dev
+            p Front-End Web Dev
+            img(src='images/front-end-web-dev.png')
 
-					.skill.front-end-web-dev
-						p Front-End Web Dev
-						img(src='images/front-end-web-dev.png')
+    section.recent-work
+      div.recent-work-content
+        h3 Recent Work
 
-		section.recent-work
-			div.recent-work-content
-				h3 Recent Work
+        .projects-container
+          .project.shoppernova
+            a(href='images/shoppernova-1.png', data-lightbox='shoppernova')
+              img(src='images/shoppernova-1.png')
+            a.hidden(href='images/shoppernova-2.png', data-lightbox='shoppernova')
+              img.hidden(src='images/shoppernova-2.png')
+            a.hidden(href='images/shoppernova-3.png', data-lightbox='shoppernova')
+              img.hidden(src='images/shoppernova-3.png')
+            p
+              a(href='http://www.shoppernova.com.au', target='_blank').external-link ShopperNova
+                i.fa.fa-external-link-square
 
-				.projects-container
-					.project.gcg
-						a(href='images/gcg.png', data-lightbox='gcg')
-							img(src='images/gcg.png')
-						p Glenda Graff Website
+          .project.field-intouch
+            a(href='images/field-intouch-1.png', data-lightbox='field-intouch')
+              img(src='images/field-intouch-1.png')
+            a.hidden(href='images/field-intouch-2.png', data-lightbox='field-intouch')
+              img.hidden(src='images/field-intouch-2.png')
+            a.hidden(href='images/field-intouch-3.png', data-lightbox='field-intouch')
+              img.hidden(src='images/field-intouch-3.png')
+            a.hidden(href='images/field-intouch-4.png', data-lightbox='field-intouch')
+              img.hidden(src='images/field-intouch-4.png')
+            a.hidden(href='images/field-intouch-5.png', data-lightbox='field-intouch')
+              img.hidden(src='images/field-intouch-5.png')
+            p 
+              a(href='http://www.field-intouch.com', target='_blank').external-link Field InTouch
+                i.fa.fa-external-link-square
 
-					.project.momo
-						a(href='images/momo-1.png', data-lightbox='momo')
-							img(src='images/momo-1.png')
-						a.hidden(href='images/momo-2.png', data-lightbox='momo')
-							img.hidden(src='images/momo-2.png')
-						a.hidden(href='images/momo-3.png', data-lightbox='momo')
-							img.hidden(src='images/momo-3.png')
-						p Momo Brasserie Website
+          .project.micomms
+            a(href='images/micomms-1.png', data-lightbox='micomms')
+              img(src='images/micomms-1.png')
+            a.hidden(href='images/micomms-2.png', data-lightbox='micomms')
+              img.hidden(src='images/micomms-2.png')
+            a.hidden(href='images/micomms-3.png', data-lightbox='micomms')
+              img.hidden(src='images/micomms-3.png')
+            p Novartis - MiComms
 
-					.project.little-boxes
-						a(href='images/little-boxes-1.png', data-lightbox='little-boxes')
-							img(src='images/little-boxes-1.png')
-						a.hidden(href='images/little-boxes-2.png', data-lightbox='little-boxes')
-							img.hidden(src='images/little-boxes-2.png')
-						a.hidden(href='images/little-boxes-3.png', data-lightbox='little-boxes')
-							img.hidden(src='images/little-boxes-3.png')
-						a.hidden(href='images/little-boxes-4.png', data-lightbox='little-boxes')
-							img.hidden(src='images/little-boxes-4.png')
-						a.hidden(href='images/little-boxes-5.png', data-lightbox='little-boxes')
-							img.hidden(src='images/little-boxes-5.png')
-						p Little Boxes
+          .project.gcg
+            a(href='images/gcg.png', data-lightbox='gcg')
+              img(src='images/gcg.png')
+            p 
+              a(href='http://www.glendagraff.com.au', target='_blank').external-link Glenda Graff
+                i.fa.fa-external-link-square
 
-					.project.transport
-						a(href='images/transport-1.png', data-lightbox='transport')
-							img(src='images/transport-1.png')
-						a.hidden(href='images/transport-2.png', data-lightbox='transport')
-							img.hidden(src='images/transport-2.png')
-						a.hidden(href='images/transport-3.png', data-lightbox='transport')
-							img.hidden(src='images/transport-3.png')
-						p Sydney Public Transport
+          .project.momo
+            a(href='images/momo-1.png', data-lightbox='momo')
+              img(src='images/momo-1.png')
+            a.hidden(href='images/momo-2.png', data-lightbox='momo')
+              img.hidden(src='images/momo-2.png')
+            a.hidden(href='images/momo-3.png', data-lightbox='momo')
+              img.hidden(src='images/momo-3.png')
+            p 
+              a(href='http://www.momobrasserie.com.au', target='_blank').external-link Momo Brasserie
+                i.fa.fa-external-link-square
 
-					.project.multitouch
-						a(href='images/multitouch.png', data-lightbox='multitouch')
-							img(src='images/multitouch.png')
-						p Multitouch Application
+          .project.little-boxes
+            a(href='images/little-boxes-1.png', data-lightbox='little-boxes')
+              img(src='images/little-boxes-1.png')
+            a.hidden(href='images/little-boxes-2.png', data-lightbox='little-boxes')
+              img.hidden(src='images/little-boxes-2.png')
+            a.hidden(href='images/little-boxes-3.png', data-lightbox='little-boxes')
+              img.hidden(src='images/little-boxes-3.png')
+            a.hidden(href='images/little-boxes-4.png', data-lightbox='little-boxes')
+              img.hidden(src='images/little-boxes-4.png')
+            a.hidden(href='images/little-boxes-5.png', data-lightbox='little-boxes')
+              img.hidden(src='images/little-boxes-5.png')
+            p Little Boxes
 
-					.project.unicef
-						a(href='images/unicef.png', data-lightbox='unicef')
-							img(src='images/unicef.png')
-						p Unicef Mobile Website
+          .project.transport
+            a(href='images/transport-1.png', data-lightbox='transport')
+              img(src='images/transport-1.png')
+            a.hidden(href='images/transport-2.png', data-lightbox='transport')
+              img.hidden(src='images/transport-2.png')
+            a.hidden(href='images/transport-3.png', data-lightbox='transport')
+              img.hidden(src='images/transport-3.png')
+            p Sydney Public Transport
 
-		section.contact
-			.contact-content
-				h3 Contact
+          .project.multitouch
+            a(href='images/multitouch.png', data-lightbox='multitouch')
+              img(src='images/multitouch.png')
+            p Multitouch Application
 
-				p If you want to work with me or find out more about my recent work, get in touch!
-				h4 0422 960 962
-				h4 amelialewis01@gmail.com
+          .project.unicef
+            a(href='images/unicef.png', data-lightbox='unicef')
+              img(src='images/unicef.png')
+            p Unicef Mobile Website
 
-				.social
-					a(href='https://www.facebook.com/lewis.amelia', target='_blank')
-						img(src='images/facebook.png')
+    section.contact
+      .contact-content
+        h3 Contact
 
-					a(href='https://twitter.com/Amelia_Lewis', target='_blank')
-						img(src='images/twitter.png')
+        p If you want to work with me or find out more about my recent work, get in touch!
+        h4 0422 960 962
+        h4 amelialewis01@gmail.com
 
-					a(href='http://instagram.com/amelia_lewis', target='_blank')
-						img(src='images/instagram.png')
+        .social
+          a(href='https://www.facebook.com/lewis.amelia', target='_blank')
+            .social-icon
+              i.fa.fa-facebook.fa-lg
 
-					a(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank')
-						img(src='images/linkedin.png')
+          a(href='https://twitter.com/Amelia_Lewis', target='_blank')
+            .social-icon
+              i.fa.fa-twitter.fa-lg
 
-					a(href='http://meelz-on-wheels.tumblr.com/', target='_blank')
-						img(src='images/tumblr.png')
+          a(href='http://instagram.com/amelia_lewis', target='_blank')
+            .social-icon
+              i.fa.fa-instagram.fa-lg
 
-				a(href='#top').arrow-up
-					img(src='images/arrow.png')
+          a(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank')
+            .social-icon
+              i.fa.fa-linkedin.fa-lg
 
-				p.copyright Copyright &copy; Amelia Lewis 2014
+          a(href='http://meelz-on-wheels.tumblr.com/', target='_blank')
+            .social-icon
+              i.fa.fa-tumblr.fa-lg
+
+        a(href='#top').arrow-up
+          i.fa.fa-chevron-circle-up.fa-3x
+
+        p.copyright Copyright &copy; Amelia Lewis 2014
 
 
 
