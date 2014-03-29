@@ -61,15 +61,34 @@ p {
       transition: text-decoration 0.15s ease-in-out;
       -moz-transition: text-decoration 0.15s ease-in-out;
       -webkit-transition: text-decoration 0.15s ease-in-out; }
-    .intro .intro-content .arrow-down {
-      color: rgba(255, 255, 255, 0.6);
-      display: inline-block;
-      margin: 10px 5px 0; }
-    .intro .intro-content .arrow-down:hover {
-      color: rgba(255, 255, 255, 0.8);
-      transition: color 0.15s ease-in-out;
-      -moz-transition: color 0.15s ease-in-out;
-      -webkit-transition: color 0.15s ease-in-out; }
+    .intro .intro-content .icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      -ms-border-radius: 50%;
+      -mox-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      display: -ms-flexbox;
+      -ms-flex-pack: center;
+      -ms-flex-align: center;
+      display: -moz-box;
+      -moz-box-pack: center;
+      -moz-box-align: center;
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      display: box;
+      box-pack: center;
+      box-align: center;
+      margin: 0 auto; }
+      .intro .intro-content .icon i {
+        color: #555555; }
+      .intro .intro-content .icon:hover {
+        background: white;
+        transition: background 0.15s ease-in-out;
+        -moz-transition: background 0.15s ease-in-out;
+        -webkit-transition: background 0.15s ease-in-out; }
 
 .what-i-do {
   background: white;
@@ -152,6 +171,33 @@ p {
     margin-right: auto; }
   .contact h4:first-of-type {
     margin-top: 40px; }
+  .contact .icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    -ms-border-radius: 50%;
+    -mox-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    display: box;
+    box-pack: center;
+    box-align: center; }
+    .contact .icon i {
+      color: #e74c3c; }
+    .contact .icon:hover {
+      background: white;
+      transition: background 0.15s ease-in-out;
+      -moz-transition: background 0.15s ease-in-out;
+      -webkit-transition: background 0.15s ease-in-out; }
   .contact .social {
     margin-top: 40px;
     margin-bottom: 80px; }
@@ -159,33 +205,9 @@ p {
       color: #e74c3c;
       display: inline-block;
       margin: 0 5px; }
-      .contact .social a .social-icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.8);
-        position: relative; }
-        .contact .social a .social-icon i {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translateY(-50%) translateX(-50%);
-          -webkit-transform: translateY(-50%) translateX(-50%);
-          -moz-transform: translateY(-50%) translateX(-50%); }
-    .contact .social a:hover .social-icon {
-      background: white;
-      transition: background 0.15s ease-in-out;
-      -moz-transition: background 0.15s ease-in-out;
-      -webkit-transition: background 0.15s ease-in-out; }
   .contact .arrow-up {
-    color: rgba(255, 255, 255, 0.6);
-    display: inline-block;
-    margin: 10px 5px 0; }
-  .contact .arrow-up:hover {
-    color: rgba(255, 255, 255, 0.8);
-    transition: color 0.15s ease-in-out;
-    -moz-transition: color 0.15s ease-in-out;
-    -webkit-transition: color 0.15s ease-in-out; }
+    margin: 0 auto 40px;
+    background: rgba(255, 255, 255, 0.5); }
   .contact .copyright {
     font-size: 14px; }
 
