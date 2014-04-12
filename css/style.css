@@ -215,7 +215,7 @@ p {
     font-size: 14px; }
 
 /* Tablet */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   html, body {
     width: auto; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
@@ -223,7 +223,7 @@ p {
     html .recent-work .projects-container, body .recent-work .projects-container {
       width: 80%; } }
 /* Mobile */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
   html, body {
     width: auto; }
     html h1, body h1 {
