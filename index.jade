@@ -61,9 +61,23 @@ html(lang="en")
 
     section.recent-work
       div.recent-work-content
-        h3 Recent Work
+        h3 Projects
 
         .projects-container
+          .project.cuts-chart
+            a(href='images/cuts-chart-1.png', data-lightbox='cuts-chart')
+              img(src='images/cuts-chart-1.png')
+            a.hidden(href='images/cuts-chart-2.png', data-lightbox='cuts-chart')
+              img.hidden(src='images/cuts-chart-2.png')
+            p Cuts Chart
+
+          .project.xolair
+            a(href='images/xolair-1.png', data-lightbox='xolair')
+              img(src='images/xolair-1.png')
+            a.hidden(href='images/xolair-2.png', data-lightbox='xolair')
+              img.hidden(src='images/xolair-2.png')
+            p Xolair Appointment App
+
           .project.shoppernova
             a(href='images/shoppernova-1.png', data-lightbox='shoppernova')
               img(src='images/shoppernova-1.png')
@@ -97,13 +111,15 @@ html(lang="en")
               img.hidden(src='images/micomms-2.png')
             a.hidden(href='images/micomms-3.png', data-lightbox='micomms')
               img.hidden(src='images/micomms-3.png')
-            p Novartis - MiComms
+            p MiComms App
 
           .project.gcg
-            a(href='images/gcg.png', data-lightbox='gcg')
-              img(src='images/gcg.png')
+            a(href='images/gcg-1.png', data-lightbox='gcg')
+              img(src='images/gcg-1.png')
+            a.hidden(href='images/gcg-2.png', data-lightbox='gcg')
+              img.hidden(src='images/gcg-2.png')
             p 
-              a(href='http://www.glendagraff.com.au', target='_blank').external-link Glenda Graff
+              a(href='http://www.glendagraff.com.au', target='_blank').external-link Glenda Graff Site
                 i.fa.fa-external-link-square
 
           .project.momo
@@ -111,10 +127,8 @@ html(lang="en")
               img(src='images/momo-1.png')
             a.hidden(href='images/momo-2.png', data-lightbox='momo')
               img.hidden(src='images/momo-2.png')
-            a.hidden(href='images/momo-3.png', data-lightbox='momo')
-              img.hidden(src='images/momo-3.png')
             p 
-              a(href='http://www.momobrasserie.com.au', target='_blank').external-link Momo Brasserie
+              a(href='http://www.momobrasserie.com.au', target='_blank').external-link Momo Brasserie Site
                 i.fa.fa-external-link-square
 
           .project.little-boxes
@@ -139,23 +153,14 @@ html(lang="en")
               img.hidden(src='images/transport-3.png')
             p Sydney Public Transport
 
-          .project.multitouch
-            a(href='images/multitouch.png', data-lightbox='multitouch')
-              img(src='images/multitouch.png')
-            p Multitouch Application
-
-          .project.unicef
-            a(href='images/unicef.png', data-lightbox='unicef')
-              img(src='images/unicef.png')
-            p Unicef Mobile Website
-
     section.contact
       .contact-content
         h3 Contact
 
         p If you want to work with me or find out more about my recent work, get in touch!
         h4 0422 960 962
-        h4 amelialewis01@gmail.com
+        h4 
+          a(href='mailto:amelialewis01@gmail.com').email amelialewis01@gmail.com
 
         .social
           a(href='https://www.facebook.com/lewis.amelia', target='_blank')
