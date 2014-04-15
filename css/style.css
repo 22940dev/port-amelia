@@ -57,10 +57,7 @@ p {
       color: white;
       text-decoration: none; }
     .intro .intro-content a:hover {
-      text-decoration: underline;
-      transition: text-decoration 0.15s ease-in-out;
-      -moz-transition: text-decoration 0.15s ease-in-out;
-      -webkit-transition: text-decoration 0.15s ease-in-out; }
+      text-decoration: underline; }
     .intro .intro-content .icon {
       width: 50px;
       height: 50px;
@@ -81,14 +78,17 @@ p {
       display: box;
       box-pack: center;
       box-align: center;
-      margin: 0 auto; }
+      margin: 0 auto;
+      transition: all 0.15s linear;
+      -moz-transition: all 0.15s linear;
+      -webkit-transition: all 0.15s linear; }
       .intro .intro-content .icon i {
         color: #555555; }
       .intro .intro-content .icon:hover {
         background: white;
-        transition: background 0.15s ease-in-out;
-        -moz-transition: background 0.15s ease-in-out;
-        -webkit-transition: background 0.15s ease-in-out; }
+        transition: all 0.15s linear;
+        -moz-transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear; }
 
 .what-i-do {
   background: white;
@@ -102,32 +102,28 @@ p {
       margin: 0 30px 20px 30px;
       color: #777777;
       vertical-align: top; }
+      .what-i-do .skills-container .skill p {
+        transition: all 0.15s linear;
+        -moz-transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear; }
       .what-i-do .skills-container .skill p:first-of-type {
         text-transform: uppercase; }
       .what-i-do .skills-container .skill img {
         width: 170px;
-        opacity: 0.7; }
-    .what-i-do .skills-container .skill:hover {
-      /*img*/
-       * /*padding-top: 2px*/
-       * /*transition: padding-top .15s ease*/
-       * /*-moz-transition: padding-top .15s ease*/
-       * /*-webkit-transition: padding-top .15s ease */
-      /*p:last-of-type*/
-       * /*padding-top: 2px*/
-       * /*transition: padding-top .15s ease*/
-       * /*-moz-transition: padding-top .15s ease*/
-       * /*-webkit-transition: padding-top .15s ease */ }
-      .what-i-do .skills-container .skill:hover img {
-        opacity: 1;
-        transition: opacity 0.15s ease;
-        -moz-transition: opacity 0.15s ease;
-        -webkit-transition: opacity 0.15s ease; }
-      .what-i-do .skills-container .skill:hover p {
-        color: #e74c3c;
-        transition: color 0.15s ease;
-        -moz-transition: color 0.15s ease;
-        -webkit-transition: color 0.15s ease; }
+        opacity: 0.7;
+        transition: all 0.15s linear;
+        -moz-transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear; }
+    .what-i-do .skills-container .skill:hover img {
+      opacity: 1;
+      transition: opall 0.15s linear;
+      -moz-transition: opall 0.15s linear;
+      -webkit-transition: opall 0.15s linear; }
+    .what-i-do .skills-container .skill:hover p {
+      color: #e74c3c;
+      transition: all 0.15s linear;
+      -moz-transition: all 0.15s linear;
+      -webkit-transition: all 0.15s linear; }
 
 .recent-work {
   background: #f1f1f1;
@@ -143,7 +139,10 @@ p {
         border: 5px solid white; }
       .recent-work .projects-container .project p {
         text-transform: uppercase;
-        color: #777777; }
+        color: #777777;
+        transition: all 0.15s linear;
+        -moz-transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear; }
         .recent-work .projects-container .project p .external-link {
           color: #777777;
           text-decoration: none; }
@@ -153,14 +152,14 @@ p {
         display: none; }
     .recent-work .projects-container .project:hover p {
       color: #e74c3c;
-      transition: color 0.15s ease-in-out;
-      -moz-transition: color 0.15s ease-in-out;
-      -webkit-transition: color 0.15s ease-in-out; }
+      transition: all 0.15s linear;
+      -moz-transition: all 0.15s linear;
+      -webkit-transition: all 0.15s linear; }
       .recent-work .projects-container .project:hover p .external-link {
         color: #e74c3c;
-        transition: color 0.15s ease-in-out;
-        -moz-transition: color 0.15s ease-in-out;
-        -webkit-transition: color 0.15s ease-in-out; }
+        transition: all 0.15s linear;
+        -moz-transition: all 0.15s linear;
+        -webkit-transition: all 0.15s linear; }
 
 .contact {
   background: #e74c3c;
@@ -193,14 +192,17 @@ p {
     -webkit-box-align: center;
     display: box;
     box-pack: center;
-    box-align: center; }
+    box-align: center;
+    transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -webkit-transition: all 0.15s linear; }
     .contact .icon i {
       color: #e74c3c; }
     .contact .icon:hover {
       background: white;
-      transition: background 0.15s ease-in-out;
-      -moz-transition: background 0.15s ease-in-out;
-      -webkit-transition: background 0.15s ease-in-out; }
+      transition: all 0.15s linear;
+      -moz-transition: all 0.15s linear;
+      -webkit-transition: all 0.15s linear; }
   .contact .social {
     margin-top: 40px;
     margin-bottom: 80px; }
@@ -249,6 +251,8 @@ p {
     html .contact p, body .contact p {
       width: 80%; }
     html .contact .social, body .contact .social {
-      width: 70%;
+      width: 50%;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto; }
+      html .contact .social a:nth-of-type(5), html .contact .social a:nth-of-type(6), html .contact .social a:nth-of-type(6), body .contact .social a:nth-of-type(5), body .contact .social a:nth-of-type(6), body .contact .social a:nth-of-type(6) {
+        margin-top: 10px; } }
