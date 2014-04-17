@@ -240,7 +240,7 @@ p {
       height: 300px; }
       html .intro .intro-content, body .intro .intro-content {
         width: 80%; }
-        html .intro .intro-content .arrow-down, body .intro .intro-content .arrow-down {
+        html .intro .intro-content .icon, body .intro .intro-content .icon {
           display: none; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
       width: 100%; }
