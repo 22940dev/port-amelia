@@ -216,14 +216,36 @@ p {
   .contact .copyright {
     font-size: 14px; }
 
-/* Tablet */
+/* Tablet (landscape) */
 @media only screen and (max-width: 1024px) {
+  html, body {
+    width: auto; }
+    html .what-i-do .skills-container, body .what-i-do .skills-container {
+      width: 100%; }
+    html .recent-work .projects-container, body .recent-work .projects-container {
+      width: 90%; } }
+@media only screen and (max-width: 930px) {
   html, body {
     width: auto; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
       width: 70%; }
     html .recent-work .projects-container, body .recent-work .projects-container {
-      width: 80%; } }
+      width: 90%; } }
+/* Tablet (portrait) */
+@media only screen and (max-width: 768px) {
+  html, body {
+    width: auto; }
+    html .what-i-do .skills-container, body .what-i-do .skills-container {
+      width: 70%; }
+    html .recent-work .projects-container, body .recent-work .projects-container {
+      width: 90%; } }
+@media only screen and (max-width: 674px) {
+  html, body {
+    width: auto; }
+    html .what-i-do .skills-container, body .what-i-do .skills-container {
+      width: 60%; }
+    html .recent-work .projects-container, body .recent-work .projects-container {
+      width: 90%; } }
 /* Mobile */
 @media only screen and (max-width: 480px) {
   html, body {
@@ -256,3 +278,6 @@ p {
       margin-right: auto; }
       html .contact .social a:nth-of-type(5), html .contact .social a:nth-of-type(6), html .contact .social a:nth-of-type(6), body .contact .social a:nth-of-type(5), body .contact .social a:nth-of-type(6), body .contact .social a:nth-of-type(6) {
         margin-top: 10px; } }
+@media only screen and (max-width: 480px) {
+  body .contact .social {
+    width: 70%; } }
