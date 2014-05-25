@@ -216,6 +216,11 @@ p {
   .contact .copyright {
     font-size: 14px; }
 
+@media only screen and (max-width: 1200px) {
+  html, body {
+    width: auto; }
+    html .recent-work .projects-container, body .recent-work .projects-container {
+      width: 900px; } }
 /* Tablet (landscape) */
 @media only screen and (max-width: 1024px) {
   html, body {
