@@ -1,45 +1,121 @@
 .recent-work
   background: #f1f1f1
   color: #555
+  padding-bottom: 0
 
   .projects-container
-    width: 900px
-    margin: 0 auto
+    width: 100%
 
     .project
-      display: inline-block
-      margin: 20px
+      display: block
+      width: 100%
+      height: 450px
+      background: #f1f1f1
+      border-bottom: 2px solid #fff
 
-      img
-        width: 250px
-        border: 5px solid #fff
+      .content
+        width: 1200px
+        margin: 0 auto
+        height: 100%
 
-      p
-        text-transform: uppercase
-        color: #777
-        transition: all .15s linear
-        -moz-transition: all .15s linear
-        -webkit-transition: all .15s linear
+        .text-container
+          width: 700px
+          display: inline-block
+          height: 100%
+          margin: 0
 
-        .external-link
-          color: #777
-          text-decoration: none
+          .text
+            width: 60%
+            text-align: left
+            position: relative
+            top: 50%
+            left: 50%
+            transform: translate3d(-50%, -50%, 0)
+            -ms-transform: translate3d(-50%, -50%, 0)
+            -moz-transform: translate3d(-50%, -50%, 0)
+            -webkit-transform: translate3d(-50%, -50%, 0)
 
-          i
-            margin-left: 10px
+            h4
+              text-transform: uppercase
 
-      .hidden
-        display: none
+            ul
+              list-style-type: none
+              padding: 0
 
-    .project:hover
-      p
-        color: #e74c3c
-        transition: all .15s linear
-        -moz-transition: all .15s linear
-        -webkit-transition: all .15s linear
+              li
+                display: inline-block
+                color: #f1f1f1
+                background: #999
+                padding: 5px 10px
+                margin: 5px
+                border-radius: 3px
 
-        .external-link
-          color: #e74c3c
-          transition: all .15s linear
-          -moz-transition: all .15s linear
-          -webkit-transition: all .15s linear
+                &:first-of-type
+                  margin-left: 0
+
+        .img-container
+          width: 500px
+          display: inline-block
+          height: 100%
+          margin: 0
+
+      &:nth-of-type(odd)
+        .content
+          .text-container
+            float: left
+
+          .img-container
+            float: right
+
+      &:nth-of-type(even)
+        .content
+          .text-container
+            float: right
+
+          .img-container
+            float: left
+      
+      &:last-of-type
+        border-bottom: none
+
+      &.cuts-chart
+        .content
+          .img-container
+            background-image: url('../images/new/cuts-chart.png')
+            background-size: 500px
+
+      &.xolair
+        .content
+          .img-container
+            background-image: url('../images/new/cuts-chart.png')
+            background-size: 500px
+
+      &.shoppernova
+        .content
+          .img-container
+            background-image: url('../images/new/cuts-chart.png')
+            background-size: 500px
+
+      &.field-intouch
+        .content
+          .img-container
+            background-image: url('../images/new/cuts-chart.png')
+            background-size: 500px
+
+      &.micomms
+        .content
+          .img-container
+            background-image: url('../images/new/cuts-chart.png')
+            background-size: 500px
+
+      &.gcg
+        .content
+          .img-container
+            background-image: url('../images/new/cuts-chart.png')
+            background-size: 500px
+
+      &.momo
+        .content
+          .img-container
+            background-image: url('../images/new/cuts-chart.png')
+            background-size: 500px

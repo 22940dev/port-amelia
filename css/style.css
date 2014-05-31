@@ -127,39 +127,85 @@ p {
 
 .recent-work {
   background: #f1f1f1;
-  color: #555555; }
+  color: #555555;
+  padding-bottom: 0; }
   .recent-work .projects-container {
-    width: 900px;
-    margin: 0 auto; }
+    width: 100%; }
     .recent-work .projects-container .project {
-      display: inline-block;
-      margin: 20px; }
-      .recent-work .projects-container .project img {
-        width: 250px;
-        border: 5px solid white; }
-      .recent-work .projects-container .project p {
-        text-transform: uppercase;
-        color: #777777;
-        transition: all 0.15s linear;
-        -moz-transition: all 0.15s linear;
-        -webkit-transition: all 0.15s linear; }
-        .recent-work .projects-container .project p .external-link {
-          color: #777777;
-          text-decoration: none; }
-          .recent-work .projects-container .project p .external-link i {
-            margin-left: 10px; }
-      .recent-work .projects-container .project .hidden {
-        display: none; }
-    .recent-work .projects-container .project:hover p {
-      color: #e74c3c;
-      transition: all 0.15s linear;
-      -moz-transition: all 0.15s linear;
-      -webkit-transition: all 0.15s linear; }
-      .recent-work .projects-container .project:hover p .external-link {
-        color: #e74c3c;
-        transition: all 0.15s linear;
-        -moz-transition: all 0.15s linear;
-        -webkit-transition: all 0.15s linear; }
+      display: block;
+      width: 100%;
+      height: 450px;
+      background: #f1f1f1;
+      border-bottom: 2px solid white; }
+      .recent-work .projects-container .project .content {
+        width: 1200px;
+        margin: 0 auto;
+        height: 100%; }
+        .recent-work .projects-container .project .content .text-container {
+          width: 700px;
+          display: inline-block;
+          height: 100%;
+          margin: 0; }
+          .recent-work .projects-container .project .content .text-container .text {
+            width: 60%;
+            text-align: left;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            -ms-transform: translate3d(-50%, -50%, 0);
+            -moz-transform: translate3d(-50%, -50%, 0);
+            -webkit-transform: translate3d(-50%, -50%, 0); }
+            .recent-work .projects-container .project .content .text-container .text h4 {
+              text-transform: uppercase; }
+            .recent-work .projects-container .project .content .text-container .text ul {
+              list-style-type: none;
+              padding: 0; }
+              .recent-work .projects-container .project .content .text-container .text ul li {
+                display: inline-block;
+                color: #f1f1f1;
+                background: #999999;
+                padding: 5px 10px;
+                margin: 5px;
+                border-radius: 3px; }
+                .recent-work .projects-container .project .content .text-container .text ul li:first-of-type {
+                  margin-left: 0; }
+        .recent-work .projects-container .project .content .img-container {
+          width: 500px;
+          display: inline-block;
+          height: 100%;
+          margin: 0; }
+      .recent-work .projects-container .project:nth-of-type(odd) .content .text-container {
+        float: left; }
+      .recent-work .projects-container .project:nth-of-type(odd) .content .img-container {
+        float: right; }
+      .recent-work .projects-container .project:nth-of-type(even) .content .text-container {
+        float: right; }
+      .recent-work .projects-container .project:nth-of-type(even) .content .img-container {
+        float: left; }
+      .recent-work .projects-container .project:last-of-type {
+        border-bottom: none; }
+      .recent-work .projects-container .project.cuts-chart .content .img-container {
+        background-image: url("../images/new/cuts-chart.png");
+        background-size: 500px; }
+      .recent-work .projects-container .project.xolair .content .img-container {
+        background-image: url("../images/new/cuts-chart.png");
+        background-size: 500px; }
+      .recent-work .projects-container .project.shoppernova .content .img-container {
+        background-image: url("../images/new/cuts-chart.png");
+        background-size: 500px; }
+      .recent-work .projects-container .project.field-intouch .content .img-container {
+        background-image: url("../images/new/cuts-chart.png");
+        background-size: 500px; }
+      .recent-work .projects-container .project.micomms .content .img-container {
+        background-image: url("../images/new/cuts-chart.png");
+        background-size: 500px; }
+      .recent-work .projects-container .project.gcg .content .img-container {
+        background-image: url("../images/new/cuts-chart.png");
+        background-size: 500px; }
+      .recent-work .projects-container .project.momo .content .img-container {
+        background-image: url("../images/new/cuts-chart.png");
+        background-size: 500px; }
 
 .contact {
   background: #e74c3c;
