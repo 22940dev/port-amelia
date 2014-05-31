@@ -157,19 +157,55 @@ p {
             -moz-transform: translate3d(-50%, -50%, 0);
             -webkit-transform: translate3d(-50%, -50%, 0); }
             .recent-work .projects-container .project .content .text-container .text h4 {
-              text-transform: uppercase; }
+              text-transform: uppercase;
+              font-size: 1.4em; }
+            .recent-work .projects-container .project .content .text-container .text h5 {
+              margin-top: 5px;
+              margin-bottom: 0;
+              text-transform: uppercase;
+              color: #777777; }
             .recent-work .projects-container .project .content .text-container .text ul {
               list-style-type: none;
               padding: 0; }
               .recent-work .projects-container .project .content .text-container .text ul li {
                 display: inline-block;
                 color: #f1f1f1;
-                background: #999999;
+                background: #c0392b;
                 padding: 5px 10px;
-                margin: 5px;
-                border-radius: 3px; }
+                margin: 0 5px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                font-size: 0.8em; }
                 .recent-work .projects-container .project .content .text-container .text ul li:first-of-type {
                   margin-left: 0; }
+            .recent-work .projects-container .project .content .text-container .text a {
+              color: #555555;
+              text-decoration: none;
+              font-weight: bold; }
+              .recent-work .projects-container .project .content .text-container .text a:hover {
+                text-decoration: underline; }
+            .recent-work .projects-container .project .content .text-container .text .button {
+              display: block;
+              border: 1px solid #555555;
+              padding: 10px 20px;
+              border-radius: 5px;
+              width: 160px;
+              text-transform: uppercase;
+              text-align: center;
+              margin-top: 40px;
+              transition: all 300ms;
+              -ms-transition: all 300ms;
+              -moz-transition: all 300ms;
+              -webkit-transition: all 300ms;
+              color: #555555;
+              text-decoration: none; }
+              .recent-work .projects-container .project .content .text-container .text .button:hover {
+                background: #555555;
+                color: #f1f1f1;
+                transition: all 300ms;
+                -ms-transition: all 300ms;
+                -moz-transition: all 300ms;
+                -webkit-transition: all 300ms; }
         .recent-work .projects-container .project .content .img-container {
           width: 500px;
           display: inline-block;
@@ -183,28 +219,29 @@ p {
         float: right; }
       .recent-work .projects-container .project:nth-of-type(even) .content .img-container {
         float: left; }
-      .recent-work .projects-container .project:last-of-type {
-        border-bottom: none; }
+      .recent-work .projects-container .project.ken-khoo .content .img-container {
+        background-image: url("../images/new/ken-khoo.png");
+        background-size: 500px; }
       .recent-work .projects-container .project.cuts-chart .content .img-container {
         background-image: url("../images/new/cuts-chart.png");
         background-size: 500px; }
       .recent-work .projects-container .project.xolair .content .img-container {
-        background-image: url("../images/new/cuts-chart.png");
+        background-image: url("../images/new/xolair.png");
         background-size: 500px; }
       .recent-work .projects-container .project.shoppernova .content .img-container {
-        background-image: url("../images/new/cuts-chart.png");
+        background-image: url("../images/new/shoppernova.png");
         background-size: 500px; }
       .recent-work .projects-container .project.field-intouch .content .img-container {
-        background-image: url("../images/new/cuts-chart.png");
+        background-image: url("../images/new/field-intouch.png");
         background-size: 500px; }
       .recent-work .projects-container .project.micomms .content .img-container {
-        background-image: url("../images/new/cuts-chart.png");
+        background-image: url("../images/new/micomms.png");
         background-size: 500px; }
       .recent-work .projects-container .project.gcg .content .img-container {
-        background-image: url("../images/new/cuts-chart.png");
+        background-image: url("../images/new/gcg.png");
         background-size: 500px; }
       .recent-work .projects-container .project.momo .content .img-container {
-        background-image: url("../images/new/cuts-chart.png");
+        background-image: url("../images/new/momo.png");
         background-size: 500px; }
 
 .contact {
@@ -262,41 +299,44 @@ p {
   .contact .copyright {
     font-size: 14px; }
 
-@media only screen and (max-width: 1200px) {
-  html, body {
-    width: auto; }
-    html .recent-work .projects-container, body .recent-work .projects-container {
-      width: 900px; } }
 /* Tablet (landscape) */
 @media only screen and (max-width: 1024px) {
   html, body {
     width: auto; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
       width: 100%; }
-    html .recent-work .projects-container, body .recent-work .projects-container {
-      width: 90%; } }
+    html .recent-work .projects-container .project .content, body .recent-work .projects-container .project .content {
+      width: 1000px; }
+      html .recent-work .projects-container .project .content .text-container, body .recent-work .projects-container .project .content .text-container {
+        width: 600px; }
+      html .recent-work .projects-container .project .content .img-container, body .recent-work .projects-container .project .content .img-container {
+        width: 400px;
+        background-size: 400px; } }
 @media only screen and (max-width: 930px) {
   html, body {
     width: auto; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
-      width: 70%; }
-    html .recent-work .projects-container, body .recent-work .projects-container {
-      width: 90%; } }
+      width: 70%; } }
 /* Tablet (portrait) */
 @media only screen and (max-width: 768px) {
   html, body {
     width: auto; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
       width: 70%; }
-    html .recent-work .projects-container, body .recent-work .projects-container {
-      width: 90%; } }
+    html .recent-work .projects-container .project .content, body .recent-work .projects-container .project .content {
+      width: 750px; }
+      html .recent-work .projects-container .project .content .text-container, body .recent-work .projects-container .project .content .text-container {
+        width: 400px; }
+        html .recent-work .projects-container .project .content .text-container ul li, body .recent-work .projects-container .project .content .text-container ul li {
+          margin: 5px 0 !important; }
+      html .recent-work .projects-container .project .content .img-container, body .recent-work .projects-container .project .content .img-container {
+        width: 350px;
+        background-size: 350px; } }
 @media only screen and (max-width: 674px) {
   html, body {
     width: auto; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
-      width: 60%; }
-    html .recent-work .projects-container, body .recent-work .projects-container {
-      width: 90%; } }
+      width: 60%; } }
 /* Mobile */
 @media only screen and (max-width: 480px) {
   html, body {
@@ -319,8 +359,30 @@ p {
       width: 100%; }
       html .what-i-do .skills-container .skill, body .what-i-do .skills-container .skill {
         margin: 0 40px 20px 40px; }
-    html .recent-work .projects-container, body .recent-work .projects-container {
-      width: 100%; }
+    html .recent-work .projects-container .project, body .recent-work .projects-container .project {
+      height: 688px;
+      display: block; }
+      html .recent-work .projects-container .project .content, body .recent-work .projects-container .project .content {
+        width: 100%;
+        height: auto; }
+        html .recent-work .projects-container .project .content .text-container, body .recent-work .projects-container .project .content .text-container {
+          width: 100%;
+          display: block;
+          height: 400px;
+          float: none !important; }
+          html .recent-work .projects-container .project .content .text-container .text, body .recent-work .projects-container .project .content .text-container .text {
+            text-align: center; }
+            html .recent-work .projects-container .project .content .text-container .text a, body .recent-work .projects-container .project .content .text-container .text a {
+              margin: 30px auto 0; }
+        html .recent-work .projects-container .project .content .img-container, body .recent-work .projects-container .project .content .img-container {
+          width: 320px;
+          height: 288px;
+          display: block;
+          background-size: 320px;
+          float: none !important;
+          margin: 0 auto; }
+      html .recent-work .projects-container .project.ken-khoo .content .img-container, html .recent-work .projects-container .project.cuts-chart .content .img-container, html .recent-work .projects-container .project.xolair .content .img-container, html .recent-work .projects-container .project.shoppernova .content .img-container, html .recent-work .projects-container .project.field-intouch .content .img-container, html .recent-work .projects-container .project.micomms .content .img-container, html .recent-work .projects-container .project.gcg .content .img-container, html .recent-work .projects-container .project.momo .content .img-container, body .recent-work .projects-container .project.ken-khoo .content .img-container, body .recent-work .projects-container .project.cuts-chart .content .img-container, body .recent-work .projects-container .project.xolair .content .img-container, body .recent-work .projects-container .project.shoppernova .content .img-container, body .recent-work .projects-container .project.field-intouch .content .img-container, body .recent-work .projects-container .project.micomms .content .img-container, body .recent-work .projects-container .project.gcg .content .img-container, body .recent-work .projects-container .project.momo .content .img-container {
+        background-size: 320px !important; }
     html .contact p, body .contact p {
       width: 80%; }
     html .contact .social, body .contact .social {
