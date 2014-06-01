@@ -205,7 +205,8 @@ p {
                 transition: all 300ms;
                 -ms-transition: all 300ms;
                 -moz-transition: all 300ms;
-                -webkit-transition: all 300ms; }
+                -webkit-transition: all 300ms;
+                text-decoration: none; }
         .recent-work .projects-container .project .content .img-container {
           width: 500px;
           display: inline-block;
@@ -220,28 +221,28 @@ p {
       .recent-work .projects-container .project:nth-of-type(even) .content .img-container {
         float: left; }
       .recent-work .projects-container .project.ken-khoo .content .img-container {
-        background-image: url("../images/new/ken-khoo.png");
+        background-image: url("../images/projects/ken-khoo.png");
         background-size: 500px; }
       .recent-work .projects-container .project.cuts-chart .content .img-container {
-        background-image: url("../images/new/cuts-chart.png");
+        background-image: url("../images/projects/cuts-chart.png");
         background-size: 500px; }
       .recent-work .projects-container .project.xolair .content .img-container {
-        background-image: url("../images/new/xolair.png");
+        background-image: url("../images/projects/xolair.png");
         background-size: 500px; }
       .recent-work .projects-container .project.shoppernova .content .img-container {
-        background-image: url("../images/new/shoppernova.png");
+        background-image: url("../images/projects/shoppernova.png");
         background-size: 500px; }
       .recent-work .projects-container .project.field-intouch .content .img-container {
-        background-image: url("../images/new/field-intouch.png");
+        background-image: url("../images/projects/field-intouch.png");
         background-size: 500px; }
       .recent-work .projects-container .project.micomms .content .img-container {
-        background-image: url("../images/new/micomms.png");
+        background-image: url("../images/projects/micomms.png");
         background-size: 500px; }
       .recent-work .projects-container .project.gcg .content .img-container {
-        background-image: url("../images/new/gcg.png");
+        background-image: url("../images/projects/gcg.png");
         background-size: 500px; }
       .recent-work .projects-container .project.momo .content .img-container {
-        background-image: url("../images/new/momo.png");
+        background-image: url("../images/projects/momo.png");
         background-size: 500px; }
 
 .contact {
