@@ -1,3 +1,23 @@
+@media only screen and (max-width: 1200px)
+  html, body
+    width: auto
+
+    .recent-work
+      .projects-container
+        width: 1000px !important
+
+        .project
+          height: 360px !important
+
+          .text-container
+            width: 600px !important
+            height: 360px !important
+
+          .img-container
+            width: 400px !important
+            height: 360px !important
+
+
 /* Tablet (landscape) */
 @media only screen and (max-width: 1024px)
   html, body
@@ -10,15 +30,11 @@
     .recent-work
       .projects-container
         .project
-          .content
-            width: 1000px
-            
-            .text-container
-              width: 600px
-
-            .img-container
-              width: 400px
-              background-size: 400px
+          .img-container
+            .bx-wrapper
+              .bx-prev, .bx-next
+                -webkit-transform: none !important
+                display: none
 
 
 @media only screen and (max-width: 930px)
@@ -28,6 +44,25 @@
     .what-i-do
       .skills-container
         width: 70%
+
+    .recent-work
+      .projects-container
+        width: 900px !important
+
+        .project
+          height: 360px !important
+
+          .text-container
+            width: 500px !important
+            height: 360px !important
+
+            ul
+              li
+                margin: 5px !important
+
+          .img-container
+            width: 400px !important
+            height: 360px !important
 
 
 /* Tablet (portrait) */
@@ -41,20 +76,40 @@
 
     .recent-work
       .projects-container
+        width: 100% !important
+
         .project
-          .content
-            width: 750px
-            
-            .text-container
-              width: 400px
+          height: auto !important
 
-              ul
-                li
-                  margin: 5px 0 !important
+          .text-container
+            width: 100% !important
+            display: block !important
+            float: none !important
+            height: auto !important
 
-            .img-container
-              width: 350px
-              background-size: 350px
+            .text
+              top: 0 !important
+              left: 0 !important
+              transform: translate3d(0, 0, 0) !important
+              -ms-transform: translate3d(0, 0, 0) !important
+              -moz-transform: translate3d(0, 0, 0) !important
+              -webkit-transform: translate3d(0, 0, 0) !important
+              text-align: center !important
+              width: 90% !important
+              margin: 30px auto 0
+
+              a
+                margin: 0 auto 10px !important
+
+          .img-container
+            width: 100% !important
+            display: block !important
+            float: none !important
+
+            img
+              width: auto !important
+              height: 360px
+              margin: 0 auto
 
 
 @media only screen and (max-width: 674px)
@@ -99,41 +154,6 @@
         .skill
           margin: 0 40px 20px 40px
 
-    .recent-work
-      .projects-container
-        .project
-          height: 688px
-          display: block
-
-          .content
-            width: 100%
-            height: auto
-            
-            .text-container
-              width: 100%
-              display: block
-              height: 400px
-              float: none !important
-
-              .text
-                text-align: center
-
-                a
-                  margin: 30px auto 0
-
-            .img-container
-              width: 320px
-              height: 288px
-              display: block
-              background-size: 320px
-              float: none !important
-              margin: 0 auto
-
-          &.ken-khoo, &.cuts-chart, &.xolair, &.shoppernova, &.field-intouch, &.micomms, &.gcg, &.momo
-            .content
-              .img-container
-                background-size: 320px !important
-
     .contact
       p
         width: 80%
@@ -146,8 +166,49 @@
         a:nth-of-type(5), a:nth-of-type(6), a:nth-of-type(6)
           margin-top: 10px
 
+
 @media only screen and (max-width: 480px)
   body
     .contact
       .social
         width: 70%
+
+
+@media only screen and (max-width: 320px)
+  .recent-work
+    .projects-container
+      width: 100% !important
+
+      .project
+        height: auto !important
+
+        .text-container
+          width: 100% !important
+          display: block !important
+          float: none !important
+          height: auto !important
+
+          .text
+            top: 0 !important
+            left: 0 !important
+            transform: translate3d(0, 0, 0) !important
+            -ms-transform: translate3d(0, 0, 0) !important
+            -moz-transform: translate3d(0, 0, 0) !important
+            -webkit-transform: translate3d(0, 0, 0) !important
+            text-align: center !important
+            width: 90% !important
+            margin: 30px auto 0
+
+            a
+              margin: 0 auto 10px !important
+
+        .img-container
+          width: 100% !important
+          display: block !important
+          float: none !important
+          height: 288px !important
+
+          img
+            width: 320px !important
+            height: auto !important
+            margin: 0 auto

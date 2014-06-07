@@ -1,28 +1,31 @@
+$projects-container-width: 1200px
+$project-height: 450px
+$img-container-width: 500px
+
+
 .recent-work
   background: #f1f1f1
   color: #555
   padding-bottom: 0
 
-  .projects-container
-    width: 100%
+  .recent-work-content
+    display: block
 
-    .project
-      display: block
-      width: 100%
-      height: 450px
-      background: #f1f1f1
-      border-bottom: 2px solid #fff
+    .projects-container
+      width: $projects-container-width
+      margin: 0 auto
 
-      .content
-        width: 1200px
-        margin: 0 auto
-        height: 100%
+      .project
+        display: block
+        width: 100%
+        border-bottom: 1px solid #fff
+        clear: both
+        height: $project-height
 
         .text-container
-          width: 700px
-          display: inline-block
-          height: 100%
-          margin: 0
+          display: block
+          width: $projects-container-width - $img-container-width
+          height: $project-height
 
           .text
             width: 60%
@@ -96,71 +99,39 @@
                 text-decoration: none
 
         .img-container
-          width: 500px
-          display: inline-block
-          height: 100%
-          margin: 0
+          display: block
+          width: $img-container-width
+          height: $project-height
+          overflow: hidden
 
-      &:nth-of-type(odd)
-        .content
+          img
+            width: $img-container-width
+
+          .bx-wrapper
+            .bx-prev
+              -webkit-transform: translateX(-50px)
+              -webkit-transition: -webkit-transform 300ms
+
+            .bx-next
+              -webkit-transform: translateX(50px)
+              -webkit-transition: -webkit-transform 300ms
+
+          &:hover
+            .bx-wrapper
+              .bx-prev, .bx-next
+                -webkit-transform: translateX(0)
+                -webkit-transition: -webkit-transform 300ms
+
+        &:nth-of-type(odd)
           .text-container
             float: left
 
           .img-container
             float: right
 
-      &:nth-of-type(even)
-        .content
+        &:nth-of-type(even)
           .text-container
             float: right
 
           .img-container
             float: left
-
-      &.ken-khoo
-        .content
-          .img-container
-            background-image: url('../images/projects/ken-khoo.png')
-            background-size: 500px
-
-      &.cuts-chart
-        .content
-          .img-container
-            background-image: url('../images/projects/cuts-chart.png')
-            background-size: 500px
-
-      &.xolair
-        .content
-          .img-container
-            background-image: url('../images/projects/xolair.png')
-            background-size: 500px
-
-      &.shoppernova
-        .content
-          .img-container
-            background-image: url('../images/projects/shoppernova.png')
-            background-size: 500px
-
-      &.field-intouch
-        .content
-          .img-container
-            background-image: url('../images/projects/field-intouch.png')
-            background-size: 500px
-
-      &.micomms
-        .content
-          .img-container
-            background-image: url('../images/projects/micomms.png')
-            background-size: 500px
-
-      &.gcg
-        .content
-          .img-container
-            background-image: url('../images/projects/gcg.png')
-            background-size: 500px
-
-      &.momo
-        .content
-          .img-container
-            background-image: url('../images/projects/momo.png')
-            background-size: 500px

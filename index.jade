@@ -14,6 +14,7 @@ html(lang="en")
     
     link(type='text/css', rel='stylesheet', href='css/style.css')
     link(type='text/css', rel='stylesheet', href='css/lightbox.css')
+    link(type='text/css', rel='stylesheet', href='css/jquery.bxslider.css')
     link(type='text/css', rel='stylesheet', href='http://fonts.googleapis.com/css?family=Pacifico|Montserrat')
     link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
     link(rel='icon', type='image/png', href='http://www.amelialewis.com.au/images/favicon.png')
@@ -27,6 +28,7 @@ html(lang="en")
     script(type='text/javascript', src='js/modernizr.custom.js')
     script(type='text/javascript', src='js/jquery-1.10.2.min.js')
     script(type='text/javascript', src='js/lightbox-2.6.min.js')
+    script(type='text/javascript', src='js/jquery.bxslider.min.js')
 
     script
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -35,6 +37,11 @@ html(lang="en")
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-50157111-1', 'amelialewis.com.au');
         ga('send', 'pageview');
+
+    script
+      $(document).ready(function(){
+        $('.bxslider').bxSlider();
+        });
 
 
 
@@ -71,119 +78,163 @@ html(lang="en")
             img(src='images/front-end-web-dev.png')
 
     section.recent-work
-      div.recent-work-content
+      .recent-work-content
         h3 Recent Work
 
         .projects-container
           .project.ken-khoo
-            .content
-              .text-container
-                .text
-                  h4 Ken Khoo Portfolio
-                  h5 Website
-                  ul.tags
-                    li ui + ux design
-                    li development
-                  p A portfolio site for a friend.
-                  a(href='http://kenkhoo.net/', target='blank').button Visit website
-              .img-container
+            .text-container
+              .text
+                h4 Ken Khoo Portfolio
+                h5 Website
+                ul.tags
+                  li ui + ux design
+                  li development
+                p A portfolio site for a friend.
+                a(href='http://kenkhoo.net/', target='blank').button Visit website
+            .img-container
+              ul.bxslider
+                li
+                  img(src='images/projects/ken-khoo-1.png')
+                li
+                  img(src='images/projects/ken-khoo-2.png')
+                li
+                  img(src='images/projects/ken-khoo-3.png')
 
           .project.cuts-chart
-            .content
-              .text-container
-                .text
-                  h4 Cuts Chart
-                  h5 Mobile app (web)
-                  ul.tags
-                    li ui + ux design
-                    li front-end development
-                  p An app for 
-                    a(href='http://www.beefandlamb.com.au/Home', target='_blank') MLA
-                    |  to help amateur foodies learn all about different cuts of meat and how best to cook them.
-                  //- a.button Download app
-              .img-container
+            .text-container
+              .text
+                h4 Cuts Chart
+                h5 Mobile app (web)
+                ul.tags
+                  li ui + ux design
+                  li front-end development
+                p An app for 
+                  a(href='http://www.beefandlamb.com.au/Home', target='_blank') MLA
+                  |  to help amateur foodies learn all about different cuts of meat and how best to cook them.
+                //- a.button Download app
+            .img-container
+              ul.bxslider
+                li
+                  img(src='images/projects/cuts-chart-1.png')
+                li
+                  img(src='images/projects/cuts-chart-2.png')
+                li
+                  img(src='images/projects/cuts-chart-3.png')
 
           .project.xolair
-            .content
-              .text-container
-                .text
-                  h4 Xolair Appointment Reminder
-                  h5 Mobile app (web)
-                  ul.tags
-                    li ui + ux design
-                    li front-end development
-                  p An app for 
-                    a(href='http://www.novartis.com.au/', target='_blank') Novartis
-                    |  for patients on the drug Xolair, to remind them of their appointments and injections.
-                  //- a.button Download app
-              .img-container
+            .text-container
+              .text
+                h4 Xolair Appointment Reminder
+                h5 Mobile app (web)
+                ul.tags
+                  li ui + ux design
+                  li front-end development
+                p An app for 
+                  a(href='http://www.novartis.com.au/', target='_blank') Novartis
+                  |  for patients on the drug Xolair, to remind them of their appointments and injections.
+                //- a.button Download app
+            .img-container
+              ul.bxslider
+                li
+                  img(src='images/projects/xolair-1.png')
+                li
+                  img(src='images/projects/xolair-2.png')
 
           .project.shoppernova
-            .content
-              .text-container
-                .text
-                  h4 ShopperNova
-                  h5 Mobile app (ios)
-                  ul.tags
-                    li graphic design
-                    li email newsletters
-                  p A deals app in association with 
-                    a(href='http://www.novafm.com.au/station/nova969', target='_blank') Nova FM
-                    |. I produce the artwork for all the content, as well as email newsletters and design changes within the app.
-                  a(href='https://itunes.apple.com/au/app/shoppernova!/id422249255?mt=8', target='blank').button Download app
-              .img-container
+            .text-container
+              .text
+                h4 ShopperNova
+                h5 Mobile app (ios)
+                ul.tags
+                  li graphic design
+                  li email newsletters
+                p A deals app in association with 
+                  a(href='http://www.novafm.com.au/station/nova969', target='_blank') Nova FM
+                  |. I produce the artwork for all the content, as well as email newsletters and design changes within the app.
+                a(href='https://itunes.apple.com/au/app/shoppernova!/id422249255?mt=8', target='blank').button Download app
+            .img-container
+              ul.bxslider
+                li
+                  img(src='images/projects/shoppernova-1.png')
+                li
+                  img(src='images/projects/shoppernova-2.png')
+                li
+                  img(src='images/projects/shoppernova-3.png')
 
           .project.field-intouch
-            .content
-              .text-container
-                .text
-                  h4 Field InTouch
-                  h5 Mobile app (web)
-                  ul.tags
-                    li ui + ux design
-                    li front-end development
-                  p An enterprise solution for internal rep training, for which I produce "slidedecks" - mostly for Imperial Tobacco.
-              .img-container
+            .text-container
+              .text
+                h4 Field InTouch
+                h5 Mobile app (web)
+                ul.tags
+                  li ui + ux design
+                  li front-end development
+                p An enterprise solution for internal rep training, for which I produce "slidedecks" - mostly for Imperial Tobacco.
+            .img-container
+              ul.bxslider
+                li
+                  img(src='images/projects/field-intouch-1.png')
+                li
+                  img(src='images/projects/field-intouch-2.png')
+                li
+                  img(src='images/projects/field-intouch-3.png')
 
           .project.micomms
-            .content
-              .text-container
-                .text
-                  h4 MiComms
-                  h5 Mobile app (ios)
-                  ul.tags
-                    li ui design
-                    li front-end development
-                  p An internal communications solution for 
-                    a(href='http://www.novartis.com.au/', target='_blank') Novartis
-                    |.
-              .img-container
+            .text-container
+              .text
+                h4 MiComms
+                h5 Mobile app (ios)
+                ul.tags
+                  li ui design
+                  li front-end development
+                p An internal communications solution for 
+                  a(href='http://www.novartis.com.au/', target='_blank') Novartis
+                  |.
+            .img-container
+              ul.bxslider
+                li
+                  img(src='images/projects/micomms-1.png')
+                li
+                  img(src='images/projects/micomms-2.png')
 
           .project.gcg
-            .content
-              .text-container
-                .text
-                  h4 Glenda Graff
-                  h5 Website
-                  ul.tags
-                    li ui + ux design
-                    li development
-                  p A website for an event planner based in Sydney's Eastern Suburbs.
-                  a(href='http://glendagraff.com.au/', target='_blank').button Visit website
-              .img-container
+            .text-container
+              .text
+                h4 Glenda Graff
+                h5 Website
+                ul.tags
+                  li ui + ux design
+                  li development
+                p A website for an event planner based in Sydney's Eastern Suburbs.
+                a(href='http://glendagraff.com.au/', target='_blank').button Visit website
+            .img-container
+              ul.bxslider
+                li
+                  img(src='images/projects/gcg-1.png')
+                li
+                  img(src='images/projects/gcg-2.png')
+                li
+                  img(src='images/projects/gcg-3.png')
 
           .project.momo
-            .content
-              .text-container
-               .text
-                  h4 Momo Brasserie
-                  h5 Website
-                  ul.tags
-                    li ui + ux design
-                    li development
-                  p A redesign and rebuild of the website for Sydney CBD restaurant, Momo Brasserie.
-                  a(href='http://momobrasserie.com.au/', target='_blank').button Visit website
-              .img-container
+            .text-container
+             .text
+                h4 Momo Brasserie
+                h5 Website
+                ul.tags
+                  li ui + ux design
+                  li development
+                p A redesign and rebuild of the website for Sydney CBD restaurant, Momo Brasserie.
+                a(href='http://momobrasserie.com.au/', target='_blank').button Visit website
+            .img-container
+              ul.bxslider
+                li
+                  img(src='images/projects/momo-1.png')
+                li
+                  img(src='images/projects/momo-2.png')
+                li
+                  img(src='images/projects/momo-3.png')
 
     section.contact
       .contact-content
