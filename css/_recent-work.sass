@@ -98,6 +98,18 @@ $img-container-width: 500px
                 -webkit-transition: all 300ms
                 text-decoration: none
 
+              &.disabled
+                border: 1px solid #aaa
+                color: #aaa
+
+                span
+                  font-size: 0.7em
+
+                &:hover
+                  background: none
+                  color: #aaa
+
+
         .img-container
           display: block
           width: $img-container-width
@@ -135,3 +147,6 @@ $img-container-width: 500px
 
           .img-container
             float: left
+
+        &:first-of-type
+          border-top: 1px solid #fff

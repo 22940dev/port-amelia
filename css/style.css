@@ -206,6 +206,14 @@ p {
                 -moz-transition: all 300ms;
                 -webkit-transition: all 300ms;
                 text-decoration: none; }
+              .recent-work .recent-work-content .projects-container .project .text-container .text .button.disabled {
+                border: 1px solid #aaaaaa;
+                color: #aaaaaa; }
+                .recent-work .recent-work-content .projects-container .project .text-container .text .button.disabled span {
+                  font-size: 0.7em; }
+                .recent-work .recent-work-content .projects-container .project .text-container .text .button.disabled:hover {
+                  background: none;
+                  color: #aaaaaa; }
         .recent-work .recent-work-content .projects-container .project .img-container {
           display: block;
           width: 500px;
@@ -230,6 +238,8 @@ p {
           float: right; }
         .recent-work .recent-work-content .projects-container .project:nth-of-type(even) .img-container {
           float: left; }
+        .recent-work .recent-work-content .projects-container .project:first-of-type {
+          border-top: 1px solid white; }
 
 .contact {
   background: #e74c3c;
@@ -305,6 +315,8 @@ p {
     width: auto; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
       width: 100%; }
+      html .what-i-do .skills-container .skill img, body .what-i-do .skills-container .skill img {
+        opacity: 1; }
     html .recent-work .projects-container .project .img-container .bx-wrapper .bx-prev, html .recent-work .projects-container .project .img-container .bx-wrapper .bx-next, body .recent-work .projects-container .project .img-container .bx-wrapper .bx-prev, body .recent-work .projects-container .project .img-container .bx-wrapper .bx-next {
       -webkit-transform: none !important;
       display: none; } }
@@ -365,6 +377,16 @@ p {
     width: auto; }
     html .what-i-do .skills-container, body .what-i-do .skills-container {
       width: 60%; } }
+@media only screen and (max-width: 640px) {
+  .recent-work .projects-container .project .img-container {
+    width: 100% !important;
+    display: block !important;
+    float: none !important;
+    height: 288px !important; }
+    .recent-work .projects-container .project .img-container img {
+      width: 320px !important;
+      height: auto !important;
+      margin: 0 auto; } }
 /* Mobile */
 @media only screen and (max-width: 480px) {
   html, body {
