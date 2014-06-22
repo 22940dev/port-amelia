@@ -5,7 +5,9 @@ body {
   body section {
     text-align: center;
     padding: 30px 0;
-    display: block; }
+    display: block;
+    width: 100%;
+    overflow-x: hidden; }
 
 h1 {
   font-size: 4em;
@@ -34,31 +36,38 @@ p {
 .intro {
   background: url("../images/header-bg.png") 50% 50% no-repeat fixed #333333;
   background-size: cover;
-  height: 600px;
+  height: 100vh;
   width: 100%;
   position: relative;
-  display: -ms-flexbox;
-  -ms-flex-pack: center;
-  -ms-flex-align: center;
-  display: -moz-box;
-  -moz-box-pack: center;
-  -moz-box-align: center;
-  display: -webkit-box;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  display: box;
-  box-pack: center;
-  box-align: center; }
+  display: block; }
   .intro .intro-content {
     width: 470px;
-    text-shadow: 0 0 60px black;
+    position: relative;
+    display: block;
+    text-shadow: 0 0 50px black, 1px 1px 1px rgba(0, 0, 0, 0.3);
     color: white;
-    text-align: center; }
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); }
+    .intro .intro-content h1 {
+      margin-top: 0; }
     .intro .intro-content a {
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: all 0.15s linear;
+      -ms-transition: all 0.15s linear;
+      -moz-transition: all 0.15s linear;
+      -webkit-transition: all 0.15s linear; }
     .intro .intro-content a:hover {
-      text-decoration: underline; }
+      color: #ffe100;
+      transition: all 0.15s linear;
+      -ms-transition: all 0.15s linear;
+      -moz-transition: all 0.15s linear;
+      -webkit-transition: all 0.15s linear; }
     .intro .intro-content .icon {
       width: 50px;
       height: 50px;
