@@ -1,0 +1,32 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Amelia Lewis",
+    "owner": "Amelia Lewis",
+    "description": "Portfolio of Amelia Lewis"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "./plugins/sass.coffee",
+    "./node_modules/wintersmith-coffee/"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  },
+  "ignore": [
+    ".DS_Store",
+    "*.s[ac]ss"
+  ]
+}
