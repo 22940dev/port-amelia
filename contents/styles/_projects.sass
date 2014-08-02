@@ -166,10 +166,20 @@
         padding-bottom: 60px
 
     .img-container
-      background:
-        size: 80%
-        position: center center
-        repeat: no-repeat
+      &.imac
+        background:
+          size: 80%
+          position: center center
+          repeat: no-repeat
+
+      &.iphone
+        background:
+          size: auto 100%
+          position: center 50px
+          repeat: no-repeat
 
       @media screen and (max-width: 480px)
         height: 220px
+
+        &.iphone
+          background-position: center center
