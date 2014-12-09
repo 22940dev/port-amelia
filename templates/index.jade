@@ -3,9 +3,13 @@ extends layout
 block content
   section.intro.coral
     .text-container
-      p.hello.wow.fadeInDown(data-wow-delay='0.3s') Hello, I'm
-      h1.wow.fadeInUp(data-wow-delay='0.4s') Amelia Lewis
-      h3.wow.bounceInRight(data-wow-delay='1.6s') ui + ux // designer + developer
+      //- p.hello.wow.fadeInDown(data-wow-delay='0.3s') Hello, I'm
+      //- h1.wow.fadeInUp(data-wow-delay='0.4s') Amelia Lewis
+      //- h3.wow.bounceInRight(data-wow-delay='1.6s') ui + ux // designer + developer
+      p.hello Hello, I'm
+      h1 Amelia Lewis
+      h3 ui + ux // designer + developer
+
 
   section.skills.white
     .content-wrap
@@ -27,15 +31,28 @@ block content
     .content-wrap
       h2 projects
 
-      .extendradio.project
+      .repassist.project
+        .text-container
+          .content
+            p.project-type tablet app (web)
+            h3 RepAssist
+            ul.role
+              li ui + ux design
+              li front-end development
+            p.description An expense reporting app for Novartis sales reps.
+            a.button.disabled() coming soon
+              i.fa.fa-angle-double-right
+        .img-container.ipad.wow.fadeIn(data-wow-delay='0.6s')
+
+      .rupert-graves.project
         .text-container
           .content
             p.project-type website
-            h3 extendradio
+            h3 Rupert Graves
             ul.role
               li ui + ux design
               li development
-            p.description A website for an app platform that allows radio stations to easily expand into mobile marketing.
+            p.description The official website for UK Actor, Rupert Graves.
             a.button.disabled() coming soon
               i.fa.fa-angle-double-right
         .img-container.imac.wow.fadeIn(data-wow-delay='0.6s')
@@ -49,9 +66,22 @@ block content
               li ui + ux design
               li front-end development
             p.description An app for Meat &amp; Livestock Australia to help amateur foodies learn all about different cuts of meat and how best to cook them.
-            a.button.disabled() coming soon
+            a.button(href='https://itunes.apple.com/au/app/meat-cuts/id904537057?mt=8', target='_blank') download app
               i.fa.fa-angle-double-right
         .img-container.iphone.wow.fadeIn(data-wow-delay='0.6s')
+
+      .extendradio.project
+        .text-container
+          .content
+            p.project-type website
+            h3 extendradio
+            ul.role
+              li ui + ux design
+              li development
+            p.description A website for an app platform that allows radio stations to easily expand into mobile marketing.
+            a.button.disabled() coming soon
+              i.fa.fa-angle-double-right
+        .img-container.imac.wow.fadeIn(data-wow-delay='0.6s')
 
       .ken-khoo.project
         .text-container
@@ -65,6 +95,19 @@ block content
             a.button(href='http://kenkhoo.net/', target='_blank') visit site
               i.fa.fa-angle-double-right
         .img-container.imac.wow.fadeIn(data-wow-delay='0.6s')
+
+      .xolair.project
+        .text-container
+          .content
+            p.project-type mobile app (web)
+            h3 Xolair
+            ul.role
+              li ui + ux design
+              li front-end development
+            p.description An app to help users of the drug Xolair to remember their injections and appointments.
+            a.button.disabled() coming soon
+              i.fa.fa-angle-double-right
+        .img-container.iphone.wow.fadeIn(data-wow-delay='0.6s')
 
       .shoppernova.project
         .text-container
@@ -121,7 +164,7 @@ block content
       h2 say hi!
       p If you want to work with me or find out more about my recent work, get in touch.
       h4
-        a(href='callto:0422960962') 0422 960 960
+        a(href='callto:61409745111') +61 409 745 111
       h4 
         a(href='mailto:amelialewis01@gmail.com') amelialewis01@gmail.com
       ul

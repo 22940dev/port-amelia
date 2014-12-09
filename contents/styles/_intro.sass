@@ -3,7 +3,7 @@
 // ====================
 
 .intro
-  @extend .display-box
+  // @extend .display-box
   height: 800px
   padding: 0
   margin-top: 45px
@@ -13,7 +13,10 @@
     display: block
     text-align: center
     width: 500px
-    +transform(skewY(-3deg))
+    position: relative
+    top: 50%
+    left: 50%
+    +transform(translate3d(-50%, -50%, 0) skewY(-3deg))
 
     .hello
       font-family: $pacifico

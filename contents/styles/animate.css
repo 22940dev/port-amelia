@@ -833,6 +833,8 @@ Copyright (c) 2014 Daniel Eden
 .bounceInRight {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes bounceInUp {
@@ -1181,6 +1183,8 @@ Copyright (c) 2014 Daniel Eden
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeInDownBig {
@@ -1391,6 +1395,8 @@ Copyright (c) 2014 Daniel Eden
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeInUpBig {
