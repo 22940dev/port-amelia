@@ -5,7 +5,7 @@
 .projects
   padding: 100px 0
 
-  @media screen and (max-width: 480px)
+  @media screen and (max-width: 768px)
     padding: 60px 0
 
     h2
@@ -29,7 +29,7 @@
     &:last-of-type
       border-bottom: none
 
-    @media screen and (max-width: 480px)
+    @media screen and (max-width: 768px)
       height: auto
       border-bottom: 1px solid #ccc
 
@@ -38,7 +38,7 @@
       height: 100%
       display: inline-block
 
-      @media screen and (max-width: 480px)
+      @media screen and (max-width: 768px)
         display: block
         float: none !important
         width: 80%
@@ -155,13 +155,13 @@
               color: #ccc !important
               padding: 12px 7px 12px 30px !important
 
-        @media screen and (max-width: 480px)
+        @media screen and (max-width: 768px)
           width: 100%
           top: 40px
           left: 0
           +transform(translate(0, 0))  
 
-      @media screen and (max-width: 480px)
+      @media screen and (max-width: 768px)
         height: auto
         padding-bottom: 60px
 
@@ -184,8 +184,23 @@
           position: center 50px
           repeat: no-repeat
 
-      @media screen and (max-width: 480px)
-        height: 220px
-
+      @media screen and (max-width: 1024px)
         &.iphone
-          background-position: center center
+          background:
+            size: 100%
+            position: center bottom
+
+      @media screen and (max-width: 768px)
+        height: 400px
+
+      @media screen and (max-width: 480px)
+        height: 300px
+
+      @media screen and (max-width: 560px)
+        height: 280px
+
+      @media screen and (max-width: 360px)
+        height: 240px
+
+      @media screen and (max-width: 320px)
+        height: 220px

@@ -4,6 +4,7 @@
 
 .skills
   padding: 150px 0
+  text-align: center
 
   $skill-list: art-direction ux-design interface-design front-end-dev
 
@@ -27,6 +28,14 @@
         size: 170px
         position: center center
         repeat: no-repeat
+
+  @media screen and (max-width: 768px)
+    padding: 50px 0
+
+    .skill
+      width: 30%
+      display: inline-block
+      margin: 20px
 
   @media screen and (max-width: 480px)
     padding: 50px 0
