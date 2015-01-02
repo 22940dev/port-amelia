@@ -16,10 +16,23 @@
   h4
     font-size: 1.3em
     margin: 5px 0
+    +transition(all 300ms)
+
+    i
+      width: 0
+      opacity: 0
+      +transition(all 300ms)
 
     a
       color: white
       text-decoration: none
+
+    &:hover
+      i
+        width: 20px
+        opacity: 1
+        margin-right: 10px
+
 
     @media screen and (max-width: 1024px)
       font-size: 1.2em
