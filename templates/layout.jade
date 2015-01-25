@@ -13,13 +13,17 @@ html(lang='en')
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(rel='stylesheet', href='/styles/style.css')
       link(rel='stylesheet', href='/styles/slicknav.css')
-      link(rel='stylesheet', href='/styles/magnific-popup.css')
       link(rel='stylesheet', href='/styles/animate.css')
+      link(rel='stylesheet', href='/styles/jquery.fullPage.css')
       link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
-      link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico', rel='stylesheet', type='text/css')
       link(rel="shortcut icon", type="image/x-icon", href="/favicon.ico")
+      script(src='//use.typekit.net/rsv4pax.js')
+      script.
+        try{Typekit.load();}catch(e){}
+
+
   
-  body(class=bodyclass)
+  body(class=bodyclass).tk-effra
     header.header
       div.content-wrap
         block header
@@ -30,7 +34,7 @@ html(lang='en')
     #content
       block content
     
-    footer
+    footer.footer
       .content-wrap
         block footer
           .copy

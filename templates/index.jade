@@ -1,190 +1,33 @@
 extends layout
 
 block content
-  section.intro.coral
-    .text-container
-      //- p.hello.wow.fadeInDown(data-wow-delay='0.3s') Hello, I'm
-      //- h1.wow.fadeInUp(data-wow-delay='0.4s') Amelia Lewis
-      //- h3.wow.bounceInRight(data-wow-delay='1.6s') ui + ux // designer + developer
-      p.hello Hello, I'm
-      h1 Amelia Lewis
-      h3 ui designer + developer
+  #fullpage
+    section.section.masthead.dark
+      .content
+        h1 Amelia Lewis
+        p.description UI + UX Designer
+      i.fa.fa-angle-down
 
+    section.section.light
+      h2 About
 
-  section.skills.white
-    .content-wrap
-      //- h2 what i do
-      .skill.art-direction.wow.fadeIn(data-wow-delay='0.3s')
-        .img
-        p art direction
-      .skill.ux-design.wow.fadeIn(data-wow-delay='0.6s')
-        .img
-        p ux design
-      .skill.interface-design.wow.fadeIn(data-wow-delay='0.9s')
-        .img
-        p interface design
-      .skill.front-end-dev.wow.fadeIn(data-wow-delay='1.2s')
-        .img
-        p front-end dev
+    section.section.light
+      .slide
+        h2 Slide 1
+        i.fa.fa-angle-left
+        i.fa.fa-angle-right
+      .slide
+        h2 Slide 2
+        i.fa.fa-angle-left
+        i.fa.fa-angle-right
+      .slide
+        h2 Slide 3
+        i.fa.fa-angle-left
+        i.fa.fa-angle-right
+      .slide
+        h2 Slide 4
+        i.fa.fa-angle-left
+        i.fa.fa-angle-right
 
-  section.projects.grey
-    .content-wrap
-      //- h2 projects
-
-      .repassist.project
-        .text-container
-          .content
-            p.project-type tablet app
-            h3 RepAssist
-            ul.role
-              li ui + ux design
-              li front-end development
-            p.description An expense reporting app for Novartis sales reps.
-            a.button.disabled() coming soon
-              i.fa.fa-angle-double-right
-        .img-container.ipad.wow.fadeIn(data-wow-delay='0.6s')
-
-      .glenda-graff.project
-        .text-container
-          .content
-            p.project-type website
-            h3 glenda graff
-            ul.role
-              li ui + ux design
-              li development
-            p.description A website for an event planner based in Sydney's Eastern Suburbs.
-            a.button(href='http://glendagraff.com.au/', target='_blank') visit site
-              i.fa.fa-angle-double-right
-        .img-container.imac.wow.fadeIn(data-wow-delay='0.6s')
-
-      .meat-cuts.project
-        .text-container
-          .content
-            p.project-type mobile app
-            h3 meat cuts
-            ul.role
-              li ui + ux design
-              li front-end development
-            p.description An app for Meat &amp; Livestock Australia to help amateur foodies learn all about different cuts of meat and how best to cook them.
-            a.button(href='https://itunes.apple.com/au/app/meat-cuts/id904537057?mt=8', target='_blank') download app
-              i.fa.fa-angle-double-right
-        .img-container.iphone.wow.fadeIn(data-wow-delay='0.6s')
-
-      .rupert-graves.project
-        .text-container
-          .content
-            p.project-type website
-            h3 Rupert Graves
-            ul.role
-              li ui + ux design
-              li development
-            p.description The official website for UK Actor, Rupert Graves.
-            a.button.disabled() coming soon
-              i.fa.fa-angle-double-right
-        .img-container.imac.wow.fadeIn(data-wow-delay='0.6s')
-
-      .extendradio.project
-        .text-container
-          .content
-            p.project-type website
-            h3 extendradio
-            ul.role
-              li ui + ux design
-              li development
-            p.description A website for an app platform that allows radio stations to easily expand into mobile marketing.
-            a.button.disabled() coming soon
-              i.fa.fa-angle-double-right
-        .img-container.imac.wow.fadeIn(data-wow-delay='0.6s')
-
-      .ken-khoo.project
-        .text-container
-          .content
-            p.project-type website
-            h3 ken khoo
-            ul.role
-              li ui + ux design
-              li development
-            p.description A portfolio site for a friend.
-            a.button(href='http://kenkhoo.net/', target='_blank') visit site
-              i.fa.fa-angle-double-right
-        .img-container.imac.wow.fadeIn(data-wow-delay='0.6s')
-
-      .xolair.project
-        .text-container
-          .content
-            p.project-type mobile app
-            h3 Xolair
-            ul.role
-              li ui + ux design
-              li front-end development
-            p.description An app to help users of the drug Xolair to remember their injections and appointments.
-            a.button.disabled() coming soon
-              i.fa.fa-angle-double-right
-        .img-container.iphone.wow.fadeIn(data-wow-delay='0.6s')
-
-      .shoppernova.project
-        .text-container
-          .content
-            p.project-type mobile app
-            h3 shoppernova
-            ul.role
-              li graphic design
-              li email newsletters
-            p.description A deals app made with Nova FM. I produce the artwork for all the content, as well as email newsletters and design changes within the app.
-            a.button(href='https://itunes.apple.com/au/app/shoppernova!/id422249255?mt=8', target='_blank') download app
-              i.fa.fa-angle-double-right
-        .img-container.iphone.wow.fadeIn(data-wow-delay='0.6s')
-
-      //- .micomms.project
-      //-   .text-container
-      //-     .content
-      //-       p.project-type website
-      //-       h3 micomms
-      //-       ul.role
-      //-         li ui design
-      //-         li front-end development
-      //-       p.description An internal communications solution for Novartis.
-      //-   .img-container.wow.fadeIn(data-wow-delay='0.6s')
-
-      .momo.project
-        .text-container
-          .content
-            p.project-type website
-            h3 momo brasserie
-            ul.role
-              li ui + ux design
-              li development
-            p.description A redesign and rebuild of the website for Sydney CBD restaurant, Momo Brasserie.
-            a.button(href='http://momobrasserie.com.au/', target='_blank') visit site
-              i.fa.fa-angle-double-right
-        .img-container.imac.wow.fadeIn(data-wow-delay='0.6s')
-
-  section.contact.coral
-    .content-wrap
-      h2 say hi!
-      p If you want to work with me or find out more about my recent work, get in touch.
-      h4
-        i.fa.fa-phone
-        a(href='callto:+61409745111') +61 409 745 111
-      h4 
-        i.fa.fa-envelope
-        a(href='mailto:amelialewis01@gmail.com') amelialewis01@gmail.com
-      ul
-        li.wow.rollIn(data-wow-delay='0.6s')
-          a(href='https://www.facebook.com/lewis.amelia', target='_blank')
-            i.fa.fa-facebook
-        li.wow.rollIn(data-wow-delay='0.5s')
-          a(href='https://twitter.com/Amelia_Lewis', target='_blank')
-            i.fa.fa-twitter
-        li.wow.rollIn(data-wow-delay='0.4s')
-          a(href='http://instagram.com/amelia_lewis', target='_blank')
-            i.fa.fa-instagram
-        li.wow.rollIn(data-wow-delay='0.3s')
-          a(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank')
-            i.fa.fa-linkedin
-        li.wow.rollIn(data-wow-delay='0.2s')
-          a(href='http://dribbble.com/Amelia_Lewis', target='_blank')
-            i.fa.fa-dribbble
-        li.wow.rollIn(data-wow-delay='0.1s')
-          a(href='http://meelz-on-wheels.tumblr.com/', target='_blank')
-            i.fa.fa-tumblr
+    section.section.dark
+      h2 Contact
