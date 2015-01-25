@@ -16,6 +16,7 @@ html(lang='en')
       link(rel='stylesheet', href='/styles/animate.css')
       link(rel='stylesheet', href='/styles/jquery.fullPage.css')
       link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+      link(href='http://fonts.googleapis.com/css?family=Pacifico', rel='stylesheet', type='text/css')
       link(rel="shortcut icon", type="image/x-icon", href="/favicon.ico")
       script(src='//use.typekit.net/rsv4pax.js')
       script.
@@ -24,22 +25,22 @@ html(lang='en')
 
   
   body(class=bodyclass).tk-effra
-    header.header
-      div.content-wrap
-        block header
-          div.logo
-            h1
-              a(href=locals.url)= locals.name
+    //- header.header
+    //-   div.content-wrap
+    //-     block header
+    //-       div.logo
+    //-         h1
+    //-           a(href=locals.url)= locals.name
     
     #content
       block content
     
-    footer.footer
-      .content-wrap
-        block footer
-          .copy
-            p Website designed and built by me
-              br
-              | &copy; #{ new Date().getFullYear() } #{ locals.owner }
+    //- footer.footer
+    //-   .content-wrap
+    //-     block footer
+    //-       .copy
+    //-         p Website designed and built by me
+    //-           br
+    //-           | &copy; #{ new Date().getFullYear() } #{ locals.owner }
 
     include partials/scripts

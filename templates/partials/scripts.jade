@@ -1,9 +1,7 @@
 script(type="text/javascript", src="/js/vendor/jquery-1.10.1.min.js")
 script(type="text/javascript", src="/js/vendor/wow.js")
-script
-  | $(function() {
-  |   new WOW().init();
-  | });
+script.
+  new WOW().init();
 script(type="text/javascript", src="/js/vendor/device.min.js")
 script(type="text/javascript", src="/js/vendor/jquery.fullPage.min.js")
 script.
@@ -40,10 +38,10 @@ script.
     controlArrows: false,
     verticalCentered: false,
     resize: true,
-    sectionsColor : ['#2c3e50', '#fff', '#eee', '#2c3e50'],
+    sectionsColor : ['#2c3e50', '#eee', '#fff', '#2c3e50'],
     paddingTop: '0',
     paddingBottom: '0',
-    fixedElements: '.header, .footer',
+    //- fixedElements: '.header, .footer',
     responsive: 0,
     //Custom selectors
     sectionSelector: '.section',
