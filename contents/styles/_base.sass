@@ -1,0 +1,59 @@
+body
+  background: white
+  font-family: $montserrat
+  margin: 0
+  padding: 0
+  background:
+    // image: url('../styles/img/bg3.png')
+    size: cover
+    position: center center
+    repeat: no-repeat
+    attachment: fixed
+
+
+  // ====================
+  // sections
+  // ====================
+
+  section
+    width: 100%
+    +transform(skewY(3deg))
+
+    &.coral
+      background: $coral
+      color: white
+
+    &.white
+      background: white
+      color: $md-grey
+
+    &.grey
+      background: $lt-grey
+      color: $dk-grey
+
+    .content-wrap
+      width: 1200px
+      margin: 0 auto
+      +transform(skewY(-3deg))
+
+      @media screen and (max-width: 1200px)
+        width: 90%
+
+      @media screen and (max-width: 480px)
+        width: 100%
+
+    h2
+      text-transform: uppercase
+      text-align: center
+      font-size: 2em
+      margin-top: 0
+
+
+@media screen and (max-width: 1024px)
+  .wow
+    visibility: visible !important
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important

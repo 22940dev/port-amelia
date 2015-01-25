@@ -1,0 +1,70 @@
+// ====================
+// contact
+// ====================
+
+.contact
+  padding: 100px 0
+  text-align: center
+
+  p
+    width: 30%
+    margin: 0 auto 40px
+
+    @media screen and (max-width: 1024px)
+      width: 80%
+
+  h4
+    font-size: 1.3em
+    margin: 5px 0
+    +transition(all 300ms)
+
+    i
+      width: 0
+      opacity: 0
+      +transition(all 300ms)
+
+    a
+      color: white
+      text-decoration: none
+
+    &:hover
+      i
+        width: 20px
+        opacity: 1
+        margin-right: 10px
+
+
+    @media screen and (max-width: 1024px)
+      font-size: 1.2em
+
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 40px auto 0
+    width: 50%
+
+    li
+      display: inline-block
+      margin: 5px
+      width: 60px
+      height: 60px
+
+      a
+        color: white
+        text-decoration: none
+        font-size: 1.5em
+        width: 60px
+        height: 60px
+        @extend .display-box
+        // background: rgba(255, 255, 255, 0.75)
+        border-radius: 50%
+        +transition(all 300ms)
+        border: 1px solid white
+
+        &:hover
+          color: $coral
+          background: rgba(255, 255, 255, 1)
+          +transition(all 300ms)
+
+    @media screen and (max-width: 1024px)
+      width: 250px

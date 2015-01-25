@@ -1,0 +1,61 @@
+// ====================
+// intro
+// ====================
+
+.intro
+  // @extend .display-box
+  height: 800px
+  padding: 0
+  margin-top: 45px
+  +transform(skewY(3deg))
+
+  .text-container
+    display: block
+    text-align: center
+    width: 500px
+    position: relative
+    top: 50%
+    left: 50%
+    +transform(translate3d(-50%, -50%, 0) skewY(-3deg))
+
+    .hello
+      font-family: $pacifico
+      text-transform: none
+      font-size: 2em
+      margin: 0
+      +animation-delay(100ms)
+
+    h1
+      text-transform: uppercase
+      font-size: 4em
+      margin: -10px 0 5px 0
+      text-shadow: 3px 3px 0 $dk-coral
+      +animation-delay(400ms)
+      line-height: 1em
+
+    h3
+      font-size: 1.2em
+      margin: 0
+      text-transform: uppercase
+      color: $dk-coral
+      +animation-delay(700ms)
+
+  @media screen and (max-width: 1024px)
+    height: 550px
+
+  @media screen and (max-width: 480px)
+    height: 400px
+    margin-top: 10px
+
+    .text-container
+      width: 80%
+
+      .hello
+        font-size: 1.5em
+
+      h1
+        font-size: 3em
+        margin: 0 0 10px 0
+
+      h3
+        font-size: 1em
