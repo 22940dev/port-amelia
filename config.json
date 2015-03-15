@@ -3,7 +3,12 @@
     "url": "http://localhost:8080",
     "name": "Amelia Lewis",
     "owner": "Amelia Lewis",
-    "description": "Portfolio of Amelia Lewis"
+    "description": "Portfolio of Amelia Lewis",
+    "nav": {
+      "About": "/about/",
+      "Work": "/work/",
+      "Contact": "/contact/"
+    }
   },
   "plugins": [
     "./plugins/paginator.coffee",

@@ -1,57 +1,6 @@
 script(type="text/javascript", src="/js/vendor/jquery-1.10.1.min.js")
+script(type="text/javascript", src="/js/vendor/modernizr.js")
 script(type="text/javascript", src="/js/vendor/wow.js")
 script.
   new WOW().init();
 script(type="text/javascript", src="/js/vendor/device.min.js")
-script(type="text/javascript", src="/js/vendor/jquery.fullPage.min.js")
-script.
-  $(document).ready(function() {
-    $('#fullpage').fullpage({
-    //Navigation
-    menu: false,
-    anchors:['hello', 'about', 'work', 'contact'],
-    navigation: false,
-    navigationPosition: 'right',
-    navigationTooltips: ['hello', 'about', 'work', 'contact'],
-    slidesNavigation: true,
-    slidesNavPosition: 'bottom',
-    //Scrolling
-    css3: true,
-    scrollingSpeed: 600,
-    autoScrolling: true,
-    scrollBar: false,
-    easing: 'easeInQuart',
-    easingcss3: 'ease',
-    loopBottom: false,
-    loopTop: false,
-    loopHorizontal: true,
-    continuousVertical: false,
-    normalScrollElements: '#element1, .element2',
-    scrollOverflow: false,
-    touchSensitivity: 15,
-    normalScrollElementTouchThreshold: 5,
-    //Accessibility
-    keyboardScrolling: true,
-    animateAnchor: true,
-    recordHistory: true,
-    //Design
-    controlArrows: false,
-    verticalCentered: false,
-    resize: true,
-    sectionsColor : ['#2c3e50', '#eee', '#fff', '#2c3e50'],
-    paddingTop: '0',
-    paddingBottom: '0',
-    //- fixedElements: '.header, .footer',
-    responsive: 0,
-    //Custom selectors
-    sectionSelector: '.section',
-    slideSelector: '.slide',
-    //events
-    onLeave: function(index, nextIndex, direction){},
-    afterLoad: function(anchorLink, index){},
-    afterRender: function(){},
-    afterResize: function(){},
-    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-    onSlideLeave: function(anchorLink, index, slideIndex, direction){}
-    });
-    });
