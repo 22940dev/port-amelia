@@ -10,15 +10,10 @@ body
     width: 960px
     margin: 0 auto
 
-// turn wow animations off on mobile
-html.mobile, html.tablet
-  .wow
-    visibility: visible !important
-    -webkit-animation: none !important
-    -moz-animation: none !important
-    -o-animation: none !important
-    -ms-animation: none !important
-    animation: none !important
+  #content
+    z-index: 10
+
+
 
 
 // ====================
@@ -44,3 +39,15 @@ html.mobile, html.tablet
 
 .clearfix
   clear: both
+
+
+
+// turn wow animations off on mobile
+html.mobile, html.tablet
+  .wow
+    visibility: visible !important
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
