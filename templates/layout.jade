@@ -12,8 +12,10 @@ html(lang='en')
           = locals.name
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(rel='stylesheet', href='/styles/style.css')
-      link(rel='stylesheet', href='/styles/slicknav.css')
-      link(rel='stylesheet', href='/styles/animate.css')
+      link(rel='stylesheet', href='/css/animate.css')
+      link(rel='stylesheet', href='/css/owl.carousel.css')
+      //- link(rel='stylesheet', href='/css/owl.theme.css')
+      link(rel='stylesheet', href='/css/owl.transitions.css')
       link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
       link(href='http://fonts.googleapis.com/css?family=Pacifico', rel='stylesheet', type='text/css')
       link(rel="shortcut icon", type="image/x-icon", href="/favicon.ico")
@@ -42,12 +44,8 @@ html(lang='en')
     #content
       block content
     
-    //- footer.footer
-    //-   .content-wrap
-    //-     block footer
-    //-       .copy
-    //-         p Website designed and built by me
-    //-           br
-    //-           | &copy; #{ new Date().getFullYear() } #{ locals.owner }
+    footer#footer
+      .content-wrap
+        p  &copy; #{ new Date().getFullYear() } #{ locals.owner } &ndash; website designed and built by me.
 
     include partials/scripts

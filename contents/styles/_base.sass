@@ -7,11 +7,34 @@ body
     border: 0
 
   .content-wrap
-    width: 960px
+    width: 1200px
     margin: 0 auto
 
   #content
     z-index: 10
+
+  section
+    padding: 80px 0
+    background: white
+    z-index: 20
+    position: relative
+
+    &:nth-of-type(2)
+      margin-top: 100vh
+
+    .text-block
+      width: 80%
+      margin: 0 auto
+      overflow: auto
+
+      .left
+        float: left
+        text-align: right
+        width: 30%
+
+      .right
+        float: right
+        width: 65%
 
 
 
@@ -39,8 +62,6 @@ body
 
 .clearfix
   clear: both
-
-
 
 // turn wow animations off on mobile
 html.mobile, html.tablet

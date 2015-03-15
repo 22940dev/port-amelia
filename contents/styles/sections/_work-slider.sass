@@ -1,0 +1,32 @@
+#work-slider
+  padding: 0
+
+  #slider
+    position: relative
+
+    $project-list: repassist meat-cuts shoppernova rupert-graves
+    =project-bg-colors
+      @each $project in $project-list
+        &##{$project}
+          @extend .#{$project}
+
+    .item
+      height: 400px
+      +project-bg-colors
+      color: white
+
+  .owl-buttons
+    .owl-next,
+    .owl-prev
+      width: 60px
+      height: 60px
+      background: white
+      position: absolute
+      top: 50%
+      +transform(translate3d(0, -50%, 0))
+
+    .owl-next
+      right: 0
+
+    .owl-prev
+      left: 0

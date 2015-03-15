@@ -1,0 +1,55 @@
+#masthead
+  width: 100%
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0
+  padding: 0
+  background:
+    image: url('img/header-bg.jpg')
+    position: center center
+    size: cover
+    repeat: no-repeat
+  z-index: 15
+  color: white
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(black, 0.3)
+    display: block
+
+  .content
+    position: relative
+    top: 50%
+    left: 50%
+    +transform(translate3d(-50%, -50%, 0))
+    text-align: center
+    z-index: 1
+
+    .text
+      margin: 0
+      display: block
+      text-shadow: 2px 2px 0 rgba(black, 0.2)
+
+      &.text-1
+        @extend .pacifico
+        font-size: 2em
+        line-height: 0.8em
+
+      &.text-2
+        text-transform: uppercase
+        font-size: 6em
+        letter-spacing: 0.05em
+        font-weight: 500
+        line-height: 1em
+
+      &.text-3
+        text-transform: uppercase
+        font-size: 1.5em
+        letter-spacing: 0.1em
+        font-weight: 500

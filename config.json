@@ -5,7 +5,7 @@
     "owner": "Amelia Lewis",
     "description": "Portfolio of Amelia Lewis",
     "nav": {
-      "About": "/about/",
+      "About": "/home/",
       "Work": "/work/",
       "Contact": "/contact/"
     }

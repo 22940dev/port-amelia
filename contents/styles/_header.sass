@@ -43,9 +43,10 @@ header
 
   &.headroom
     +transition(transform 200ms linear)
+    +transform(translate3d(0, -80%, 0))
 
   &.headroom--pinned
-    +transform(translate3d(0, 0, 0))
+    +transform(translate3d(0, -80%, 0))
 
   &.headroom--unpinned
-    +transform(translate3d(0, -100%, 0))
+    +transform(translate3d(0, 0, 0))

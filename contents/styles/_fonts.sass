@@ -11,15 +11,36 @@ h1
 
 h2
   text:
-    // transform: uppercase
+    transform: uppercase
     align: center
   font:
-    size: 2em
+    size: 1.6em
     weight: 500
-  letter-spacing: 0.05em
+  letter-spacing: 0.1em
+  position: relative
 
-  &.pacifico
-    font-size: 2.3em
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    bottom: -15px
+    background: $yellow
+    width: 40px
+    height: 5px
+    left: 50%
+    +transform(translate3d(-50%, 0, 0))
+
+.text-block
+  h2
+    text-align: right
+
+    &:after
+      right: 0
+      +transform(translate3d(0, 0, 0))
+      left: auto
+
+h3
+  margin: 0
 
 p
   font-size: 1.2em

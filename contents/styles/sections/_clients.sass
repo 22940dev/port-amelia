@@ -1,0 +1,28 @@
+#clients-container
+  text-align: center
+  padding: 20px 0 0
+
+  $client-list: roche mla nova novartis imperial-tobacco
+  =client-logo-images
+    @each $client in $client-list
+      &.#{$client}
+        background-image: url('img/clients/#{$client}-grey.png')
+
+        &:hover
+          background-image: url('img/clients/#{$client}-color.png')
+
+  .client
+    width: 130px
+    height: 70px
+    background:
+      position: center center
+      repeat: no-repeat
+      size: 100%
+    +client-logo-images
+    display: inline-block
+    margin: 20px 30px
+    +transform(scale(0.95))
+    +transition(all 400ms)
+
+    &:hover
+      +transform(scale(1))

@@ -6,3 +6,19 @@ script(type="text/javascript", src="/js/vendor/device.min.js")
 script.
   new WOW().init();
   $("#header").headroom();
+script(type="text/javascript", src="/js/vendor/owl.carousel.min.js")
+script.
+  $(document).ready(function() {
+    $("#slider").owlCarousel({
+    navigation : true, // Show next and prev buttons
+    slideSpeed : 400,
+    pagination : false,
+    singleItem:true
+    // "singleItem:true" is a shortcut for:
+    // items : 1,
+    // itemsDesktop : false,
+    // itemsDesktopSmall : false,
+    // itemsTablet: false,
+    // itemsMobile : false
+    });
+    });
