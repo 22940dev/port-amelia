@@ -1,20 +1,45 @@
+mixin projectslide(title, description, img, link, bgcolor)
+  .item(id!=attributes.id)
+    .content-wrap
+      .image  
+        img(src=img)
+      .text
+        h3= title
+        p= description
+        a(href=link).btn Read More
+
 #slider.owl-carousel.owl-theme
-  .item#repassist
-    h3 Repassist
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    a.btn Read more
+  +projectslide(
+    'RepAssist',
+    'Lorem ipsum dolor',
+    'styles/img/projects/repassist-2.png',
+    'google.com'
+  )(id='repassist')
 
-  .item#meat-cuts
-    h3 Meat Cuts
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    a.btn Read more
-
-  .item#shoppernova
-    h3 ShopperNova
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    a.btn Read more
-
-  .item#rupert-graves
-    h3 Rupert Graves
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    a.btn Read more
+  +projectslide(
+    'Meat Cuts',
+    'Lorem ipsum dolor',
+    'hello.jpg',
+    'google.com'
+  )(id='meat-cuts')
+  
+  +projectslide(
+    'Gauloises',
+    'Lorem ipsum dolor',
+    'hello.jpg',
+    'google.com'
+  )(id='gauloises')
+  
+  +projectslide(
+    'Rupert Graves',
+    'Lorem ipsum dolor',
+    'hello.jpg',
+    'google.com'
+  )(id='rupert-graves')
+  
+  +projectslide(
+    'Dermatology Maps',
+    'Lorem ipsum dolor',
+    'hello.jpg',
+    'google.com'
+  )(id='derma-maps')
