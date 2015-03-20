@@ -8,8 +8,8 @@
       &.#{$client}
         background-image: url('img/clients/#{$client}-grey.png')
 
-        &:hover
-          background-image: url('img/clients/#{$client}-color.png')
+        // &:hover
+          // background-image: url('img/clients/#{$client}-color.png')
 
   .client
     width: 130px
@@ -21,8 +21,10 @@
     +client-logo-images
     display: inline-block
     margin: 20px 30px
+    opacity: 0.5
     +transform(scale(0.95))
     +transition(all 400ms)
 
     &:hover
+      opacity: 1
       +transform(scale(1))

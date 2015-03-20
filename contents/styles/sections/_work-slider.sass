@@ -4,7 +4,7 @@
   #slider
     position: relative
 
-    $project-list: repassist meat-cuts shoppernova rupert-graves gauloises derma-maps
+    $project-list: repassist meat-cuts shoppernova rupert-graves gauloises derma-maps glenda-graff momo-brasserie xolair ken-khoo
     =project-bg-colors
       @each $project in $project-list
         &##{$project}
@@ -20,45 +20,55 @@
         height: 100%
         position: relative
 
-      .image
-        width: 60%
-        height: 100%
-        position: absolute
-        left: 0
-        right: 0
+        .slide-content
+          position: relative
+          height: 100%
+          top: 0
+          left: 50%
+          +transform(translate3d(-50%, 0, 0))
+          text-align: center
 
-        img
-          width: 100%
-          position: absolute
-          top: 50%
-          right: 0
-          +transform(translate3d(0, -50%, 0))
-
-      .text
-        position: absolute
-        right: 0
-        width: 30%
-        top: 50%
-        +transform(translate3d(0, -50%, 0))
-
-      .btn
-        width: 200px
-        height: 50px
-        @extend .display-box
-        background: rgba(white, 0.2)
-        border: 1px solid white
-        +border-radius(5px)
-        text-transform: uppercase
-        letter-spacing: 0.1em
-        +transition(all 300ms)
-
-        &:hover
-          background: rgba(white, 0.3)
-
-      &#repassist
-        .image
           img
-            +transform(translate3d(0, -50%, 0) rotate(10deg))
+            height: 100%
+            display: inline-block
+            margin-right: 80px
+
+          .text-container
+            height: 100%
+            display: inline-block
+            position: relative
+            width: 30%
+            text-align: left
+
+            .text
+              position: absolute
+              right: 0
+              width: 100%
+              top: 50%
+              +transform(translate3d(0, -50%, 0))
+
+          .btn
+            width: 200px
+            height: 50px
+            @extend .display-box
+            background: rgba(white, 0.2)
+            border: 1px solid white
+            +border-radius(5px)
+            text-transform: uppercase
+            letter-spacing: 0.1em
+            +transition(all 300ms)
+
+            &:hover
+              background: rgba(white, 0.3)
+
+            &.disabled
+              border-color: rgba(white, 0.7)
+              background: rgba(white, 0.1)
+              color: rgba(white, 0.7)
+              pointer-events: none
+
+              &:hover
+                background: rgba(white, 0.1)
 
   .owl-buttons
     .owl-next,

@@ -1,45 +1,84 @@
 mixin projectslide(title, description, img, link, bgcolor)
   .item(id!=attributes.id)
     .content-wrap
-      .image  
+      .slide-content
         img(src=img)
-      .text
-        h3= title
-        p= description
-        a(href=link).btn Read More
+        .text-container
+          .text
+            h3= title
+            p= description
+            if link
+              a(href=link).btn Read More
+            else
+              .btn.disabled Coming Soon
 
 #slider.owl-carousel.owl-theme
   +projectslide(
-    'RepAssist',
-    'Lorem ipsum dolor',
-    'styles/img/projects/repassist-2.png',
-    'google.com'
-  )(id='repassist')
-
-  +projectslide(
     'Meat Cuts',
-    'Lorem ipsum dolor',
-    'hello.jpg',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'styles/img/projects/meat-cuts-2.png',
     'google.com'
   )(id='meat-cuts')
   
   +projectslide(
     'Gauloises',
-    'Lorem ipsum dolor',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     'hello.jpg',
     'google.com'
   )(id='gauloises')
+
+  +projectslide(
+    'Glenda Graff',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'hello.jpg',
+    'google.com'
+  )(id='glenda-graff')
   
   +projectslide(
     'Rupert Graves',
-    'Lorem ipsum dolor',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     'hello.jpg',
     'google.com'
   )(id='rupert-graves')
+
+  +projectslide(
+    'RepAssist',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'styles/img/projects/repassist-2.png',
+    'google.com'
+  )(id='repassist')
   
   +projectslide(
     'Dermatology Maps',
-    'Lorem ipsum dolor',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     'hello.jpg',
     'google.com'
   )(id='derma-maps')
+
+  +projectslide(
+    'Ken Khoo',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'hello.jpg',
+    'google.com'
+  )(id='ken-khoo')
+
+  +projectslide(
+    'Momo Brasserie',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'hello.jpg',
+    'google.com'
+  )(id='momo-brasserie')
+
+  +projectslide(
+    'ShopperNova',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'hello.jpg',
+    'google.com'
+  )(id='shoppernova')
+
+  +projectslide(
+    'Xolair Appointment Reminder',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'hello.jpg',
+    'google.com'
+  )(id='xolair')
