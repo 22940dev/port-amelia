@@ -1,4 +1,4 @@
-mixin projectslide(title, description, img, link, bgcolor)
+mixin projectslide(title, description, img, caselink, projectlink, bgcolor)
   .item(id!=attributes.id)
     .content-wrap
       .slide-content
@@ -7,78 +7,77 @@ mixin projectslide(title, description, img, link, bgcolor)
           .text
             h3= title
             p= description
-            if link
-              a(href=link).btn Read More
+            if caselink
+              a(href=caselink, target='_blank').btn Read More
+            else if projectlink
+              a(href=projectlink, target='_blank').btn Visit Project
             else
               .btn.disabled Coming Soon
 
 #slider.owl-carousel.owl-theme
   +projectslide(
-    'Meat Cuts',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'styles/img/projects/meat-cuts-2.png',
-    'google.com'
-  )(id='meat-cuts')
+    "Meat Cuts",
+    "An app for Meat & Livestock Australia to help amateur foodies learn all about different cuts of meat and how best to cook them.",
+    "styles/img/projects/meat-cuts.png",
+    "",
+    "https://itunes.apple.com/au/app/meat-cuts/id904537057?mt="
+  )(id="meat-cuts")
   
   +projectslide(
-    'Gauloises',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'hello.jpg',
-    'google.com'
-  )(id='gauloises')
+    "Gauloises",
+    "An internal training slidedeck for international cigarette brand, Gauloises. The deck was very well received, and was translated into German, French, Flemish, Dutch and Arabic.",
+    "styles/img/projects/gauloises.png",
+    "",
+    ""
+  )(id="gauloises")
 
   +projectslide(
-    'Glenda Graff',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'hello.jpg',
-    'google.com'
-  )(id='glenda-graff')
+    "Glenda Graff",
+    "A website for an event planner based in Sydney's Eastern Suburbs.",
+    "styles/img/projects/glenda-graff.png",
+    "",
+    "http://glendagraff.com.au"
+  )(id="glenda-graff")
   
   +projectslide(
-    'Rupert Graves',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'hello.jpg',
-    'google.com'
-  )(id='rupert-graves')
-
-  +projectslide(
-    'RepAssist',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'styles/img/projects/repassist-2.png',
-    'google.com'
-  )(id='repassist')
+    "Rupert Graves",
+    "The official website for UK Actor, Rupert Graves.",
+    "styles/img/projects/rupert-graves.png",
+    "",
+    ""
+  )(id="rupert-graves")
   
   +projectslide(
-    'Dermatology Maps',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'hello.jpg',
-    'google.com'
-  )(id='derma-maps')
+    "Dermatology Maps",
+    "A tool for Novartis sales representatives to collect and visualise important data in an engaging way.",
+    "styles/img/projects/derma-maps.png",
+    "google.com"
+  )(id="derma-maps")
 
   +projectslide(
-    'Ken Khoo',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'hello.jpg',
-    'google.com'
-  )(id='ken-khoo')
+    "RepAssist",
+    "A utility for Novartis sales representatives to report their meeting expenses and order pharmaceutical samples.",
+    "styles/img/projects/repassist.png",
+    "google.com"
+  )(id="repassist")
 
   +projectslide(
-    'Momo Brasserie',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'hello.jpg',
-    'google.com'
-  )(id='momo-brasserie')
+    "ShopperNova",
+    "A deals and competition app made in association with Nova FM.",
+    "styles/img/projects/shoppernova.png",
+    "google.com"
+  )(id="shoppernova")
 
   +projectslide(
-    'ShopperNova',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'hello.jpg',
-    'google.com'
-  )(id='shoppernova')
+    "Ken Khoo",
+    "A portfolio site for my friend, a 3D animator.",
+    "styles/img/projects/ken-khoo.png",
+    "google.com"
+  )(id="ken-khoo")
 
   +projectslide(
-    'Xolair Appointment Reminder',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    'hello.jpg',
-    'google.com'
-  )(id='xolair')
+    "Momo Brasserie",
+    "A website for Sydney CBD restaurant, Momo Brasserie.",
+    "styles/img/projects/momo-brasserie.png",
+    "google.com"
+  )(id="momo-brasserie")

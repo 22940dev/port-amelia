@@ -7,7 +7,7 @@
     "nav": {
       "About": "/home/",
       "Work": "/work/",
-      "Contact": "/contact/"
+      "Contact": "#contact"
     }
   },
   "plugins": [
