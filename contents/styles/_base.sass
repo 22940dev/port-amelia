@@ -5,7 +5,7 @@ body
   background:
     image: url('img/header-bg.jpg')
     position: center center
-    size: 100%
+    size: cover
     repeat: no-repeat
     attachment: fixed
 
@@ -15,6 +15,9 @@ body
   .content-wrap
     width: 1200px
     margin: 0 auto
+
+    @media screen and (max-width: 1200px)
+      width: 100%
 
   #content
     z-index: 10
@@ -41,6 +44,10 @@ body
       .right
         float: right
         width: 65%
+
+html.tablet
+  body
+    background: none
 
 
 
