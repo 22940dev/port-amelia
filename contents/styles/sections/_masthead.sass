@@ -30,12 +30,15 @@
     .text
       margin: 0
       display: block
-      text-shadow: 2px 2px 0 rgba(black, 0.2)
+      // text-shadow: 2px 2px 0 rgba(black, 0.2)
 
       &.text-1
         font-size: 2.1em
         line-height: 1.2em
         @extend .pacifico
+
+        @media screen and (max-width: 768px)
+          font-size: 1.4em
 
       &.text-2
         text-transform: uppercase
@@ -44,19 +47,33 @@
         font-weight: 700
         line-height: 1em
 
+        @media screen and (max-width: 768px)
+          font-size: 4em
+
       &.text-3
         text-transform: uppercase
         font-size: 1.5em
         letter-spacing: 0.1em
         font-weight: 700
         line-height: 1.5em
+        opacity: 0.6
 
-html.tablet
+        @media screen and (max-width: 768px)
+          font-size: 1em
+
+  @media screen and (max-width: 480px)
+    height: 500px
+
+    .content
+      width: 80%
+
+html.tablet,
+html.mobile
   #masthead
     width: 100%
     height: 100vh
     background:
-      image: url('img/header-bg.jpg')
+      image: url('img/pattern-2.jpg')
       position: center center
       size: cover
       repeat: no-repeat

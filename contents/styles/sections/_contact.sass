@@ -4,14 +4,14 @@
   text-align: center
 
   .content-wrap
-    // h2:after
-    //   background: white
-
     p
       font-size: 1.2em
       margin: 60px auto 40px
       letter-spacing: 0.05em
       width: 50%
+
+      @media screen and (max-width: 640px)
+        width: 80%
 
     #contact-details
       a
@@ -65,5 +65,19 @@
           .fa-dribbble
             color: $dribbble
 
+          .fa-github
+            color: $github
+
           .fa-tumblr
             color: $tumblr
+
+      @media screen and (max-width: 640px)
+        width: 80%
+        margin: 40px auto 0
+
+        a
+          width: 45px
+          height: 45px
+
+          i
+            font-size: 1.4em

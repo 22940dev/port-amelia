@@ -32,14 +32,14 @@ html(lang='en')
           h1
             a(href=locals.url)= locals.name
 
-        //- #nav
-        //-   ul
-        //-     for href, title in locals.nav
-        //-       - var _href  = page && page.filepath.relative.split("/")[0];
-        //-       - var active = page && href.match(_href);
+        #nav
+          ul
+            for href, title in locals.nav
+              - var _href  = page && page.filepath.relative.split("/")[0];
+              - var active = page && href.match(_href);
 
-        //-       li(class=(active ? "active" : ""))
-        //-         a(href=href)= title
+              li(class=(active ? "active" : ""))
+                a(href=href)= title
     
     #content
       block content
