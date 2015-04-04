@@ -1,15 +1,10 @@
 #masthead
   width: 100%
   height: 100vh
-  // position: fixed
+  max-height: 800px
   top: 0
   left: 0
   padding: 0
-  // background:
-  //   image: url('img/header-bg.jpg')
-  //   position: center center
-  //   size: cover
-  //   repeat: no-repeat
   z-index: 15
   color: white
   background: transparent
@@ -38,22 +33,23 @@
       text-shadow: 2px 2px 0 rgba(black, 0.2)
 
       &.text-1
+        font-size: 2.1em
+        line-height: 1.2em
         @extend .pacifico
-        font-size: 2em
-        line-height: 0.8em
 
       &.text-2
         text-transform: uppercase
-        font-size: 6em
+        font-size: 5em
         letter-spacing: 0.05em
-        font-weight: 500
+        font-weight: 700
         line-height: 1em
 
       &.text-3
         text-transform: uppercase
         font-size: 1.5em
         letter-spacing: 0.1em
-        font-weight: 500
+        font-weight: 700
+        line-height: 1.5em
 
 html.tablet
   #masthead

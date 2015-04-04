@@ -15,6 +15,7 @@
       +project-bg-colors
       color: white
       position: relative
+      overflow: hidden
 
       .content-wrap
         height: 100%
@@ -40,6 +41,10 @@
               left: 50%
               +transform(translate3d(-50%, 0, 0))
 
+            @media screen and (max-width: 640px)
+              width: 90%
+              height: auto
+
           .text-container
             height: 100%
             display: inline-block
@@ -63,7 +68,8 @@
               +transform(translate3d(-50%, 0, 0))
 
               .text
-                width: 60%
+                width: 50%
+                top: 60%
                 left: 50%
                 right: auto
                 +transform(translate3d(-50%, -50%, 0))
@@ -72,6 +78,10 @@
                 h3:after
                   left: 50%
                   +transform(translate3d(-50%, 0, 0))
+
+            @media screen and (max-width: 640px)
+              .text
+                width: 80%
 
           .btn
             width: 200px
@@ -104,6 +114,16 @@
 
         .slide-content
           width: 100%
+
+      @media screen and (max-width: 640px)
+        height: 100vh
+        max-height: 700px
+
+        &#meat-cuts,
+        &#shoppernova
+          img
+            height: 50%
+            width: auto
 
   .owl-buttons
     .owl-next,
