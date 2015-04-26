@@ -1,19 +1,121 @@
 footer
   background: $dk-grey
   color: white
-  text-align: center
   z-index: 20
   position: relative
 
-  p
-    font-size: 0.75em
-    font-weight: 700
-    padding: 15px 0
-    text-transform: uppercase
-    letter-spacing: 0.1em
-    margin: 0
-    // opacity: 0.6
-    
-    @media screen and (max-width: 640px)
-      width: 60%
-      margin: 0 auto
+  .contact
+    padding: 40px 0
+    overflow: auto
+
+    .col-2,
+    .col-1
+      float: left
+      text-align: left
+      padding: 20px 50px
+      box-sizing: border-box
+
+    .col-2
+      width: calc(100% - 281px)
+
+    .col-1
+      width: 281px
+      border-left: 1px solid rgba(white, 0.2)
+
+    .detail
+      font-size: 1.2em
+      
+      i
+        width: 0
+        opacity: 0
+        text-align: left
+        font-size: 0.85em
+        +transition(all 300ms)
+
+      a
+        border-bottom: 1px solid white
+        position: relative
+        +transition(all 300ms)
+
+      &:hover
+        i
+          opacity: 1
+          width: 30px
+          color: $primary
+        
+        a
+          color: $primary
+          border-color: $primary
+
+    @media screen and (max-width: 720px)
+      .col-2,
+      .col-1
+        float: none
+        width: 100%
+        border: none
+
+    #social-media
+      a
+        float: left
+        padding: 20px
+        width: 20px
+        text-align: center
+        +transition(all 300ms)
+
+        i
+          font-size: 1.2em
+          +transition(all 300ms)
+
+        &:hover
+          transform: scale(1.15)
+
+          .fa-facebook
+            color: $facebook
+
+          .fa-twitter
+            color: $twitter
+
+          .fa-instagram
+            color: $instagram
+
+          .fa-linkedin
+            color: $linkedin
+
+          .fa-dribbble
+            color: $dribbble
+
+          .fa-github
+            color: $github
+
+          .fa-tumblr
+            color: $tumblr
+
+          .fa-pinterest-p
+            color: $pinterest
+
+      @media screen and (max-width: 720px)
+        text-align: center
+
+        a
+          width: calc((100% / 8) - 40px)
+          min-width: 20px
+          float: none
+          display: inline-block
+
+  .copyright
+    background: rgba(black, 0.2)
+    clear: both
+    text-align: center
+
+    p
+      font-size: 0.75em
+      font-weight: 700
+      padding: 15px 0
+      text-transform: uppercase
+      letter-spacing: 0.1em
+      margin: 0
+      // opacity: 0.6
+      
+      @media screen and (max-width: 640px)
+        width: 60%
+        margin: 0 auto

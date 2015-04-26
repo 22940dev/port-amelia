@@ -3,8 +3,9 @@ body
   margin: 0
   padding: 0
   @extend .lato
+  color: $dk-grey
   background:
-    image: url('img/pattern.jpg')
+    image: url('img/desk.jpg')
     position: center center
     size: cover
     repeat: no-repeat
@@ -55,6 +56,9 @@ body
     @media screen and (max-width: 480px)
       padding: 50px 0
 
+html.mobile
+  body
+    background: $dk-grey
 
 
 // ====================
