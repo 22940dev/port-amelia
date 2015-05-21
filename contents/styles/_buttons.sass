@@ -1,0 +1,23 @@
+.btn
+  height: 50px
+  padding: 0 30px
+  margin: 20px auto 0
+  @extend .display-box
+  background: rgba(white, 0.2)
+  border: 1px solid white
+  +border-radius(0px)
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  +transition(all 300ms)
+
+  &:hover
+    background: rgba(white, 0.3)
+
+  &.disabled
+    border-color: rgba(white, 0.7)
+    background: rgba(white, 0.1)
+    color: rgba(white, 0.7)
+    pointer-events: none
+
+    &:hover
+      background: rgba(white, 0.1)

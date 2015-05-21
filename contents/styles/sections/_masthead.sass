@@ -7,7 +7,12 @@
   padding: 0
   z-index: 15
   color: white
-  background: transparent
+  background:
+    image: url('img/desk.jpg')
+    position: center center
+    size: cover
+    repeat: no-repeat
+    attachment: fixed
   border: 20px solid white
   box-sizing: border-box
 
@@ -79,4 +84,5 @@ html.tablet
 
 html.mobile
   #masthead
-    background: $dk-grey
+    background:
+      attachment: scroll

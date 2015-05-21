@@ -4,12 +4,12 @@ body
   padding: 0
   @extend .lato
   color: $dk-grey
-  background:
-    image: url('img/desk.jpg')
-    position: center center
-    size: cover
-    repeat: no-repeat
-    attachment: fixed
+  // background:
+  //   image: url('img/desk.jpg')
+  //   position: center center
+  //   size: cover
+  //   repeat: no-repeat
+  //   attachment: fixed
 
   img
     border: 0
@@ -66,10 +66,6 @@ html.mobile
 // ====================
 
 .display-box
-  display: box
-  box-pack: center
-  box-align: center
-
   display: -ms-box
   -ms-box-pack: center
   -ms-box-align: center
@@ -94,3 +90,7 @@ html.mobile, html.tablet
     -o-animation: none !important
     -ms-animation: none !important
     animation: none !important
+
+@for $i from 1 through 30
+  .delay-#{$i * 50}
+    transition-delay: $i * 50ms !important

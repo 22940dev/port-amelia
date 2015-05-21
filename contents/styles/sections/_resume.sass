@@ -1,0 +1,95 @@
+#resume-view
+  overflow: auto
+
+  .left-side
+    float: left
+    width: 33%
+    background: $dk-grey
+    color: white
+
+    .left-side-section
+      padding: 30px 40px 40px
+      box-sizing: border-box
+      border-bottom: 1px solid rgba(white, 0.1)
+
+    #resume-name
+      background: darken($dk-grey, 2%)
+      text-align: center
+      padding: 100px 30px
+
+      h1
+        font-size: 2.3em
+        // font-weight: 700
+        margin-bottom: 5px
+
+      h3
+        opacity: 0.5
+        margin: 0
+        font-size: 1.2em
+        font-weight: 700
+
+        &:after
+          display: none
+
+    #resume-about,
+    #resume-contact,
+    #resume-skills
+      h2
+        text-align: left
+        font-size: 1.4em
+        margin: 20px 0 10px
+        opacity: 0.4
+
+        &:after
+          display: none
+
+      p
+        margin: 0 0 10px
+
+        &:last-of-type
+          margin: 0
+
+      ul
+        list-style-type: none
+        margin: 0
+        padding: 0
+        font-size: 1.2em
+        margin: 0 0 30px
+
+        &:last-of-type
+          margin: 0
+
+        li
+          margin: 0 0 10px
+
+          span
+            text-transform: uppercase
+            font-size: 0.6em
+            font-weight: 700
+            opacity: 0.5
+            margin-left: 10px
+
+          i
+            width: 0
+            opacity: 0
+            text-align: left
+            font-size: 0.85em
+            +transition(all 300ms)
+
+          a
+            // border-bottom: 1px solid white
+            position: relative
+            +transition(all 300ms)
+
+          &:hover
+            i
+              opacity: 1
+              width: 30px
+              color: $primary
+            
+            a
+              color: $primary
+              border-color: $primary
+
+          &:last-of-type
+            margin: 0

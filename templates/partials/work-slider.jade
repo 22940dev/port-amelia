@@ -8,11 +8,10 @@ mixin projectslide(title, description, img, caselink, projectlink, bgcolor)
             h3= title
             p= description
             if caselink
-              a(href=caselink, target='_blank').btn Read More
+              a(href=caselink, target='_blank').btn Case Study
             else if projectlink
-              a(href=projectlink, target='_blank').btn Visit Project
+              a(href=projectlink, target='_blank').btn View Project
             else
-              .btn.disabled Coming Soon
 
 #slider.owl-carousel.owl-theme
   +projectslide(
@@ -25,7 +24,7 @@ mixin projectslide(title, description, img, caselink, projectlink, bgcolor)
   
   +projectslide(
     "Gauloises",
-    "An internal training slidedeck for international cigarette brand, Gauloises. The deck was very well received, and was translated into German, French, Flemish, Dutch and Arabic.",
+    "An internal training and sales slidedeck for international cigarette brand, Gauloises. The deck was very well received, and was translated into German, French, Flemish, Dutch and Arabic.",
     "styles/img/projects/gauloises.png",
     "",
     ""
@@ -65,7 +64,7 @@ mixin projectslide(title, description, img, caselink, projectlink, bgcolor)
 
   +projectslide(
     "ShopperNova",
-    "A deals and competition app made in association with Nova FM.",
+    "A deals and competition app made in association with one of Australia's largest radio stations, Nova FM.",
     "styles/img/projects/shoppernova.png",
     "",
     ""
