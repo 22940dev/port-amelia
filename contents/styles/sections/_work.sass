@@ -1,101 +1,127 @@
 #work
+  overflow: auto
+
   $project-list: repassist meat-cuts shoppernova rupert-graves gauloises derma-maps glenda-graff momo-brasserie xolair ken-khoo cosentyx
   =project-bg
     @each $project in $project-list
       &.#{$project}
         @extend .bg-#{$project}
-        background: url("img/work-tiles/#{$project}.png") no-repeat center / cover
+        background: url("img/work-tiles/#{$project}.png") no-repeat center / 100%
 
-  .work-container
+  .content-wrap
     overflow: auto
-    margin: 40px auto 0
+    margin: 0 auto
+    width: calc(100vw - 240px)
 
-    @media screen and (max-width: 1024px)
-      width: 80%
-
-    @media screen and (max-width: 320px)
-      width: 90%
+    @media screen and (max-width: 1600px)
+      width: 100vw
     
-    .tile
-      width: calc((100% - 60px) / 3)
-      height: 260px
-      float: left
-      position: relative
-      margin: 10px
-      background-color: rgba($dk-grey, 0.01)
-      border: 1px solid rgba($dk-grey, 0.1)
-      box-sizing: border-box
-      text-align: center
-      +transition(all 400ms)
-      +project-bg
+  .tile
+    width: calc((100vw - 240px) / 3)
+    height: calc((100vw - 240px) / 3)
+    float: left
+    position: relative
+    background-color: rgba($dk-grey, 0.01)
+    box-sizing: border-box
+    text-align: center
+    +transition(all 700ms)
+    +project-bg
 
-      &:hover
-        +transform(scale(1.03))
+    &:hover
+      background-size: 110%
 
-      &:active
-        +transform(scale(0.99))
+    &:active
+      +transform(scale(0.99))
 
-      @media screen and (max-width: 1024px)
-        width: calc((100% - 40px) / 2)
+    @media screen and (max-width: 1600px)
+      width: calc(100vw / 3)
+      height: calc(100vw / 3)
 
-      @media screen and (max-width: 840px)
+    @media screen and (max-width: 1200px)
+      width: 50%
+      height: 400px
+
+      &:last-of-type
         width: 100%
-        margin: 10px 0
 
-      .overlay
-        width: 100%
-        height: 100%
-        background-color: rgba($dk-grey, 0.5)
-        color: white
-        @extend .display-box
-        +transition(all 500ms)
+    @media screen and (max-width: 600px)
+      width: 100%
+      background-size: cover !important
+
+    .overlay
+      width: 100%
+      height: 100%
+      background-color: rgba($dk-grey, 0.5)
+      color: white
+      @extend .display-box
+      +transition(all 500ms)
+      opacity: 0
+
+      .overlay-content
+        max-width: 80%
+
+        @media screen and (max-width: 600px)
+          max-width: 90%
+
+      h3
+        margin: 0
+        font-size: 2em
+
+        &:after
+          display: none
+
+        @media screen and (max-width: 1600px)
+          font-size: 1.8em
+
+        span
+          display: inline-block
+          min-width: 10px
+          opacity: 0
+          +transition(all 400ms)
+          +transform(translate3d(0, 100%, 0) scale(0.9))
+
+      p
+        margin: 5px auto 10px
         opacity: 0
+        // font-size: 1em
+        line-height: 1.2em
+        +transform(translate3d(0, 20px, 0) scale(0.98))
+        +transition(all 400ms)
 
-        .overlay-content
-          max-width: 80%
+        @media screen and (max-width: 1400px)
+          font-size: 1.2em
 
-        h3
-          margin: 0
+      .circle-btn
+        width: 50px
+        height: 50px
+        border: 1px solid white
+        +border-radius(50%)
+        @extend .display-box
+        margin: 20px auto 0
+        opacity: 0
+        +transform(translate3d(0, 20px, 0) scale(0.98))
+        +transition(all 400ms)
 
-          &:after
-            display: none
+        &:hover
+          background: rgba(white, 0.2)
+          +transition-delay(0ms !important)
 
-          span
-            display: inline-block
-            min-width: 10px
-            opacity: 0
-            +transition(all 400ms)
-            +transform(translate3d(0, 100%, 0) scale(0.9))
+    &:hover
+      .overlay
+        opacity: 1
 
-        p
-          margin: 5px auto 10px
-          opacity: 0
-          font-size: 1em
-          line-height: 1.3em
-          +transform(translate3d(0, 20px, 0) scale(0.98))
-          +transition(all 400ms)
-
+        h3 span,
+        p,
         .circle-btn
-          width: 50px
-          height: 50px
-          border: 1px solid white
-          +border-radius(50%)
-          @extend .display-box
-          margin: 20px auto 0
-          opacity: 0
-          +transform(translate3d(0, 20px, 0) scale(0.98))
-          +transition(all 400ms)
-
-          &:hover
-            background: rgba(white, 0.2)
-            +transition-delay(0ms !important)
-
-      &:hover
-        .overlay
           opacity: 1
+          +transform(translate3d(0, 0, 0) scale(1))
 
-          h3 span,
-          p,
-          .circle-btn
-            opacity: 1
-            +transform(translate3d(0, 0, 0) scale(1))
+html.tablet,
+html.mobile
+  .tile
+    .overlay,
+    h3 span,
+    p,
+    .circle-btn
+      opacity: 1 !important
+      +transform(translate3d(0, 0, 0) scale(1) !important)

@@ -1,26 +1,33 @@
 mixin project(link, title, description)
-  a.tile(href=link, class!=attributes.class)
-    .overlay
-      .overlay-content
-        h3
-          for letter, i in title.split("")
-            span.char(class="char-#{i + 1} delay-#{(i + 1) * 50}")= letter
-        p.delay-600= description
-        .circle-btn.delay-800: i.fa.fa-angle-double-right
+  if link
+    a.tile(href=link, class!=attributes.class)
+      .overlay
+        .overlay-content
+          h3
+            for letter, i in title.split("")
+              span.char(class="char-#{i + 1} delay-#{(i + 1) * 50}")= letter
+          p.delay-600= description
+          .circle-btn.delay-800: i.fa.fa-angle-double-right
+  else
+    .tile(class!=attributes.class)
+      .overlay
+        .overlay-content
+          h3
+            for letter, i in title.split("")
+              span.char(class="char-#{i + 1} delay-#{(i + 1) * 50}")= letter
+          p.delay-600= description
 
 
 
 .content-wrap
-  h2 Recent projects
-
-  .work-container
-    +project("#", "Meat Cuts", "An app for groumet foodies to learn all about their favourite cuts of meat.")(class="meat-cuts")
-    +project("#", "Gauloises", "An interactive internal training deck for the global cigarette brand.")(class="gauloises")
-    +project("#", "Glenda Graff", "A website for a high-end event planner in Sydney.")(class="glenda-graff")
-    +project("#", "Cosentyx", "A support app for psoriasis patients.")(class="cosentyx")
-    +project("#", "Rupert Graves", "The official website for the UK actor.")(class="rupert-graves")
-    //- +project("#", "Derma Maps", "A tool for Novartis sales reps to collect and visualise data in an engaging way.")(class="derma-maps")
-    +project("#", "RepAssist", "A utlity for Novartis sales reps to report their expenses and order samples.")(class="repassist")
-    +project("#", "Ken Khoo", "A portfolio site for a friend.")(class="ken-khoo")
-    +project("#", "ShopperNova", "A deals and competitions app made in association with Nova FM.")(class="shoppernova")
-    +project("#", "Momo Brasserie", "The website for a Sydney CBD restaurant.")(class="momo-brasserie")
+  //- h2 Recent projects
+  +project("", "Meat Cuts", "An app for groumet foodies to learn all about their favourite cuts of meat.")(class="meat-cuts")
+  +project("", "Gauloises", "An interactive internal training deck for the global cigarette brand.")(class="gauloises")
+  +project("", "Glenda Graff", "A website for an exclusive event planner in Sydney.")(class="glenda-graff")
+  +project("", "Cosentyx", "A support app for psoriasis patients.")(class="cosentyx")
+  +project("", "Rupert Graves", "The official website for the UK actor.")(class="rupert-graves")
+  //- +project("#", "Derma Maps", "A tool for Novartis sales reps to collect and visualise data in an engaging way.")(class="derma-maps")
+  +project("", "RepAssist", "A utlity for Novartis sales reps to report their expenses and order samples.")(class="repassist")
+  +project("", "Ken Khoo", "A portfolio site for a friend.")(class="ken-khoo")
+  +project("", "ShopperNova", "A deals and competitions app made in association with Sydney's biggest radio station.")(class="shoppernova")
+  +project("", "Momo Brasserie", "The website for a Sydney CBD restaurant.")(class="momo-brasserie")
