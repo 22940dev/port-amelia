@@ -8,7 +8,7 @@ mixin projectslide(title, description, img, caselink, projectlink, bgcolor)
             h3= title
             p= description
             if caselink
-              a(href=caselink, target='_blank').btn Case Study
+              a(href=caselink).btn View Case Study
             else if projectlink
               a(href=projectlink, target='_blank').btn View Project
             else
@@ -18,7 +18,7 @@ mixin projectslide(title, description, img, caselink, projectlink, bgcolor)
     "Meat Cuts",
     "An app for Meat & Livestock Australia to help amateur foodies learn all about different cuts of meat and how best to cook them.",
     "styles/img/projects/meat-cuts.png",
-    "",
+    "/meat-cuts",
     "https://itunes.apple.com/au/app/meat-cuts/id904537057?mt="
   )(id="meat-cuts")
   

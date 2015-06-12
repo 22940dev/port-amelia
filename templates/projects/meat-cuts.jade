@@ -1,6 +1,45 @@
 extends ../layout
 
+//- block header
+//-   include ../partials/header
+
 block content
   .project-view#meat-cuts
-    h1 Meat Cuts
+    a.btn-back(href="index.html") 
+      i.fa.fa-angle-left
+      | Go Back
+
+    .project-title.bg-meat-cuts Meat Cuts
+    .project-detail.bg-meat-cuts
     
+    section.info
+      .content-wrap
+        .row
+          .col-sm-4
+            h4 My Role
+            ul
+              li UI/UX design
+              li Front-end development
+
+          .col-sm-4
+            h4 The Client
+            ul
+              li: a.standard(href="http://www.mla.com.au/Home" target="_blank") Meat &amp; Livestock Australia
+
+          .col-sm-4
+            h4 Download the App
+            ul
+              li: a.standard(href="https://itunes.apple.com/us/app/meat-cuts/id904537057?mt=8" target="_blank") App Store
+              li: a.standard(href="https://play.google.com/store/apps/details?id=com.mla.meatcuts&hl=en" target="_blank") Google Play Store
+
+    section
+      .content-wrap
+        .row
+          .col-sm-6
+            h3 About the Project
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .col-sm-6
+            h3 My Approach
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

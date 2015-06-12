@@ -1,0 +1,47 @@
+=project-bg
+  @each $project in $project-list
+    &##{$project}
+      .project-title
+        @extend .bg-#{$project}
+
+      .project-detail
+        @extend .bg-#{$project}
+        background-image: url('../../#{$project}/project-detail.png')
+
+
+.project-view
+  +project-bg
+  
+  .project-title
+    color: white
+    padding: 100px 0 10px
+    font-size: 2.8em
+    @extend .text-center
+    @extend .text-uppercase
+    @extend .text-heavy
+    letter-spacing: 0.1em
+    border-top: 3px solid $dk-grey
+
+  .project-detail
+    width: 100%
+    height: 45vw
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+  .info
+    background: $lt-grey
+
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+
+    a
+      display: inline-block
+
+    i
+      margin-right: 10px
+
+    .col-sm-4
+      border-left: 1px solid $dk-grey

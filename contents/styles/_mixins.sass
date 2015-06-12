@@ -63,3 +63,12 @@
   -moz-column-gap:    $gap
   -ms-column-gap:     $gap
   column-gap:         $gap
+
+=clearfix()
+  &:before,
+  &:after
+    content: " " // 1
+    display: table // 2
+
+  &:after
+    clear: both

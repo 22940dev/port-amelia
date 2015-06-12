@@ -1,13 +1,12 @@
 .btn
-  height: 50px
-  padding: 0 30px
+  padding: 15px 35px
   margin: 20px auto 0
-  @extend .display-box
+  font-size: 1em
   background: rgba(white, 0.2)
   border: 1px solid white
-  +border-radius(0px)
-  text-transform: uppercase
+  @extend .text-uppercase
   letter-spacing: 0.1em
+  +border-radius(3px)
   +transition(all 300ms)
 
   &:hover
@@ -21,3 +20,27 @@
 
     &:hover
       background: rgba(white, 0.1)
+
+.btn-back
+  position: fixed
+  top: 50px
+  left: 0
+  z-index: 100
+  background: white
+  color: $dk-grey
+  border: solid $dk-grey
+  border-width: 1px 1px 1px 0
+  @extend .text-center
+  @extend .text-uppercase
+  font-size: 1em
+  padding: 15px 25px 15px 40px
+  box-sizing: border-box
+  +border-radius(0 3px 3px 0)
+  +transition(all 300ms)
+
+  i
+    margin-right: 10px
+
+  &:hover,
+  &:active
+    +transform(translate3d(-10px, 0, 0))

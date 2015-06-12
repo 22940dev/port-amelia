@@ -26,28 +26,15 @@ html(lang='en')
 
   
   body(class=bodyclass)
-    header#header
-      .content-wrap
-        #logo
-          h1
-            a(href=locals.url)= locals.name
-
-        #nav
-          ul
-            for href, title in locals.nav
-              - var _href  = page && page.filepath.relative.split("/")[0];
-              - var active = page && href.match(_href);
-
-              li(class=(active ? "active" : ""))
-                a(href=href)= title
+    block header
     
     #content
       block content
     
     footer#footer
-      .contact
-        .content-wrap
-          .col-2
+      .content-wrap
+        .row.contact
+          .col-sm-9
             h4 Say hi!
             p Don't be shy... if you want to work together or find out more about any of my projects, I'd love to hear from you.
 
@@ -55,7 +42,7 @@ html(lang='en')
               i.fa.fa-paper-plane
               a(href='mailto:hello@amelia-lewis.com') hello@amelia-lewis.com
           
-          .col-1#social-media
+          .col-sm-3.social-media
             a(href='https://www.facebook.com/lewis.amelia', target='_blank')
               i.fa.fa-facebook
             a(href='https://twitter.com/Amelia_Lewis', target='_blank')
@@ -72,9 +59,10 @@ html(lang='en')
               i.fa.fa-linkedin
             a(href='https://github.com/amelia-lewis', target='_blank')
               i.fa.fa-github
-      
       .copyright
         .content-wrap
-          p &copy; #{ new Date().getFullYear() } #{ locals.owner } &ndash; website designed and built by me
+          .row
+            .col-sm-12
+              p &copy; #{ new Date().getFullYear() } #{ locals.owner } &ndash; website designed and built by me
 
     include partials/scripts

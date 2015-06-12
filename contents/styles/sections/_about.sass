@@ -1,8 +1,15 @@
 #about
-  a
-    border-bottom: 1px solid $dk-grey
-    +transition(all 300ms)
+  .content-wrap
+    width: 800px
 
-    &:hover
-      color: $primary
-      border-color: $primary
+    @media screen and (max-width: 800px)
+      width: 100%
+
+  h2  
+    @media screen and (max-width: 480px)
+      @extend .text-center
+
+      &:after
+        left: 50%
+        right: auto
+        +transform(translate3d(-50%, 0, 0))
