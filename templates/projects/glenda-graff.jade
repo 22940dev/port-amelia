@@ -1,14 +1,42 @@
-.slide.project.glenda-graff
-  i.fa.fa-angle-left
-  i.fa.fa-angle-right
+extends ../layout
 
-  .left
-    .container
-      .text
-        h2 Glenda Graff
-          //- span Website
-      a.button(href='http://glendagraff.com.au/') Visit the site
-        i.fa.fa-angle-double-right
+//- block header
+//-   include ../partials/header
 
-  .right
-    img(src='styles/img/projects/glenda-graff.png')
+block content
+  .project-view#glenda-graff
+    a.btn-back(href="index.html") Go Back
+
+    .project-title.bg-glenda-graff Glenda Graff
+    .project-detail.bg-glenda-graff
+    
+    section.info
+      .content-wrap
+        .row
+          .col-sm-4
+            h4 My Role
+            ul
+              li UI/UX design
+              li Development
+
+          .col-sm-4
+            h4 The Client
+            ul
+              li Glenda Graff
+
+          .col-sm-4
+            h4 Visit the Site
+            ul
+              li: a.standard(href="http://glendagraff.com.au/" target="_blank") Website
+
+    section
+      .content-wrap
+        .row
+          .col-sm-6
+            h3 About the Project
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .col-sm-6
+            h3 My Approach
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

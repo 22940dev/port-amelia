@@ -20,14 +20,37 @@ mixin project(link, title, description)
 
 
 .content-wrap
-  //- h2 Recent projects
-  +project("", "Meat Cuts", "An app for groumet foodies to learn all about their favourite cuts of meat.")(class="meat-cuts")
-  +project("", "Gauloises", "An interactive internal training deck for the global cigarette brand.")(class="gauloises")
-  +project("", "Glenda Graff", "A website for an exclusive event planner in Sydney.")(class="glenda-graff")
-  +project("", "Cosentyx", "A support app for psoriasis patients.")(class="cosentyx")
-  +project("", "Rupert Graves", "The official website for the UK actor.")(class="rupert-graves")
-  //- +project("#", "Derma Maps", "A tool for Novartis sales reps to collect and visualise data in an engaging way.")(class="derma-maps")
-  +project("", "RepAssist", "A utlity for Novartis sales reps to report their expenses and order samples.")(class="repassist")
-  +project("", "Ken Khoo", "A portfolio site for a friend.")(class="ken-khoo")
-  +project("", "ShopperNova", "A deals and competitions app made in association with Sydney's biggest radio station.")(class="shoppernova")
-  +project("", "Momo Brasserie", "The website for a Sydney CBD restaurant.")(class="momo-brasserie")
+  //- h2.text-center Recent projects
+
+  .row
+    .col-sm-6
+      +project("/meat-cuts", "Meat Cuts", "An app for groumet foodies to learn all about their favourite cuts of meat.")(class="meat-cuts")
+    .col-sm-6
+      +project("/field-intouch", "Field InTouch", "Interactive internal training decks for renowned global cigarette brands.")(class="field-intouch")
+  
+  .row
+    .col-sm-6
+      +project("/glenda-graff", "Glenda Graff", "A website for an exclusive Sydney-based wedding and event planner.")(class="glenda-graff desktop")
+    .col-sm-6  
+      +project("", "RepAssist", "A utlity for Novartis sales reps to report their expenses and order samples.")(class="repassist")
+  
+  hr
+
+  .row
+    .col-sm-4
+      +project("", "Cosentyx", "A support app for psoriasis patients.")(class="cosentyx")
+    .col-sm-4
+      +project("/rupert-graves", "Rupert Graves", "The official website for the UK actor.")(class="rupert-graves desktop")
+    
+    .col-sm-4
+      +project("", "Derma Maps", "A tool for Novartis sales reps to collect and visualise data in an engaging way.")(class="derma-maps")
+    
+  .row  
+    .col-sm-4
+      +project("", "Ken Khoo", "A portfolio site for a friend.")(class="ken-khoo desktop")
+    
+    .col-sm-4
+      +project("", "ShopperNova", "A deals and competitions app made in association with Sydney's biggest radio station.")(class="shoppernova")
+    
+    .col-sm-4
+      +project("", "Momo Brasserie", "The website for a Sydney CBD restaurant.")(class="momo-brasserie desktop")
