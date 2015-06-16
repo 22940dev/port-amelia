@@ -13,6 +13,9 @@
         &.desktop
           background-position: center bottom
           background-size: auto 90%
+
+        &.tile-small
+          background-size: auto 80%
     
   .tile
     float: left
@@ -32,6 +35,9 @@
     &.desktop:hover
       background-size: auto 95%
 
+    &.tile-small:hover
+      background-size: auto 85%
+
     &:active
       +transform(scale(0.96))
 
@@ -41,7 +47,7 @@
       position: absolute
       top: 5px
       left: 5px
-      background-color: rgba(black, 0.75)
+      background-color: rgba(black, 0.6)
       color: white
       @extend .display-box
       +transition(all 500ms)
@@ -80,16 +86,23 @@
         width: 50px
         height: 50px
         border: 1px solid white
-        +border-radius(50%)
+        +border-radius(25px)
         @extend .display-box
+        @extend .text-uppercase
+        @extend .text-left
         margin: 20px auto 0
         opacity: 0
+        display: inline-block
         +transform(translate3d(0, 20px, 0) scale(0.98))
         +transition(all 400ms)
+        overflow: auto
 
         &:hover
           background: rgba(white, 0.2)
           +transition-delay(0ms !important)
+
+          .text-wrapper
+            width: 160px
 
     &:hover
       .overlay

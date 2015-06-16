@@ -7,7 +7,6 @@ mixin project(link, title, description)
             for letter, i in title.split("")
               span.char(class="char-#{i + 1} delay-#{(i + 1) * 50}")= letter
           p.delay-600= description
-          .circle-btn.delay-800: i.fa.fa-angle-double-right
   else
     .tile(class!=attributes.class)
       .overlay
@@ -25,32 +24,32 @@ mixin project(link, title, description)
   .row
     .col-sm-6
       +project("/meat-cuts", "Meat Cuts", "An app for groumet foodies to learn all about their favourite cuts of meat.")(class="meat-cuts")
-    .col-sm-6
-      +project("/field-intouch", "Field InTouch", "Interactive internal training decks for renowned global cigarette brands.")(class="field-intouch")
+    .col-sm-6  
+      +project("/repassist", "RepAssist", "A utlity for Novartis sales reps to report their expenses and order samples.")(class="repassist")
   
   .row
     .col-sm-6
-      +project("/glenda-graff", "Glenda Graff", "A website for an exclusive Sydney-based wedding and event planner.")(class="glenda-graff desktop")
-    .col-sm-6  
-      +project("", "RepAssist", "A utlity for Novartis sales reps to report their expenses and order samples.")(class="repassist")
+      +project("/field-intouch", "Field InTouch", "Interactive internal training decks for renowned global cigarette brands.")(class="field-intouch")
+    .col-sm-6
+      +project("/jr-cigars", "JR Cigars", "A social media and content hub for the world's largest online cigar store.")(class="jr-cigars desktop")
   
   hr
 
   .row
     .col-sm-4
-      +project("", "Cosentyx", "A support app for psoriasis patients.")(class="cosentyx")
+      +project("/glenda-graff", "Glenda Graff", "A website for an exclusive Sydney-based wedding and event planner.")(class="glenda-graff desktop")
     .col-sm-4
       +project("/rupert-graves", "Rupert Graves", "The official website for the UK actor.")(class="rupert-graves desktop")
     
     .col-sm-4
-      +project("", "Derma Maps", "A tool for Novartis sales reps to collect and visualise data in an engaging way.")(class="derma-maps")
+      +project("/derma-maps", "Derma Maps", "A tool for Novartis sales reps to collect and visualise data in an engaging way.")(class="derma-maps tile-small")
     
   .row  
     .col-sm-4
-      +project("", "Ken Khoo", "A portfolio site for a friend.")(class="ken-khoo desktop")
+      +project("/ken-khoo", "Ken Khoo", "A portfolio site for a friend.")(class="ken-khoo desktop")
     
     .col-sm-4
-      +project("", "ShopperNova", "A deals and competitions app made in association with Sydney's biggest radio station.")(class="shoppernova")
+      +project("/shoppernova", "ShopperNova", "A deals and competitions app made in association with Sydney's biggest radio station.")(class="shoppernova tile-small")
     
     .col-sm-4
-      +project("", "Momo Brasserie", "The website for a Sydney CBD restaurant.")(class="momo-brasserie desktop")
+      +project("/momo-brasserie", "Momo Brasserie", "The website for a Sydney CBD restaurant.")(class="momo-brasserie desktop")
