@@ -2,12 +2,13 @@
   .content-wrap
     width: 800px
 
-    @media screen and (max-width: 800px)
-      width: 100%
+    @media (max-width: $screen-sm-min)
+      width: 90%
 
   h2  
-    @media screen and (max-width: 480px)
-      @extend .text-center
+    @media (max-width: $screen-sm-min)
+      text-align: center
+      margin: 0 0 1.2em
 
       &:after
         left: 50%

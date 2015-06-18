@@ -41,6 +41,10 @@
     &:active
       +transform(scale(0.96))
 
+    @media (max-width: $screen-xs-min)
+      height: 200px
+      margin-bottom: 20px
+
     .overlay
       width: calc(100% - 10px)
       height: calc(100% - 10px)
@@ -53,10 +57,16 @@
       +transition(all 500ms)
       opacity: 0
 
+      @media (max-width: $screen-sm-min)
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+
       .overlay-content
         max-width: 70%
 
-        @media screen and (max-width: 600px)
+        @media (max-width: $screen-sm-min)
           max-width: 90%
 
       h3
@@ -65,8 +75,11 @@
         &:after
           display: none
 
-        @media screen and (max-width: 1600px)
+        @media (max-width: $screen-lg-min)
           font-size: 1.8em
+
+        @media (max-width: $screen-xs-min)
+          font-size: 1.5em
 
         span
           display: inline-block
@@ -114,8 +127,7 @@
           opacity: 1
           +transform(translate3d(0, 0, 0) scale(1))
 
-html.tablet,
-html.mobile
+@media (max-width: $screen-sm-min)
   .tile
     .overlay,
     h3 span,

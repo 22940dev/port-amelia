@@ -16,9 +16,9 @@
     i
       margin: 20px 0
 
-    // @media screen and (max-width: 1024px)
-    //   width: calc((100% - 40px) / 2)
+  @media (max-width: $screen-sm-min)
+    .col-sm-4
+      margin-bottom: 40px
 
-    // @media screen and (max-width: 840px)
-    //   width: 100%
-    //   margin: 10px 0
+      &:last-of-type
+        margin-bottom: 0

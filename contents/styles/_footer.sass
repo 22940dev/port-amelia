@@ -7,7 +7,7 @@ footer
   .contact
     padding: 60px 0
 
-    @media screen and (max-width: 768px)
+    @media (max-width: $screen-sm-min)
       text-align: center
 
     a.standard
@@ -41,6 +41,13 @@ footer
         a
           color: $primary
           border-color: $primary
+
+      @media (max-width: $screen-sm-min)
+        i
+          opacity: 1
+          width: 30px
+          color: white
+
 
     .social-media
       border-left: 1px solid rgba(white, 0.1)
@@ -86,6 +93,7 @@ footer
 
       @media screen and (max-width: 768px)
         text-align: center
+        margin-top: 20px
 
         a
           width: calc((100% / 8) - 40px)
@@ -107,6 +115,6 @@ footer
       margin: 0
       // opacity: 0.6
       
-      @media screen and (max-width: 640px)
-        width: 60%
+      @media (max-width: $screen-sm-min)
+        width: 90%
         margin: 0 auto
