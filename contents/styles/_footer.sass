@@ -91,9 +91,10 @@ footer
           .fa-pinterest-p
             color: $pinterest
 
-      @media screen and (max-width: 768px)
+      @media (max-width: $screen-sm-min)
         text-align: center
         margin-top: 20px
+        border-left: none
 
         a
           width: calc((100% / 8) - 40px)

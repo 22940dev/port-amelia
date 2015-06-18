@@ -12,8 +12,11 @@ body
     width: 1200px
     margin: 0 auto
 
-    @media screen and (max-width: 1200px)
+    @media (max-width: $screen-lg-min)
       width: 90%
+
+    @media (max-width: $screen-xs-min)
+      width: 85%
 
   #content
     z-index: 10
