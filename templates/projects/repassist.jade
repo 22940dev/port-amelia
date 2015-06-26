@@ -5,12 +5,15 @@ extends ../layout
 
 block content
   .project-view#repassist
-    a.btn-back(href="index.html") Go Back
+    //- a.btn-back(href="index.html") Go Back
 
-    .project-title.bg-repassist RepAssist
-    .project-detail.bg-repassist
+    a.btn-home(href="index.html")
+      i.fa.fa-angle-left
+
+    section.project-title.bg-repassist(data-midnight="white") RepAssist
+    section.project-detail.bg-repassist(data-midnight="white")
     
-    section.info
+    section.info(data-midnight="black")
       .content-wrap
         .row
           .col-sm-4
@@ -29,14 +32,20 @@ block content
             ul
               li Coming soon!
 
-    section
+    section(data-midnight="black")
       .content-wrap
         .row
           .col-sm-6
             h3 About the Project
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            p RepAssist was a pre-existing iPhone app that Novartis had, and they came to us at CLD asking to rebuild the thing from the ground up. The old one was - to put it delicately - a 
+              em mess 
+              | and in dire need of a redesign.
+            p The app is used by sales reps for two functions; to submit expense reports for events they've held, and to order drug samples.
+            p The app is currently in the process of client approvals and will be released internally within Novartis in the coming months.
+          
           .col-sm-6
             h3 My Approach
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            p The UX and user flow of this app was probably one of the more complicated I've dealt with beacuse of the sheer volume of form inputs, most of which weren't super easy to split into neat categories, and the client's request to make this relatively mundane task "fun". We spent weeks going back and forth between layouts and ways to arrange the content before finally settling on a horizontal-swipe card layout (which later, unsurprisingly, turned out to be a bit of a nightmare when the client wanted to add more inputs and move them all around).
+            p In terms of visual design, I chose to keep the interface as clean and simple as possible to balance out the content-heavy screens. I kept the colour palette largely to white and greys, only using Novartis' brand colours sparingly, always with the purpose of providing information to the user about their input in the form of error messages and buttons.
+
+            p Unfortunately, while RepAssist started off with the best intentions design-wise, it's become one of those projects that has become completely overrun by project manager decisions and client requests.

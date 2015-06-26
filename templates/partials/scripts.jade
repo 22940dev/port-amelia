@@ -1,5 +1,6 @@
 script(type="text/javascript", src="/js/vendor/jquery-1.10.1.min.js")
 script(type="text/javascript", src="/js/vendor/jquery.headroom.js")
+script(type="text/javascript", src="/js/vendor/midnight.jquery.min.js")
 script(type="text/javascript", src="/js/vendor/html5shiv.js")
 script(type="text/javascript", src="/js/vendor/device.min.js")
 script(type="text/javascript", src="/js/vendor/owl.carousel.min.js")
@@ -13,3 +14,9 @@ script.
     addClassActive : true
     });
     });
+script.
+  // Start midnight
+  $(document).ready(function(){
+  // Change this to the correct selector.
+  $('.btn-home').midnight();
+  });
