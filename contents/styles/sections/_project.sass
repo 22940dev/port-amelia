@@ -8,6 +8,8 @@
         @extend .bg-#{$project}
         background-image: url('../../#{$project}/project-detail.png')
 
+        @media (max-width: $screen-sm-min)
+          background-image: url('../../#{$project}/project-detail-sm.png')
 
 .project-view
   +project-bg
