@@ -1,12 +1,10 @@
 extends ../layout
 
-//- block header
-//-   include ../partials/header
+block append vars
+  - bodyclass = 'project'
 
 block content
   .project-view#momo-brasserie
-    a.btn-back(href="index.html") Go Back
-
     .project-title.bg-momo-brasserie Momo Brasserie
     .project-detail.bg-momo-brasserie
     

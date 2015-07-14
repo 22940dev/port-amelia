@@ -1,12 +1,10 @@
 extends ../layout
 
-//- block header
-//-   include ../partials/header
+block append vars
+  - bodyclass = 'project'
 
 block content
   .project-view#field-intouch
-    a.btn-back(href="index.html") Go Back
-
     .project-title.bg-field-intouch Field InTouch
     .project-detail.bg-field-intouch
     

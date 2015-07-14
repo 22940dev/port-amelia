@@ -26,7 +26,26 @@ html(lang='en')
 
   
   body(class=bodyclass)
-    block header
+    //- block header
+    .b-nav
+      ul
+        li: a.b-link(href="index.html") Home
+        li: a.b-link(href="/meat-cuts") Meat Cuts
+        li: a.b-link(href="/repassist") RepAssist
+        li: a.b-link(href="/field-intouch") Field InTouch
+        li: a.b-link(href="/jr-cigars") JR Cigars
+        li: a.b-link(href="/glenda-graff") Glenda Graff
+        li: a.b-link(href="/rupert-graves") Rupert Graves
+        li: a.b-link(href="/derma-maps") Derma Maps
+        li: a.b-link(href="/ken-khoo") Ken Khoo
+        li: a.b-link(href="/shoppernova") ShopperNova
+        li: a.b-link(href="/momo-brasserie") Momo Brasserie
+
+    .b-container
+      .b-menu
+        .b-bun.b-bun--top
+        .b-bun.b-bun--mid
+        .b-bun.b-bun--bottom
     
     #content
       block content
@@ -51,16 +70,18 @@ html(lang='en')
               i.fa.fa-twitter
             a(href='http://instagram.com/amelia_lewis', target='_blank')
               i.fa.fa-instagram
-            a(href='https://www.pinterest.com/lewisamelia/', target='_blank')
-              i.fa.fa-pinterest-p
-            a(href='http://meelz-on-wheels.tumblr.com/', target='_blank')
-              i.fa.fa-tumblr
-            a(href='http://dribbble.com/Amelia_Lewis', target='_blank')
-              i.fa.fa-dribbble
             a(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank')
               i.fa.fa-linkedin
+            a(href='http://dribbble.com/Amelia_Lewis', target='_blank')
+              i.fa.fa-dribbble
             a(href='https://github.com/amelia-lewis', target='_blank')
               i.fa.fa-github
+            a(href='https://angel.co/amelia_lewis', target='_blank')
+              i.fa.fa-angellist
+            a(href='http://meelz-on-wheels.tumblr.com/', target='_blank')
+              i.fa.fa-tumblr
+            //- a(href='https://www.pinterest.com/lewisamelia/', target='_blank')
+            //-   i.fa.fa-pinterest-p
       .copyright
         .content-wrap
           .row

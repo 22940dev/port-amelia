@@ -1,12 +1,10 @@
 extends ../layout
 
-//- block header
-//-   include ../partials/header
+block append vars
+  - bodyclass = 'project'
 
 block content
   .project-view#derma-maps
-    a.btn-back(href="index.html") Go Back
-
     .project-title.bg-derma-maps Derma Maps
     .project-detail.bg-derma-maps
     

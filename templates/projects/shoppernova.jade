@@ -1,12 +1,10 @@
 extends ../layout
 
-//- block header
-//-   include ../partials/header
+block append vars
+  - bodyclass = 'project'
 
 block content
   .project-view#shoppernova
-    a.btn-back(href="index.html") Go Back
-
     .project-title.bg-shoppernova ShopperNova
     .project-detail.bg-shoppernova
     

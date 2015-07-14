@@ -1,19 +1,14 @@
 extends ../layout
 
-//- block header
-//-   include ../partials/header
+block append vars
+  - bodyclass = 'project'
 
 block content
   .project-view#meat-cuts
-    //- a.btn-back(href="index.html") Go Back
-
-    a.btn-home(href="index.html")
-      i.fa.fa-angle-left
-
-    section.project-title.bg-meat-cuts(data-midnight="white") Meat Cuts
-    section.project-detail.bg-meat-cuts(data-midnight="white")
+    section.project-title.bg-meat-cuts Meat Cuts
+    section.project-detail.bg-meat-cuts
     
-    section.info(data-midnight="black")
+    section.info
       .content-wrap
         .row
           .col-sm-4

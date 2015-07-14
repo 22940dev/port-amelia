@@ -1,0 +1,213 @@
+// Height (and width) of the burger menu
+$b-height: 60px
+// Burger menu margin (distance from top)
+$b-margin-top: 30px
+// Burger menu margin (distance from left)
+$b-margin-left: 30px
+// Width of the borders and 'buns'
+$b-border-width: 1px
+// Width of the 'buns'
+$b-bun-width: 26px
+// Height of the 'buns'
+$b-bun-height: $b-border-width
+// Change the border radius of the menu
+$b-border-radius: 50
+
+// Transition speed settings
+$b-trans-speed: .4s
+// Transitions
+$b-transition: all $b-trans-speed ease
+
+// Font size of brand and links
+$b-font-size: 18px
+// Font family of the brand and links
+$b-font-family: 'Lato', sans-serif
+// Font weight of brand and links
+$b-font-weight: 700
+// Left padding on both brand and links
+$b-txt-pad: 20px
+
+// Vertically centers brand to menu
+$b-line-height: ($b-height / 2 - ($b-font-size / 2.8))
+// Top margin for first link element
+$b-txt-pad-top: ($b-margin-top + $b-height + $b-txt-pad)
+// Half bun width used for calculation
+$b-bun-width-half: ($b-bun-width / 2)
+// Horizontally centers bun in menu
+$b-pad-left: 16px
+// Vertically centers bun in menu
+$b-pad-top: 18px
+
+@keyframes slideInLeft
+  0%
+    transform: translate3d(-250px, 0, 0)
+    visibility: visible
+
+  100%
+    transform: translate3d(0, 0, 0)
+
+@keyframes slideOutLeft
+  0%
+    transform: translate3d(0, 0, 0)
+
+  100%
+    transform: translate3d(-250px, 0, 0)
+    visibility: hidden
+
+*
+  box-sizing: border-box
+
+body
+  &:after
+    background: $dk-grey
+    content: ''
+    height: 100%
+    left: 0
+    opacity: 0
+    overflow: hidden
+    padding: 0
+    position: fixed
+    top: 0
+    visibility: hidden
+    transition: $b-transition
+    width: 400px
+    z-index: 99
+    box-shadow: 3px 0 0 rgba(black, 0.2)
+
+  &.open
+    overflow: hidden
+
+  &.open:after
+    opacity: 1
+    visibility: visible
+
+.b-nav
+  position: fixed
+  z-index: 100
+
+  ul
+    padding-left: 50px
+
+  &:not(.open)
+    visibility: hidden
+
+  li 
+    color: white
+    list-style-type: none
+    padding: 10px 10px 10px 0
+    text-align: left
+    transform: translateX(-250px)
+
+  li:not(.open)
+    animation-duration: $b-trans-speed
+    animation-fill-mode: both
+    animation-name: slideOutLeft
+
+  li:first-child
+    padding-top: $b-txt-pad-top
+
+  &.open
+    visibility: visible
+
+    li
+      animation-duration: $b-trans-speed
+      animation-fill-mode: both
+      animation-name: slideInLeft
+
+.b-link
+  background: transparent
+  border-bottom: rgba(white, 0) solid $b-border-width
+  color: white
+  font-size: $b-font-size
+  text-decoration: none
+  transition: $b-transition
+  width: auto
+  @extend .text-uppercase
+  @extend .text-bold
+  letter-spacing: 0.15em
+  padding-bottom: 3px
+
+  &:hover,
+  &--active
+    border-bottom: white solid $b-border-width
+    // padding-left: $b-txt-pad
+
+.b-menu
+  background: darken($dk-grey, 2)
+  border: darken($dk-grey, 2) solid $b-border-width
+  border-radius: $b-border-radius
+  cursor: pointer
+  display: inline-block
+  height: $b-height
+  padding-left: $b-pad-left
+  padding-top: $b-pad-top
+  position: fixed
+  transition: $b-transition
+  user-select: none
+  width: $b-height
+  z-index: 100
+
+  &:hover
+    border: white solid $b-border-width
+
+.b-bun
+  background: white
+  position: relative
+  transition: $b-transition
+
+  &--top
+    height: $b-bun-height
+    top: 2px
+    width: $b-bun-width
+
+  &--mid
+    height: $b-bun-height
+    top: 10px
+    width: $b-bun-width
+
+  &--bottom
+    height: $b-bun-height
+    top: 18px
+    width: $b-bun-width
+
+.b-container
+  height: $b-height
+  left: $b-margin-left
+  position: fixed
+  top: $b-margin-top
+  z-index: 100
+
+  &:hover:not(.open)
+    .bun-top,
+    .bun-mid,
+    .bun-bottom
+      background: darken($dk-grey, 10)
+
+  &.open
+    .b-main
+      border: white solid $b-border-width
+
+    .b-menu
+      background: $dk-grey
+      border-color: $dk-grey
+
+    .b-bun--top
+      background: white
+      top: 9px
+      transform: rotate(45deg)
+    
+    .b-bun--mid
+      opacity: 0
+
+    .b-bun--bottom
+      background: white
+      top: 7px
+      transform: rotate(-45deg)
+
+    .b-brand
+      color: white
+
+body.index
+  .b-nav,
+  .b-container
+    display: none

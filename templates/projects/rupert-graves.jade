@@ -1,12 +1,10 @@
 extends ../layout
 
-//- block header
-//-   include ../partials/header
+block append vars
+  - bodyclass = 'project'
 
 block content
   .project-view#rupert-graves
-    a.btn-back(href="index.html") Go Back
-
     .project-title.bg-rupert-graves Rupert Graves
     .project-detail.bg-rupert-graves
     
@@ -27,7 +25,7 @@ block content
           .col-sm-4
             h4 Visit the Site
             ul
-              li Coming soon!
+              li: a.standard(href="http://rupert.amelialewis.com.au/" target="_blank") Staging website
 
     section
       .content-wrap

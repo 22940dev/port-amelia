@@ -1,19 +1,14 @@
 extends ../layout
 
-//- block header
-//-   include ../partials/header
+block append vars
+  - bodyclass = 'project'
 
 block content
   .project-view#repassist
-    //- a.btn-back(href="index.html") Go Back
-
-    a.btn-home(href="index.html")
-      i.fa.fa-angle-left
-
-    section.project-title.bg-repassist(data-midnight="white") RepAssist
-    section.project-detail.bg-repassist(data-midnight="white")
+    section.project-title.bg-repassist RepAssist
+    section.project-detail.bg-repassist
     
-    section.info(data-midnight="black")
+    section.info
       .content-wrap
         .row
           .col-sm-4

@@ -1,12 +1,10 @@
 extends ../layout
 
-//- block header
-//-   include ../partials/header
+block append vars
+  - bodyclass = 'project'
 
 block content
   .project-view#jr-cigars
-    a.btn-back(href="index.html") Go Back
-
     .project-title.bg-jr-cigars JR Cigars: The Blending Room
     .project-detail.bg-jr-cigars
     
