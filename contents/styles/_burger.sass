@@ -54,6 +54,26 @@ $b-pad-top: 18px
     transform: translate3d(-250px, 0, 0)
     visibility: hidden
 
+@keyframes slideInUp
+  0%
+    transform: translate3d(0, 50px, 0)
+    opacity: 0
+    visibility: visible
+
+  100%
+    transform: translate3d(0, 0, 0)
+    opacity: 1
+
+@keyframes slideOutDown
+  0%
+    transform: translate3d(0, 0, 0)
+    opacity: 1
+
+  100%
+    transform: translate3d(0, 50px, 0)
+    opacity: 0
+    visibility: hidden
+
 *
   box-sizing: border-box
 
@@ -70,7 +90,7 @@ body
     top: 0
     visibility: hidden
     transition: $b-transition
-    width: 400px
+    width: 100%
     z-index: 99
     box-shadow: 3px 0 0 rgba(black, 0.2)
 
@@ -78,15 +98,18 @@ body
     overflow: hidden
 
   &.open:after
-    opacity: 1
+    opacity: 0.98
     visibility: visible
 
 .b-nav
   position: fixed
   z-index: 100
+  width: 100%
+  overflow: scroll
 
   ul
-    padding-left: 50px
+    padding: 0
+    width: 100%
 
   &:not(.open)
     visibility: hidden
@@ -94,14 +117,17 @@ body
   li 
     color: white
     list-style-type: none
-    padding: 10px 10px 10px 0
-    text-align: left
-    transform: translateX(-250px)
+    padding: 10px 0
+    // transform: translateX(-250px)
+    width: 100%
+    @extend .text-center
+    opacity: 0
 
   li:not(.open)
-    animation-duration: $b-trans-speed
-    animation-fill-mode: both
-    animation-name: slideOutLeft
+    // animation-duration: $b-trans-speed
+    // animation-fill-mode: both
+    // animation-name: slideOutDown
+    pointer-events: none
 
   li:first-child
     padding-top: $b-txt-pad-top
@@ -110,9 +136,11 @@ body
     visibility: visible
 
     li
-      animation-duration: $b-trans-speed
-      animation-fill-mode: both
-      animation-name: slideInLeft
+      // animation-duration: $b-trans-speed
+      // animation-fill-mode: both
+      // animation-name: slideInUp
+      pointer-events: all
+      opacity: 1
 
 .b-link
   background: transparent
@@ -125,7 +153,7 @@ body
   @extend .text-uppercase
   @extend .text-bold
   letter-spacing: 0.15em
-  padding-bottom: 3px
+  padding-bottom: 5px
 
   &:hover,
   &--active

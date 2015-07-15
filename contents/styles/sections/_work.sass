@@ -1,11 +1,13 @@
 #work
   overflow: auto
+  border: 10px solid white
+  box-sizing: border-box
   
   =project-bg
     @each $project in $project-list
       &.#{$project}
         @extend .bg-#{$project}
-        background-image: url('../../#{$project}/project-detail-sm.png')
+        background-image: url('../../#{$project}/project-detail.png')
         background-repeat: no-repeat
         background-position: center
         background-size: 100%
@@ -13,21 +15,18 @@
         &.desktop
           background-position: center bottom
           background-size: auto 90%
-
-        &.tile-small
-          background-size: auto 80%
     
   .tile
     float: left
-    width: 100%
-    height: 320px
+    width: 50%
+    height: 600px
     position: relative
     background-color: rgba($dk-grey, 0.01)
-    box-sizing: border-box
     text-align: center
+    border: 10px solid white
+    box-sizing: border-box
     +transition(all 700ms)
     +project-bg
-    margin-bottom: 40px
 
     &:hover
       background-size: 110%
@@ -35,22 +34,25 @@
     &.desktop:hover
       background-size: auto 95%
 
-    &.tile-small:hover
-      background-size: auto 85%
-
     &:active
-      +transform(scale(0.96))
+      +transform(scale(0.98))
+
+    @media (max-width: $screen-lg-min)
+      height: 500px
+
+    @media (max-width: $screen-md-min)
+      width: 100%
+      height: 500px
 
     @media (max-width: $screen-xs-min)
-      height: 200px
-      margin-bottom: 20px
+      height: 300px
 
     .overlay
-      width: calc(100% - 10px)
-      height: calc(100% - 10px)
       position: absolute
-      top: 5px
-      left: 5px
+      top: 10px
+      left: 10px
+      bottom: 10px
+      right: 10px
       background-color: rgba(black, 0.6)
       color: white
       @extend .display-box
@@ -64,29 +66,18 @@
         left: 0
 
       .overlay-content
-        max-width: 70%
+        max-width: 50%
 
         @media (max-width: $screen-sm-min)
           max-width: 90%
 
       h3
-        margin: 0
-
-        &:after
-          display: none
-
-        @media (max-width: $screen-lg-min)
-          font-size: 1.8em
-
-        @media (max-width: $screen-xs-min)
-          font-size: 1.5em
-
         span
           display: inline-block
           min-width: 10px
           opacity: 0
           +transition(all 400ms)
-          +transform(translate3d(0, 100%, 0) scale(0.9))
+          +transform(translate3d(0, 30px, 0) scale(1))
 
       p
         margin: 5px auto 10px
@@ -94,28 +85,6 @@
         line-height: 1.2em
         +transform(translate3d(0, 20px, 0) scale(0.98))
         +transition(all 400ms)
-
-      .circle-btn
-        width: 50px
-        height: 50px
-        border: 1px solid white
-        +border-radius(25px)
-        @extend .display-box
-        @extend .text-uppercase
-        @extend .text-left
-        margin: 20px auto 0
-        opacity: 0
-        display: inline-block
-        +transform(translate3d(0, 20px, 0) scale(0.98))
-        +transition(all 400ms)
-        overflow: auto
-
-        &:hover
-          background: rgba(white, 0.2)
-          +transition-delay(0ms !important)
-
-          .text-wrapper
-            width: 160px
 
     &:hover
       .overlay

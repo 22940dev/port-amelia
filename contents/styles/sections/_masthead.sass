@@ -1,89 +1,58 @@
 #masthead
   width: 100%
   height: 100vh
-  // max-height: 800px
   top: 0
   left: 0
-  padding: 0
-  z-index: 15
   color: white
-  background:
-    image: url('img/desk.jpg')
-    position: center center
-    size: cover
-    repeat: no-repeat
-    attachment: fixed
+  background: url('img/desk.jpg') no-repeat fixed center / cover
   border: 20px solid white
   box-sizing: border-box
+  +transition(all 300ms)
 
-  &:after
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    // background: rgba(black, 0.4)
-    display: block
+  @media (max-width: $screen-sm-min)
+    border-width: 10px
 
   .content
     position: relative
     top: 50%
     left: 50%
     +transform(translate3d(-50%, -50%, 0))
-    z-index: 1
-    width: 420px
-    overflow: auto
+    width: 430px
     text-align: left
-    // padding: 20px 0 20px 50px
-    // border-left: 2px solid white
 
-    .text
-      margin: 0
-      display: block
+    @media (max-width: $screen-sm-min)
+      width: 300px
 
-      &.text-1
-        font-size: 1.7em
-        font-weight: 700
-        letter-spacing: 0.05em
-        text-transform: uppercase
-        margin-bottom: 5px
-        opacity: 0.5
-        padding-top: 20px
+    @media (max-width: $screen-xs-min)
+      width: 255px
 
-      &.text-2
-        text-transform: uppercase
-        font-size: 5em
-        letter-spacing: 0.05em
-        font-weight: 900
-        line-height: 1em
-        padding-bottom: 20px
-        border-bottom: 1px solid white
+    .text-1,
+    .text-2
+      +transition(all 300ms)
+      @extend .text-uppercase
+      letter-spacing: 0.05em
 
-  @media screen and (max-width: 480px)
-    height: 500px
-    border-width: 10px
+    .text-1
+      @extend .text-heavy
+      font-size: 5em
+      line-height: 1em
+      padding: 0 0 20px
+      border-bottom: 1px solid white
 
-    .content
-      width: 260px
-      border-left: none
-      padding: 0
+      @media (max-width: $screen-sm-min)
+        font-size: 3.5em
 
-      .text.text-1
-        font-size: 1.6em
-
-      .text.text-2
+      @media (max-width: $screen-xs-min)
         font-size: 3em
 
-html.tablet
-  #masthead
-    width: 100%
-    height: 500px
-    background:
-      image: url('img/desk.jpg')
-      position: center center
-      size: auto 100%
-      repeat: no-repeat
+    .text-2
+      @extend .text-bold
+      font-size: 1.7em
+      color: rgba(white, 0.5)
+      padding: 20px 0 0
+
+      @media (max-width: $screen-sm-min)
+        font-size: 1.4em
 
 html.mobile
   #masthead

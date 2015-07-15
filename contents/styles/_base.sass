@@ -22,7 +22,6 @@ body
     z-index: 10
 
   section
-    padding: 120px 0
     background: white
     z-index: 20
     position: relative
@@ -47,11 +46,14 @@ body
           width: 100%
           float: none
 
-    @media screen and (max-width: 1024px)
-      padding: 80px 0
+    &.padding
+      padding: 120px 0
 
-    @media screen and (max-width: 480px)
-      padding: 50px 0
+      @media screen and (max-width: 1024px)
+        padding: 80px 0
+
+      @media screen and (max-width: 480px)
+        padding: 50px 0
 
   hr
     margin-bottom: 40px

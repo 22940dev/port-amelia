@@ -78,6 +78,7 @@ h2
     width: 40px
     height: 5px
     left: 50%
+    +transition(all 300ms)
     +transform(translate3d(-50%, 0, 0))
 
   &.text-right
@@ -88,7 +89,10 @@ h2
 
 h3
   position: relative
-  font-size: 1.4em
+  font-size: 2em
+
+  @media (max-width: $screen-xs-min)
+    font-size: 1.6em
 
 h4
   font-size: 1em
