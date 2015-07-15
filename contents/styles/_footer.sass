@@ -1,14 +1,9 @@
 footer
   background: $dk-grey
   color: white
-  z-index: 20
-  position: relative
 
   .contact
     padding: 60px 0
-
-    @media (max-width: $screen-sm-min)
-      text-align: center
 
     a.standard
       border-color: white
@@ -52,21 +47,24 @@ footer
     .social-media
       border-left: 1px solid rgba(white, 0.1)
       box-sizing: border-box
+      overflow: auto
 
       a
         float: left
-        padding: 20px
+        display: block
+        width: 60px
+        height: 60px
+        position: relative
         text-align: center
+        padding: 20px 0px
         +transition(all 300ms)
+        @extend .text-center
 
         i
-          width: 20px
           font-size: 1.2em
           +transition(all 300ms)
 
         &:hover
-          // transform: scale(1.15)
-
           .fa-facebook
             color: $facebook
 
@@ -95,30 +93,22 @@ footer
             color: $angellist
 
       @media (max-width: $screen-sm-min)
-        text-align: center
         margin-top: 20px
         border-left: none
-
-        a
-          width: calc((100% / 8) - 40px)
-          min-width: 20px
-          float: none
-          display: inline-block
+        border-top: 1px solid rgba(white, 0.1)
+        padding: 20px 0 0
 
   .copyright
     background: rgba(black, 0.2)
-    clear: both
-    text-align: center
+    @extend .text-center
+
+    @media (max-width: $screen-sm-min)
+      text-align: left
 
     p
       font-size: 0.75em
-      font-weight: 700
+      @extend .text-heavy
+      @extend .text-uppercase
       padding: 15px 0
-      text-transform: uppercase
       letter-spacing: 0.1em
       margin: 0
-      // opacity: 0.6
-      
-      @media (max-width: $screen-sm-min)
-        width: 90%
-        margin: 0 auto
