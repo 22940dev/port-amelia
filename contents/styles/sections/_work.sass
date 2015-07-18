@@ -11,10 +11,6 @@
 
       .image
         background: url('../../projects/#{$project}/project-detail-sm.jpg') no-repeat center / auto 100%
-
-        // &.desktop
-        //   background-position: center bottom
-        //   background-size: auto 90%
     
   .tile
     float: left
@@ -26,24 +22,13 @@
     border: 10px solid white
     box-sizing: border-box
     +transition(all 700ms)
-    // +project-bg
     overflow: hidden
 
     &:hover
       background-size: 110%
 
-    // &.desktop:hover
-    //   background-size: auto 95%
-
-    &.feature
-      width: 50%
-      height: 600px
-
-      .overlay-content
-        max-width: 50% !important
-
     &:active
-      +transform(scale(0.98))
+      +transform(scale(0.95))
 
     @media (max-width: $screen-lg-min)
       height: 500px
