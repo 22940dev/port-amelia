@@ -1,9 +1,10 @@
 mixin project(link, title, description)
   if link
     a.tile(href=link, class!=attributes.class)
+      .image(class!=attributes.class)
       .overlay
         .overlay-content
-          h3
+          .project-name
             for letter, i in title.split("")
               span.char(class="char-#{i + 1} delay-#{(i + 1) * 50}")= letter
           p.delay-600= description
@@ -11,7 +12,7 @@ mixin project(link, title, description)
     .tile(class!=attributes.class)
       .overlay
         .overlay-content
-          h3
+          .project-name
             for letter, i in title.split("")
               span.char(class="char-#{i + 1} delay-#{(i + 1) * 50}")= letter
           p.delay-600= description
@@ -20,13 +21,61 @@ mixin project(link, title, description)
 
 //- .content-wrap
 //- h2.text-center Recent projects
-+project("/meat-cuts", "Meat Cuts", "An app for groumet foodies to learn all about their favourite cuts of meat.")(class="meat-cuts")
-+project("/repassist", "RepAssist", "A utlity for Novartis sales reps to report their expenses and order samples.")(class="repassist")
-+project("/field-intouch", "Field InTouch", "Interactive internal training decks for renowned global cigarette brands.")(class="field-intouch")
-+project("/jr-cigars", "JR Cigars", "A social media and content hub for the world's largest online cigar store.")(class="jr-cigars desktop")
-+project("/rupert-graves", "Rupert Graves", "The official website for the UK actor.")(class="rupert-graves desktop")
-+project("/glenda-graff", "Glenda Graff", "A website for an exclusive Sydney-based wedding and event planner.")(class="glenda-graff desktop")
-+project("/derma-maps", "Derma Maps", "A tool for Novartis sales reps to collect and visualise data in an engaging way.")(class="derma-maps")
-+project("/ken-khoo", "Ken Khoo", "A portfolio site for a friend.")(class="ken-khoo desktop")
-+project("/momo-brasserie", "Momo Brasserie", "The website for a Sydney CBD restaurant.")(class="momo-brasserie desktop")
-+project("/shoppernova", "ShopperNova", "A deals and competitions app made in association with Sydney's biggest radio station.")(class="shoppernova")
++project(
+  "/projects/meat-cuts", 
+  "Meat Cuts", 
+  "An app for groumet foodies to learn all about their favourite cuts of meat."
+  )(class="meat-cuts")
+
++project(
+  "/projects/repassist",
+  "RepAssist", 
+  "A utlity for Novartis sales reps to report their expenses and order samples."
+  )(class="repassist")
+
++project(
+  "/projects/field-intouch",
+  "Field InTouch", 
+  "Interactive internal training decks for renowned global cigarette brands."
+  )(class="field-intouch")
+
++project(
+  "/projects/jr-cigars",
+  "JR Cigars", 
+  "A social media and content hub for the world's largest online cigar store."
+  )(class="jr-cigars desktop")
+
++project(
+  "/projects/cosentyx",
+  "Cosentyx", 
+  "A support tool for Psoriasis patients."
+  )(class="cosentyx")
+
++project(
+  "/projects/rupert-graves", 
+  "Rupert Graves", "The official website for the UK actor."
+  )(class="rupert-graves desktop")
+
++project(
+  "/projects/glenda-graff",
+  "Glenda Graff", 
+  "A website for an exclusive Sydney-based wedding and event planner."
+  )(class="glenda-graff desktop")
+
++project(
+  "/projects/ken-khoo",
+  "Ken Khoo", 
+  "A portfolio site for a friend."
+  )(class="ken-khoo desktop")
+
++project(
+  "/projects/shoppernova", 
+  "ShopperNova", 
+  "A deals and competitions app made in association with Sydney's biggest radio station."
+  )(class="shoppernova")
+
++project(
+  "/projects/momo-brasserie",
+  "Momo Brasserie", 
+  "The website for a Sydney CBD restaurant."
+  )(class="momo-brasserie desktop")

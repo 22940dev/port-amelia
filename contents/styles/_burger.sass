@@ -5,7 +5,7 @@ $b-margin-top: 30px
 // Burger menu margin (distance from left)
 $b-margin-left: 30px
 // Width of the borders and 'buns'
-$b-border-width: 1px
+$b-border-width: 3px
 // Width of the 'buns'
 $b-bun-width: 26px
 // Height of the 'buns'
@@ -36,7 +36,7 @@ $b-bun-width-half: ($b-bun-width / 2)
 // Horizontally centers bun in menu
 $b-pad-left: 16px
 // Vertically centers bun in menu
-$b-pad-top: 18px
+$b-pad-top: 17px
 
 @keyframes slideInLeft
   0%
@@ -89,7 +89,7 @@ body
     position: fixed
     top: 0
     visibility: hidden
-    transition: $b-transition
+    +transition(all 300ms)
     width: 100%
     z-index: 99
     box-shadow: 3px 0 0 rgba(black, 0.2)
@@ -98,18 +98,27 @@ body
     overflow: hidden
 
   &.open:after
-    opacity: 0.98
+    opacity: 0.99
     visibility: visible
 
 .b-nav
   position: fixed
   z-index: 100
   width: 100%
+  height: 100%
   overflow: scroll
 
   ul
     padding: 0
+    margin: 0
     width: 100%
+    position: absolute
+    top: 50%
+    +transform(translate3d(0, -50%, 0))
+
+    @media (max-height: 800px)
+      top: 50px
+      +transform(translate3d(0, 0, 0))
 
   &:not(.open)
     visibility: hidden
@@ -117,20 +126,22 @@ body
   li 
     color: white
     list-style-type: none
-    padding: 10px 0
-    // transform: translateX(-250px)
+    box-sizing: border-box
     width: 100%
+    padding: 1% 0
     @extend .text-center
     opacity: 0
+    margin: 0
+    +transition(all 300ms)
+
+    @media (max-height: 800px)
+      padding: 15px 0
 
   li:not(.open)
     // animation-duration: $b-trans-speed
     // animation-fill-mode: both
     // animation-name: slideOutDown
     pointer-events: none
-
-  li:first-child
-    padding-top: $b-txt-pad-top
 
   &.open
     visibility: visible
@@ -144,11 +155,10 @@ body
 
 .b-link
   background: transparent
-  border-bottom: rgba(white, 0) solid $b-border-width
+  border-bottom: rgba(white, 0) solid 1px
   color: white
-  font-size: $b-font-size
-  text-decoration: none
-  transition: $b-transition
+  font-size: 1.2em
+  +transition(all 300ms)
   width: auto
   @extend .text-uppercase
   @extend .text-bold
@@ -157,12 +167,12 @@ body
 
   &:hover,
   &--active
-    border-bottom: white solid $b-border-width
+    border-bottom: white solid 1px
     // padding-left: $b-txt-pad
 
 .b-menu
-  background: darken($dk-grey, 2)
-  border: darken($dk-grey, 2) solid $b-border-width
+  background: $dk-grey
+  border: $dk-grey solid 1px
   border-radius: $b-border-radius
   cursor: pointer
   display: inline-block
@@ -173,10 +183,12 @@ body
   transition: $b-transition
   user-select: none
   width: $b-height
+  +border-radius(50%)
   z-index: 100
+  box-shadow: 0 0 20px rgba(black, 0.3)
 
   &:hover
-    border: white solid $b-border-width
+    border: white solid 1px
 
 .b-bun
   background: white
@@ -190,12 +202,12 @@ body
 
   &--mid
     height: $b-bun-height
-    top: 10px
+    top: 8px
     width: $b-bun-width
 
   &--bottom
     height: $b-bun-height
-    top: 18px
+    top: 14px
     width: $b-bun-width
 
 .b-container
@@ -221,7 +233,7 @@ body
 
     .b-bun--top
       background: white
-      top: 9px
+      top: 11px
       transform: rotate(45deg)
     
     .b-bun--mid
@@ -229,7 +241,7 @@ body
 
     .b-bun--bottom
       background: white
-      top: 7px
+      top: 5px
       transform: rotate(-45deg)
 
     .b-brand

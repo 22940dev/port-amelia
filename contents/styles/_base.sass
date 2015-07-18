@@ -8,64 +8,22 @@ body
   img
     border: 0
 
-  .content-wrap
-    width: 1200px
-    margin: 0 auto
+.content-wrap
+  width: 1200px
+  margin: 0 auto
 
-    @media (max-width: $screen-lg-min)
-      width: 90%
+  @media (max-width: $screen-lg-min)
+    width: 90%
 
-    @media (max-width: $screen-xs-min)
-      width: 85%
+  @media (max-width: $screen-xs-min)
+    width: 85%
 
-  #content
-    z-index: 10
+#content
+  z-index: 10
 
-  section
-    background: white
-    z-index: 20
-    position: relative
-
-    .text-block
-      width: 80%
-      margin: 0 auto
-      overflow: auto
-
-      .left
-        float: left
-        text-align: right
-        width: 30%
-
-      .right
-        float: right
-        width: 65%
-
-      @media screen and (max-width: 480px)
-        .left,
-        .right
-          width: 100%
-          float: none
-
-    &.padding
-      padding: 120px 0
-
-      @media screen and (max-width: 1024px)
-        padding: 80px 0
-
-      @media screen and (max-width: 480px)
-        padding: 50px 0
-
-  hr
-    margin-bottom: 40px
-    border-color: rgba($dk-grey, 0.1)
-
-    @media (max-width: $screen-xs-min)
-      margin-bottom: 20px
-
-
-html.mobile
-  body
-    background: $dk-grey
+section
+  background: white
+  position: relative
 
 
 // ====================
@@ -85,9 +43,6 @@ html.mobile
   -webkit-box-pack: center
   -webkit-box-align: center
 
-.clearfix
-  clear: both
-
 // turn wow animations off on mobile
 html.mobile, html.tablet
   .wow
@@ -98,7 +53,21 @@ html.mobile, html.tablet
     -ms-animation: none !important
     animation: none !important
 
+
 @for $i from 1 through 30
   .delay-#{$i * 50}
     transition-delay: $i * 50ms !important
     animation-delay: $i * 50ms !important
+
+
+.hide-mobile
+  display: none
+
+  @media (max-width: $screen-xs-min)
+    display: block
+
+.hide-desktop
+  display: block
+
+  @media (max-width: $screen-xs-min)
+    display: none

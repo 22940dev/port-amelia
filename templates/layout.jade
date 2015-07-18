@@ -1,6 +1,7 @@
 doctype html
 block vars
   - var bodyclass = null;
+
 html(lang='en')
   head
     block head
@@ -29,17 +30,17 @@ html(lang='en')
     //- block header
     .b-nav
       ul
-        li: a.b-link(href="index.html") Home
-        li: a.b-link(href="/meat-cuts") Meat Cuts
-        li: a.b-link(href="/repassist") RepAssist
-        li: a.b-link(href="/field-intouch") Field InTouch
-        li: a.b-link(href="/jr-cigars") JR Cigars
-        li: a.b-link(href="/glenda-graff") Glenda Graff
-        li: a.b-link(href="/rupert-graves") Rupert Graves
-        li: a.b-link(href="/derma-maps") Derma Maps
-        li: a.b-link(href="/ken-khoo") Ken Khoo
-        li: a.b-link(href="/shoppernova") ShopperNova
-        li: a.b-link(href="/momo-brasserie") Momo Brasserie
+        li: a.b-link(href=locals.url) Home
+        li: a.b-link(href="/projects/meat-cuts") Meat Cuts
+        li: a.b-link(href="/projects/repassist") RepAssist
+        li: a.b-link(href="/projects/field-intouch") Field InTouch
+        li: a.b-link(href="/projects/jr-cigars") JR Cigars
+        li: a.b-link(href="/projects/cosentyx") Cosentyx
+        li: a.b-link(href="/projects/rupert-graves") Rupert Graves
+        li: a.b-link(href="/projects/glenda-graff") Glenda Graff
+        li: a.b-link(href="/projects/ken-khoo") Ken Khoo
+        li: a.b-link(href="/projects/shoppernova") ShopperNova
+        li: a.b-link(href="/projects/momo-brasserie") Momo Brasserie
 
     .b-container
       .b-menu
