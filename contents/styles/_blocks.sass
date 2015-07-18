@@ -1,0 +1,33 @@
+=make-block($size, $padding)
+  .block-hor-#{$size}
+    padding-left: $padding
+    padding-right: $padding
+
+  .block-ver-#{$size}
+    padding-top: $padding
+    padding-bottom: $padding
+
+  .block-bot-#{$size}
+    padding-bottom: $padding
+
+  .block-top-#{$size}
+    padding-top: $padding
+
+  .block-#{$size}
+    padding: $padding
+
+=make-block-variant($name, $color)
+  .block-#{$name}
+    background: $color
+
++make-block(xl, 100px)
++make-block(lg, 60px)
++make-block(md, 20px)
++make-block(sm, 8px)
+
+@media (max-width: $screen-sm-min)
+  +make-block(xl, 60px)
+
+
++make-block-variant("lt-grey", $lt-grey)
++make-block-variant("white", white)

@@ -1,55 +1,50 @@
 body
   background: white
-  font-family: $montserrat
   margin: 0
   padding: 0
-  background:
-    // image: url('../styles/img/bg3.png')
-    size: cover
-    position: center center
-    repeat: no-repeat
-    attachment: fixed
+  @extend .lato
+  color: $dk-grey
+
+  img
+    border: 0
+
+.content-wrap
+  width: 1200px
+  margin: 0 auto
+
+  @media (max-width: $screen-lg-min)
+    width: 90%
+
+  @media (max-width: $screen-xs-min)
+    width: 85%
+
+#content
+  z-index: 10
+
+section
+  background: white
+  position: relative
 
 
-  // ====================
-  // sections
-  // ====================
+// ====================
+// common styles
+// ====================
 
-  section
-    width: 100%
-    +transform(skewY(3deg))
+.display-box
+  display: -ms-box
+  -ms-box-pack: center
+  -ms-box-align: center
 
-    &.coral
-      background: $coral
-      color: white
+  display: -moz-box
+  -moz-box-pack: center
+  -moz-box-align: center
 
-    &.white
-      background: white
-      color: $md-grey
+  display: -webkit-box
+  -webkit-box-pack: center
+  -webkit-box-align: center
 
-    &.grey
-      background: $lt-grey
-      color: $dk-grey
-
-    .content-wrap
-      width: 1200px
-      margin: 0 auto
-      +transform(skewY(-3deg))
-
-      @media screen and (max-width: 1200px)
-        width: 90%
-
-      @media screen and (max-width: 480px)
-        width: 100%
-
-    h2
-      text-transform: uppercase
-      text-align: center
-      font-size: 2em
-      margin-top: 0
-
-
-@media screen and (max-width: 1024px)
+// turn wow animations off on mobile
+html.mobile, html.tablet
   .wow
     visibility: visible !important
     -webkit-animation: none !important
@@ -57,3 +52,22 @@ body
     -o-animation: none !important
     -ms-animation: none !important
     animation: none !important
+
+
+@for $i from 1 through 30
+  .delay-#{$i * 50}
+    transition-delay: $i * 50ms !important
+    animation-delay: $i * 50ms !important
+
+
+.hide-mobile
+  display: none
+
+  @media (max-width: $screen-xs-min)
+    display: block
+
+.hide-desktop
+  display: block
+
+  @media (max-width: $screen-xs-min)
+    display: none

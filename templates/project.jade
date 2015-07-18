@@ -1,0 +1,46 @@
+extends layout
+
+block append vars
+  - bodyclass = 'project'
+
+block prepend title
+  | #{ page.title + " - "}
+
+block content
+  .project-view
+    img.hide-mobile(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
+    img.hide-desktop(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
+
+    section.block-lt-grey.block-ver-xl.info
+      .content-wrap
+        .row.block-bot-sm
+          .col-sm-12
+            h1= page.title
+        
+        .row
+          .col-sm-4
+            h4 My Role
+            ul
+              li= page.metadata.role1
+              li= page.metadata.role2
+
+          .col-sm-4
+            h4 The Client
+            ul
+              li: a.standard(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
+
+          .col-sm-4
+            h4 See the project
+            ul
+              if page.metadata.appstorelink
+                li: a.standard(href="#{page.metadata.appstorelink}" target="_blank") App Store
+              if page.metadata.playstorelink
+                li: a.standard(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
+              else if page.metadata.websitelink
+                li: a.standard(href="#{page.metadata.websitelink}" target="_blank") Website
+              else
+                li Coming soon
+
+    section.block-ver-xl
+      .content-wrap
+        .row!= typogr(page.html).typogrify()

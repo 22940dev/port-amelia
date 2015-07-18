@@ -1,0 +1,16 @@
+#about
+  .content-wrap
+    width: 800px
+
+    @media (max-width: $screen-sm-min)
+      width: 90%
+
+  h2  
+    @media (max-width: $screen-sm-min)
+      text-align: center
+      margin: 0 0 1.2em
+
+      &:after
+        left: 50%
+        right: auto
+        +transform(translate3d(-50%, 0, 0))

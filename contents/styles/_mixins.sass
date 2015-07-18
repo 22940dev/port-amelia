@@ -34,11 +34,21 @@
   -ms-transition:     $transition
   transition:         $transition
 
+=transition-delay($transition-delay)
+  -webkit-transition-delay: $transition-delay
+  -moz-transition-delay:    $transition-delay
+  -ms-transition-delay:     $transition-delay
+  transition-delay:         $transition-delay
+
 =appearance($appearance)
   -webkit-appearance: $appearance
   -moz-appearance:    $appearance
   -ms-appearance:     $appearance
   appearance:         $appearance
+
+=animation($animation)
+  -webkit-animation: $animation
+  animation:         $animation
 
 =animation-delay($delay)
   -webkit-animation-delay: $delay
@@ -53,3 +63,12 @@
   -moz-column-gap:    $gap
   -ms-column-gap:     $gap
   column-gap:         $gap
+
+=clearfix()
+  &:before,
+  &:after
+    content: " " // 1
+    display: table // 2
+
+  &:after
+    clear: both

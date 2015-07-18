@@ -1,0 +1,34 @@
+.project-view
+  img
+    width: 100%
+    border: 20px solid white
+    box-sizing: border-box
+
+    @media (max-width: $screen-sm-min)
+      border-width: 10px
+
+  .info
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+
+    a
+      display: inline-block
+
+    i
+      margin-right: 10px
+
+    .col-sm-4
+      border-left: 1px solid $dk-grey
+
+      @media (max-width: $screen-xs-min)
+        border-left: none
+
+  @media (max-width: $screen-sm-min)
+    .col-sm-4,
+    .col-sm-6
+      margin-bottom: 40px
+
+      &:last-of-type
+        margin-bottom: 0
