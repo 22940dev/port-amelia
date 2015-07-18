@@ -58,6 +58,11 @@ h1, h2, h3, h4, ul, ol, p, li
 .text-tight
   margin: 0
 
+ul:last-of-type,
+li:last-of-type,
+p:last-of-type
+  margin: 0 !important
+
 
 // LETTER SPACING
 h1, h2, h3, h4
@@ -130,3 +135,8 @@ a
     &:hover
       color: $primary
       border-color: $primary
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
