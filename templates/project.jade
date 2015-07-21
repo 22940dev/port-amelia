@@ -9,7 +9,8 @@ block prepend title
 block content
   .project-view
     img.hide-mobile(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
-    img.hide-desktop(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
+    .mobile-image-container.hide-desktop
+      img(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
 
     section.block-lt-grey.block-ver-xl.info
       .content-wrap
@@ -27,7 +28,10 @@ block content
           .col-sm-4
             h4 The Client
             ul
-              li: a.standard(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
+              if page.metadata.clientlink
+                li: a.standard(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
+              else
+                li= page.metadata.clientname
 
           .col-sm-4
             h4 See the project
