@@ -107,6 +107,7 @@ body
   width: 100%
   height: 100%
   overflow: scroll
+  -webkit-overflow-scrolling: touch
 
   ul
     padding: 0
@@ -119,6 +120,7 @@ body
     @media (max-height: 800px)
       top: 50px
       +transform(translate3d(0, 0, 0))
+      padding-bottom: 50px
 
   &:not(.open)
     visibility: hidden
@@ -216,6 +218,10 @@ body
   position: fixed
   top: $b-margin-top
   z-index: 100
+
+  @media (max-width: $screen-xs-min)
+    top: 15px
+    left: 15px
 
   &:hover:not(.open)
     .bun-top,

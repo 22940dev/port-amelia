@@ -8,9 +8,15 @@ block prepend title
 
 block content
   .project-view
+    //- STAGING
     img.hide-mobile(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
     .mobile-image-container.hide-desktop
       img(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
+
+    //- PRODUCTION
+    //- img.hide-mobile(src="project-detail.jpg")
+    //- .mobile-image-container.hide-desktop
+    //-   img(src="project-detail.jpg")
 
     section.block-lt-grey.block-ver-xl.info
       .content-wrap
@@ -38,8 +44,8 @@ block content
             ul
               if page.metadata.appstorelink
                 li: a.standard(href="#{page.metadata.appstorelink}" target="_blank") App Store
-              if page.metadata.playstorelink
-                li: a.standard(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
+                if page.metadata.playstorelink
+                  li: a.standard(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
               else if page.metadata.websitelink
                 li: a.standard(href="#{page.metadata.websitelink}" target="_blank") Website
               else
