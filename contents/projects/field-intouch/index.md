@@ -5,7 +5,7 @@ role1: UX/UI Design
 role2: Front-end development
 clientname: Imperial Tobacco
 clientlink: http://www.imperial-tobacco.com/
-appstorelink: https://itunes.apple.com/us/app/field-in-touch/id583253185?mt=8
+internal: yes
 ---
 
 <div class="col-sm-6">

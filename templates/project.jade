@@ -48,6 +48,10 @@ block content
                   li: a.standard(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
               else if page.metadata.websitelink
                 li: a.standard(href="#{page.metadata.websitelink}" target="_blank") Website
+              else if page.metadata.internal
+                li Unfortunately, 
+                  span= page.title
+                  |  is for internal client use
               else
                 li Coming soon!
 
