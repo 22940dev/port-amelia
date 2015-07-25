@@ -11,19 +11,16 @@ clientname: Rupert Graves
 <div class="col-sm-6">
   <h3>About the Project</h3>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </p>
-  <p>
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    This is (or will be) the official website for UK actor, Rupert Graves. His current site is rather dated, so we've been working to create something a little sexier and more modern.
   </p>
 </div>
 
 <div class="col-sm-6">
   <h3>My Approach</h3>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    This is still very much a work in progress. I've been through a few iterations but I'm yet to settle on something that I love. It's been interesting researching similar sites, and trying to decide what content is actually worth having on here as opposed to what's available elsewhere on the web.
   </p>
   <p>
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    I'm essentially creating a visual brand for Rupert, so I want it to be something that stands out and looks great.
   </p>
 </div>
