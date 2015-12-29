@@ -4,23 +4,17 @@ block append vars
   - bodyclass = 'index'
 
 block content
-  section#masthead
-    .content
-      .text.text-1 
-        | UX/UI
+  section#masthead.block-ver-xl
+    .grey-box
+    //- .pink-box
+    .desc
+      h1.text-heavy
+        | Amelia
         br
-        | Designer
-      .text.text-2
-        | Amelia Lewis
+        | Lewis
+      .block-hor-xl
+        p.text-uppercase.text-bold UX/UI Designer
+        p.text-uppercase Currently working at WGSN in New York City.
 
-  section.block-ver-xl#about
-    include partials/about
-
-  //- section.block-ver-xl#skills
-  //-   include partials/skills
-
-  //- section#work-slider
-  //-   include partials/work-slider
-
-  section#work
+  section.block-ver-xl#work
     include partials/work
