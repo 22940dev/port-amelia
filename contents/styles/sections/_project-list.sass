@@ -1,0 +1,52 @@
+#project-list
+  .project-list-item
+    display: block
+    overflow: auto
+    position: relative
+    border-top: 1px solid black
+    vertical-align: text-bottom
+
+    &:last-of-type
+      border-bottom: 1px solid black
+
+    .project-name
+      margin: 0 6px 0 0
+
+    .project-type
+      font-size: 0.8em
+      margin-top: 3px
+
+    .project-year
+      font-size: 0.8em
+      margin-top: 2px
+
+    &:before,
+    &:after
+      display: block
+      position: absolute
+      width: 200px
+      height: 100%
+      top: 0
+      right: 0
+      +transform(translate3d(0, 0, 0) scale(0, 1))
+      +transition(all 400ms)
+
+    &:before
+      content: ""
+      background: $primary
+      +transform-origin(right center)
+
+    &:after
+      content: "→"
+      color: white
+      @extend .text-center
+      font-size: 2em
+      box-sizing: border-box
+      padding: 12px 0
+      +transform-origin(left center)
+      +transition-delay(200ms)
+
+    &:hover
+      &:before,
+      &:after
+        +transform(translate3d(0, 0, 0) scale(1, 1))
