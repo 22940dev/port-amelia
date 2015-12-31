@@ -1,46 +1,85 @@
 extends layout
 
 block append vars
-  - bodyclass = 'project'
+  - bodyclass = 'project-view'
 
 block prepend title
   | #{ page.title + " - "}
 
 block content
-  .project-view
-    img.hide-mobile(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
-    img.hide-desktop(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
-
-    section.block-lt-grey.block-ver-xl.info
-      .content-wrap
-        .row.block-bot-sm
-          .col-sm-12
-            h1= page.title
-        
+  section#project
+    .content-wrap
+      .block-top-xl.block-bot-md
         .row
-          .col-sm-4
-            h4 My Role
-            ul
-              li= page.metadata.role1
-              li= page.metadata.role2
+          .col-xs-12
+            .block-bot-md: a.underlined.text-uppercase(href="/") ← Go back
 
-          .col-sm-4
-            h4 The Client
-            ul
-              li: a.standard(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
+        .row
+          .col-xs-12.col-sm-9
+            h1.text-uppercase.text-bold.text-tight= page.title
+            .block-bot-md: a.project-client.text-uppercase(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
+            //- ul.project-role
+            //-   li= page.metadata.role1
+            //-   li= page.metadata.role2
+          
+          .col-xs-12.col-sm-3
+            if page.metadata.appstorelink
+              a.btn(href="#{page.metadata.appstorelink}" target="_blank") App Store
+            if page.metadata.playstorelink
+              a.btn(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
+            else if page.metadata.websitelink
+              a.btn(href="#{page.metadata.websitelink}" target="_blank") Website
+            else
+              p.btn.btn-disabled.tight Coming soon
+      
+      hr
 
-          .col-sm-4
-            h4 See the project
-            ul
-              if page.metadata.appstorelink
-                li: a.standard(href="#{page.metadata.appstorelink}" target="_blank") App Store
-              if page.metadata.playstorelink
-                li: a.standard(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
-              else if page.metadata.websitelink
-                li: a.standard(href="#{page.metadata.websitelink}" target="_blank") Website
-              else
-                li Coming soon
-
-    section.block-ver-xl
-      .content-wrap
+      .block-top-md
         .row!= typogr(page.html).typogrify()
+
+      hr
+
+      .block-top-md.block-bot-xl
+        .row
+          .col-xs-12
+            img(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
+
+
+
+  //- .project-view
+  //-   img.hide-mobile(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
+  //-   img.hide-desktop(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
+
+  //-   section.block-lt-grey.block-ver-xl.info
+  //-     .content-wrap
+  //-       .row.block-bot-sm
+  //-         .col-sm-12
+  //-           h1= page.title
+        
+  //-       .row
+  //-         .col-sm-4
+  //-           h4 My Role
+  //-           ul
+  //-             li= page.metadata.role1
+  //-             li= page.metadata.role2
+
+  //-         .col-sm-4
+  //-           h4 The Client
+  //-           ul
+  //-             li: a.standard(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
+
+  //-         .col-sm-4
+  //-           h4 See the project
+  //-           ul
+  //-             if page.metadata.appstorelink
+  //-               li: a.standard(href="#{page.metadata.appstorelink}" target="_blank") App Store
+  //-             if page.metadata.playstorelink
+  //-               li: a.standard(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
+  //-             else if page.metadata.websitelink
+  //-               li: a.standard(href="#{page.metadata.websitelink}" target="_blank") Website
+  //-             else
+  //-               li Coming soon
+
+  //-   section.block-ver-xl
+  //-     .content-wrap
+  //-       .row!= typogr(page.html).typogrify()

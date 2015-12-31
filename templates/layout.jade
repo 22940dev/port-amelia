@@ -14,27 +14,23 @@ html(lang='en')
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(rel='stylesheet', href='/styles/style.css?v1.0')
       link(rel='stylesheet', href='/css/animate.css')
-      link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+      //- link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
       link(rel="shortcut icon", type="image/x-icon", href="/favicon.ico")
-      script(src='//use.typekit.net/rsv4pax.js')
-      script.
-        try{Typekit.load();}catch(e){}
 
-
-  
   body(class=bodyclass)
     //- block header
     .b-nav
       ul
-        li: a.b-link(href='mailto:amelialewis01@gmail.com', target='_blank') Email
-        li: a.b-link(href='https://www.facebook.com/lewis.amelia', target='_blank') Facebook
-        li: a.b-link(href='https://twitter.com/Amelia_Lewis', target='_blank') Twitter
-        li: a.b-link(href='http://instagram.com/amelia_lewis', target='_blank') Instagram
-        li: a.b-link(href='http://meelz-on-wheels.tumblr.com/', target='_blank') Tumblr
-        li: a.b-link(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank') LinkedIn
-        li: a.b-link(href='http://dribbble.com/Amelia_Lewis', target='_blank') Dribbble
-        li: a.b-link(href='https://github.com/amelia-lewis', target='_blank') Github
-        li: a.b-link(href='https://www.pinterest.com/lewisamelia/', target='_blank') Pinterest
+        li.block-bot-md.menu-home: a.b-link.underlined(href='/') Home
+        li: a.b-link.underlined(href='mailto:amelialewis01@gmail.com', target='_blank') Email
+        li: a.b-link.underlined(href='https://www.facebook.com/lewis.amelia', target='_blank') Facebook
+        li: a.b-link.underlined(href='https://twitter.com/Amelia_Lewis', target='_blank') Twitter
+        li: a.b-link.underlined(href='http://instagram.com/amelia_lewis', target='_blank') Instagram
+        li: a.b-link.underlined(href='http://meelz-on-wheels.tumblr.com/', target='_blank') Tumblr
+        li: a.b-link.underlined(href='https://www.pinterest.com/lewisamelia/', target='_blank') Pinterest
+        li: a.b-link.underlined(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank') LinkedIn
+        li: a.b-link.underlined(href='http://dribbble.com/Amelia_Lewis', target='_blank') Dribbble
+        li: a.b-link.underlined(href='https://github.com/amelia-lewis', target='_blank') Github
 
     .b-container
       .b-menu
@@ -46,6 +42,6 @@ html(lang='en')
       block content
     
     footer.text-center
-      p.text-uppercase.text-tight &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; website designed and built by me
+      p.text-uppercase &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; website designed and built by me
 
     include partials/scripts

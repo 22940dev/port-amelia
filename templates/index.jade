@@ -6,15 +6,16 @@ block append vars
 block content
   section#masthead.block-ver-xl
     .grey-box
-    //- .pink-box
     .desc
       h1.text-heavy
         | Amelia
         br
         | Lewis
       .block-hor-xl
-        p.text-uppercase.text-bold Product Designer
-        p.text-uppercase Currently working at WGSN in New York City.
+        p.text-uppercase.text-bold.text-spaced Product Designer
+        p.text-uppercase Currently working at 
+          a.underlined(href="http://wgsn.com", target="_blank") WGSN
+          |  in New York City.
 
   section#project-list.block-bot-xl
     include partials/project-list

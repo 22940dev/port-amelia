@@ -4,3 +4,11 @@ footer
   font-size: 0.8em
   letter-spacing: 0.05em
   padding: 16px 0
+  +transition(all 300ms)
+
+  p
+    max-width: 80%
+    margin: 0 auto
+
+  @media (max-width: $screen-sm-min)
+    font-size: 0.7em

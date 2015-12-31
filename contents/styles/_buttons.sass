@@ -1,0 +1,41 @@
+.btn
+  @extend .text-uppercase
+  @extend .text-bold
+  @extend .text-center
+  @extend .text-spaced
+  border: 2px solid black
+  display: block
+  position: relative
+  padding: 14px 24px
+  margin: 0 0 10px
+  +transition(all 300ms)
+
+  &:after
+    content: ""
+    width: 100%
+    height: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+    background: $primary
+    z-index: -1
+    +transform(translate3d(0, 0, 0) scale(1, 0))
+    +transform-origin(center bottom)
+    +transition(all 300ms)
+
+  &:hover
+    color: white
+    border-color: $primary
+
+    &:after
+      +transform(translate3d(0, 0, 0) scale(1, 1))
+
+  &.btn-disabled
+    color: rgba(black, 0.2)
+    border-color: rgba(black, 0.2)
+
+    &:after
+      display: none
+
+    &:hover
+      background: none
