@@ -9,7 +9,7 @@ clientlink: https://www.novartis.com/
 
 <div class="col-sm-6">
   <h3>About the Project</h3>
-  <p>RepAssist was a pre-existing iPhone app that Novartis had, and they came to us at CLD asking to rebuild the thing from the ground up. The old one was - to put it delicately - a <em>mess</em> and in dire need of a redesign.</p>
+  <p>RepAssist was a pre-existing iPhone app that Novartis had, and they came to us at <a href="http://creativelicencedigital.com/" target="_blank" class="underlined">CLD</a> asking to rebuild the thing from the ground up. The old one was - to put it delicately - a <em>mess</em> and in dire need of a redesign.</p>
   <p>The app is used by sales reps for two functions; to submit expense reports for events they've held, and to order drug samples.</p>
   <p>The app is currently in the process of client approvals and will be released internally within Novartis in the coming months.</p>
 </div>

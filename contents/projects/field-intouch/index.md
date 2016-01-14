@@ -10,7 +10,7 @@ appstorelink: https://itunes.apple.com/us/app/field-in-touch/id583253185?mt=8
 
 <div class="col-sm-6">
   <h3>About the Project</h3>
-  <p>Field InTouch is a versatile, modular platform providing sales forces with a single application for their core needs in the field. It is an iPad app and platform developed by CLD, and I regularly produce interactive slidedecks/mini-apps that are housed within in the app.</p>
+  <p>Field InTouch is a versatile, modular platform providing sales forces with a single application for their core needs in the field. It is an iPad app and platform developed by <a href="http://creativelicencedigital.com/" target="_blank" class="underlined">CLD</a>, and I regularly produce interactive slidedecks/mini-apps that are housed within in the app.</p>
   <p>Over the last three years, we have worked consistently to make these decks more and more impressive, and our clients love them. Through FiT, they are able to get otherwise unattainable analytics about their field force and the force is able to enjoy their sales material with levels of interactivity and excitement just not achievable by their traditional means and resources.</p>
   <p>The majority of the work I do is for our largest client, Imperial Tobacco. My work is used all around the world and I have localised decks for the U.S, the U.K., Australia, New Zealand, France, Belgium, the Netherlands, Estonia, Saudi Arabia, UAE and Iraq.</p>
 </div>

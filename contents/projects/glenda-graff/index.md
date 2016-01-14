@@ -17,6 +17,6 @@ websitelink: http://glendagraff.com.au/
 <div class="col-sm-6">
   <h3>My Approach</h3>
   <p>At the beginning of the project, I was given a logo, a color and a small mountain of images. Together we developed some content for the site and I set out to create a great design. The first iteration was certainly not the sexiest website in the world, but over time the design has evolved into something sleek and modern, showcasing lots of beautiful imagery.</p>
-  <p>I built the website from scratch, using Wintersmith.</p>
+  <p>I built the website from scratch, using <a href="http://wintersmith.io/" target="_blank" class="underlined">Wintersmith</a>.</p>
   <p>Next time I work on this project, I would like to work out a better way of loading images, as well as connecting a CMS so the client can upload imagery. There is also potential to expand the content out and include things like booking forms and more detailed service information.</p>
 </div>

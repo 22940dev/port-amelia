@@ -1,17 +1,18 @@
 ---
-title: JR Cigars
+title: The Blending Room
 template: project.jade
 role1: UX/UI Design
 role2: Front-end development
 clientname: JR Cigars
 clientlink: https://www.jrcigars.com/
+websitelink: https://www.jrcigars.com/blending-room/
 ---
 
 <div class="col-sm-6">
   <h3>About the Project</h3>
-  <p>JR Cigars is the world's largest cigar e-commerce site, and CLD recently redesigned and rebuilt their platform. While I didn't play a huge role in the site design, I now do any feature updates and changes.</p>
+  <p>JR Cigars is the world's largest cigar e-commerce site, and <a href="http://creativelicencedigital.com/" target="_blank" class="underlined">CLD</a> recently redesigned and rebuilt their platform. While I didn't play a huge role in the site design, I now do any feature updates and changes.</p>
   <p>The Blending Room is a new content hub for JR's customers to get access to everything they need to know about cigars, latest news and events, video reviews and intgrated social media feeds. This type of content experiences very high traffic on the current site and is great for SEO, so The Blending Room was conceived as a way to really consolidate all that content in its own, dedicated place and enrich the user experience.</p>
-  <p>The Blending Room is a Wordpress site, and will be launched in the coming weeks!</p>
+  <p>The Blending Room is a Wordpress site.</p>
 </div>
 
 <div class="col-sm-6">

@@ -1,10 +1,11 @@
 ---
-title: My Portfolio
+title: WGSN Brand Guide
 template: project.jade
 role1: UX/UI Design
 role2: Front-end development
-clientname: Amelia Lewis
-websitelink: http://amelialewis.com.au/
+clientname: WGSN
+clientlink: http://www.wgsn.com
+websitelink: http://wgsn-styleguide.amelialewis.com.au/
 ---
 
 <div class="col-xs-12 col-sm-6 block-bot-md">
