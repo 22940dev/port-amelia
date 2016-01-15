@@ -21,16 +21,22 @@ mixin project(link, title, description)
 
 //- .content-wrap
 //- h2.text-center Recent projects
+//- +project(
+//-   "/projects/ed-website", 
+//-   "Ed Website", 
+//-   "An app for gourmet foodies to learn all about their favourite cuts of meat."
+//-   )(class="ed-website")
+
 +project(
   "/projects/meat-cuts", 
   "Meat Cuts", 
-  "An app for groumet foodies to learn all about their favourite cuts of meat."
+  "An app for gourmet foodies to learn all about their favourite cuts of meat."
   )(class="meat-cuts")
 
 +project(
   "/projects/repassist",
   "RepAssist", 
-  "A utlity for Novartis sales reps to report their expenses and order samples."
+  "A utility for Novartis sales reps to report their expenses and order samples."
   )(class="repassist")
 
 +project(

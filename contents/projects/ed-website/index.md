@@ -1,10 +1,10 @@
 ---
-title: Rupert Graves
+title: Ed Website
 template: project.jade
 role1: UX/UI Design
-role2: Development
-clientname: Rupert Graves
-stagingwebsitelink: http://rupert.amelialewis.com.au/
+role2: Front-end development
+clientname: Ed
+stagingwebsitelink: http://edapp.cldstaging.com.au/
 ---
 
 <div class="col-sm-6">

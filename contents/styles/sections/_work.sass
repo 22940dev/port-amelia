@@ -61,7 +61,6 @@
       right: 10px
       background-color: rgba(black, 0.7)
       color: white
-      @extend .display-box
       +transition(all 500ms)
       opacity: 0
 
@@ -72,7 +71,11 @@
         left: 0
 
       .overlay-content
-        max-width: 70%
+        width: 80%
+        position: absolute
+        top: 50%
+        left: 50%
+        +transform(translate3d(-50%, -50%, 0))
 
         @media (max-width: $screen-sm-min)
           max-width: 90%

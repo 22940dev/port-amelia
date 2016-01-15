@@ -23,7 +23,7 @@ clientlink: https://www.novartis.com/
 <div class="col-sm-6">
   <h3>My Approach</h3>
   <p>
-    The design process for Let's Go has been a bit unusal because I was given (dated) designs for an existing app, which is now forming a section of our app, as well as a new set of branding which included the rainbow bursts pictured above. I absolutely loved the rainbow bursts and knew they had to be worked into the designs in a great way.
+    The design process for Let's Go has been a bit unusual because I was given (dated) designs for an existing app, which is now forming a section of our app, as well as a new set of branding which included the rainbow bursts pictured above. I absolutely loved the rainbow bursts and knew they had to be worked into the designs in a great way.
   </p>
   <p>
     While I've kept a lot of the UI elements very simple, I've really enjoyed being able to play around with the bright colours and fun imagery. The purpose of the app is really to collect a lot of data about the patient in order to help with their condition, so we had to think of creative ways for the user to interact with these inputs and want to keep coming back.
