@@ -11,8 +11,8 @@ playstorelink: https://play.google.com/store/apps/details?id=com.mla.meatcuts&hl
 
 <div class="col-xs-12 col-sm-6 block-bot-md">
   <h3>About the Project</h3>
-  <p>Meat Cuts is an app I worked on at <a href="http://creativelicencedigital.com/" target="_blank" class="underlined">CLD</a>, briefed to us by Meat &amp; Livestock Australia. They wanted to create an app for users to learn all about various cuts of meat and how best to cook them, in a fun an interactive way. Our focus user group was "gourmet home cooks" - largely, but not exclusively, in the young male demographic.</p>
-  <p>There are a number of apps with a similar function on the App Store (most of which are less than amazing), so we really wanted Meat Cuts to stand out visually and to be the one that users chose. </p>
+  <p>Meat Cuts is an app I worked on at <a href="http://creativelicencedigital.com/" target="_blank" class="underlined">CLD</a>, briefed by Meat &amp; Livestock Australia. They wanted to create an app for users to learn all about various cuts of meat and how best to cook them, in a fun an interactive way. Our target user group was gourmet home cooks&mdash;largely, but not exclusively, in the young male demographic.</p>
+  <p>There were a number of apps with a similar function on the App Store, so we really wanted Meat Cuts to stand out visually and to be the one that users chose.</p>
   <p>The app has been downloaded over 60,000 times on both iOS and Android, with mostly 4 and 5 star reviews.</p>
 </div>
 
