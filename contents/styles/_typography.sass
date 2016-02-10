@@ -14,13 +14,16 @@
 
 // WEIGHT
 .text-normal
-  font-family: 'montserratlight'
+  // font-family: 'montserratlight'
+  font-weight: 100
 
 .text-bold, h3
-  font-family: 'montserratbold'
+  // font-family: 'montserratbold'
+  font-weight:  900
 
 .text-heavy
-  font-family: 'montserratblack'
+  // font-family: 'montserratblack'
+  font-weight: 900
 
 
 // TRANSFORMATION
@@ -58,8 +61,26 @@ a
   +transition(all 300ms)
 
   &.underlined
-    border-bottom: 1px solid black
+    display: inline-block
+    position: relative
+    @extend .text-bold
+    z-index: 1
+
+    &:after
+      content: ""
+      display: block
+      width: 100%
+      height: 3px
+      position: absolute
+      bottom: 0
+      left: 0
+      background: rgba($dk-grey, 0.2)
+      +transform(scale(1, 1))
+      +transform-origin(center bottom)
+      +transition(all 300ms)
+      z-index: -1
 
     &:hover
-      color: $primary
-      border-color: $primary
+      &:after
+        background: rgba($primary, 0.3)
+        +transform(scale(1, 3.2))

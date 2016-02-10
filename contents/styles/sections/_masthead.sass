@@ -1,6 +1,8 @@
 #masthead
   position: relative
-  height: 600px
+  background: $dk-grey
+  color: white
+  padding: 200px 0
   
   .grey-box
     background: $lt-grey
@@ -12,15 +14,14 @@
     z-index: 10
   
   .desc
-    position: absolute
-    top: 160px
-    left: 38%
     z-index: 30
+    +transition(all 300ms)
 
     h1
       font-size: 4.6em
       line-height: 1em
       position: relative
+      // color: $primary
       +transform(translate3d(0, 0, 0))
       +transition(all 300ms)
       
@@ -28,18 +29,34 @@
         content: ""
         display: block
         position: absolute
-        background: $primary
-        top: 28px
+        background: rgba(white, 0.05)
+        top: 34px
         left: -100px
         right: -1500px
         height: 14px
         z-index: -1
+        +transform(translate3d(0, 0, 0))
+        +transition(all 300ms)
+
+      // &:hover
+      //   +transform(translate3d(-20px, -10px, 0))
+
+      //   &:after
+      //     +transform(translate3d(40px, 18px, 0))
 
       @media (max-width: $screen-sm-min)
         font-size: 3.4em
 
     p:last-of-type
       margin-top: -5px
+
+    a.underlined
+      &:after
+        background: rgba(white, 0.3)
+
+      &:hover
+        &:after
+          background: rgba($primary, 1)
 
     @media (max-width: $screen-sm-min)
       left: 20%

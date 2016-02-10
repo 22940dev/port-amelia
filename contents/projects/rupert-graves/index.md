@@ -4,8 +4,8 @@ template: project.jade
 role1: UX/UI Design
 role2: Development
 clientname: Rupert Graves
-clientlink: http://rupert.amelialewis.com.au/
-websitelink: http://rupert.amelialewis.com.au/
+clientlink: http://rupert-graves.amelia-lewis.com/
+websitelink: http://rupert-graves.amelia-lewis.com/
 ---
 
 <div class="col-sm-6">

@@ -4,20 +4,19 @@ block append vars
   - bodyclass = 'index'
 
 block content
-  section#masthead.block-ver-xl
-    .grey-box
-    .desc
-      h1.text-heavy
-        | Amelia
-        br
-        | Lewis
-      .block-hor-xl
-        p.text-uppercase.text-bold.text-spaced Product Designer
-        p.text-uppercase Currently working at 
+  section#masthead
+    //- .grey-box
+    .content-wrap
+      .desc
+        h1.text-bold
+          | amelia lewis
+        //- .block-hor-xl
+        p.text-lowercase.text-bold.text-spaced Product Designer
+        p.text-lowercase.text-spaced Currently working at 
           a.underlined(href="http://wgsn.com", target="_blank") WGSN
           |  in New York City, previously at 
           a.underlined(href="http://creativelicencedigital.com/", target="_blank") Creative Licence Digital
           | .
 
-  section#project-list.block-bot-xl
+  section#project-list.block-ver-xl
     include partials/project-list
