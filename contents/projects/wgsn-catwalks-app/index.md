@@ -1,10 +1,10 @@
 ---
-title: WGSN
+title: WGSN Catwalks App
 template: project.jade
 role1: UX/UI Design
-role2: Front-end development
 clientname: WGSN
 clientlink: http://www.wgsn.com
+websitelink: http://www.wgsn.com
 ---
 
 <div class="col-xs-12 col-sm-6 block-bot-md">

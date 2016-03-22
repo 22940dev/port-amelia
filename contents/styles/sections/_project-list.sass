@@ -43,7 +43,7 @@
       @extend .text-center
       font-size: 2em
       top: 50%
-      +transform(translate3d(0, -50%, 0) scale(1, 1))
+      +transform(translate3d(0, -50%, 0) scale(0, 1))
       +transform-origin(left center)
 
     &:hover
@@ -81,3 +81,46 @@
       &:after
         width: 60px
         font-size: 1.4em
+
+  .project-list-item2
+    width: 100%
+    height: 500px
+    // max-width: 1000px
+    margin: 0 auto
+    position: relative
+
+    .project-img
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      background: $lt-grey no-repeat center / cover
+      position: relative
+      +transform(translate3d(0, 0, 0) scale(1))
+      +transition(all 600ms)
+
+    .project-text
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+
+      .project-name,
+      .project-type,
+      .project-year
+        background: rgba(white, 0.9)
+        display: inline-block
+        padding: 5px 15px
+
+      .project-name
+        font-size: 3em
+
+    &:hover
+      .project-img
+        +transform(translate3d(0, 0, 0) scale(1.01))
+
+    &:active
+      .project-img
+        +transform(translate3d(0, 0, 0) scale(0.96))
