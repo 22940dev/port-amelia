@@ -1,83 +1,51 @@
 #project-list
   .project-list-item
     display: block
-    overflow: auto
     position: relative
-    border-top: 1px solid black
-    vertical-align: text-bottom
+    border-bottom: 1px solid transparent
 
-    &:last-of-type
-      border-bottom: 1px solid black
+    h4
+      +transform(translate3d(0, 10px, 0))
+      +transition(all 300ms)
+      opacity: 0
+      border-top: 1px solid transparent
 
-    .project-name
-      margin: 0 6px 0 0
-      max-width: 60%
+    p
+      +transform(translate3d(0, -10px, 0))
+      +transition(all 300ms)
+      opacity: 0
 
-    .project-type
-      font-size: 0.8em
-      margin-top: 3px
+    #project-name
+      p
+        opacity: 1
+        position: relative
+        display: inline-block
 
-    .project-year
-      font-size: 0.8em
-      margin-top: 2px
-
-    &:before,
-    &:after
-      display: block
-      position: absolute
-      width: 200px
-      right: 0
-      +transition(all 400ms)
-
-    &:before
-      content: ""
-      background: $primary
-      top: 0
-      height: 100%
-      +transform(translate3d(0, 0, 0) scale(0, 1))
-      +transform-origin(right center)
-
-    &:after
-      content: "→"
-      color: white
-      @extend .text-center
-      font-size: 2em
-      top: 50%
-      +transform(translate3d(0, -50%, 0) scale(0, 1))
-      +transform-origin(left center)
+        &:after
+          content: ""
+          display: block
+          position: absolute
+          background: rgba($primary, 0.25)
+          top: 7px
+          left: -600px
+          right: -5px
+          height: 6px
+          z-index: -1
+          +transform(translate3d(0, 0, 0) scale(0, 1))
+          +transform-origin(left center)
+          +transition(all 600ms)
 
     &:hover
-      &:before
-        +transform(translate3d(0, 0, 0) scale(1, 1))
+      border-color: $lt-grey
+      
+      h4,
+      p
+        +transform(translate3d(0, 0, 0))
+        opacity: 1
+        border-color: $lt-grey
 
-      &:after
-        +transform(translate3d(0, -50%, 0) scale(1, 1))
-        +transition-delay(200ms)
-
-    &:active
-      &:before,
-      &:after
-        +transform(translate3d(20px, 0, 0) scale(1, 1))
-        +transition-delay(0ms)
-
-    @media (max-width: $screen-sm-min)
-      .project-name,
-      .project-type,
-      .project-year
-        float: none
-
-      &:before,
-      &:after
-        width: 100px
-
-      &:before
-        +transform(translate3d(0, 0, 0) scale(1, 1))
-
-      &:after
-        +transform(translate3d(0, -50%, 0) scale(1, 1))
-
-    @media (max-width: $screen-xs-min)
-      &:before,
-      &:after
-        width: 60px
-        font-size: 1.4em
+      #project-name
+        p
+          &:after
+            +transform(translate3d(0, 0, 0) scale(1, 1))
+            @extend .delay-100

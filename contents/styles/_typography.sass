@@ -13,17 +13,14 @@
 
 
 // WEIGHT
-.text-normal
-  // font-family: 'montserratlight'
+.text-light
   font-weight: 100
 
-.text-bold, h3
-  // font-family: 'montserratbold'
-  font-weight:  900
+.text-normal
+  font-weight: 300
 
-.text-heavy
-  // font-family: 'montserratblack'
-  font-weight: 900
+.text-bold, h3
+  font-weight:  900
 
 
 // TRANSFORMATION
@@ -50,7 +47,13 @@ h1, h2, h3, h4, ul, ol, p, li
 
 // STYLES
 h1
-  font-size: 3.4em
+  font-size: 3.5em
+
+h4
+  font-size: 0.75em
+  @extend .text-uppercase
+  @extend .text-spaced
+  @extend .text-light
 
 p
   line-height: 1.4em
