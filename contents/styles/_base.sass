@@ -13,14 +13,14 @@ body
     border: 0
 
 .content-wrap
-  width: 1000px
+  width: 90%
   margin: 0 auto
 
-  @media (max-width: $screen-lg-min)
-    width: 90%
-
-  @media (max-width: $screen-xs-min)
+  @media (min-width: $screen-xs-min)
     width: 85%
+
+  @media (min-width: $screen-lg-min)
+    width: 1000px
 
 #content
   z-index: 10
@@ -55,27 +55,9 @@ hr
   float: right
 
 .display-box
-  display: -ms-box
-  -ms-box-pack: center
-  -ms-box-align: center
-
-  display: -moz-box
-  -moz-box-pack: center
-  -moz-box-align: center
-
-  display: -webkit-box
-  -webkit-box-pack: center
-  -webkit-box-align: center
-
-// turn wow animations off on mobile
-html.mobile, html.tablet
-  .wow
-    visibility: visible !important
-    -webkit-animation: none !important
-    -moz-animation: none !important
-    -o-animation: none !important
-    -ms-animation: none !important
-    animation: none !important
+  display: flex
+  align-items: center
+  justify-content: center
 
 
 @for $i from 1 through 30
@@ -84,14 +66,14 @@ html.mobile, html.tablet
     animation-delay: $i * 50ms !important
 
 
-.hide-mobile
-  display: none
-
-  @media (max-width: $screen-xs-min)
-    display: block
-
-.hide-desktop
+.hidden-desktop
   display: block
 
-  @media (max-width: $screen-xs-min)
+  @media (min-width: $screen-xs-min)
     display: none
+
+.hidden-mobile
+  display: none
+
+  @media (min-width: $screen-xs-min)
+    display: block
