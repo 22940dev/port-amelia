@@ -12,9 +12,9 @@ html(lang='en')
         block title
           = locals.name
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css")
       link(rel='stylesheet', href='/styles/style.css?v1.0')
       //- link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
-      link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css")
       link(href='https://fonts.googleapis.com/css?family=Lato:100,300,900' rel='stylesheet' type='text/css')
       link(rel="shortcut icon", type="image/x-icon", href="/favicon.ico")
 
