@@ -1,21 +1,20 @@
 mixin project-list-item(id, title, type, year, team)
   a.project-list-item.block-md(href="/projects/" + id, id=id, class!=attributes.class)
     .row
-      .col-xs-12.col-sm-6#project-name
+      .col-xs-6#project-name
         h4.block-top-sm Project
         p.text-tight.text-bold.text-uppercase.text-spaced
           for letter, i in title.split("")
             span.char(class="char-#{i + 1} delay-#{(i + 1) * 50}")= letter
-      .col-xs-4.col-sm-2#project-type
+      .col-xs-2#project-type
         h4.block-top-sm.delay-100 Type
         p.text-tight.delay-200= type
-      .col-xs-4.col-sm-2#project-year
+      .col-xs-2#project-year
         h4.block-top-sm.delay-200 Year
         p.text-tight.delay-300= year
-      if team
-        .col-xs-4.col-sm-2#project-team
-          h4.block-top-sm.delay-300 Team
-          p.text-tight.delay-400= team
+      .col-xs-2#project-team
+        h4.block-top-sm.delay-300 Team
+        p.text-tight.delay-400= team
 
 //- ===============================================================================================
 
@@ -26,9 +25,9 @@ section#project-list.block-ver-xl
     +project-list-item("wgsn", "WGSN Public Website", "Website", "2015", "WGSN")
     +project-list-item("wgsn-brand-guide", "WGSN Brand Guide", "Website", "2015", "WGSN")
     +project-list-item("the-blending-room", "The Blending Room", "Website", "2015", "CLD")
-    +project-list-item("rupert-graves", "Rupert Graves", "Website", "2015", "")
+    +project-list-item("rupert-graves", "Rupert Graves", "Website", "2015", "Freelance")
     +project-list-item("field-intouch", "Field InTouch", "Tablet app", "2013—15", "CLD")
     +project-list-item("meat-cuts", "Meat Cuts", "Mobile app", "2014", "CLD")
     +project-list-item("repassist", "RepAssist", "Tablet app", "2014", "CLD")
-    +project-list-item("glenda-graff", "Glenda Graff", "Website", "2013—14", "")
-    +project-list-item("my-portfolio", "My Portfolio", "Website", "2012—15", "")
+    +project-list-item("glenda-graff", "Glenda Graff", "Website", "2013—14", "Freelance")
+    +project-list-item("my-portfolio", "My Portfolio", "Website", "2012—15", "Freelance")
