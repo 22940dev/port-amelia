@@ -19,16 +19,33 @@ mixin project-list-item(id, title, type, year, team)
 
 //- ===============================================================================================
 
-section#project-list.block-ver-xl
-  .content-wrap
-    +project-list-item("wgsn", "WGSN Workspace", "Web App", "2016", "WGSN")(class="coming-soon")
-    +project-list-item("wgsn", "WGSN Catwalks App", "Mobile App", "2015", "WGSN")
-    +project-list-item("wgsn", "WGSN Public Website", "Website", "2015", "WGSN")
-    +project-list-item("wgsn-brand-guide", "WGSN Brand Guide", "Website", "2015", "WGSN")
-    +project-list-item("the-blending-room", "The Blending Room", "Website", "2015", "CLD")
-    +project-list-item("rupert-graves", "Rupert Graves", "Website", "2015", "")
-    +project-list-item("field-intouch", "Field InTouch", "Tablet app", "2013—15", "CLD")
-    +project-list-item("meat-cuts", "Meat Cuts", "Mobile app", "2014", "CLD")
-    +project-list-item("repassist", "RepAssist", "Tablet app", "2014", "CLD")
-    +project-list-item("glenda-graff", "Glenda Graff", "Website", "2013—14", "")
-    +project-list-item("my-portfolio", "My Portfolio", "Website", "2012—15", "")
+section#project-list
+  .row
+    .col-xs-12
+      +project-list-item("wgsn", "Workspace & Image Library", "Web App", "2016", "WGSN")(class="coming-soon")
+  .row
+    .col-xs-12.col-sm-6
+      +project-list-item("wgsn", "Catwalks App", "Mobile App", "2015", "WGSN")
+    .col-xs-12.col-sm-6
+      +project-list-item("wgsn", "WGSN Public Website", "Website", "2015", "WGSN")
+  .row
+    .col-xs-12
+      +project-list-item("wgsn-brand-guide", "WGSN Brand Guide", "Website", "2015", "WGSN")
+  .row
+    .col-xs-12.col-sm-4
+      +project-list-item("the-blending-room", "The Blending Room", "Website", "2015", "CLD")
+    .col-xs-12.col-sm-4
+      +project-list-item("field-intouch", "Field InTouch", "Tablet app", "2013—15", "CLD")
+    .col-xs-12.col-sm-4
+      +project-list-item("repassist", "RepAssist", "Tablet app", "2014", "CLD")
+  .row
+    .col-xs-12
+      +project-list-item("meat-cuts", "Meat Cuts", "Mobile app", "2014", "CLD")
+  .row
+    .col-xs-12.col-sm-6
+      +project-list-item("rupert-graves", "Rupert Graves", "Website", "2015", "")
+    .col-xs-12.col-sm-6
+      +project-list-item("glenda-graff", "Glenda Graff", "Website", "2013—14", "")
+  .row
+    .col-xs-12
+      +project-list-item("my-portfolio", "My Portfolio", "Website", "2012—15", "")

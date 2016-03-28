@@ -2,16 +2,14 @@
   .project-list-item
     display: block
     position: relative
-    border-left: 1px solid transparent
     border-bottom: 1px solid $lt-grey
 
     #project-name
       p
-        margin-bottom: 10px
+        margin-bottom: 20px
 
   @media (min-width: $screen-sm-min)
     .project-list-item
-      border-left: 1px solid $lt-grey
       border-bottom: 1px solid transparent
       
       h4
@@ -30,24 +28,24 @@
           opacity: 1
           position: relative
           display: inline-block
-          margin: 0
 
-          &:after
-            content: ""
-            display: block
-            position: absolute
-            background: rgba($primary, 0.25)
-            top: 7px
-            left: -600px
-            right: -5px
-            height: 6px
-            z-index: -1
-            +transform(translate3d(0, 0, 0) scale(0, 1))
-            +transform-origin(left center)
-            +transition(all 600ms)
+          // &:after
+          //   content: ""
+          //   display: block
+          //   position: absolute
+          //   background: rgba($primary, 0.25)
+          //   top: 7px
+          //   left: -600px
+          //   right: -5px
+          //   height: 6px
+          //   z-index: -1
+          //   +transform(translate3d(0, 0, 0) scale(0, 1))
+          //   +transform-origin(left center)
+          //   +transition(all 600ms)
 
       &:hover
         border-color: $lt-grey
+        background: white
         
         h4,
         p
