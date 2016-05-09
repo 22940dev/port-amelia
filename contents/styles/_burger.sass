@@ -29,10 +29,10 @@ body
       opacity: 0.4
       pointer-events: none
 
-    #masthead .desc,
-    #project,
-    #project-list
-      +transform(translate3d(-10%, 0, 0) scale(0.9))
+    // #masthead .content-wrap,
+    // #project,
+    // .project-list-item
+    //   +transform(translate3d(-10%, 0, 0) scale(0.9))
 
   &.open:after
     visibility: visible
@@ -65,8 +65,7 @@ body
     +transition(all 300ms)
 
     .b-link
-      color: white
-      border-color: white
+      color: rgba(white, 0.5)
       padding-bottom: 2px
       font-size: 0.8em
       @extend .text-bold
@@ -74,8 +73,7 @@ body
       letter-spacing: 0.2em
 
       &:hover
-        color: $primary
-        border-color: $primary
+        color: white
 
   &.open
     visibility: visible

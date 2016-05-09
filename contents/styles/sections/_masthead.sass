@@ -1,8 +1,6 @@
 #masthead
   position: relative
-  background: $dk-grey
-  color: white
-  padding: 260px 0
+  padding: 220px 0 120px
 
   h1
     font-size: 3.4em
@@ -11,31 +9,23 @@
     +transform(translate3d(0, 0, 0))
     +transition(all 300ms)
     
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      background: rgba(white, 0.05)
-      top: 20px
-      left: -30px
-      right: 40px
-      height: 14px
-      z-index: -1
-      +transform(translate3d(0, 0, 0))
-      +transition(all 300ms)
+    // &:after
+    //   content: ""
+    //   display: block
+    //   position: absolute
+    //   background: rgba($primary, 1)
+    //   top: 20px
+    //   left: -20px
+    //   right: 40px
+    //   height: 14px
+    //   z-index: -1
+    //   +transform(translate3d(0, 0, 0))
+    //   +transition(all 300ms)
 
       @media (min-width: $screen-sm-min)
         top: 34px
-        left: -100px
+        left: -20px
         right: -1500px        
 
     @media (min-width: $screen-sm-min)
-      font-size: 4.6em
-
-  a.underlined
-    &:after
-      background: rgba(white, 0.3)
-
-    &:hover
-      &:after
-        background: rgba($primary, 1)
+      font-size: 3.4em

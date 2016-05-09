@@ -12,12 +12,12 @@ block content
       .block-top-xl.block-bot-md
         .row
           .col-xs-12
-            .block-bot-md: a.underlined.text-uppercase(href="/") ← Go back
+            .block-bot-md: a.underlined(href="/") ← Go back
 
         .row
           .col-xs-12.col-sm-9
-            h1.text-uppercase.text-bold.text-tight= page.title
-            .block-bot-md: a.project-client.text-uppercase(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
+            h2.text-tight= page.title
+            .block-bot-md: a.text-uppercase.text-smaller.text-xspaced(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
             //- ul.project-role
             //-   li= page.metadata.role1
             //-   li= page.metadata.role2

@@ -1,28 +1,47 @@
 mixin project-list-item(id, title, type, year)
-  a.project-list-item.block-md.text-uppercase(href="/projects/" + id, id=id, class!=attributes.class)
-    .project-name.text-bold.pull-left.text-spaced
-      for letter, i in title.split("")
-        span.char(class="char-#{i + 1} delay-#{(i + 1) * 50}")= letter
-    .project-type.pull-left= type
-    .project-year.pull-right= year
+  a.project-list-item(href="/projects/" + id, id=id, class!=attributes.class)
+    .project-img(style="background-image: url('/projects/" + id + "/project-tile.jpg')")
+    //- .project-name.text-bold
+    //-   for letter, i in title.split("")
+    //-     span.char(class="char-#{i + 1} delay-#{(i + 1) * 50}")= letter
+    .block-md
+      p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey= type
+      h2.serif= title
+      //- .project-year= year
 
 //- ===============================================================================================
 
-section#project-list.block-ver-xl
+section#project-list.block-bot-xl
   .content-wrap
+    //- .row.header-row
+    //-   .col-xs-12.col-sm-3
+    //-     h2.text-lowercase Select Work
     .row
       .col-xs-12
-        +project-list-item("wgsn", "WGSN Workspace", "Web App", "2016")(class="coming-soon")
-        +project-list-item("wgsn", "WGSN Catwalks App", "Mobile App", "2015")
-        +project-list-item("wgsn", "WGSN Public Website", "Website", "2015")
+        +project-list-item("wgsn-workspace", "WGSN Workspace", "Web App", "2016")(class="coming-soon")
+    .row  
+      .col-xs-12.col-sm-12.col-md-8
         +project-list-item("wgsn-brand-guide", "WGSN Brand Guide", "Website", "2015")
-        +project-list-item("the-blending-room", "The Blending Room", "Website", "2015")
-        +project-list-item("rupert-graves", "Rupert Graves", "Website", "2015")
-        +project-list-item("field-intouch", "Field InTouch", "Tablet app", "2013–2015")
-        +project-list-item("meat-cuts", "Meat Cuts", "Mobile app", "2014")
-        +project-list-item("repassist", "RepAssist", "Tablet app", "2014")
-        +project-list-item("glenda-graff", "Glenda Graff", "Website", "2013–2014")
-    .block-md
     .row
-      .col-xs-12
+      .col-xs-12.col-sm-12.col-md-4
+        +project-list-item("wgsn-catwalks-app", "WGSN Catwalks App", "Mobile App", "2015")
+      .col-xs-12.col-sm-12.col-md-4
+        +project-list-item("wgsn-public-site", "WGSN Public Website", "Website", "2015")
+    .row
+      .col-xs-12.col-sm-12.col-md-12
+        +project-list-item("meat-cuts", "Meat Cuts", "Mobile app", "2014")
+    .row
+      .col-xs-12.col-sm-12.col-md-4
+        +project-list-item("the-blending-room", "The Blending Room", "Website", "2015")
+      .col-xs-12.col-sm-12.col-md-4
+        +project-list-item("field-intouch", "Field InTouch", "Tablet app", "2013–2015")
+      .col-xs-12.col-sm-12.col-md-4
+        +project-list-item("repassist", "RepAssist", "Tablet app", "2014")
+    .row
+      .col-xs-12.col-sm-12.col-md-4
+        +project-list-item("rupert-graves", "Rupert Graves", "Website", "2015")
+      .col-xs-12.col-sm-12.col-md-4
+        +project-list-item("glenda-graff", "Glenda Graff", "Website", "2013–2014")
+    .row
+      .col-xs-12.col-sm-12.col-md-8
         +project-list-item("my-portfolio", "My Portfolio", "Website", "2012–2015")
