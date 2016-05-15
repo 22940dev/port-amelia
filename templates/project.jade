@@ -8,21 +8,27 @@ block prepend title
 
 block content
   section#project
-    .content-wrap
-      .block-top-xl.block-bot-md
-        .row
-          .col-xs-12
-            .block-bot-md: a.underlined(href="/") ← Go back
+    //- .header-img(style="background-image: url('" + page.title.replace(/ /g, "-").toLowerCase() + "/project-tile.jpg')")
 
-        .row
-          .col-xs-12.col-sm-9
-            h2.text-tight= page.title
-            .block-bot-md: a.text-uppercase.text-smaller.text-xspaced(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
-            //- ul.project-role
-            //-   li= page.metadata.role1
-            //-   li= page.metadata.role2
+    .content-wrap.block-ver-xl
+      //- .row.block-bot-md
+      //-   .col-xs-12
+      //-     a.highlighted.sans-serif(href="/") ← Back
+
+      .row.block-bot-md
+        .col-xs-12.text-center
+          .block-bot-xs
+            h1.text-tight= page.title
           
-          .col-xs-12.col-sm-3
+          .block-bot-md
+            a.client-name.text-uppercase.text-smaller.text-xspaced(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
+          
+          //- .block-bot-md
+          //-   ul.project-role
+          //-     li= page.metadata.role1
+          //-     li= page.metadata.role2
+          
+          .block-bot-md
             if page.metadata.appstorelink
               a.btn(href="#{page.metadata.appstorelink}" target="_blank") App Store
             if page.metadata.playstorelink
@@ -31,15 +37,12 @@ block content
               a.btn(href="#{page.metadata.websitelink}" target="_blank") Website
             else
               p.btn.btn-disabled.tight Internal use only
-      
+        
       hr
 
-      .block-top-md
-        .row!= typogr(page.html).typogrify()
-
-      hr
-
-      .block-top-md.block-bot-xl
-        .row
-          .col-xs-12
-            img(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
+      .row.block-ver-md
+        .col-xs-12.col-sm-4
+          .block-right-md!= typogr(page.html).typogrify()
+        
+        .col-xs-12.col-sm-8
+          img(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")

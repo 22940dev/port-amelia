@@ -1,7 +1,7 @@
 .sans-serif
   font-family: 'Lato'
 
-p, li
+p, li, a
   @extend .sans-serif
 
 .serif
@@ -29,15 +29,18 @@ h1, h2, h3, h4
 // WEIGHT
 .text-normal
   // font-family: 'montserratlight'
-  font-weight: 100
+  font-weight: 300
 
 .text-bold
   // font-family: 'montserratbold'
-  font-weight:  900
+  font-weight:  700
 
 .text-heavy
   // font-family: 'montserratblack'
   font-weight: 900
+
+p, li
+  @extend .text-normal
 
 
 // TRANSFORMATION
@@ -111,3 +114,27 @@ a
       &:after
         background: $primary
         +transform(scale(1, 3))
+
+  &.highlighted
+    display: inline-block
+    position: relative
+    @extend .text-bold
+
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      background: rgba($primary, 0.5)
+      top: 13px
+      left: 0
+      right: 0
+      height: 8px
+      border-radius: 1px
+      z-index: -1
+      transition: all 400ms
+      transform: translate3d(0, 0, 0) scale(0, 1) skewX(-15deg)
+      transform-origin: left center
+
+    &:hover
+      &:after
+        transform: translate3d(0, 0, 0) scale(1, 1) skewX(-15deg)

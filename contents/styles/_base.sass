@@ -20,10 +20,11 @@ body
     width: 85%
 
   @media (min-width: $screen-lg-min)
-    width: 1200px
+    max-width: 1400px
 
 #content
   z-index: 10
+  min-height: 100vh
 
 section
   position: relative
@@ -53,6 +54,9 @@ hr
 
 .pull-right
   float: right
+
+.inline-block
+  display: inline-block
 
 .display-box
   display: flex

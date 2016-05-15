@@ -3,16 +3,12 @@ title: My Portfolio
 template: project.jade
 role1: UX/UI Design
 role2: Front-end development
-clientname: Amelia Lewis
-websitelink: http://amelialewis.com.au/
+clientname: Myself
+websitelink: http://amelia-lewis.com/
 ---
 
-<div class="col-xs-12 col-sm-6 block-bot-md">
-  <h3>About the Project</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
+### About the Project
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-<div class="col-xs-12 col-sm-6 block-bot-md">
-  <h3>My Approach</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
+### My Approach
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

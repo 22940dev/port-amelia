@@ -15,16 +15,31 @@
 
     .project-img
       height: 300px
-      background: $md-grey
-      background: no-repeat center / cover
+      background: $lt-grey no-repeat center / cover
       border-radius: 2px 2px 0 0
       transition: all 400ms
 
     h2
-      transition: all 400ms
+      position: relative
+      display: inline-block
+
+      &:after
+        content: ""
+        display: block
+        position: absolute
+        background: rgba($primary, 0.5)
+        top: 12px
+        left: -4px
+        right: -4px
+        height: 14px
+        border-radius: 1px
+        z-index: -1
+        transition: all 400ms
+        transform: translate3d(0, 0, 0) scale(0, 1) skewX(-15deg)
+        transform-origin: left center
 
     &:hover
       box-shadow: 0 0 30px rgba(black, 0.1)
-      
-      h2
-        color: $primary
+
+      h2:after
+        transform: translate3d(0, 0, 0) scale(1, 1) skewX(-15deg)
