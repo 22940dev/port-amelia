@@ -1,5 +1,7 @@
 ---
 title: WGSN Public Site
+date: 2015
+type: Website
 template: project.jade
 role1: UX/UI Design
 role2: Front-end development

@@ -1,5 +1,7 @@
 ---
 title: WGSN Catwalks App
+date: 2015–2016
+type: Mobile App
 template: project.jade
 role1: UX/UI Design
 clientname: WGSN
