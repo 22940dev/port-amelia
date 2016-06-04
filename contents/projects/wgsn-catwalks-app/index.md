@@ -4,7 +4,8 @@ template: project.jade
 role1: UX/UI Design
 clientname: WGSN
 clientlink: http://www.wgsn.com
-websitelink: http://www.wgsn.com
+appstorelink: https://itunes.apple.com/us/app/wgsn-catwalks/id1041086526?mt=8
+playstorelink: https://play.google.com/store/apps/details?id=com.wgsn.catwalkgallery&hl=en
 ---
 
 ### About the Project

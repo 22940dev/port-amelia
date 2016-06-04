@@ -1,15 +1,10 @@
-.sans-serif
+.sans-serif, p, li, a
   font-family: 'Lato'
+  line-height: 1.4em
 
-p, li, a
-  @extend .sans-serif
-
-.serif
+.serif, h1, h2, h3, h4
   font-family: 'Abril Fatface'
   font-weight: normal
-
-h1, h2, h3, h4
-  @extend .serif
 
 
 // ALIGNMENT
@@ -27,20 +22,17 @@ h1, h2, h3, h4
 
 
 // WEIGHT
-.text-normal
+.text-normal, p, li
   // font-family: 'montserratlight'
   font-weight: 300
 
 .text-bold
   // font-family: 'montserratbold'
-  font-weight:  700
+  font-weight:  400
 
 .text-heavy
   // font-family: 'montserratblack'
   font-weight: 900
-
-p, li
-  @extend .text-normal
 
 
 // TRANSFORMATION
@@ -75,11 +67,11 @@ h1, h2, h3, h4, ul, ol, p, li
 .text-grey
   color: $md-grey
 
-// h1
-//   font-size: 3.4em
+.text-white
+  color: white
 
-// h2
-//   font-size: 2em
+h1
+  font-size: 3.4em
 
 a
   text-decoration: none

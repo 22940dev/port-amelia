@@ -1,5 +1,7 @@
 ---
 title: My Portfolio
+date: 2012–2015
+type: Website
 template: project.jade
 role1: UX/UI Design
 role2: Front-end development

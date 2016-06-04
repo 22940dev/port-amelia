@@ -1,5 +1,7 @@
 ---
 title: Rupert Graves
+date: 2015
+type: Website
 template: project.jade
 role1: UX/UI Design
 role2: Development
@@ -9,9 +11,11 @@ websitelink: http://rupert-graves.amelia-lewis.com/
 ---
 
 ### About the Project
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+This is (or will be) the official website for UK actor, Rupert Graves. His <a href="http://rupert-graves.com/" class="highlighted" target="_blank">current site</a> is rather dated, so we’ve been working to create something a little sexier and more modern.
 
 ### My Approach
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+This is still very much a work in progress. I’ve been through a few iterations but I’m yet to settle on something that I love. It’s been interesting researching similar sites, and trying to decide what content is actually worth having on here as opposed to what’s available elsewhere on the web.
+
+I’m essentially creating a visual brand for Rupert, so I want it to be something that stands out and looks great.
