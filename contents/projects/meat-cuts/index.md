@@ -30,5 +30,3 @@ With feedback from my colleagues, I decided to keep both the user flow and the v
 The biggest challenge I faced in the design of Meat Cuts was fitting the animal diagrams onto the small screens, while keeping them large enough for the smaller sections to be tappable. We experimented with various device-rotation ideas, but in the end decided a horizontal scroll was the most user-friendly.
 
 Meat Cuts was built as a hybrid web app.
-
-![Meat Cuts](meat-cuts-1.jpg "Meat Cuts")

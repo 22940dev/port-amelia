@@ -9,6 +9,10 @@ clientname: Novartis
 clientlink: https://www.novartis.com/
 ---
 
+<div class="block-bot-md">
+![RepAssist](repassist-1.jpg "RepAssist")
+</div>
+
 ### About the Project
 
 RepAssist was a pre-existing iPhone app that Novartis had, and they came to us at <a href="http://creativelicencedigital.com/" target="_blank" class="highlighted">CLD</a> asking to rebuild the thing from the ground up. The old one was&mdash;to put it delicately&mdash;a <em>mess</em> and in dire need of a redesign.

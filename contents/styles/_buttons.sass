@@ -10,7 +10,7 @@
   margin: 0 0 10px
   font-size: 0.7em
   overflow: hidden
-  +transition(all 500ms)
+  transition: all 500ms
 
   &:after
     content: ""
@@ -21,19 +21,19 @@
     left: -20px
     background: $primary
     z-index: -1
-    +transform(translate3d(0, 0, 0) scale(0, 1) skewX(-30deg))
-    +transform-origin(left center)
-    +transition(all 500ms)
+    transform: translate3d(0, 0, 0) scale(0, 1) skewX(-30deg)
+    transform-origin: left center
+    transition: all 500ms
 
   &:hover
     color: white
     border-color: $primary
 
     &:after
-      +transform(translate3d(0, 0, 0) scale(1, 1) skewX(-30deg))
+      transform: translate3d(0, 0, 0) scale(1, 1) skewX(-30deg)
 
   &:active
-    +transform(translate3d(0, 0, 0) scale(0.95))
+    transform: translate3d(0, 0, 0) scale(0.95)
 
   &.btn-disabled
     color: rgba(black, 0.2)

@@ -25,5 +25,5 @@ I built the website from scratch, using <a href="http://wintersmith.io/" target=
 Next time I work on this project, I would like to work out a better way of loading images, as well as connecting a CMS so the client can upload imagery. There is also potential to expand the content out and include things like booking forms and more detailed service information.
 
 <div class="block-top-md">
-![Meat Cuts](glenda-graff-1.jpg "Glenda Graff")
+![Glenda Graff](glenda-graff-1.jpg "Glenda Graff")
 </div>
