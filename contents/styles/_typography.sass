@@ -1,8 +1,8 @@
-.sans-serif, p, li, a
+.sans-serif, p, li, a, h4
   font-family: 'Lato'
   line-height: 1.4em
 
-.serif, h1, h2, h3, h4
+.serif, h1, h2, h3
   font-family: 'Playfair Display'
   font-weight: 900
   line-height: 1.2em
@@ -29,7 +29,7 @@
 .text-bold
   font-weight:  400
 
-.text-heavy
+.text-heavy, h4
   font-weight: 900
 
 
@@ -37,7 +37,7 @@
 .text-lowercase
   text-transform: lowercase
 
-.text-uppercase
+.text-uppercase, h4
   text-transform: uppercase
 
 .text-capitalize
@@ -46,7 +46,7 @@
 
 // MARGINS
 h1, h2, h3, h4, ul, ol, p, li
-  margin: 0 0 15px
+  margin: 0 0 0.5em
 
 .text-tight
   margin: 0
@@ -54,27 +54,30 @@ h1, h2, h3, h4, ul, ol, p, li
 
 // SIZES
 h1
-  font-size: 3em
+  font-size: 2.6em
 
 h2
-  font-size: 1.6em
+  font-size: 2em
 
 h3
   font-size: 1.4em
 
 h4
-  font-size: 1em
+  font-size: 0.8em
 
 
 // STYLES
-.text-spaced
+.text-spaced, h4
   letter-spacing: 0.1em
 
 .text-xspaced
   letter-spacing: 0.5em
 
 .text-smaller
-  font-size: 0.8em
+  font-size: 0.6em
+
+.text-bigger
+  font-size: 1.2em
 
 .text-grey
   color: $md-grey
@@ -100,10 +103,10 @@ a
       display: block
       position: absolute
       background: rgba($primary, 0.5)
-      top: 13px
-      left: 0
-      right: 0
-      height: 8px
+      top: 58%
+      left: -2px
+      right: -2px
+      height: 10px
       border-radius: 1px
       z-index: -1
       transition: all 400ms

@@ -39,7 +39,6 @@ body
   height: 100%
   top: 0
   right: 0
-  padding: 46px
   overflow: scroll
   transform: translate3d(240px, 0, 0)
   transition: all 300ms
@@ -49,33 +48,29 @@ body
     padding: 0
     margin: 0
     width: 100%
+    list-style-type: none
 
   li 
-    list-style-type: none
-    width: 100%
     opacity: 0
-    margin: 0 0 20px 0
     pointer-events: none
     transition: all 300ms
 
     .b-link
       color: rgba(white, 0.5)
-      padding-bottom: 2px
-      font-size: 0.8em
-      @extend .text-bold
-      @extend .text-uppercase
-      letter-spacing: 0.2em
 
       &:hover
         color: white
+
+  hr
+    background: rgba(white, 0.2)
 
   &.open
     visibility: visible
     transform: translate3d(0, 0, 0)
 
     li
-      pointer-events: all
       opacity: 1
+      pointer-events: all
 
 .b-container
   position: fixed
@@ -138,5 +133,5 @@ body
       transform: translate3d(30%, -150%, 0) rotate(-35deg) scale(0.4, 1)
 
 body.index
-  .menu-home
+  li:first-of-type
     display: none

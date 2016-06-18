@@ -1,5 +1,5 @@
 ---
-title: WGSN Workspace
+title: WGSN Workspace & Image Library
 date: 2015–2016
 type: Web app
 template: project.jade
@@ -10,7 +10,9 @@ websitelink: http://wgsn-cherry-prototype.amelia-lewis.com
 ---
 
 ### About the Project
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
 ### My Approach
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
