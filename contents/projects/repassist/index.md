@@ -3,6 +3,8 @@ title: RepAssist
 date: 2014
 type: Tablet App
 template: project.jade
+tagline1: A streamlined solution tailored
+tagline2: specifically to Novartis sales reps' needs.
 role1: UX/UI Design
 role2: Front-end Development
 clientname: Novartis
@@ -13,9 +15,9 @@ clientlink: https://www.novartis.com/
 ![RepAssist](repassist-1.jpg "RepAssist")
 </div>
 
-### About the Project
+### About
 
-RepAssist was a pre-existing iPhone app that <a href="http://www.novartis.com/" target="_blank" class="highlighted">Novartis</a> had, and they came to us at <a href="http://creativelicencedigital.com/" target="_blank" class="highlighted">CLD</a> asking to rebuild the thing from the ground up. The old one was&mdash;to put it delicately&mdash;in dire need of a redesign.
+RepAssist was a pre-existing iPhone app that <a href="http://www.novartis.com/" target="_blank" class="highlighted">Novartis</a> had, and they came to us at <a href="http://creativelicence.com.au/" target="_blank" class="highlighted">CLD</a> asking to rebuild the thing from the ground up. The old one was&mdash;to put it delicately&mdash;in dire need of a redesign.
 
 The app is used by sales reps for two functions; to submit expense reports for events they've held, and to order drug samples.
 

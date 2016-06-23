@@ -1,6 +1,7 @@
 .project-view
-  h2
+  h1
     position: relative
+    width: 60%
 
     &:before
       content: ""
@@ -19,6 +20,27 @@
 
     &:first-of-type
       margin-top: 0
+
+  .tagline
+    span
+      display: inline-block
+      position: relative
+      margin: 0 0 4px
+
+      &:after
+        content: ""
+        display: block
+        position: absolute
+        background: rgba($primary, 0.15)
+        top: 2px
+        left: -8px
+        right: -8px
+        height: 100%
+        border-radius: 1px
+        z-index: -1
+        transition: all 400ms
+        transform: translate3d(0, 0, 0) skewX(-15deg)
+        transform-origin: left center
   
   img
     width: 100%

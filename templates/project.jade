@@ -17,8 +17,20 @@ block content
         .row.block-ver-xl
           .col-xs-12
             .block-bot-md
-              p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey= page.metadata.type
-              h2= page.title
+              p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
+                span= page.metadata.type
+                span &nbsp;&nbsp;/&nbsp;&nbsp;
+                span= page.metadata.date
+              h1= page.title
+              p.tagline.text-bigger
+                if page.metadata.tagline1
+                  span= page.metadata.tagline1
+                if page.metadata.tagline2
+                  br
+                  span= page.metadata.tagline2
+                if page.metadata.tagline3
+                  br
+                  span= page.metadata.tagline3
             .block
               if page.metadata.appstorelink
                 .block-right-sm.inline-block: a.btn(href="#{page.metadata.appstorelink}" target="_blank") App Store
@@ -29,60 +41,29 @@ block content
         
         hr
 
-        .row.block-top-md
-          .col-xs-12.col-sm-4.block-bot-md
-            h4.text-tight Client
-            a.highlighted.text-tight(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
+        //- .row.block-top-md
+        //-   .col-xs-12.col-sm-4.block-bot-md
+        //-     h4.text-tight Client
+        //-     a.highlighted.text-tight(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
 
-            if page.metadata.clientname2
-              br
-              a.highlighted.text-tight(href="#{page.metadata.clientlink2}" target="_blank")= page.metadata.clientname2
+        //-     if page.metadata.clientname2
+        //-       br
+        //-       a.highlighted.text-tight(href="#{page.metadata.clientlink2}" target="_blank")= page.metadata.clientname2
 
-            if page.metadata.clientname3
-              br
-              a.highlighted.text-tight(href="#{page.metadata.clientlink3}" target="_blank")= page.metadata.clientname3
+        //-     if page.metadata.clientname3
+        //-       br
+        //-       a.highlighted.text-tight(href="#{page.metadata.clientlink3}" target="_blank")= page.metadata.clientname3
 
-          .col-xs-12.col-sm-4.block-bot-md
-            h4.text-tight My Role
-            p.text-tight= page.metadata.role1
-            p.text-tight= page.metadata.role2
+        //-   .col-xs-12.col-sm-4.block-bot-md
+        //-     h4.text-tight My Role
+        //-     p.text-tight= page.metadata.role1
+        //-     p.text-tight= page.metadata.role2
 
-          .col-xs-12.col-sm-4.block-bot-md
-            h4.text-tight Date
-            p.text-tight= page.metadata.date
+        //-   .col-xs-12.col-sm-4.block-bot-md
+        //-     h4.text-tight Date
+        //-     p.text-tight= page.metadata.date
 
-        hr
+        //- hr
 
         .row.block-ver-xl
-          //- .col-xs-12.col-sm-3
-          //-   if page.metadata.clientname
-          //-     .block-bot-md
-          //-       h4.text-tight Client
-          //-       a.highlighted.text-tight(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
-
-          //-       if page.metadata.clientname2
-          //-         br
-          //-         a.highlighted.text-tight(href="#{page.metadata.clientlink2}" target="_blank")= page.metadata.clientname2
-
-          //-       if page.metadata.clientname3
-          //-         br
-          //-         a.highlighted.text-tight(href="#{page.metadata.clientlink3}" target="_blank")= page.metadata.clientname3
-
-          //-   .block-bot-md
-          //-     h4.text-tight My Role
-          //-     p.text-tight= page.metadata.role1
-          //-     p.text-tight= page.metadata.role2
-
-          //-   .block-bot-lg
-          //-     h4.text-tight Date
-          //-     p.text-tight= page.metadata.date
-
-          //-   .block-bot-lg
-          //-     if page.metadata.appstorelink
-          //-       .block-bot-xs: a.btn.inline-block(href="#{page.metadata.appstorelink}" target="_blank") App Store
-          //-     if page.metadata.playstorelink
-          //-       .block-bot-xs: a.btn.inline-block(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
-          //-     if page.metadata.websitelink
-          //-       .block-bot-xs: a.btn.inline-block(href="#{page.metadata.websitelink}" target="_blank") Website
-
           .col-xs-12!= typogr(page.html).typogrify()

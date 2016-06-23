@@ -3,12 +3,15 @@ title: ShopperNova
 date: 2014
 type: Mobile App
 template: project.jade
+tagline1: An undisputed leader in
+tagline2: mobile marketing, location-based
+tagline3: targeting and data-collection.
 role1: UX/UI Design
 clientname: Nova FM
 clientlink: http://www.nova969.com.au/nova969
 ---
 
-### About the Project
+### About
 
 ShopperNova is a location-based deals app that CLD made in association with Nova FM, one of Sydney’s largest commercial radio stations. It was one of the first apps to utilise Passbook, and has enjoyed over 100,000 downloads from the App Store. Since its conception in 2012, ShopperNova has allowed Nova to seamlessly move their content into the mobile space—a necessary move for radio in this day and age.
 

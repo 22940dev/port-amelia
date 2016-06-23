@@ -9,7 +9,7 @@ clientname: Myself
 websitelink: http://amelia-lewis.com/
 ---
 
-### About the Project
+### About
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ### My Approach

@@ -3,6 +3,8 @@ title: Rupert Graves
 date: 2015
 type: Website
 template: project.jade
+tagline1: A digital brand for
+tagline2: the international actor.
 role1: UX/UI Design
 role2: Development
 clientname: Rupert Graves
@@ -10,7 +12,7 @@ clientlink: http://rupert-graves.amelia-lewis.com/
 websitelink: http://rupert-graves.amelia-lewis.com/
 ---
 
-### About the Project
+### About
 
 This is—well, will be—the official website for UK actor, Rupert Graves. His <a href="http://rupert-graves.com/" class="highlighted" target="_blank">current site</a> is rather dated, so we’ve been working to create something a little sexier and more modern.
 
