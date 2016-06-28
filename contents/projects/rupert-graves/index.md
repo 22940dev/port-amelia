@@ -22,6 +22,4 @@ This is still very much a work in progress. I’ve been through a few iterations
 
 I’m essentially creating a visual brand for Rupert, so I want it to be something that stands out and looks great.
 
-<div class="block-top-md">
-![Glenda Graff](rupert-graves-1.jpg "Rupert Graves")
-</div>
+![Rupert Graves](rupert-graves-1.jpg "Rupert Graves")

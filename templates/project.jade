@@ -9,8 +9,6 @@ block prepend title
 block content
   section#project
     //- .header-img(style="background-image: url('" + page.title.replace(/ /g, "-").toLowerCase() + "/project-tile.jpg')")
-    //-   .content-wrap
-    //-     h1.text-tight.text-white= page.title
 
     .content-wrap
       .block-ver-xl
@@ -40,30 +38,6 @@ block content
                 .block-right-sm.inline-block: a.btn(href="#{page.metadata.websitelink}" target="_blank") Website
         
         hr
-
-        //- .row.block-top-md
-        //-   .col-xs-12.col-sm-4.block-bot-md
-        //-     h4.text-tight Client
-        //-     a.highlighted.text-tight(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
-
-        //-     if page.metadata.clientname2
-        //-       br
-        //-       a.highlighted.text-tight(href="#{page.metadata.clientlink2}" target="_blank")= page.metadata.clientname2
-
-        //-     if page.metadata.clientname3
-        //-       br
-        //-       a.highlighted.text-tight(href="#{page.metadata.clientlink3}" target="_blank")= page.metadata.clientname3
-
-        //-   .col-xs-12.col-sm-4.block-bot-md
-        //-     h4.text-tight My Role
-        //-     p.text-tight= page.metadata.role1
-        //-     p.text-tight= page.metadata.role2
-
-        //-   .col-xs-12.col-sm-4.block-bot-md
-        //-     h4.text-tight Date
-        //-     p.text-tight= page.metadata.date
-
-        //- hr
 
         .row.block-ver-xl
           .col-xs-12!= typogr(page.html).typogrify()

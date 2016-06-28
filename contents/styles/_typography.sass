@@ -54,7 +54,7 @@ h1, h2, h3, h4, ul, ol, p, li
 
 // SIZES
 h1
-  font-size: 2.6em
+  font-size: 2.8em
 
 h2
   font-size: 2.2em
@@ -96,23 +96,41 @@ a
   &.highlighted
     display: inline-block
     position: relative
-    @extend .text-bold
+    @extend .text-normal
+
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      background: rgba($primary, 0.4)
+      bottom: 0
+      left: 0
+      right: 0
+      height: 1px
+      transition: all 400ms
+      transform: translate3d(0, 0, 0) scale(1, 1)
+      transform-origin: right center
+      pointer-events: none
 
     &:after
       content: ""
       display: block
       position: absolute
-      background: rgba($primary, 0.5)
-      top: 58%
+      background: rgba($primary, 0.4)
+      bottom: 0
       left: -2px
       right: -2px
-      height: 10px
+      height: 44%
       border-radius: 1px
       z-index: -1
       transition: all 400ms
       transform: translate3d(0, 0, 0) scale(0, 1) skewX(-15deg)
       transform-origin: left center
+      pointer-events: none
 
     &:hover
+      &:before
+        transform: translate3d(0, 0, 0) scale(0, 1)
+      
       &:after
         transform: translate3d(0, 0, 0) scale(1, 1) skewX(-15deg)

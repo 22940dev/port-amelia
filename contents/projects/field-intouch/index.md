@@ -32,6 +32,4 @@ In these decks, the content is generally the promotion of a new product or featu
 
 Technically, I was responsible for creating the entire front-end of each deck. I got to have a lot of fun experimenting with cool CSS features and animations, while still being careful to optmise for older generation iPads as well as newer ones. The FiT decks are Brunch apps, utilising Jade, Sass and CoffeeScript.
 
-<div class="block-top-md">
 ![Field InTouch](field-intouch-1.jpg "Field InTouch")
-</div>

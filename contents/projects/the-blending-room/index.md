@@ -28,6 +28,4 @@ To make the experience as rich and exciting as possible, I kept the design very 
 
 This was the first time I'd even touched Wordpress, and while at first I was somewhat daunted, once I got my head around it all it was actually quite a smooth process. I was, however, largely working with already existing CSS styles and templates from the main site.
 
-<div class="block-top-md">
 ![The Blending Room](the-blending-room-1.jpg "The Blending Room")
-</div>
