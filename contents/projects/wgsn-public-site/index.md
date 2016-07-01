@@ -28,6 +28,6 @@ Even though this was a marketing/brochure site, I still wanted there to be a str
 
 ### Prototyping
 
-In order to most effectively communicate how I wanted the site to behave between different screen sizes, I put together a <a href="http://wgsn-public-site.amelia-lewis.com/" target="_blank" class="highlighted">prototype</a>. This was built from scratch using <a href="https://harpjs.com/" target="_blank" class="highlighted">Harp</a> and ended up being rather high-fidelity as a I had a lot of time.
+In order to most effectively communicate how I wanted the site to behave between different screen sizes, I put together a <a href="http://wgsn-public-site.amelia-lewis.com/" target="_blank" class="highlighted">prototype</a>. This was built from scratch using <a href="https://harpjs.com/" target="_blank" class="highlighted">Harp</a> and ended up being rather high-fidelity as a I had a lot of time to work on it.
 
 The prototype proved to be very useful, as we were working with developers overseas to build the site, so it was a great way to get the point across to them. It also proved very useful for the art department to try out different imagery easily before having the proper site and CMS built.
