@@ -1,7 +1,10 @@
-mixin project-list-item(id, title, type, year, comingsoon)
+mixin project-list-item(id, title, type, date, comingsoon)
   .project-list-item.block-ver-md(id=id)
     //- .project-img(style="background-image: url('/projects/" + id + "/project-tile.jpg')")
-    p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey= type
+    p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
+      span= type
+      span &nbsp;&nbsp;/&nbsp;&nbsp;
+      span= date
     a.highlighted.text-bigger(href="/projects/" + id)= title
 
 //- ===============================================================================================
