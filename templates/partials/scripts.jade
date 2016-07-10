@@ -1,8 +1,8 @@
 script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
 script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js")
 //- script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js")
-script(type="text/javascript", src="/js/vendor/burger.min.js")
-//- script(type="text/javascript", src="/js/vendor/wow.js")
+script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/burger/2.0.2/scripts/burger.min.js")
+script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
 
 //- script.
 //-   $.stellar({
@@ -10,5 +10,12 @@ script(type="text/javascript", src="/js/vendor/burger.min.js")
 //-     verticalOffset: 0
 //-   });
 
-//- script.
-//-   new WOW().init();
+script.
+  new WOW().init();
+
+script.
+  wowImages = function(){
+    $('.project-view').find('img').addClass('wow fadeIn').attr("data-wow-delay", "300ms");
+  };
+
+  wowImages();

@@ -48,47 +48,7 @@ hr
 
 
 // ====================
-// common styles
+// Masthead
 // ====================
-
-.pull-left
-  float: left
-
-.pull-right
-  float: right
-
-.inline-block
-  display: inline-block !important
-
-.display-box
-  display: flex
-  align-items: center
-  justify-content: center
-
-.bg-white
-  background: white
-
-.bg-lt-grey
-  background: $lt-grey
-
-.bg-dk-grey
-  background: $dk-grey
-  color: white
-
-@for $i from 1 through 30
-  .delay-#{$i * 50}
-    transition-delay: $i * 50ms !important
-    animation-delay: $i * 50ms !important
-
-
-.hidden-desktop
-  display: block
-
-  @media (min-width: $screen-xs-min)
-    display: none
-
-.hidden-mobile
-  display: none
-
-  @media (min-width: $screen-xs-min)
-    display: block
+#masthead
+  height: 100vh

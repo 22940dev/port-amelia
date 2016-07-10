@@ -1,3 +1,5 @@
+$burger-width: 360px
+
 body
   overflow-x: hidden
 
@@ -5,21 +7,21 @@ body
     background: black
     content: ""
     height: 100%
-    width: 240px
+    width: $burger-width
     position: fixed
     top: 0
     right: 0
     overflow: hidden
     visibility: hidden
     z-index: 99
-    transform: translate3d(240px, 0, 0)
+    transform: translate3d($burger-width, 0, 0)
     transition: all 300ms
 
   &.open
     overflow: hidden
 
     .b-container
-      transform: translate3d(-240px, 0, 0)
+      transform: translate3d(-$burger-width, 0, 0)
 
     #masthead,
     #project-list,
@@ -35,12 +37,12 @@ body
 .b-nav
   position: fixed
   z-index: 100
-  width: 240px
+  width: $burger-width
   height: 100%
   top: 0
   right: 0
   overflow: scroll
-  transform: translate3d(240px, 0, 0)
+  transform: translate3d($burger-width, 0, 0)
   transition: all 300ms
   visibility: hidden
 
@@ -133,6 +135,6 @@ body
       transform: translate3d(30%, -150%, 0) rotate(-35deg) scale(0.4, 1)
 
 body.index
-  li:first-of-type,
-  .block-ver-md
+  .b-nav,
+  .b-container
     display: none

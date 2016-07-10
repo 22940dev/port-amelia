@@ -57,7 +57,7 @@ h1
   font-size: 2.8em
 
 h2
-  font-size: 2.2em
+  font-size: 2em
 
 h3
   font-size: 1.2em
@@ -79,11 +79,19 @@ h4
 .text-bigger
   font-size: 1.2em
 
+.text-italic
+  font-style: italic
+
 .text-grey
   color: $md-grey
 
 .text-white
   color: white
+
+.ul-bare
+  list-style: none
+  margin: 0
+  padding: 0
 
 
 // LINKS
@@ -97,6 +105,7 @@ a
     display: inline-block
     position: relative
     @extend .text-normal
+    z-index: 10
 
     &:before
       content: ""

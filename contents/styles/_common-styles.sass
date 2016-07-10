@@ -1,0 +1,49 @@
+// ====================
+// Common Styles
+// ====================
+
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+.inline-block
+  display: inline-block !important
+
+.flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.bg-white
+  background: white
+
+.bg-lt-grey
+  background: $lt-grey
+
+.bg-dk-grey
+  background: $dk-grey
+  color: white
+
+.bg-xdk-grey
+  background: darken($dk-grey, 3)
+  color: white
+
+@for $i from 1 through 30
+  .delay-#{$i * 50}
+    transition-delay: $i * 50ms !important
+    animation-delay: $i * 50ms !important
+
+
+.hidden-desktop
+  display: block
+
+  @media (min-width: $screen-xs-min)
+    display: none
+
+.hidden-mobile
+  display: none
+
+  @media (min-width: $screen-xs-min)
+    display: block

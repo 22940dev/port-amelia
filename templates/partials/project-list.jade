@@ -1,11 +1,11 @@
 mixin project-list-item(id, title, type, date, comingsoon)
-  .project-list-item.block-ver-md(id=id)
+  .project-list-item.block-ver-md.wow.fadeIn(id=id)
     //- .project-img(style="background-image: url('/projects/" + id + "/project-tile.jpg')")
     p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
       span= type
       span &nbsp;&nbsp;/&nbsp;&nbsp;
       span= date
-    a.highlighted.text-bigger(href="/projects/" + id)= title
+    a.text-normal(href="/projects/" + id)= title
 
 //- ===============================================================================================
 
@@ -13,7 +13,7 @@ section#project-list.block-bot-xl
   .content-wrap
     .row
       .col-xs-12
-        h3 Recent projects
+        h3.wow.fadeIn Recent projects
 
     .row
       .col-xs-12
@@ -37,7 +37,7 @@ section#project-list.block-bot-xl
     
     .row.block-top-xl
       .col-xs-12
-        h3 Older
+        h3.wow.fadeIn Older
 
     .row
       .col-xs-12
