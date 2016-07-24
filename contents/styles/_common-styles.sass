@@ -30,6 +30,13 @@
   background: darken($dk-grey, 3)
   color: white
 
+.border
+  border: 1px solid $lt-grey
+
+@each $side in top, right, bottom, left
+  .border-#{$side}
+    border-#{$side}: 1px solid $lt-grey
+
 @for $i from 1 through 30
   .delay-#{$i * 50}
     transition-delay: $i * 50ms !important

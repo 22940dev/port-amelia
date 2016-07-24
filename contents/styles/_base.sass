@@ -3,7 +3,10 @@ body
   color: $dk-grey
   margin: 0
   padding: 0
-  font-size: 18px
+  font-size: 16px
+
+  @media (min-width: $screen-sm-min)
+    font-size: 20px
 
   *
     box-sizing: border-box
@@ -45,6 +48,14 @@ hr
 ::-moz-selection
   background: $primary
   color: white
+
+
+// ====================
+// Header
+// ====================
+body.index
+  header
+    display: none
 
 
 // ====================
