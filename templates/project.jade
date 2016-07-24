@@ -11,33 +11,33 @@ block content
     //- .header-img(style="background-image: url('" + page.title.replace(/ /g, "-").toLowerCase() + "/project-tile.jpg')")
 
     .content-wrap
-      .block-ver-xl
-        .row.block-ver-xl
-          .col-xs-12
-            .block-bot-md
-              p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
-                span= page.metadata.type
-                span &nbsp;&nbsp;/&nbsp;&nbsp;
-                span= page.metadata.date
-              h2.project-title= page.title
-              p.project-tagline.text-bigger
-                if page.metadata.tagline1
-                  span= page.metadata.tagline1
-                if page.metadata.tagline2
-                  br
-                  span= page.metadata.tagline2
-                if page.metadata.tagline3
-                  br
-                  span= page.metadata.tagline3
-            .block
+      .row.block-ver-xl
+        .col-xs-12.block-ver-lg
+          p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
+            span= page.metadata.type
+            span &nbsp;&nbsp;/&nbsp;&nbsp;
+            span= page.metadata.date
+          h2= page.title
+          p.project-tagline.text-bigger.text-tight
+            if page.metadata.tagline1
+              span= page.metadata.tagline1
+            if page.metadata.tagline2
+              br
+              span= page.metadata.tagline2
+            if page.metadata.tagline3
+              br
+              span= page.metadata.tagline3
+          
+          if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
+            .block-top-md
               if page.metadata.appstorelink
                 .block-right-sm.inline-block: a.btn(href="#{page.metadata.appstorelink}" target="_blank") App Store
               if page.metadata.playstorelink
                 .block-right-sm.inline-block: a.btn(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
               if page.metadata.websitelink
                 .block-right-sm.inline-block: a.btn(href="#{page.metadata.websitelink}" target="_blank") Website
-        
-        hr
+      
+      hr
 
-        .row.block-ver-xl
-          .col-xs-12!= typogr(page.html).typogrify()
+      .row.block-ver-xl
+        .col-xs-12!= typogr(page.html).typogrify()

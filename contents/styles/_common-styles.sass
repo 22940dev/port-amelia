@@ -1,7 +1,6 @@
 // ====================
-// Common Styles
+// Layout
 // ====================
-
 .pull-left
   float: left
 
@@ -16,6 +15,10 @@
   align-items: center
   justify-content: center
 
+
+// ====================
+// BGs & Borders
+// ====================
 .bg-white
   background: white
 
@@ -37,12 +40,10 @@
   .border-#{$side}
     border-#{$side}: 1px solid $lt-grey
 
-@for $i from 1 through 30
-  .delay-#{$i * 50}
-    transition-delay: $i * 50ms !important
-    animation-delay: $i * 50ms !important
 
-
+// ====================
+// Hiders
+// ====================
 .hidden-desktop
   display: block
 
@@ -54,3 +55,12 @@
 
   @media (min-width: $screen-xs-min)
     display: block
+
+
+// ====================
+// Delays
+// ====================
+@for $i from 1 through 30
+  .delay-#{$i * 50}
+    transition-delay: $i * 50ms !important
+    animation-delay: $i * 50ms !important

@@ -93,6 +93,18 @@ h4
   margin: 0
   padding: 0
 
+h2
+  position: relative
+
+  &:before
+    content: ""
+    position: absolute
+    top: calc(50% - 1px)
+    left: -120px
+    width: 100px
+    height: 2px
+    background: $primary
+
 
 // LINKS
 a
@@ -107,35 +119,31 @@ a
     @extend .text-normal
     z-index: 10
 
-    &:before
-      content: ""
-      display: block
-      position: absolute
-      background: rgba($primary, 0.4)
-      bottom: 0
-      left: 0
-      right: 0
-      height: 1px
-      transition: all 400ms
-      transform: translate3d(0, 0, 0) scale(1, 1)
-      transform-origin: right center
-      pointer-events: none
-
+    &:before,
     &:after
       content: ""
       display: block
       position: absolute
       background: rgba($primary, 0.4)
-      bottom: 0
+      bottom: 1px
+      transition: all 400ms
+      pointer-events: none
+
+    &:before
+      left: 0
+      right: 0
+      height: 1px
+      transform: translate3d(0, 0, 0) scale(1, 1)
+      transform-origin: right center
+      
+    &:after
       left: -2px
       right: -2px
       height: 44%
       border-radius: 1px
       z-index: -1
-      transition: all 400ms
       transform: translate3d(0, 0, 0) scale(0, 1) skewX(-15deg)
       transform-origin: left center
-      pointer-events: none
 
     &:hover
       &:before
