@@ -58,8 +58,11 @@
 
 
 // ====================
-// Delays
+// Transitions
 // ====================
+.transition
+  transition: all 400ms
+
 @for $i from 1 through 30
   .delay-#{$i * 50}
     transition-delay: $i * 50ms !important

@@ -1,11 +1,12 @@
 mixin project-list-item(id, title, type, date, comingsoon)
-  a.project-list-item.border-bottom.block-ver-md(id=id href="/projects/" + id)
+  a.project-list-item.border.block-lg(id=id href="/projects/" + id)
     //- .project-img(style="background-image: url('/projects/" + id + "/project-tile.jpg')")
-    p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
+    p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey.transition
       span= type
       span &nbsp;&nbsp;/&nbsp;&nbsp;
       span= date
-    p.text-tight= title
+    p.text-tight.text-bigger= title
+    p.highlighted.text-tight Read more
 
 //- ===============================================================================================
 
@@ -16,18 +17,18 @@ section#project-list.block-ver-xl
     //-     h2.wow.fadeIn Some things I've worked on...
 
     .row.block-bot-lg
-      .col-xs-12.wow.fadeIn: +project-list-item("wgsn-city-by-city-app", "WGSN City by City App", "Mobile App", "2016", true)
-      .col-xs-12.wow.fadeIn: +project-list-item("wgsn-workspace", "WGSN Workspace & Image Library", "Web App", "2016", true)      
-      .col-xs-12.wow.fadeIn: +project-list-item("wgsn-brand-guide", "WGSN Brand Guide", "Website", "2015", true)      
-      .col-xs-12.wow.fadeIn: +project-list-item("wgsn-catwalks-app", "WGSN Catwalks App", "Mobile App", "2015", true)        
-      .col-xs-12.wow.fadeIn: +project-list-item("wgsn-public-site", "WGSN Public Website", "Website", "2015", true)
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-city-by-city-app", "WGSN City by City App", "Mobile App", "2016", true)
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-workspace", "WGSN Workspace & Image Library", "Web App", "2016", true)      
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-brand-guide", "WGSN Brand Guide", "Website", "2015", true)      
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-catwalks-app", "WGSN Catwalks App", "Mobile App", "2015", true)        
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-public-site", "WGSN Public Website", "Website", "2015", true)
     
     .row
-      .col-xs-12.wow.fadeIn: +project-list-item("meat-cuts", "Meat Cuts", "Mobile app", "2014", false)
-      .col-xs-12.wow.fadeIn: +project-list-item("the-blending-room", "The Blending Room", "Website", "2015", false)
-      //- .col-xs-12.wow.fadeIn: +project-list-item("field-intouch", "Field InTouch", "Tablet app", "2013–2015", false)
-      .col-xs-12.wow.fadeIn: +project-list-item("shoppernova", "ShopperNova", "Mobile app", "2014", false)
-      .col-xs-12.wow.fadeIn: +project-list-item("repassist", "RepAssist", "Tablet app", "2014", false)
-      .col-xs-12.wow.fadeIn: +project-list-item("rupert-graves", "Rupert Graves", "Website", "2015", false)
-      .col-xs-12.wow.fadeIn: +project-list-item("glenda-graff", "Glenda Graff", "Website", "2013–2014", false)
-      //- .col-xs-12.wow.fadeIn: +project-list-item("my-portfolio", "My Portfolio", "Website", "2012–2015", true)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("meat-cuts", "Meat Cuts", "Mobile app", "2014", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("the-blending-room", "The Blending Room", "Website", "2015", false)
+      //- .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("field-intouch", "Field InTouch", "Tablet app", "2013–2015", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("shoppernova", "ShopperNova", "Mobile app", "2014", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("repassist", "RepAssist", "Tablet app", "2014", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("rupert-graves", "Rupert Graves", "Website", "2015", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("glenda-graff", "Glenda Graff", "Website", "2013–2014", false)
+      //- .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("my-portfolio", "My Portfolio", "Website", "2012–2015", true)

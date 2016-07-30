@@ -2,6 +2,7 @@
 title: WGSN Brand Guide
 date: 2016
 type: Website
+client: WGSN
 template: project.jade
 tagline1: A live inventory of UI components, brand
 tagline2: guidelines, brand assets, code snippets
@@ -13,7 +14,7 @@ clientlink: http://www.wgsn.com
 websitelink: http://wgsn-styleguide.amelia-lewis.com/
 ---
 
-### What is it?
+<h3 data-title="What is it?">What is it?</h3>
 
 This brand guide started as a simple tool for myself. I kept finding myself needing the colors and logos for all our products, so I built a simple site to copy and download them from (now, the <a href="http://wgsn-styleguide.amelia-lewis.com/" target="_blank" class="highlighted">products</a> page of the site). It quickly spread around the company, and everyone from creative services to sales loved it.
 

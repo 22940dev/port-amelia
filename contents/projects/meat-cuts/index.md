@@ -2,6 +2,7 @@
 title: Meat Cuts
 date: 2014
 type: Mobile App
+client: CLD
 template: project.jade
 tagline1: Your number one destination
 tagline2: for information about beef, lamb,
@@ -14,7 +15,7 @@ appstorelink: https://itunes.apple.com/us/app/meat-cuts/id904537057?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.mla.meatcuts&hl=en
 ---
 
-### What is it?
+<h3 data-title="What is it?">What is it?</h3>
 
 Meat Cuts is an app I worked on at <a href="http://creativelicence.com.au/" target="_blank" class="highlighted">CLD</a>, briefed by <a href="http://www.mla.com.au/Home" target="_blank" class="highlighted">Meat &amp; Livestock Australia</a>. They wanted to create an app for users to learn all about various cuts of meat and how best to cook them, in a fun an interactive way. Our target user group was gourmet home cooks&mdash;largely, but not exclusively, in the young male demographic.
 
@@ -22,7 +23,7 @@ There were a number of apps with a similar function on the App Store, so we real
 
 The app has been downloaded over 60,000 times on both iOS and Android, with mostly 4 and 5 star reviews.
 
-### My Approach
+<h3 data-title="My Approach">My Approach</h3>
 
 This was the first project at <a href="http://creativelicence.com.au/" target="_blank" class="highlighted">CLD</a> where I was able to take the lead on the design and art direction, as well as being the first consumer app I really worked on. The client's only real design input was that they wanted a "chalkboard look", so I got to have a lot of fun taking ownership of both the UX/user flow and the visual design.
 

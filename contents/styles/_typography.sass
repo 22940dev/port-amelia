@@ -113,45 +113,45 @@ a
   line-height: 1.4em
   transition: all 300ms
 
-  &.highlighted
-    display: inline-block
-    position: relative
-    @extend .text-normal
-    z-index: 10
+.highlighted
+  display: inline-block
+  position: relative
+  @extend .text-normal
+  z-index: 10
 
-    &:before,
-    &:after
-      content: ""
-      display: block
-      position: absolute
-      background: rgba($primary, 0.4)
-      bottom: 1px
-      transition: all 400ms
-      pointer-events: none
+  &:before,
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    background: rgba($primary, 0.4)
+    bottom: 1px
+    transition: all 400ms
+    pointer-events: none
 
+  &:before
+    left: 0
+    right: 0
+    height: 1px
+    transform: translate3d(0, 0, 0) scale(1, 1)
+    transform-origin: right center
+    
+  &:after
+    left: -2px
+    right: -2px
+    height: 44%
+    border-radius: 1px
+    z-index: -1
+    transform: translate3d(0, 0, 0) scale(0, 1) skewX(-15deg)
+    transform-origin: left center
+
+  &:hover
     &:before
-      left: 0
-      right: 0
-      height: 1px
-      transform: translate3d(0, 0, 0) scale(1, 1)
-      transform-origin: right center
-      
+      transform: translate3d(0, 0, 0) scale(0, 1)
+    
     &:after
-      left: -2px
-      right: -2px
-      height: 44%
-      border-radius: 1px
-      z-index: -1
-      transform: translate3d(0, 0, 0) scale(0, 1) skewX(-15deg)
-      transform-origin: left center
+      transform: translate3d(0, 0, 0) scale(1, 1) skewX(-15deg)
 
-    &:hover
-      &:before
-        transform: translate3d(0, 0, 0) scale(0, 1)
-      
-      &:after
-        transform: translate3d(0, 0, 0) scale(1, 1) skewX(-15deg)
-
-    &:focus
-      outline-color: $primary
-      outline-width: 2px
+  &:focus
+    outline-color: $primary
+    outline-width: 2px

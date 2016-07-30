@@ -2,6 +2,7 @@
 title: WGSN Public Site
 date: 2015
 type: Website
+client: WGSN
 template: project.jade
 tagline1: A new public face for the
 tagline2: world's leading trend authority.
@@ -12,7 +13,7 @@ clientlink: http://www.wgsn.com
 websitelink: http://www.wgsn.com
 ---
 
-### About
+<h3 data-title="About">About</h3>
 
 When I started at <a href="http://wgsn.com/" target="_blank" class="highlighted">WGSN</a>, the product and marketing teams were already well into the redesign of their non-subscriber site. The goal was to refresh the look of the site and pull together the various product sites under the new "single platform" approach.
 
@@ -20,13 +21,13 @@ Flat designs for the desktop version of the site were done, and my task was to t
 
 ![WGSN Public Site](wgsn-public-site-1.jpg "WGSN Public Site")
 
-### Making a Desktop Site Responsive
+<h3 data-title="Making a Desktop Site Responsive">Making a Desktop Site Responsive</h3>
 
 The existing designs had been done for a larger desktop screen, so various elements had to be adjusted in order to make them more modular and able be to transformed between all different screen sizes. I really wanted the site to be completely fluid, not just fixed to a handful of breakpoints. Some elements made for easy, obvious transitions, while others had to be tweaked on the larger screens in order to make for a smarter transition into the smaller screens.
 
 Even though this was a marketing/brochure site, I still wanted there to be a strongly held design system in place. This site redesign marked the beginning of a new look and feel for all our other WGSN products and it was important to put a strong foot forward.
 
-### Prototyping
+<h3 data-title="Prototyping">Prototyping</h3>
 
 In order to most effectively communicate how I wanted the site to behave between different screen sizes, I put together a <a href="http://wgsn-public-site.amelia-lewis.com/" target="_blank" class="highlighted">prototype</a>. This was built from scratch using <a href="https://harpjs.com/" target="_blank" class="highlighted">Harp</a> and ended up being rather high-fidelity as a I had a lot of time to work on it.
 

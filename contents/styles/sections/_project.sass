@@ -1,9 +1,19 @@
 .project-view
   h3
-    margin-top: 1.5em
+    margin-top: 160px
+    position: relative
 
     &:first-of-type
       margin-top: 0
+
+    &:after
+      content: attr(data-title)
+      position: absolute
+      bottom: -2px
+      left: 0
+      font-size: 3em
+      color: rgba(black, 0.03)
+      line-height: 1em
 
   .project-tagline
     span

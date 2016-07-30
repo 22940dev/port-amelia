@@ -1,12 +1,22 @@
 #project-list
-  .content-wrap:hover
-    .project-list-item
-      opacity: 0.4
-
   .project-list-item
     display: block
     position: relative
-    transition: all 300ms
+    height: 300px
+    margin: 0 0 1rem
+    background: -webkit-linear-gradient(left bottom, rgba($primary, 0.05) 0%, white 50%) no-repeat 100% 0px / 200% 100%
+    @extend .transition
+
+    &:before
+      content: ""
+      position: absolute
+      top: 5px
+      left: 5px
+      width: 30px
+      height: 30px
+      @extend .border-top
+      @extend .border-left
+      @extend .transition
 
     &:after
       content: ""
@@ -19,10 +29,27 @@
       background: $primary
       transform: translate3d(0, 0, 0) scale(0, 1)
       transform-origin: left center
-      transition: all 1000ms
+      @extend .transition
+
+    .highlighted
+      position: absolute
+      bottom: 40px
+      right: 40px
     
     &:hover
-      opacity: 1 !important
+      background-position: 0px 0px
+
+      &:before
+        border-color: rgba($primary, 0.4)
       
       &:after
         transform: translate3d(0, 0, 0) scale(1, 1)
+
+      .text-grey
+        opacity: 0.4
+
+      .highlighted:before
+        transform: translate3d(0, 0, 0) scale(0, 1)
+      
+      .highlighted:after
+        transform: translate3d(0, 0, 0) scale(1, 1) skewX(-15deg)
