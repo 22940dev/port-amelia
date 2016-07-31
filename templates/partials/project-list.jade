@@ -1,28 +1,34 @@
 mixin project-list-item(id, title, type, date, comingsoon)
   a.project-list-item.border.block-lg(id=id href="/projects/" + id)
     //- .project-img(style="background-image: url('/projects/" + id + "/project-tile.jpg')")
-    p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey.transition
+    p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
       span= type
       span &nbsp;&nbsp;/&nbsp;&nbsp;
       span= date
-    p.text-tight.text-bigger= title
-    p.highlighted.text-tight Read more
+    p.text-bigger= title
+    p.highlighted Read more
 
 //- ===============================================================================================
 
 section#project-list.block-ver-xl
   .content-wrap
-    //- .row
-    //-   .col-xs-12
-    //-     h2.wow.fadeIn Some things I've worked on...
+    .row
+      .col-xs-12
+        h3.header-highlight.wow.fadeIn Recent projects
 
-    .row.block-bot-lg
+    .row
       .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-city-by-city-app", "WGSN City by City App", "Mobile App", "2016", true)
       .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-workspace", "WGSN Workspace & Image Library", "Web App", "2016", true)      
-      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-brand-guide", "WGSN Brand Guide", "Website", "2015", true)      
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-brand-guide", "WGSN Brand Guide", "Website", "2015–2016", true)      
       .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-catwalks-app", "WGSN Catwalks App", "Mobile App", "2015", true)        
-      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-public-site", "WGSN Public Website", "Website", "2015", true)
+      //- .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-public-site", "WGSN Public Website", "Website", "2015", true)
     
+    .block-ver-lg
+
+    .row
+      .col-xs-12
+        h3.header-highlight.wow.fadeIn Older
+
     .row
       .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("meat-cuts", "Meat Cuts", "Mobile app", "2014", false)
       .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("the-blending-room", "The Blending Room", "Website", "2015", false)
