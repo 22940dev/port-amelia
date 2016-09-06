@@ -1,5 +1,5 @@
 ---
-title: WGSN Brand Guide
+title: WGSN Rebrand & Style Guide
 date: 2016
 type: Website
 client: WGSN
@@ -14,16 +14,19 @@ clientlink: http://www.wgsn.com
 websitelink: http://wgsn-styleguide.amelia-lewis.com/
 ---
 
-<h3 data-title="What is it?">What is it?</h3>
+The WGSN style guide began as a simple tool for myself from which to grab the colors and logos for all our products. After a few months at WGSN, however, it became apparent there was no solid structure or style guide for how we were designing our products. Every UI element was being designed and coded over and over... always slightly differently. So, I took it upon myself to start creating a full style guide for the WGSN product team. The company also began a big rebrand project around this time, putting us in the perfect position to think about redesigning every UI element.
 
-This brand guide started as a simple tool for myself. I kept finding myself needing the colors and logos for all our products, so I built a simple site to copy and download them from (now, the <a href="http://wgsn-styleguide.amelia-lewis.com/" target="_blank" class="highlighted">products</a> page of the site). It quickly spread around the company, and everyone from creative services to sales loved it.
+![WGSN Brand Guide](wgsn-brand-guide-9.jpg "WGSN Brand Guide")
 
-![WGSN Brand Guide](wgsn-brand-guide-2.jpg "WGSN Brand Guide")
+Taking inspiration from sites like Dropbox's <a href="http://dropbox.github.io/scooter/index.html" target="_blank" class="highlighted">Scooter</a> and Marvel's <a href="https://marvelapp.com/styleguide/overview/introduction" target="_blank" class="highlighted">Style Guide</a>, I started compiling a full set of UI components and styles used around the site and constructed them into guidelines and reusable components.
 
-As time went on, it became apparent there was no solid structure or style guide for how we were designing our products. Every UI element was being designed and coded over and over... always slightly differently. So, I took it upon myself to make a full style guide / pattern library. Taking inspiration from places like Dropbox's <a href="http://dropbox.github.io/scooter/index.html" target="_blank" class="highlighted">Scooter</a> and Marvel's <a href="https://marvelapp.com/styleguide/overview/introduction" target="_blank" class="highlighted">Style Guide</a>, I started compiling UI elements from the most recent projects we'd worked on and constructing the site.
+I worked on the style guide alongside designing an actual product&mdash;which proved to be very useful, for both things&mdash;and created all these elements, or "building blocks", which we could use from then on to design all our products. It was important that these elements were reusable across different screens, platforms and contexts.
 
-![WGSN Brand Guide](wgsn-brand-guide-1.jpg "WGSN Brand Guide")
+![WGSN Brand Guide](wgsn-brand-guide-11.jpg "WGSN Brand Guide")
+![WGSN Brand Guide](wgsn-brand-guide-12.jpg "WGSN Brand Guide")
+![WGSN Brand Guide](wgsn-brand-guide-13.jpg "WGSN Brand Guide")
+![WGSN Brand Guide](wgsn-brand-guide-14.jpg "WGSN Brand Guide")
+![WGSN Brand Guide](wgsn-brand-guide-15.jpg "WGSN Brand Guide")
+![WGSN Brand Guide](wgsn-brand-guide-16.jpg "WGSN Brand Guide")
 
-This is still a work in progress in terms of making it something robust and usable for the developers, but we are working together to find a way to integrate it into their code stack and their workflow.
-
-![WGSN Brand Guide](wgsn-brand-guide-3.jpg "WGSN Brand Guide")
+This project is as much about front-end dev as it is design. A very important part of this is setting standards for the CSS we write as a team, and consolidating all the components that we've historically written over and over again.

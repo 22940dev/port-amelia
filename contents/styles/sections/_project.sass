@@ -1,19 +1,16 @@
 .project-view
   h3
-    margin-top: 160px
+    margin-top: 2em
     position: relative
 
-    &:first-of-type
-      margin-top: 0
-
-    &:after
-      content: attr(data-title)
-      position: absolute
-      bottom: -2px
-      left: 0
-      font-size: 2.8em
-      color: rgba(black, 0.03)
-      line-height: 1em
+    // &:after
+    //   content: attr(data-title)
+    //   position: absolute
+    //   bottom: -2px
+    //   left: 0
+    //   font-size: 2.8em
+    //   color: rgba(black, 0.03)
+    //   line-height: 1em
 
   .project-tagline
     span
@@ -39,13 +36,11 @@
   .btn
     margin-bottom: 0
 
+  .project-content
+    padding: 80px 60px
+
   img
     width: 100%
 
-    @media (min-width: $screen-md-min)
-      width: calc(100% + 160px)
-      margin-left: -80px
-
-  p + p img
-    margin-top: 40px
-    margin-bottom: 40px
+  p img
+    margin: 40px auto

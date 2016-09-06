@@ -1,11 +1,10 @@
-mixin project-list-item(id, title, type, date, comingsoon)
+mixin project-list-item(id, title, description, type, date, comingsoon)
   a.project-list-item.border.block-lg(id=id href="/projects/" + id)
     //- .project-img(style="background-image: url('/projects/" + id + "/project-tile.jpg')")
-    p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
-      span= type
-      span &nbsp;&nbsp;/&nbsp;&nbsp;
-      span= date
+    //- p.text-grey.text-smaller.text-uppercase= type
     p.text-bigger= title
+    p.text-grey.text-smaller= description
+    p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey= date
     p.highlighted Read more
 
 //- ===============================================================================================
@@ -17,11 +16,11 @@ section#project-list.block-ver-xl
         h3.header-highlight.wow.fadeIn Recent projects
 
     .row
-      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-city-by-city-app", "WGSN City by City App", "Mobile App", "2016", true)
-      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-workspace", "WGSN Workspace & Image Library", "Web App", "2016", true)      
-      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-brand-guide", "WGSN Brand Guide", "Website", "2015–2016", true)      
-      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-catwalks-app", "WGSN Catwalks App", "Mobile App", "2015", true)        
-      //- .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-public-site", "WGSN Public Website", "Website", "2015", true)
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-city-by-city-app", "WGSN City by City App", "Editor-curated listings, travel guides and trip planning tools.", "Mobile App", "2016", true)
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-workspace", "WGSN Workspace & Image Library", "A hub for creative teams to work together, utilizing WGSN's millions of excluive assets.", "Web App", "2016", true)      
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-brand-guide", "WGSN Rebrand & Style Guide", "A live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.", "Website", "2015–2016", true)      
+      .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-catwalks-app", "WGSN Catwalks App", "From the runway to your phone, see the latest collections from New York, London, Milan and Paris.", "Mobile App", "2015", true)        
+      //- .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-public-site", "WGSN Public Website", "Lorem ipsum", "Website", "2015", true)
     
     .block-ver-lg
 
@@ -30,11 +29,11 @@ section#project-list.block-ver-xl
         h3.header-highlight.wow.fadeIn Older
 
     .row
-      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("meat-cuts", "Meat Cuts", "Mobile app", "2014", false)
-      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("the-blending-room", "The Blending Room", "Website", "2015", false)
-      //- .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("field-intouch", "Field InTouch", "Tablet app", "2013–2015", false)
-      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("shoppernova", "ShopperNova", "Mobile app", "2014", false)
-      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("repassist", "RepAssist", "Tablet app", "2014", false)
-      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("rupert-graves", "Rupert Graves", "Website", "2015", false)
-      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("glenda-graff", "Glenda Graff", "Website", "2013–2014", false)
-      //- .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("my-portfolio", "My Portfolio", "Website", "2012–2015", true)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("meat-cuts", "Meat Cuts", "Your number one destination for information about beef, lamb, veal and goat cuts.", "Mobile app", "2014", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("the-blending-room", "The Blending Room", "Everything you need to know about the latest cigar trends.", "Website", "2015", false)
+      //- .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("field-intouch", "Field InTouch", "The next generation in field force mobility.", "Tablet app", "2013–2015", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("shoppernova", "ShopperNova", "An undisputed leader in mobile marketing, location-based targeting and data-collection.", "Mobile app", "2014", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("repassist", "RepAssist", "A streamlined solution tailored specifically to Novartis sales reps' needs.", "Tablet app", "2014", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("rupert-graves", "Rupert Graves", "A digital brand for the international actor.", "Website", "2015", false)
+      .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("glenda-graff", "Glenda Graff", "An elite event planner for Sydney's eastern suburbs.", "Website", "2013–2014", false)
+      //- .col-xs-12.col-sm-6.col-md-4.wow.fadeIn: +project-list-item("my-portfolio", "My Portfolio", "Lorem ipsum", "Website", "2012–2015", true)

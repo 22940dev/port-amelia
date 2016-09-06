@@ -13,13 +13,14 @@ html(lang='en')
         block title
           = locals.name
       
-      link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      //- link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       
-      link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css")
-      link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
-      link(rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css")
-      link(rel='stylesheet', href='/styles/style.css?v1.0')
-      link(href='https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Karla:400,700' rel='stylesheet' type='text/css')
+      link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css")
+      link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+      link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css")
+      link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css")
+      link(rel="stylesheet" type="text/css" href="/styles/style.css?v1.0")
+      link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Karla:400,700")
       
       link(rel="shortcut icon", type="image/x-icon", href="/favicon.ico")
 

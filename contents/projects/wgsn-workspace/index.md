@@ -4,7 +4,7 @@ date: 2015–2016
 type: Web app
 client: WGSN
 template: project.jade
-tagline1: A hub for creatives teams to work
+tagline1: A hub for creative teams to work
 tagline2: together, utilizing WGSN's millions
 tagline3: of excluive assets.
 role1: UX/UI Design
