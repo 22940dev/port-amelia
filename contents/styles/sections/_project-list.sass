@@ -1,49 +1,30 @@
 #project-list
-  .row:nth-of-type(2),
-  .row:nth-of-type(5)
-    position: relative
+  // .row:nth-of-type(2),
+  // .row:nth-of-type(5)
+  //   position: relative
     
-    &:before
-      content: ""
-      position: absolute
-      bottom: 4px
-      right: -4px
-      width: 20px
-      height: 20px
-      @extend .border-bottom
-      @extend .border-right
-      border-color: rgba($primary, 0.4)
+  //   &:before
+  //     content: ""
+  //     position: absolute
+  //     bottom: 4px
+  //     right: -4px
+  //     width: 20px
+  //     height: 20px
+  //     @extend .border-bottom
+  //     @extend .border-right
+  //     border-color: rgba($primary, 0.4)
 
   .project-list-item
     display: block
     position: relative
-    height: 300px
-    margin: 0 0 1rem
+    margin: 0 0 20px
     background: white
-    background: -moz-linear-gradient(left bottom, rgba($primary, 0.05) 0%, white 40%)
-    background: -webkit-linear-gradient(left bottom, rgba($primary, 0.05) 0%, white 40%)
-    background: linear-gradient(left bottom, rgba($primary, 0.05) 0%, white 40%)
-    background-repeat: no-repeat
-    background-size: 200% 100%
-    background-position: 100% center
+    transition: all 400ms
+    cursor: pointer
 
-    &:before,
     &:after
       content: ""
       position: absolute
-      transition: all 400ms
-
-    &:before
-      top: 8px
-      left: 8px
-      width: 30px
-      height: 30px
-      @extend .border-top
-      @extend .border-left
-      transform: scale(1)
-      transform-origin: left top
-
-    &:after
       width: 100%
       height: 1px
       left: 0
@@ -51,34 +32,20 @@
       background: $primary
       transform: scale(0, 1)
       transform-origin: left center
+      transition: all 400ms
 
-    .text-spaced
-      position: absolute
-      bottom: 30px
-      left: 40px
-
-    .highlighted
-      position: absolute
-      bottom: 17px
-      right: 40px
+    p
+      transition: all 400ms
     
     &:hover
-      background-position: 0px center
       transform: scale(1.02)
-
-      &:before
-        border-color: rgba($primary, 0.4)
-        transform: scale(1.5)
       
       &:after
         transform: scale(1, 1)
 
-      .text-grey,
-      .text-grey span
-        color: rgba($primary, 0.2)
-
-      .highlighted:before
-        transform: scale(0, 1)
+      p.link-highlight
+        &:before
+          transform: scale(0, 1)
       
-      .highlighted:after
-        transform: scale(1, 1) skewX(-15deg)
+        &:after
+          transform: scale(1, 1) skewX(-15deg)

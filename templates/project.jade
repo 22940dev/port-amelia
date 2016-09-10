@@ -17,7 +17,7 @@ block content
             span= page.metadata.type
             span &nbsp;&nbsp;/&nbsp;&nbsp;
             span= page.metadata.date
-          h2.header-highlight(data-heading=page.metadata.client)= page.metadata.title
+          h1(data-heading=page.metadata.client)= page.metadata.title
           p.project-tagline.text-bigger.text-tight
             if page.metadata.tagline1
               span= page.metadata.tagline1

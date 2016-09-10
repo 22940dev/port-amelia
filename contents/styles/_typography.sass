@@ -42,7 +42,7 @@
 
 // MARGINS
 h1, h2, h3, h4, ul, ol, p
-  margin: 0 0 1em
+  margin: 0 0 0.5em
 
 .text-tight
   margin: 0
@@ -50,16 +50,16 @@ h1, h2, h3, h4, ul, ol, p
 
 // SIZES
 h1
-  font-size: 3em
-
-h2
   font-size: 2em
 
+h2
+  font-size: 1.8em
+
 h3
-  font-size: 1.2em
+  font-size: 1.4em
 
 h4
-  font-size: 0.7em
+  font-size: 0.8em
 
 
 // STYLES
@@ -73,7 +73,7 @@ h4
   letter-spacing: 0.5em
 
 .text-smaller
-  font-size: 0.7em
+  font-size: 0.8em
 
 .text-bigger
   font-size: 1.2em
@@ -98,26 +98,32 @@ h4
 
 .header-highlight
   position: relative
+  display: inline-block
 
   &:before
     content: ""
+    display: block
     position: absolute
-    top: calc(50% - 1px)
-    left: -120px
-    width: 100px
-    height: 2px
-    background: $primary
+    background: rgba($primary, 0.15)
+    bottom: 0
+    left: -10px
+    right: -10px
+    height: 40%
+    border-radius: 1px
+    z-index: -1
+    transform: scale(1, 1) skewX(-15deg)
 
 a
   text-decoration: none
   color: inherit
   line-height: 1.4em
 
-.highlighted
+.link-highlight
   display: inline-block
   position: relative
   @extend .text-normal
   z-index: 10
+  cursor: pointer
 
   &:before,
   &:after
