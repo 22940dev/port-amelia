@@ -10,7 +10,6 @@ body
 
   *
     box-sizing: border-box
-    // transition: all 400ms
 
   img
     border: 0
@@ -37,24 +36,9 @@ hr
   margin: 0
 
 ::selection
-  background: rgba($primary, 0.3)
+  background: $primary
   color: white
 
 ::-moz-selection
-  background: rgba($primary, 0.3)
+  background: $primary
   color: white
-
-
-// ====================
-// Header
-// ====================
-body.index
-  header
-    display: none
-
-
-// ====================
-// Masthead
-// ====================
-#masthead
-  height: 100vh

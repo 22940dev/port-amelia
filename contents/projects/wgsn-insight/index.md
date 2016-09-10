@@ -1,17 +1,16 @@
 ---
-title: WGSN Workspace & Image Library
-date: 2015–2016
-type: Web app
+title: WGSN Insight
+date: 2016
+type: Website
 client: WGSN
 template: project.jade
-tagline1: A hub for creative teams to work
-tagline2: together, utilizing WGSN's millions
-tagline3: of exclusive assets.
+tagline1: A new product for WGSN, providing
+tagline2: the C-suite and marketers with
+tagline3:  high-level information on future trends.
 role1: UX/UI Design
 role2: Prototype development
 clientname: WGSN
 clientlink: http://www.wgsn.com
-websitelink: http://wgsn-cherry-prototype.amelia-lewis.com
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

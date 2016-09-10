@@ -1,5 +1,5 @@
 mixin project-list-item(id, title, description, type, date, comingsoon)
-  a.project-list-item.border-bottom.block-ver-md(id=id href="/projects/" + id)
+  a.project-list-item.block-ver-lg(id=id href="/projects/" + id)
     .row.block-bot-md
       .col-xs-12
         //- .project-img(style="background-image: url('/projects/" + id + "/project-tile.jpg')")
@@ -13,7 +13,8 @@ mixin project-list-item(id, title, description, type, date, comingsoon)
           span &nbsp;&nbsp;/&nbsp;&nbsp;
           span= date
       .col-xs-6.text-right
-        p.link-highlight.text-tight Read more →
+        p.link-highlight.text-tight Read more 
+          span →
 
 //- ===============================================================================================
 
@@ -21,20 +22,21 @@ section#project-list.block-ver-xl
   .content-wrap
     .row
       .col-xs-12
-        h2.header-highlight.wow.fadeIn Recent Projects
+        h2.header-highlight.wow.slideInUp Recent Projects
 
     .row
+      .col-xs-12.wow.slideInUp: +project-list-item("wgsn-insight", "WGSN Insight", "A new product for WGSN, providing the C-suite and marketers with high-level information on future trends.", "Website", "2016", true)
+      .col-xs-12.wow.slideInUp: +project-list-item("wgsn-brand-guide", "WGSN Rebrand & Style Guide", "A live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.", "Website", "2015–2016", true)
       .col-xs-12.wow.slideInUp: +project-list-item("wgsn-city-by-city-app", "WGSN City by City App", "Editor-curated listings, travel guides and trip planning tools.", "Mobile App", "2016", true)
-      .col-xs-12.wow.slideInUp: +project-list-item("wgsn-workspace", "WGSN Workspace & Image Library", "A hub for creative teams to work together, utilizing WGSN's millions of exclusive assets.", "Web App", "2016", true)      
-      .col-xs-12.wow.slideInUp: +project-list-item("wgsn-brand-guide", "WGSN Rebrand & Style Guide", "A live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.", "Website", "2015–2016", true)      
-      .col-xs-12.wow.slideInUp: +project-list-item("wgsn-catwalks-app", "WGSN Catwalks App", "From the runway to your phone, see the latest collections from New York, London, Milan and Paris.", "Mobile App", "2015", true)        
+      .col-xs-12.wow.slideInUp: +project-list-item("wgsn-workspace", "WGSN Workspace & Image Library", "A hub for creative teams to work together, utilizing WGSN's millions of exclusive assets.", "Web App", "2016", true)
+      .col-xs-12.wow.slideInUp: +project-list-item("wgsn-catwalks-app", "WGSN Catwalks App", "From the runway to your phone, see the latest collections from New York, London, Milan and Paris.", "Mobile App", "2015", true)
       //- .col-xs-12.col-sm-6.wow.fadeIn: +project-list-item("wgsn-public-site", "WGSN Public Website", "Lorem ipsum", "Website", "2015", true)
     
     .block-ver-lg
 
     .row
       .col-xs-12
-        h2.header-highlight.wow.fadeIn Older
+        h2.header-highlight.wow.slideInUp Older
 
     .row
       .col-xs-12.wow.slideInUp: +project-list-item("meat-cuts", "Meat Cuts", "Your number one destination for information about beef, lamb, veal and goat cuts.", "Mobile app", "2014", false)

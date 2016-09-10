@@ -1,51 +1,40 @@
 #project-list
-  // .row:nth-of-type(2),
-  // .row:nth-of-type(5)
-  //   position: relative
-    
-  //   &:before
-  //     content: ""
-  //     position: absolute
-  //     bottom: 4px
-  //     right: -4px
-  //     width: 20px
-  //     height: 20px
-  //     @extend .border-bottom
-  //     @extend .border-right
-  //     border-color: rgba($primary, 0.4)
-
   .project-list-item
     display: block
     position: relative
-    margin: 0 0 20px
-    background: white
-    transition: all 400ms
-    cursor: pointer
 
     &:after
       content: ""
       position: absolute
-      width: 100%
-      height: 1px
-      left: 0
-      bottom: -1px
-      background: $primary
-      transform: scale(0, 1)
-      transform-origin: left center
+      top: 0
+      bottom: 0
+      right: -1000px
+      left: -1000px
+      background: $xlt-grey
+      transition: all 400ms
+      z-index: -1
+      opacity: 0
       transition: all 400ms
 
     p
       transition: all 400ms
+
+    .link-highlight
+      span
+        display: inline-block
+        transform: translate(0, 0)
+        transition: all 400ms
     
     &:hover
-      transform: scale(1.02)
-      
       &:after
-        transform: scale(1, 1)
+        opacity: 0.7
 
-      p.link-highlight
+      .link-highlight
+        span
+          transform: translate(3px, 0)
+        
         &:before
           transform: scale(0, 1)
-      
+        
         &:after
           transform: scale(1, 1) skewX(-15deg)

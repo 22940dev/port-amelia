@@ -18,7 +18,7 @@ The WGSN style guide began as a simple tool for myself from which to grab the co
 
 ![WGSN Brand Guide](wgsn-brand-guide-9.jpg "WGSN Brand Guide")
 
-Taking inspiration from sites like Dropbox's <a href="http://dropbox.github.io/scooter/index.html" target="_blank" class="highlighted">Scooter</a> and Marvel's <a href="https://marvelapp.com/styleguide/overview/introduction" target="_blank" class="highlighted">Style Guide</a>, I started compiling a full set of UI components and styles used around the site and constructed them into guidelines and reusable components.
+Taking inspiration from sites like Dropbox's <a href="http://dropbox.github.io/scooter/index.html" target="_blank" class="link-highlight">Scooter</a> and Marvel's <a href="https://marvelapp.com/styleguide/overview/introduction" target="_blank" class="link-highlight">Style Guide</a>, I started compiling a full set of UI components and styles used around the site and constructed them into guidelines and reusable components.
 
 I worked on the style guide alongside designing an actual product&mdash;which proved to be very useful, for both things&mdash;and created all these elements, or "building blocks", which we could use from then on to design all our products. It was important that these elements were reusable across different screens, platforms and contexts.
 

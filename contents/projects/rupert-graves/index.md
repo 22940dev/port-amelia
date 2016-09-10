@@ -12,11 +12,11 @@ clientlink: http://rupert-graves.amelia-lewis.com/
 websitelink: http://rupert-graves.amelia-lewis.com/
 ---
 
-<h3 data-title="What is it?">What is it?</h3>
+### What is it?
 
-This is—well, will be—the official website for UK actor, Rupert Graves. His <a href="http://rupert-graves.com/" class="highlighted" target="_blank">current site</a> is rather dated, so we’ve been working to create something a little sexier and more modern.
+This is—well, will be—the official website for UK actor, Rupert Graves. His <a href="http://rupert-graves.com/" class="link-highlight" target="_blank">current site</a> is rather dated, so we’ve been working to create something a little sexier and more modern.
 
-<h3 data-title="My Approach">My Approach</h3>
+### My Approach
 
 This is still very much a work in progress. I’ve been through a few iterations but I’m yet to settle on something that I love. It’s been interesting researching similar sites, and trying to decide what content is actually worth having on here as opposed to what’s available elsewhere on the web.
 
