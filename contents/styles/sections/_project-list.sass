@@ -11,10 +11,10 @@
       right: -1000px
       left: -1000px
       background: $xlt-grey
-      transition: all 400ms
       z-index: -1
       opacity: 0
       transition: all 400ms
+      pointer-events: none
 
     p
       transition: all 400ms
@@ -38,3 +38,7 @@
         
         &:after
           transform: scale(1, 1) skewX(-15deg)
+
+// @each $project in wgsn-insight, wgsn-brand-guide, wgsn-city-by-city-app, wgsn-workspace, wgsn-catwalks-app
+//   .project-list-item##{$project}:after
+//     background: $xlt-grey url('../projects/#{$project}/project-tile.jpg') no-repeat center / cover
