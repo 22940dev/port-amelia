@@ -29,4 +29,4 @@ I worked on the style guide alongside designing an actual product&mdash;which pr
 ![WGSN Brand Guide](wgsn-brand-guide-15.jpg "WGSN Brand Guide")
 ![WGSN Brand Guide](wgsn-brand-guide-16.jpg "WGSN Brand Guide")
 
-This project is as much about front-end dev as it is design. A very important part of this is setting standards for the CSS we write as a team, and consolidating all the components that we've historically written over and over again.
+This project is as much about front-end development as it is design. A very important part of this is setting standards for the CSS we write as a team, and consolidating all the components that we've historically written over and over again. Through the entire preocess, I've been working closely with the front-end developers to ensure everything I'm making works well for them and their code bases. Similarly, I've made sure to closely involve our creative services teams to make sure our products are tied in nicely with any marketing collateral our users see.
