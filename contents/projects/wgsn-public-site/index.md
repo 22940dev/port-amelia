@@ -11,6 +11,8 @@ role2: Prototype development
 clientname: WGSN
 clientlink: http://www.wgsn.com
 websitelink: http://www.wgsn.com
+prevproject: glenda-graff
+nextproject: wgsn-insight
 ---
 
 ### About

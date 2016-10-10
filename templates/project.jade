@@ -41,3 +41,15 @@ block content
 
       .row.block-ver-xl
         .col-xs-12!= typogr(page.html).typogrify()
+
+    .row.border-top
+      .content-wrap
+        .row
+          .col-xs-6.block-ver-lg.border-right
+            a(href="/projects/#{page.metadata.prevproject}" class="link-highlight")
+              span ←
+              |  Previous
+
+          .col-xs-6.block-ver-lg.text-right
+            a(href="/projects/#{page.metadata.nextproject}" class="link-highlight") Next 
+              span →

@@ -9,6 +9,8 @@ role1: UX/UI Design
 role2: Front-end Development
 clientname: Novartis
 clientlink: https://www.novartis.com/
+prevproject: shoppernova
+nextproject: rupert-graves
 ---
 
 ### What is it?

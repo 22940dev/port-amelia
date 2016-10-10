@@ -13,6 +13,8 @@ clientname: Meat & Livestock Australia
 clientlink: http://www.mla.com.au/Home
 appstorelink: https://itunes.apple.com/us/app/meat-cuts/id904537057?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.mla.meatcuts&hl=en
+prevproject: wgsn-catwalks-app
+nextproject: the-blending-room
 ---
 
 ### What is it?

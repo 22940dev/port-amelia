@@ -12,6 +12,8 @@ role2: Prototype development
 clientname: WGSN
 clientlink: http://www.wgsn.com
 websitelink: https://www.wgsn.com/insight/#/home
+prevproject: glenda-graff
+nextproject: wgsn-brand-guide
 ---
 
 October 1st, 2016 marked the <a href="https://www.wgsn.com/en/article/wgsn-launches-wgsn-insight-consumer-market-intelligence-product/?lang=en" target="_blank" class="link-highlight">launch</a> of a brand new product for WGSN; <a href="https://www.wgsn.com/en/products/insight/" target="_blank" class="link-highlight">WGSN Insight</a>. Following the form and function of our flagship product, <a href="https://www.wgsn.com/en/products/fashion/" target="_blank" class="link-highlight">WGSN Fashion</a>,  Insight couples big-picture thinking with immediate insight into the ever-evolving consumer your brand serves, including intelligence and research on the latest technology, marketing and retail innovations.
@@ -26,7 +28,7 @@ Insight was also WGSN's first responsive product. Rather than producing dozens o
 
 ![WGSN Insight](wgsn-insight-3.jpg "WGSN Insight")
 
-Another thing that was important to me with Insight (and the new branding in general), was to include little delights like fancy hover states. The interfaces, in general, are on the simpler side, so I think it's nice to show a little extra thought and care with these.
+Another thing that was important to me with Insight (and the new branding in general), was to include little delights like fancy hover states. The interfaces, in general, are on the simpler side, so I think it's nice to show a little extra thought and care with these to "wow" our users.
 
 ![WGSN Insight](wgsn-insight-4.gif "WGSN Insight")
 

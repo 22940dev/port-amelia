@@ -12,6 +12,8 @@ clientname: WGSN
 clientlink: http://www.wgsn.com
 appstorelink: https://itunes.apple.com/us/app/wgsn-catwalks/id1041086526?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.wgsn.catwalkgallery&hl=en
+prevproject: wgsn-workspace
+nextproject: meat-cuts
 ---
 
 Catwalk coverage is key to <a href="http://wgsn.com/" target="_blank" class="link-highlight">WGSN</a>'s offering so extending that out into a mobile app was the obvious next step forward for our customers' Fashion Week experience. Collections from New York, London, Milan and Paris Fashion Weeks are fed through almost instantly so our users are able to stay completely up-to-the-minute with the latest looks and expert analyses.

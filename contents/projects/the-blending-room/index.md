@@ -10,6 +10,8 @@ role2: Front-end development
 clientname: JR Cigars
 clientlink: https://www.jrcigars.com/
 websitelink: https://www.jrcigars.com/blending-room/
+prevproject: meat-cuts
+nextproject: shoppernova
 ---
 
 ### What is it?

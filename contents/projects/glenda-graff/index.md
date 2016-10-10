@@ -10,6 +10,8 @@ role2: Development
 clientname: Glenda Graff
 clientlink: http://glendagraff.com.au/
 websitelink: http://glendagraff.com.au/
+prevproject: rupert-graves
+nextproject: wgsn-insght
 ---
 
 ### What is it?

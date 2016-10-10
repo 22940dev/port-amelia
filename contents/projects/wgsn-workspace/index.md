@@ -12,6 +12,8 @@ role2: Prototype development
 clientname: WGSN
 clientlink: http://www.wgsn.com
 websitelink: http://wgsn-cherry-prototype.amelia-lewis.com
+prevproject: wgsn-city-by-city-app
+nextproject: wgsn-catwalks-app
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

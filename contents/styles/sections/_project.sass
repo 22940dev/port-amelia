@@ -25,9 +25,10 @@
         transform: translate3d(0, 0, 0) skewX(-15deg)
         transform-origin: left center
         transition: all 400ms
-  
-  .btn
-    margin-bottom: 0
+
+  @media (min-width: $screen-sm-min)
+    .btn
+      margin-bottom: 0
 
   .project-content
     padding: 80px 60px
@@ -42,3 +43,20 @@
   p img
     margin-top: 40px
     margin-bottom: 40px
+
+  .row:last-child
+    .link-highlight
+      span
+        display: inline-block
+        transform: translate(0, 0)
+        transition: all 400ms
+
+    .col-xs-6:first-child
+      .link-highlight:hover
+        span
+          transform: translate(-3px, 0)
+
+    .col-xs-6:last-child
+      .link-highlight:hover
+        span
+          transform: translate(3px, 0)
