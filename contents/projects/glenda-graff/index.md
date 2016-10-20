@@ -11,7 +11,7 @@ clientname: Glenda Graff
 clientlink: http://glendagraff.com.au/
 websitelink: http://glendagraff.com.au/
 prevproject: rupert-graves
-nextproject: wgsn-insght
+nextproject: wgsn-insight
 ---
 
 ### What is it?

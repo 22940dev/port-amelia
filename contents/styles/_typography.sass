@@ -161,3 +161,15 @@ a
   &:focus
     outline-color: $primary
     outline-width: 2px
+
+.link-back span,
+.link-forward span
+  display: inline-block
+  transform: translate(0, 0)
+  transition: all 400ms
+  
+.link-back:hover span
+  transform: translate(-3px, 0)
+
+.link-forward:hover span
+  transform: translate(3px, 0)

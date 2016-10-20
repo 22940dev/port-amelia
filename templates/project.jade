@@ -46,10 +46,10 @@ block content
       .content-wrap
         .row
           .col-xs-6.block-ver-lg.border-right
-            a(href="/projects/#{page.metadata.prevproject}" class="link-highlight")
+            a.link-highlight.link-back(href="/projects/#{page.metadata.prevproject}")
               span ←
               |  Previous
 
           .col-xs-6.block-ver-lg.text-right
-            a(href="/projects/#{page.metadata.nextproject}" class="link-highlight") Next 
+            a.link-highlight.link-forward(href="/projects/#{page.metadata.nextproject}") Next 
               span →
