@@ -7,57 +7,6 @@ block prepend title
   | #{ page.title + " | "}
 
 block content
-<<<<<<< HEAD
-  .project-view
-    //- DEVELOPMENT
-    //- img.hide-mobile(src=page.title.replace(/ /g, "-").replace("'", "").toLowerCase() + "/project-detail.jpg")
-    //- .mobile-image-container.hide-desktop
-    //-   img(src=page.title.replace(/ /g, "-").toLowerCase() + "/project-detail.jpg")
-
-    //- PRODUCTION
-    img.hide-mobile(src="project-detail.jpg")
-    .mobile-image-container.hide-desktop
-      img(src="project-detail.jpg")
-
-    section.block-lt-grey.block-ver-xl.info
-      .content-wrap
-        .row.block-bot-sm
-          .col-sm-12
-            h1= page.title
-        
-        .row
-          .col-sm-4
-            h4 My Role
-            ul
-              li= page.metadata.role1
-              li= page.metadata.role2
-
-          .col-sm-4
-            h4 The Client
-            ul
-              if page.metadata.clientlink
-                li: a.standard(href="#{page.metadata.clientlink}" target="_blank")= page.metadata.clientname
-              else
-                li= page.metadata.clientname
-
-          .col-sm-4
-            h4 See the project
-            ul
-              if page.metadata.appstorelink
-                li: a.standard(href="#{page.metadata.appstorelink}" target="_blank") App Store
-                if page.metadata.playstorelink
-                  li: a.standard(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
-              else if page.metadata.websitelink
-                li: a.standard(href="#{page.metadata.websitelink}" target="_blank") Website
-              else if page.metadata.stagingwebsitelink
-                li: a.standard(href="#{page.metadata.stagingwebsitelink}" target="_blank") Website (Staging)
-              else if page.metadata.internal
-                li Unfortunately, 
-                  span= page.title
-                  |  is only for internal client use.
-              else
-                li Coming soon!
-=======
   section#project
     //- .header-img(style="background-image: url('" + page.title.replace(/ /g, "-").toLowerCase() + "/project-tile.jpg')")
 
@@ -89,7 +38,6 @@ block content
                 .block-right-sm.inline-block: a.btn(href="#{page.metadata.websitelink}" target="_blank") Website
       
       hr
->>>>>>> redesign
 
       .row.block-ver-xl
         .col-xs-12!= typogr(page.html).typogrify()

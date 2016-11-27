@@ -42,33 +42,15 @@ body
   top: 0
   right: 0
   overflow: scroll
-<<<<<<< HEAD
-  -webkit-overflow-scrolling: touch
-=======
   transform: translate3d($burger-width, 0, 0)
   transition: all 500ms
   visibility: hidden
->>>>>>> redesign
 
   ul
     padding: 0
     margin: 0
     width: 100%
-<<<<<<< HEAD
-    position: absolute
-    top: 50%
-    +transform(translate3d(0, -50%, 0))
-
-    @media (max-height: 800px)
-      top: 50px
-      +transform(translate3d(0, 0, 0))
-      padding-bottom: 50px
-
-  &:not(.open)
-    visibility: hidden
-=======
     list-style-type: none
->>>>>>> redesign
 
   li 
     opacity: 0
@@ -138,20 +120,8 @@ body
     .b-bun--top
       transform: rotate(0deg) scale(1, 1) translate3d(0, -2px, 0)
 
-<<<<<<< HEAD
-  @media (max-width: $screen-xs-min)
-    top: 15px
-    left: 15px
-
-  &:hover:not(.open)
-    .bun-top,
-    .bun-mid,
-    .bun-bottom
-      background: darken($dk-grey, 10)
-=======
     .b-bun--bottom
       transform: rotate(0deg) scale(1, 1) translate3d(0, 2px, 0)
->>>>>>> redesign
 
   &.open
     .b-menu
@@ -166,8 +136,7 @@ body
     .b-bun--bottom
       transform: translate3d(30%, -150%, 0) rotate(-35deg) scale(0.4, 1)
 
-body.index,
-body.resume
+body.index
   .b-nav,
   .b-container
     display: none
