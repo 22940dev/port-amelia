@@ -3,6 +3,12 @@
     padding-left: $padding
     padding-right: $padding
 
+  .block-left-#{$size}
+    padding-left: $padding
+
+  .block-right-#{$size}
+    padding-right: $padding
+
   .block-ver-#{$size}
     padding-top: $padding
     padding-bottom: $padding
@@ -20,13 +26,14 @@
   .block-#{$name}
     background: $color
 
-+make-block(xl, 100px)
-+make-block(lg, 60px)
++make-block(xl, 140px)
++make-block(lg, 40px)
 +make-block(md, 20px)
-+make-block(sm, 8px)
++make-block(sm, 10px)
 
 @media (max-width: $screen-sm-min)
-  +make-block(xl, 60px)
+  +make-block(xl, 50px)
+  +make-block(lg, 30px)
 
 
 +make-block-variant("lt-grey", $lt-grey)

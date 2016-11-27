@@ -1,0 +1,46 @@
+#project-list
+  .project-list-item
+    display: block
+    position: relative
+
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      right: -1000px
+      left: -1000px
+      background: rgba($xlt-grey, 0.7)
+      z-index: -1
+      transform: translate(0, 0) scale(0, 1)
+      transform-origin: left center
+      transition: all 1000ms
+      pointer-events: none
+
+    p
+      transition: all 400ms
+
+    .link-highlight
+      span
+        display: inline-block
+        transform: translate(0, 0)
+        transition: all 400ms
+    
+    &:hover
+      &:after
+        // opacity: 0.7
+        transform: translate(0, 0) scale(1, 1)
+
+      .link-highlight
+        span
+          transform: translate(3px, 0)
+        
+        &:before
+          transform: scale(0, 1)
+        
+        &:after
+          transform: scale(1, 1) skewX(-15deg)
+
+// @each $project in wgsn-insight, wgsn-brand-guide, wgsn-city-by-city-app, wgsn-workspace, wgsn-catwalks-app
+//   .project-list-item##{$project}:after
+//     background: $xlt-grey url('../projects/#{$project}/project-tile.jpg') no-repeat center / cover

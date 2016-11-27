@@ -1,0 +1,50 @@
+.btn
+  @extend .text-uppercase
+  @extend .text-bold
+  @extend .text-center
+  @extend .text-spaced
+  @extend .text-smaller
+  border: 1px solid black
+  display: block
+  position: relative
+  padding: 12px 24px
+  margin: 0 0 10px
+  overflow: hidden
+  transition: all 400ms
+
+  &:after
+    content: ""
+    width: calc(100% + 40px)
+    height: 100%
+    position: absolute
+    bottom: 0
+    left: -20px
+    background: $primary
+    z-index: -1
+    transform: translate3d(0, 0, 0) scale(0, 1) skewX(-30deg)
+    transform-origin: left center
+    transition: all 500ms
+
+  &:hover
+    color: white
+    border-color: $primary
+
+    &:after
+      transform: translate3d(0, 0, 0) scale(1, 1) skewX(-30deg)
+
+  &:active
+    transform: translate3d(0, 0, 0) scale(0.95)
+
+  &:focus
+    outline-color: $primary
+    outline-width: 2px
+
+  &.btn-disabled
+    color: rgba(black, 0.2)
+    border-color: rgba(black, 0.2)
+
+    &:after
+      display: none
+
+    &:hover
+      background: none

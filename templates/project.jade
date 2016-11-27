@@ -1,12 +1,13 @@
 extends layout
 
 block append vars
-  - bodyclass = 'project'
+  - bodyclass = 'project-view'
 
 block prepend title
-  | #{ page.title + " - "}
+  | #{ page.title + " | "}
 
 block content
+<<<<<<< HEAD
   .project-view
     //- DEVELOPMENT
     //- img.hide-mobile(src=page.title.replace(/ /g, "-").replace("'", "").toLowerCase() + "/project-detail.jpg")
@@ -56,7 +57,51 @@ block content
                   |  is only for internal client use.
               else
                 li Coming soon!
+=======
+  section#project
+    //- .header-img(style="background-image: url('" + page.title.replace(/ /g, "-").toLowerCase() + "/project-tile.jpg')")
 
-    section.block-ver-xl
+    .content-wrap
+      .row.block-ver-xl
+        .col-xs-12
+          p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
+            span= page.metadata.type
+            span &nbsp;&nbsp;/&nbsp;&nbsp;
+            span= page.metadata.date
+          h1(data-heading=page.metadata.client)= page.metadata.title
+          p.project-tagline.text-bigger.text-tight
+            if page.metadata.tagline1
+              span= page.metadata.tagline1
+            if page.metadata.tagline2
+              br
+              span= page.metadata.tagline2
+            if page.metadata.tagline3
+              br
+              span= page.metadata.tagline3
+          
+          if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
+            .block-top-md
+              if page.metadata.appstorelink
+                .block-right-sm.inline-block: a.btn(href="#{page.metadata.appstorelink}" target="_blank") App Store
+              if page.metadata.playstorelink
+                .block-right-sm.inline-block: a.btn(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store
+              if page.metadata.websitelink
+                .block-right-sm.inline-block: a.btn(href="#{page.metadata.websitelink}" target="_blank") Website
+      
+      hr
+>>>>>>> redesign
+
+      .row.block-ver-xl
+        .col-xs-12!= typogr(page.html).typogrify()
+
+    .row.border-top
       .content-wrap
-        .row!= typogr(page.html).typogrify()
+        .row
+          .col-xs-6.block-ver-lg.border-right
+            a.link-highlight.link-back(href="/projects/#{page.metadata.prevproject}")
+              span ←
+              |  Previous
+
+          .col-xs-6.block-ver-lg.text-right
+            a.link-highlight.link-forward(href="/projects/#{page.metadata.nextproject}") Next 
+              span →

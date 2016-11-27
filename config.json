@@ -3,12 +3,7 @@
     "url": "http://amelialewis.com.au",
     "name": "Amelia Lewis",
     "owner": "Amelia Lewis",
-    "description": "Portfolio of Amelia Lewis",
-    "nav": {
-      "About": "/home/",
-      "Work": "/work/",
-      "Contact": "#contact"
-    }
+    "description": "Portfolio of Amelia Lewis"
   },
   "plugins": [
     "./plugins/paginator.coffee",
@@ -27,9 +22,6 @@
   "markdown": {
     "smartLists": true,
     "smartypants": true
-  },
-  "paginator": {
-    "perPage": 3
   },
   "ignore": [
     ".DS_Store",

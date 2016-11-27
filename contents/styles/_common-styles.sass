@@ -1,0 +1,66 @@
+// ====================
+// Layout
+// ====================
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+.inline-block
+  display: inline-block !important
+
+.flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+// ====================
+// BGs & Borders
+// ====================
+.bg-white
+  background: white
+
+.bg-lt-grey
+  background: $lt-grey
+
+.bg-dk-grey
+  background: $dk-grey
+  color: white
+
+.bg-xdk-grey
+  background: darken($dk-grey, 3)
+  color: white
+
+.border
+  border: 1px solid $lt-grey
+
+@each $side in top, right, bottom, left
+  .border-#{$side}
+    border-#{$side}: 1px solid $lt-grey
+
+
+// ====================
+// Hiders
+// ====================
+.hidden-desktop
+  display: block
+
+  @media (min-width: $screen-xs-min)
+    display: none
+
+.hidden-mobile
+  display: none
+
+  @media (min-width: $screen-xs-min)
+    display: block
+
+
+// ====================
+// Transitions
+// ====================
+@for $i from 1 through 30
+  .delay-#{$i * 50}
+    transition-delay: $i * 50ms !important
+    animation-delay: $i * 50ms !important

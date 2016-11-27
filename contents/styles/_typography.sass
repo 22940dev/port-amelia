@@ -1,0 +1,175 @@
+.sans-serif, p, li, a, h4, h1, h2, h3
+  font-family: 'Karla', sans-serif
+  line-height: 1.4em
+
+.serif
+  font-family: 'Playfair Display'
+  line-height: 1.2em
+
+
+// ALIGNMENT
+.text-left
+  text-align: left
+
+.text-center
+  text-align: center
+
+.text-right
+  text-align: right
+
+.text-justify
+  text-align: justify
+
+
+// WEIGHT
+.text-normal, p, li
+  font-weight: 400
+
+.text-bold
+  font-weight: 700
+
+
+// TRANSFORMATION
+.text-lowercase
+  text-transform: lowercase
+
+.text-uppercase, h4
+  text-transform: uppercase
+
+.text-capitalize
+  text-transform: capitalize
+
+
+// MARGINS
+h1, h2, h3, h4, ul, ol, p
+  margin: 0 0 0.5em
+
+.text-tight
+  margin: 0
+
+
+// SIZES
+h1
+  font-size: 2em
+
+h2
+  font-size: 1.8em
+
+h3
+  font-size: 1.4em
+
+h4
+  font-size: 0.8em
+
+
+// STYLES
+.text-unspaced, h1, h2, h3
+  letter-spacing: -0.05em
+
+.text-spaced, h4
+  letter-spacing: 0.1em
+
+.text-xspaced
+  letter-spacing: 0.5em
+
+.text-smaller
+  font-size: 0.8em
+
+.text-bigger
+  font-size: 1.2em
+
+.text-italic
+  font-style: italic
+
+.text-grey,
+.text-grey span
+  color: $md-grey
+
+.text-primary
+  color: $primary
+
+.text-white
+  color: white
+
+.ul-bare
+  list-style: none
+  margin: 0
+  padding: 0
+
+.header-highlight
+  position: relative
+  display: inline-block
+
+  &:before
+    content: ""
+    display: block
+    position: absolute
+    background: rgba($primary, 0.15)
+    bottom: 0
+    left: -10px
+    right: -10px
+    height: 40%
+    border-radius: 1px
+    z-index: -1
+    transform: scale(1, 1) skewX(-15deg)
+
+a
+  text-decoration: none
+  color: inherit
+  line-height: 1.4em
+  cursor: pointer
+
+.link-highlight
+  display: inline-block
+  position: relative
+  @extend .text-normal
+  z-index: 10
+
+  &:before,
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    background: rgba($primary, 0.4)
+    bottom: 1px
+    transition: all 400ms
+    pointer-events: none
+
+  &:before
+    left: 0
+    right: 0
+    height: 1px
+    transform: scale(1, 1)
+    transform-origin: right center
+    
+  &:after
+    left: -2px
+    right: -2px
+    height: 44%
+    border-radius: 1px
+    z-index: -1
+    transform: scale(0, 1) skewX(-15deg)
+    transform-origin: left center
+
+  &:hover
+    &:before
+      transform: scale(0, 1)
+    
+    &:after
+      transform: scale(1, 1) skewX(-15deg)
+
+  &:focus
+    outline-color: $primary
+    outline-width: 2px
+
+.link-back span,
+.link-forward span
+  display: inline-block
+  transform: translate(0, 0)
+  transition: all 400ms
+  
+.link-back:hover span
+  transform: translate(-3px, 0)
+
+.link-forward:hover span
+  transform: translate(3px, 0)

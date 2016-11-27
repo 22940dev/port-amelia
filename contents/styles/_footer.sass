@@ -1,49 +1,40 @@
 footer
-  background: $dk-grey
-  color: white
+  a
+    &.linkedin:before,
+    &.linkedin:after
+      background: rgba($linkedin, 0.6)
 
-  .contact
-    padding: 60px 0
+    &.facebook:before,
+    &.facebook:after
+      background: rgba($facebook, 0.6)
 
-    a.standard
-      border-color: white
+    &.twitter:before,
+    &.twitter:after
+      background: rgba($twitter, 0.6)
 
-      &:hover
-        border-color: $primary
+    &.instagram:before,
+    &.instagram:after
+      background: rgba($instagram, 0.6)
 
-    .detail
-      font-size: 1.2em
-      display: inline-block
-      
-      i
-        width: 0
-        opacity: 0
-        text-align: left
-        font-size: 0.85em
-        +transition(all 300ms)
+    &.tumblr:before,
+    &.tumblr:after
+      background: rgba($tumblr, 0.6)
 
-      a
-        border-bottom: 1px solid white
-        position: relative
-        +transition(all 300ms)
+    &.dribbble:before,
+    &.dribbble:after
+      background: rgba($dribbble, 0.6)
 
-      &:hover
-        i
-          opacity: 1
-          width: 30px
-          color: $primary
-        
-        a
-          color: $primary
-          border-color: $primary
+    &.github:before,
+    &.github:after
+      background: rgba($github, 0.6)
 
-      @media (max-width: $screen-sm-min)
-        i
-          opacity: 1
-          width: 30px
-          color: white
+  p
+    color: rgba(white, 0.5)
 
+  .block-ver-xl
+    padding-bottom: 30px
 
+<<<<<<< HEAD
     .social-media
       border-left: 1px solid rgba(white, 0.1)
       box-sizing: border-box
@@ -116,3 +107,7 @@ footer
 body.resume
   footer
     display: none
+=======
+    @media (min-width: $screen-sm-min)
+      padding-bottom: 120px
+>>>>>>> redesign
