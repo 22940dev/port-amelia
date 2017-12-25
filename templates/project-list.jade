@@ -1,0 +1,55 @@
+extends layout
+
+block append vars
+  - bodyclass = 'index'
+
+mixin project-list-item(id, title, description, type, date, comingsoon)
+  a.project-list-item.block-ver-lg(id=id href="/projects/" + id)
+    .row.block-bot-md
+      .col-xs-12
+        //- .project-img(style="background-image: url('/projects/" + id + "/project-tile.jpg')")
+        //- p.text-grey.text-smaller.text-uppercase= type
+        h3= title
+        p= description
+    .row
+      .col-xs-6
+        p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
+          span= type
+          span &nbsp;&nbsp;/&nbsp;&nbsp;
+          span= date
+      .col-xs-6.text-right
+        p.link-highlight.text-tight Read more 
+          span →
+
+//- ===============================================================================================
+
+block content
+  section#project-list.block-ver-xl
+    .content-wrap
+      .row
+        .col-xs-12
+          h2.header-highlight.wow.fadeInUp Recent Projects
+
+      .row
+        //- .col-xs-12.wow.fadeInUp: +project-list-item("wgsn-public-site", "WGSN Public Website", "A new public face for the world's leading trend authority.", "Website", "2015", true)
+        .col-xs-12.wow.fadeInUp: +project-list-item("wgsn-insight", "WGSN Insight", "A new product for WGSN, providing the C-suite and marketers with high-level information on future trends.", "Website", "2016", true)
+        .col-xs-12.wow.fadeInUp: +project-list-item("wgsn-brand-guide", "WGSN Rebrand & Style Guide", "A live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.", "Website", "2016", true)
+        .col-xs-12.wow.fadeInUp: +project-list-item("wgsn-city-by-city-app", "WGSN City by City App", "Editor-curated listings, travel guides and trip planning tools.", "Mobile App", "2016", true)
+        .col-xs-12.wow.fadeInUp: +project-list-item("wgsn-workspace", "WGSN Workspace & Image Library", "A hub for creative teams to work together, utilizing WGSN's millions of exclusive assets.", "Web App", "2016", true)
+        .col-xs-12.wow.fadeInUp: +project-list-item("wgsn-catwalks-app", "WGSN Catwalks App", "From the runway to your phone, see the latest collections from New York, London, Milan and Paris.", "Mobile App", "2015—2016", true)
+      
+      .block-ver-lg
+
+      .row
+        .col-xs-12
+          h2.header-highlight.wow.fadeInUp Older
+
+      .row
+        .col-xs-12.wow.fadeInUp: +project-list-item("meat-cuts", "Meat Cuts", "Your number one destination for information about beef, lamb, veal and goat cuts.", "Mobile app", "2014", false)
+        .col-xs-12.wow.fadeInUp: +project-list-item("the-blending-room", "The Blending Room", "Everything you need to know about the latest cigar trends.", "Website", "2015", false)
+        //- .col-xs-12.wow.fadeInUp: +project-list-item("field-intouch", "Field InTouch", "The next generation in field force mobility.", "Tablet app", "2013–2015", false)
+        .col-xs-12.wow.fadeInUp: +project-list-item("shoppernova", "ShopperNova", "An undisputed leader in mobile marketing, location-based targeting and data-collection.", "Mobile app", "2014", false)
+        .col-xs-12.wow.fadeInUp: +project-list-item("repassist", "RepAssist", "A streamlined solution tailored specifically to Novartis sales reps' needs.", "Tablet app", "2014", false)
+        //- .col-xs-12.wow.fadeInUp: +project-list-item("rupert-graves", "Rupert Graves", "A digital brand for the international actor.", "Website", "2015", false)
+        .col-xs-12.wow.fadeInUp: +project-list-item("glenda-graff", "Glenda Graff", "An elite event planner for Sydney's eastern suburbs.", "Website", "2013–2014", false)
+        //- .col-xs-12.wow.fadeInUp: +project-list-item("my-portfolio", "My Portfolio", "Lorem ipsum", "Website", "2012–2015", true)

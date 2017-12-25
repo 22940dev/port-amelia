@@ -20,7 +20,7 @@ html(lang='en')
       link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css")
       link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css")
       link(rel="stylesheet" type="text/css" href="/styles/style.css?v1.0")
-      link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Karla:400,700")
+      link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,900")
       
       link(rel="shortcut icon", type="image/x-icon", href="/favicon.ico")
 
@@ -32,32 +32,28 @@ html(lang='en')
               a.link-highlight.link-back(href="/")
                 span ←
                 |  Go back
-            
-            //- .col-xs-6
-            //-   include partials/burger
     
     #content
       block content
     
     footer
-      .border-top.block-ver-xl
-        .content-wrap
-          .row
-            .col-xs-12
-              .inline-block.block-right-md.block-bot-md.wow.fadeInUp: a.link-highlight(href='mailto:amelialewis01@gmail.com', target='_blank') amelialewis01@gmail.com
-              .inline-block.block-right-md.block-bot-md.wow.fadeInUp(data-wow-delay="100ms"): a.facebook.link-highlight(href='https://www.facebook.com/lewis.amelia', target='_blank') Facebook
-              .inline-block.block-right-md.block-bot-md.wow.fadeInUp(data-wow-delay="200ms"): a.twitter.link-highlight(href='https://twitter.com/Amelia_Lewis', target='_blank') Twitter
-              .inline-block.block-right-md.block-bot-md.wow.fadeInUp(data-wow-delay="300ms"): a.instagram.link-highlight(href='http://instagram.com/amelia_lewis', target='_blank') Instagram
-              .inline-block.block-right-md.block-bot-md.wow.fadeInUp(data-wow-delay="400ms"): a.tumblr.link-highlight(href='http://meelz-on-wheels.tumblr.com/', target='_blank') Tumblr
-              br
-              .inline-block.block-right-md.block-bot-md.wow.fadeInUp: a.linkedin.link-highlight(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank') LinkedIn
-              .inline-block.block-right-md.block-bot-md.wow.fadeInUp(data-wow-delay="100ms"): a.dribbble.link-highlight(href='http://dribbble.com/Amelia_Lewis', target='_blank') Dribbble
-              .inline-block.block-right-md.block-bot-md.wow.fadeInUp(data-wow-delay="200ms"): a.github.link-highlight(href='https://github.com/amelia-lewis', target='_blank') Github
+      .content-wrap
+        .row
+          .col-xs-12
+            .footer-contact
+              h2 👋🏻
 
-      .bg-xdk-grey.block-ver-md
-        .content-wrap
-          .row
-            .col-xs-12
+              .footer-contact-links
+                a.link-highlight(href='mailto:amelialewis01@gmail.com', target='_blank') Email
+                a.link-highlight.link-highlight-facebook(href='https://www.facebook.com/lewis.amelia', target='_blank') Facebook
+                a.link-highlight.link-highlight-twitter(href='https://twitter.com/Amelia_Lewis', target='_blank') Twitter
+                a.link-highlight.link-highlight-instagram(href='http://instagram.com/amelia_lewis', target='_blank') Instagram
+                a.link-highlight.link-highlight-tumblr(href='http://meelz-on-wheels.tumblr.com/', target='_blank') Tumblr
+                a.link-highlight.link-highlight-linkedin(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank') LinkedIn
+                a.link-highlight.link-highlight-dribbble(href='http://dribbble.com/Amelia_Lewis', target='_blank') Dribbble
+                a.link-highlight.link-highlight-github(href='https://github.com/amelia-lewis', target='_blank') Github
+
+            .block-ver-sm
               p.text-tight.text-smaller &copy; #{ new Date().getFullYear() } #{ locals.owner }. Website designed and built by me.
 
     include partials/scripts

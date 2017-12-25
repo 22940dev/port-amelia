@@ -4,5 +4,19 @@ block append vars
   - bodyclass = 'index'
 
 block content
-  include partials/masthead
-  include partials/project-list
+  section#masthead
+    .content-wrap
+      .row
+        .col-xs-12
+          .masthead-intro.block-ver-lg
+            h1 Hey, I'm Amelia 👩🏻‍💻
+            p
+              | I'm a product designer at 
+              a.link-highlight.link-highlight-wework(href="http://wework.com", target="_blank") WeWork
+              |  based in New York City, previously at 
+              a.link-highlight.link-highlight-wgsn(href="http://wgsn.com", target="_blank") WGSN
+              |  and 
+              a.link-highlight.link-highlight-cld(href="http://creativelicencedigital.com/", target="_blank") Creative Licence Digital
+              | .
+            p I love beautiful products, design systems and well-crafted CSS.
+            p: a.link-highlight(href="/projects") Projects ➡️

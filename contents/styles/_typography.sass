@@ -1,10 +1,6 @@
 .sans-serif, p, li, a, h4, h1, h2, h3
-  font-family: 'Karla', sans-serif
+  font-family: 'Work Sans', sans-serif
   line-height: 1.4em
-
-.serif
-  font-family: 'Playfair Display'
-  line-height: 1.2em
 
 
 // ALIGNMENT
@@ -26,14 +22,17 @@
   font-weight: 400
 
 .text-bold
-  font-weight: 700
+  font-weight: 600
+
+.text-heavy
+  font-weight: 900
 
 
 // TRANSFORMATION
 .text-lowercase
   text-transform: lowercase
 
-.text-uppercase, h4
+.text-uppercase
   text-transform: uppercase
 
 .text-capitalize
@@ -41,8 +40,11 @@
 
 
 // MARGINS
-h1, h2, h3, h4, ul, ol, p
+h1, h2, h3, h4, ul, ol
   margin: 0 0 0.5em
+
+p 
+  margin: 0 0 0.75em
 
 .text-tight
   margin: 0
@@ -53,7 +55,7 @@ h1
   font-size: 2em
 
 h2
-  font-size: 1.8em
+  font-size: 1.6em
 
 h3
   font-size: 1.4em
@@ -61,22 +63,32 @@ h3
 h4
   font-size: 0.8em
 
+p
+  font-size: 1em
+
+@media (min-width: $screen-sm-min)
+  h1
+    font-size: 3em
+
+  h2
+    font-size: 1.8em
+
 
 // STYLES
-.text-unspaced, h1, h2, h3
+.text-unspaced
   letter-spacing: -0.05em
 
-.text-spaced, h4
+.text-spaced
   letter-spacing: 0.1em
 
 .text-xspaced
   letter-spacing: 0.5em
 
 .text-smaller
-  font-size: 0.8em
+  font-size: 0.6em
 
 .text-bigger
-  font-size: 1.2em
+  font-size: 1.3em
 
 .text-italic
   font-style: italic
@@ -122,45 +134,72 @@ a
 .link-highlight
   display: inline-block
   position: relative
-  @extend .text-normal
+  @extend .text-bold
+  margin: 0 -4px -6px
+  padding: 0 4px
   z-index: 10
+  overflow: hidden
+  transition: all 400ms
 
-  &:before,
-  &:after
+  &:before
     content: ""
     display: block
     position: absolute
-    background: rgba($primary, 0.4)
+    background: rgba(black, 0.1)
+    top: 60%
     bottom: 1px
+    left: 4px
+    right: 4px
+    transform: scale(1, 1)
+    transform-origin: center bottom
     transition: all 400ms
     pointer-events: none
-
-  &:before
-    left: 0
-    right: 0
-    height: 1px
-    transform: scale(1, 1)
-    transform-origin: right center
-    
-  &:after
-    left: -2px
-    right: -2px
-    height: 44%
-    border-radius: 1px
     z-index: -1
-    transform: scale(0, 1) skewX(-15deg)
-    transform-origin: left center
 
   &:hover
+    color: white
+
     &:before
-      transform: scale(0, 1)
-    
-    &:after
-      transform: scale(1, 1) skewX(-15deg)
+      background: black
+      transform: scale(1.2, 2.8)
 
   &:focus
-    outline-color: $primary
-    outline-width: 2px
+    outline-color: rgba(black, 0.1)
+    outline-width: 1px
+    outline-offset: -3px
+
+  &.link-highlight-wework:hover:before
+    background: #ffd16d
+
+  &.link-highlight-wgsn:hover:before
+    background: #0000dd
+
+  &.link-highlight-cld:hover:before
+    background: #ffe100
+
+  &.link-highlight-facebook:hover:before
+    background: $facebook
+
+  &.link-highlight-twitter:hover:before
+    background: $twitter
+
+  &.link-highlight-instagram:hover:before
+    background: $instagram
+
+  &.link-highlight-instagram:hover:before
+    background: $instagram
+
+  &.link-highlight-tumblr:hover:before
+    background: $tumblr
+
+  &.link-highlight-linkedin:hover:before
+    background: $linkedin
+
+  &.link-highlight-dribbble:hover:before
+    background: $dribbble
+
+  &.link-highlight-github:hover:before
+    background: $github
 
 .link-back span,
 .link-forward span
