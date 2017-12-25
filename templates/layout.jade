@@ -18,24 +18,31 @@ html(lang='en')
       link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css")
       link(rel="stylesheet" type="text/css" href="/styles/style.css?v1.0")
       link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,900")
-      
+
+      meta(property="og:title", content="Amelia Lewis")
+      meta(property="og:type", content="website")
+      meta(property="og:url", content="http://amelia-lewis.com/")
+      meta(property="og:image", content="/styles/img/og-image.jpg")
+      meta(property="og:site_name", content="Amelia Lewis")
+      meta(property="og:description", content="Hey, I'm Amelia. I'm a product designer at WeWork based in New York City, previously at WGSN and Creative Licence Digital. I love beautiful products, design systems and well-crafted CSS.")
+            
       //- generics
-      link(rel='icon', href='/styles/img/favicon-32.png', sizes='32x32')
-      link(rel='icon', href='/styles/img/favicon-57.png', sizes='57x57')
-      link(rel='icon', href='/styles/img/favicon-76.png', sizes='76x76')
-      link(rel='icon', href='/styles/img/favicon-96.png', sizes='96x96')
-      link(rel='icon', href='/styles/img/favicon-128.png', sizes='128x128')
-      link(rel='icon', href='/styles/img/favicon-228.png', sizes='228x228')
+      link(rel="icon", href="/styles/img/favicon-32.png", sizes="32x32")
+      link(rel="icon", href="/styles/img/favicon-57.png", sizes="57x57")
+      link(rel="icon", href="/styles/img/favicon-76.png", sizes="76x76")
+      link(rel="icon", href="/styles/img/favicon-96.png", sizes="96x96")
+      link(rel="icon", href="/styles/img/favicon-128.png", sizes="128x128")
+      link(rel="icon", href="/styles/img/favicon-228.png", sizes="228x228")
       //- Android
-      link(rel='shortcut icon', sizes='196x196', href='“/styles/img/favicon-196.png"')
+      link(rel="shortcut icon", sizes="196x196", href="/styles/img/favicon-196.png")
       //- iOS
-      link(rel='apple-touch-icon', href='/styles/img/favicon-120.png', sizes='120x120')
-      link(rel='apple-touch-icon', href='path/to/favicon-152.png', sizes='152x152')
-      link(rel='apple-touch-icon', href='path/to/favicon-180.png', sizes='180x180')
+      link(rel="apple-touch-icon", href="/styles/img/favicon-120.png", sizes="120x120")
+      link(rel="apple-touch-icon", href="path/to/favicon-152.png", sizes="152x152")
+      link(rel="apple-touch-icon", href="path/to/favicon-180.png", sizes="180x180")
       //- Windows 8 IE 10
-      meta(name='msapplication-TileColor', content='#ffffff')
-      meta(name='msapplication-TileImage', content='/styles/img/favicon-144.png')
-      meta(name='msapplication-config', content='/styles/img/browserconfig.xml')
+      meta(name="msapplication-TileColor", content="#ffffff")
+      meta(name="msapplication-TileImage", content="/styles/img/favicon-144.png")
+      meta(name="msapplication-config", content="/styles/img/browserconfig.xml")
 
   body(class=bodyclass)
     #content
@@ -49,15 +56,15 @@ html(lang='en')
               h2 👋🏻
 
               .footer-contact-links
-                a.link-highlight(href='mailto:amelialewis01@gmail.com', target='_blank') Email
-                a.link-highlight.link-highlight-facebook(href='https://www.facebook.com/lewis.amelia', target='_blank') Facebook
-                a.link-highlight.link-highlight-twitter(href='https://twitter.com/Amelia_Lewis', target='_blank') Twitter
-                a.link-highlight.link-highlight-instagram(href='http://instagram.com/amelia_lewis', target='_blank') Instagram
-                a.link-highlight.link-highlight-tumblr(href='http://meelz-on-wheels.tumblr.com/', target='_blank') Tumblr
-                a.link-highlight.link-highlight-pinterest(href='https://www.pinterest.com.au/lewisamelia/', target='_blank') Pinterest
-                a.link-highlight.link-highlight-linkedin(href='http://www.linkedin.com/pub/amelia-lewis/44/672/9a1', target='_blank') LinkedIn
-                a.link-highlight.link-highlight-dribbble(href='http://dribbble.com/Amelia_Lewis', target='_blank') Dribbble
-                a.link-highlight.link-highlight-github(href='https://github.com/amelia-lewis', target='_blank') Github
+                a.link-highlight(href="mailto:amelialewis01@gmail.com", target='_blank') Email
+                a.link-highlight.link-highlight-facebook(href="https://www.facebook.com/lewis.amelia", target="_blank") Facebook
+                a.link-highlight.link-highlight-twitter(href="https://twitter.com/Amelia_Lewis", target="_blank") Twitter
+                a.link-highlight.link-highlight-instagram(href="http://instagram.com/amelia_lewis", target="_blank") Instagram
+                a.link-highlight.link-highlight-tumblr(href="http://meelz-on-wheels.tumblr.com/", target="_blank") Tumblr
+                a.link-highlight.link-highlight-pinterest(href="https://www.pinterest.com.au/lewisamelia/", target="_blank") Pinterest
+                a.link-highlight.link-highlight-linkedin(href="http://www.linkedin.com/pub/amelia-lewis/44/672/9a1", target="_blank") LinkedIn
+                a.link-highlight.link-highlight-dribbble(href="http://dribbble.com/Amelia_Lewis", target="_blank") Dribbble
+                a.link-highlight.link-highlight-github(href="https://github.com/amelia-lewis", target="_blank") Github
 
             .block-top-sm.block-bot-md
               p.text-tight.text-smaller &copy; #{ new Date().getFullYear() } #{ locals.owner }. Website designed and built by me.
