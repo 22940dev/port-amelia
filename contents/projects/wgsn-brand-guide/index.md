@@ -4,9 +4,7 @@ date: 2016
 type: Website
 client: WGSN
 template: project.jade
-tagline1: A live inventory of UI components, brand
-tagline2: guidelines, brand assets, code snippets
-tagline3: and developer guidelines for WGSN products.
+tagline: A live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.
 role1: UX/UI Design
 role2: Front-end development
 clientname: WGSN

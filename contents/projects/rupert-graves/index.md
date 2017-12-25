@@ -3,13 +3,12 @@ title: Rupert Graves
 date: 2015
 type: Website
 template: project.jade
-tagline1: A digital brand for
-tagline2: the international actor.
+tagline: A digital brand for the international actor.
 role1: UX/UI Design
 role2: Development
 clientname: Rupert Graves
-clientlink: http://rupert-graves.amelia-lewis.com/
-websitelink: http://rupert-graves.amelia-lewis.com/
+clientlink: http://rupert-graves.com/
+websitelink: http://rupert-graves.com/
 prevproject: repassist
 nextproject: glenda-graff
 ---

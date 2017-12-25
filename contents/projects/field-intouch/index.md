@@ -4,8 +4,7 @@ date: 2013–2015
 type: Tablet App
 client: CLD
 template: project.jade
-tagline1: The next generation in
-tagline2: field force mobility.
+tagline: The next generation in field force mobility.
 role1: UX/UI Design
 role2: Front-end development
 clientname: Imperial Tobacco

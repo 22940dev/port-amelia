@@ -3,8 +3,7 @@ title: The Blending Room
 date: 2015
 type: Website
 template: project.jade
-tagline1: Everything you need to know
-tagline2: about the latest cigar trends.
+tagline: Everything you need to know about the latest cigar trends.
 role1: UX/UI Design
 role2: Front-end development
 clientname: JR Cigars

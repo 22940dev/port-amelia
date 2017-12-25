@@ -4,8 +4,7 @@ date: 2015
 type: Website
 client: WGSN
 template: project.jade
-tagline1: A new public face for the
-tagline2: world's leading trend authority.
+tagline: A new public face for the world's leading trend authority.
 role1: UX/UI Design
 role2: Prototype development
 clientname: WGSN

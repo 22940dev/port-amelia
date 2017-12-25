@@ -3,9 +3,7 @@ title: ShopperNova
 date: 2014
 type: Mobile App
 template: project.jade
-tagline1: An undisputed leader in
-tagline2: mobile marketing, location-based
-tagline3: targeting and data-collection.
+tagline: An undisputed leader in mobile marketing, location-based targeting and data-collection.
 role1: UX/UI Design
 clientname: Nova FM
 clientlink: http://www.nova969.com.au/nova969

@@ -3,14 +3,13 @@ title: Glenda Graff
 date: 2013–2014
 type: Website
 template: project.jade
-tagline1: An elite event planner
-tagline2: for Sydney's eastern suburbs.
+tagline: An elite event planner for Sydney's eastern suburbs.
 role1: UX/UI Design
 role2: Development
 clientname: Glenda Graff
 clientlink: http://glendagraff.com.au/
 websitelink: http://glendagraff.com.au/
-prevproject: rupert-graves
+prevproject: repassist
 nextproject: wgsn-insight
 ---
 

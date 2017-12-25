@@ -21,18 +21,11 @@ block content
         .col-xs-12
           p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
             span= page.metadata.type
-            span &nbsp;&nbsp;/&nbsp;&nbsp;
+            span &nbsp;&middot;&nbsp;
             span= page.metadata.date
           h1(data-heading=page.metadata.client)= page.metadata.title
-          p.project-tagline.text-bigger.text-tight
-            if page.metadata.tagline1
-              span= page.metadata.tagline1
-            if page.metadata.tagline2
-              br
-              span= page.metadata.tagline2
-            if page.metadata.tagline3
-              br
-              span= page.metadata.tagline3
+          if page.metadata.tagline
+            p.project-tagline.text-bigger.text-tight= page.metadata.tagline
           
           if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
             .block-top-md

@@ -4,9 +4,7 @@ date: 2015–2016
 type: Mobile App
 client: WGSN
 template: project.jade
-tagline1: From the runway to your phone,
-tagline2: see the latest collections from
-tagline3: New York, London, Milan and Paris.
+tagline: From the runway to your phone, see the latest collections from New York, London, Milan and Paris.
 role1: UX/UI Design
 clientname: WGSN
 clientlink: http://www.wgsn.com

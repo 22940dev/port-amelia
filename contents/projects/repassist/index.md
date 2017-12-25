@@ -3,14 +3,13 @@ title: RepAssist
 date: 2014
 type: Tablet App
 template: project.jade
-tagline1: A streamlined solution tailored
-tagline2: specifically to Novartis sales reps' needs.
+tagline: A streamlined solution tailored specifically to Novartis sales reps' needs.
 role1: UX/UI Design
 role2: Front-end Development
 clientname: Novartis
 clientlink: https://www.novartis.com/
 prevproject: shoppernova
-nextproject: rupert-graves
+nextproject: glenda-graff
 ---
 
 ### What is it?
