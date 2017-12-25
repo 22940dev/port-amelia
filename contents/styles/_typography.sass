@@ -21,10 +21,10 @@
 .text-normal, p, li
   font-weight: 400
 
-.text-bold
+.text-bold, h3, h4
   font-weight: 600
 
-.text-heavy
+.text-heavy, h1, h2
   font-weight: 900
 
 
@@ -58,7 +58,7 @@ h2
   font-size: 1.6em
 
 h3
-  font-size: 1.4em
+  font-size: 1.2em
 
 h4
   font-size: 0.8em
@@ -107,23 +107,6 @@ p
   list-style: none
   margin: 0
   padding: 0
-
-.header-highlight
-  position: relative
-  display: inline-block
-
-  &:before
-    content: ""
-    display: block
-    position: absolute
-    background: rgba($primary, 0.15)
-    bottom: 0
-    left: -10px
-    right: -10px
-    height: 40%
-    border-radius: 1px
-    z-index: -1
-    transform: scale(1, 1) skewX(-15deg)
 
 a
   text-decoration: none
@@ -200,15 +183,3 @@ a
 
   &.link-highlight-github:hover:before
     background: $github
-
-.link-back span,
-.link-forward span
-  display: inline-block
-  transform: translate(0, 0)
-  transition: all 400ms
-  
-.link-back:hover span
-  transform: translate(-3px, 0)
-
-.link-forward:hover span
-  transform: translate(3px, 0)

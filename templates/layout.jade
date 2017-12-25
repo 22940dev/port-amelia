@@ -25,14 +25,6 @@ html(lang='en')
       link(rel="shortcut icon", type="image/x-icon", href="/favicon.ico")
 
   body(class=bodyclass)
-    header.border-bottom.block-ver-md
-      .content-wrap
-          .row
-            .col-xs-6
-              a.link-highlight.link-back(href="/")
-                span ←
-                |  Go back
-    
     #content
       block content
     
@@ -40,7 +32,7 @@ html(lang='en')
       .content-wrap
         .row
           .col-xs-12
-            .footer-contact
+            .footer-contact.block-top-md
               h2 👋🏻
 
               .footer-contact-links
@@ -53,7 +45,7 @@ html(lang='en')
                 a.link-highlight.link-highlight-dribbble(href='http://dribbble.com/Amelia_Lewis', target='_blank') Dribbble
                 a.link-highlight.link-highlight-github(href='https://github.com/amelia-lewis', target='_blank') Github
 
-            .block-ver-sm
+            .block-top-sm.block-bot-md
               p.text-tight.text-smaller &copy; #{ new Date().getFullYear() } #{ locals.owner }. Website designed and built by me.
 
     include partials/scripts
