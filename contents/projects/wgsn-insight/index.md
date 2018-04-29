@@ -1,4 +1,5 @@
 ---
+id: wgsn-insight
 title: WGSN Insight
 date: 2016
 type: Website

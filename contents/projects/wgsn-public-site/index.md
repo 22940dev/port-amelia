@@ -1,4 +1,5 @@
 ---
+id: wgsn-public-site
 title: WGSN Public Site
 date: 2015
 type: Website

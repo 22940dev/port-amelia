@@ -1,12 +1,11 @@
 ---
+id: wgsn-city-by-city-app
 title: WGSN City by City App
 date: 2016
 type: Mobile App
 client: WGSN
 template: project.jade
-tagline1: Editor-curated listings,
-tagline2: travel guides
-tagline3: and trip planning tools.
+tagline: Editor-curated listings, travel guides and trip planning tools.
 role1: UX/UI Design
 clientname: WGSN
 clientlink: http://www.wgsn.com

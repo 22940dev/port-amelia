@@ -1,4 +1,5 @@
 ---
+id: wgsn-catwalks-app
 title: WGSN Catwalks App
 date: 2015–2016
 type: Mobile App

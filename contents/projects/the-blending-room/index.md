@@ -1,4 +1,5 @@
 ---
+id: the-blending-room
 title: The Blending Room
 date: 2015
 type: Website
@@ -12,8 +13,6 @@ websitelink: https://www.jrcigars.com/blending-room/
 prevproject: meat-cuts
 nextproject: shoppernova
 ---
-
-### What is it?
 
 <a href="https://www.jrcigars.com/" target="_blank" class="link-highlight">JR Cigars</a> is the world's largest cigar e-commerce site, and <a href="http://creativelicence.com.au/" target="_blank" class="link-highlight">CLD</a> recently redesigned and rebuilt their platform. While I didn't play a huge role in the site design, I did do a number of feature updates and changes.
 

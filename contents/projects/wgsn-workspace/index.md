@@ -1,4 +1,5 @@
 ---
+id: wgsn-workspace
 title: WGSN Workspace & Image Library
 date: 2015–2016
 type: Web app

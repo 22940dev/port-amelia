@@ -11,30 +11,54 @@ block content
     .content-wrap
       .row
         .col-xs-12
-          a.link-highlight(href="/projects") ⬅️ Back to Projects
+          a.link-highlight(href="/projects") ← Back to Projects
 
   section#project
-    .header-img(style="background-image: url('" + page.title.replace(/ /g, "-").toLowerCase() + "/project-tile.jpg')")
+    .content-wrap
+      .row.block-top-xl
+        .col-xs-12
+          .h1-outer: h1(data-heading=page.metadata.client)= page.metadata.title
+
+    .header-img(style="background-image: url('" + page.metadata.id + "/project-tile.jpg')")
 
     .content-wrap
-      .row.block-ver-xl
-        .col-xs-12
-          p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey
-            span= page.metadata.type
-            span &nbsp;&middot;&nbsp;
-            span= page.metadata.date
-          h1(data-heading=page.metadata.client)= page.metadata.title
+      .row.block-ver-lg
+        .col-xs-12.col-md-8
           if page.metadata.tagline
             p.project-tagline.text-bigger.text-tight= page.metadata.tagline
-          
+
           if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
-            .block-top-md
+            .block-ver-md
               if page.metadata.appstorelink
-                .block-right-sm.inline-block: a.link-highlight(href="#{page.metadata.appstorelink}" target="_blank") App Store ➡️
+                .block-bot-sm: a.link-highlight(href="#{page.metadata.appstorelink}" target="_blank") App Store →
               if page.metadata.playstorelink
-                .block-right-sm.inline-block: a.link-highlight(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store ➡️
+                .block-bot-sm: a.link-highlight(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store →
               if page.metadata.websitelink
-                .block-right-sm.inline-block: a.link-highlight(href="#{page.metadata.websitelink}" target="_blank") Website ➡️
+                .block-bot-sm: a.link-highlight(href="#{page.metadata.websitelink}" target="_blank") Website →
+
+        .col-xs-12.col-md-4.first-md
+          .block-bot-sm
+            h4.text-grey Project Type
+            p= page.metadata.type
+          
+          .block-bot-sm
+            h4.text-grey Date
+            p= page.metadata.date
+
+          .block-bot-sm
+            h4.text-grey Client
+            a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.clientname
+
+          if page.metadata.role1
+            h4.text-grey Involvement
+          if page.metadata.role1
+            p= page.metadata.role1
+          if page.metadata.role2
+            p= page.metadata.role2
+
+      .row
+        .col-xs-12.block-bot-lg
+          hr
 
       .row.block-bot-xl
         .col-xs-12!= typogr(page.html).typogrify()
@@ -43,7 +67,7 @@ block content
       .content-wrap
         .row
           .col-xs-6.block-ver-lg.border-right
-            a.link-highlight.link-back(href="/projects/#{page.metadata.prevproject}") ⬅️ Previous
+            a.link-highlight.link-back(href="/projects/#{page.metadata.prevproject}") ← Previous
 
           .col-xs-6.block-ver-lg.text-right
-            a.link-highlight.link-forward(href="/projects/#{page.metadata.nextproject}") Next ➡️
+            a.link-highlight.link-forward(href="/projects/#{page.metadata.nextproject}") Next →

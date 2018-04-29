@@ -1,4 +1,5 @@
 ---
+id: wgsn-brand-guide
 title: WGSN Rebrand & Style Guide
 date: 2016
 type: Website
