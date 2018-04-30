@@ -11,7 +11,7 @@ clientname: WGSN
 clientlink: http://www.wgsn.com
 appstorelink: https://itunes.apple.com/us/app/city-by-city/id451178706?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.citybycity
-prevproject: wgsn-brand-guide
+prevproject: wgsn-insight
 nextproject: wgsn-workspace
 ---
 

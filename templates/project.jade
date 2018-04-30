@@ -17,7 +17,7 @@ block content
     .content-wrap
       .row.block-top-xl
         .col-xs-12
-          .h1-outer: h1= page.metadata.title
+          .h1-outer: h1(data-heading=page.metadata.client)= page.metadata.title
 
     .header-img(style="background-image: url('" + page.metadata.id + "/project-tile.jpg')")
 
@@ -61,8 +61,8 @@ block content
         .col-xs-12.block-bot-lg
           hr
 
-      .row.block-bot-xl
-        .col-xs-12!= typogr(page.html).typogrify()
+      .row
+        .col-xs-12.block-bot-xl!= typogr(page.html).typogrify()
 
     .row.border-top.border-bottom
       .content-wrap
