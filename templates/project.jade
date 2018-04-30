@@ -25,10 +25,11 @@ block content
       .row.block-ver-lg
         .col-xs-12.col-md-8
           if page.metadata.tagline
-            p.project-tagline.text-bigger.text-tight= page.metadata.tagline
+            .block-bot-md
+              p.project-tagline.text-bigger.text-tight= page.metadata.tagline
 
           if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
-            .block-ver-md
+            .block-bot-md
               if page.metadata.appstorelink
                 .block-bot-sm: a.link-highlight(href="#{page.metadata.appstorelink}" target="_blank") App Store →
               if page.metadata.playstorelink

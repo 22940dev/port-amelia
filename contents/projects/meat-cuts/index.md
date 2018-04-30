@@ -16,8 +16,6 @@ prevproject: wgsn-catwalks-app
 nextproject: the-blending-room
 ---
 
-### What is it?
-
 Meat Cuts is an app I worked on at <a href="http://creativelicence.com.au/" target="_blank" class="link-highlight">CLD</a>, briefed by <a href="http://www.mla.com.au/Home" target="_blank" class="link-highlight">Meat &amp; Livestock Australia</a>. They wanted to create an app for users to learn all about various cuts of meat and how best to cook them, in a fun an interactive way. Our target user group was gourmet home cooks&mdash;largely, but not exclusively, in the young male demographic.
 
 There were a number of apps with a similar function on the App Store, so we really wanted Meat Cuts to stand out visually and to be the one that users chose.

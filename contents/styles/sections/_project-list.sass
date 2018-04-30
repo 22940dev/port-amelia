@@ -41,6 +41,26 @@
       @extend .text-uppercase
       padding: 1px 3px 0
 
+    .dummy-text
+      margin-top: 12px
+
+      .line
+        height: 15px
+        margin: 0 auto 8px 0
+        background: $lt-grey
+
+        &:nth-of-type(1)
+          width: 92%
+
+        &:nth-of-type(2)
+          width: 100%
+
+        &:nth-of-type(3)
+          width: 88%
+
+        &:nth-of-type(4)
+          width: 50%
+
     &:not(.coming-soon):hover
       box-shadow: 0 10px 30px rgba(black, 0.06)
       transform: translate(0, -4px)

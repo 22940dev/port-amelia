@@ -13,8 +13,6 @@ prevproject: shoppernova
 nextproject: glenda-graff
 ---
 
-### What is it?
-
 RepAssist was a pre-existing iPhone app that <a href="http://www.novartis.com/" target="_blank" class="link-highlight">Novartis</a> had, and they came to us at <a href="http://creativelicence.com.au/" target="_blank" class="link-highlight">CLD</a> asking to rebuild the thing from the ground up. The old one was&mdash;to put it delicately&mdash;in dire need of a redesign.
 
 The app is used by sales reps for two functions; to submit expense reports for events they've held, and to order drug samples.

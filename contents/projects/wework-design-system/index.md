@@ -1,6 +1,6 @@
 ---
-id: wework-dot-com
-title: WeWork.com
+id: wework-design-system
+title: WeWork Design System
 date: 2017–18
 type: Website
 client: WeWork
@@ -14,3 +14,4 @@ websitelink: http://www.wework.com
 prevproject: glenda-graff
 nextproject: wgsn-insight
 ---
+
