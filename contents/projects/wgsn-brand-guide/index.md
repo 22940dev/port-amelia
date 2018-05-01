@@ -2,7 +2,7 @@
 id: wgsn-brand-guide
 title: WGSN Rebrand & Style Guide
 date: 2016
-type: Website
+type: Design System
 client: WGSN
 template: project.jade
 tagline: A live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.
