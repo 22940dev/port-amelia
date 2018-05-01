@@ -11,8 +11,8 @@ role2: Prototype development
 clientname: WeWork
 clientlink: http://www.wework.com
 websitelink: http://www.wework.com
-prevproject: rivendell-design-system
-nextproject: wework-guest-wifi
+prevproject: glenda-graff
+nextproject: wgsn-insight
 ---
 
 Coming Soon

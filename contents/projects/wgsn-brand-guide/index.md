@@ -5,13 +5,13 @@ date: 2016
 type: Design System
 client: WGSN
 template: project.jade
-tagline: A live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.
+tagline: A fresh look, and a live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.
 role1: UX/UI Design
 role2: Front-end development
 clientname: WGSN
 clientlink: http://www.wgsn.com
 websitelink: http://wgsn-styleguide.amelia-lewis.com/
-prevproject: glenda-graff
+prevproject: rivendell-design-system
 nextproject: wgsn-insight
 ---
 

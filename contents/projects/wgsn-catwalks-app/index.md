@@ -1,6 +1,6 @@
 ---
 id: wgsn-catwalks-app
-title: WGSN Catwalks App
+title: Catwalks App
 date: 2015–2016
 type: Mobile App
 client: WGSN
@@ -11,7 +11,7 @@ clientname: WGSN
 clientlink: http://www.wgsn.com
 appstorelink: https://itunes.apple.com/us/app/wgsn-catwalks/id1041086526?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.wgsn.catwalkgallery&hl=en
-prevproject: wgsn-workspace
+prevproject: wgsn-city-by-city-app
 nextproject: meat-cuts
 ---
 

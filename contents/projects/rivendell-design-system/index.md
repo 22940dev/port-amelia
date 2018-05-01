@@ -1,6 +1,6 @@
 ---
-id: wework-design-system
-title: WeWork Design System
+id: rivendell-design-system
+title: Rivendell Design System
 date: 2017–18
 type: Design System
 client: WeWork
@@ -12,7 +12,7 @@ clientname: WeWork
 clientlink: http://www.wework.com
 websitelink: http://rivendell-docs.netlify.com/
 prevproject: glenda-graff
-nextproject: wgsn-insight
+nextproject: wgsn-brand-guide
 ---
 
 ### Foundations
