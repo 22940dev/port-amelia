@@ -26,9 +26,9 @@ Rivendell covers everything from button and input styles, to color and text styl
 ![Impact Title Styles](foundations-text-title-impact.png "Impact Title Styles")
 ![Button Styles](components-buttons.png "Button Styles")
 
-Visually, the goal was to create something that was rather paired back and simple, so as to give a fresh new look that we could continue to evolve and build upon. We always want to make sure the design on the digital side reflects the beautiful, open, light-filled feel of our spaces. Color and typography are purposely used scarcely, to allow the focus to fall onto the imagery of our spaces.
+Visually, the goal was to create something that was rather paired back and simple, so as to give a fresh new look that we could continue to evolve and build upon. We always want to make sure the design on the digital side of WeWork reflects the beautiful, open, light-filled feel of our spaces. Color and typography are purposely used scarcely, to allow the focus to fall onto the imagery of our spaces.
 
-The idea is that the patterns would almost be "plug and play" blocks that anyone could use to quickly and easily create a beautiful page. Creating a uniformed spacing system was key, so that the patterns could be stacked in any order and look great next to each other.
+The idea was that the patterns would almost be "plug and play" blocks that anyone could use to quickly and easily create a beautiful page. Creating a uniformed spacing system was key, so that the patterns could be stacked in any order and look great next to each other.
 
 ![Media & Caption](media-caption.png "Media & Caption")
 ![Masthead #3](masthead-3.png "Masthead #3")
@@ -39,11 +39,11 @@ The idea is that the patterns would almost be "plug and play" blocks that anyone
 
 The patterns had to be robust, flexible and responsive. WeWork supports over 10 locales, so the patterns had to support any length of copy, and also make sense when localized (coming soon: right-to-left languages!). The patterns also had to be responsive to any viewport width or device type, as our users are split almost 50/50 across desktop and mobile, and I stressed tested the patterns vigorously to make sure all screen sizes were tended to. 
 
-With WeWork's ever-expanding audience, another high priority element of Rivendell was accessibility. We were dedicated to making sure the site was AA compliant—meaning colors were readable, inputs had labels, HTML syntax made sense, and so on.
+With WeWork's ever-expanding audience, another high priority element of Rivendell was accessibility. We are dedicated to making sure the system is AA compliant—meaning colors were readable, inputs had labels, HTML syntax made sense, and so on.
 
 ### Prototyping
 
-To enable rapid prototyping (and some out-of-hours design exploration), I built this <a href="http://ww-styleguide.amelia-lewis.com/style-guide" target="_blank" class="link-highlight">style guide</a> from scratch in my own environment. I also used it as a chance to <a href="http://ww-styleguide.amelia-lewis.com/" target="_blank" class="link-highlight">prototype</a> what wework.com might look like once Rivendell is fully rolled out. Actually building the patterns with HTML/CSS allowed me to further test the responsiveness of the patterns
+To enable rapid prototyping (and some out-of-hours design exploration), I built this <a href="http://ww-styleguide.amelia-lewis.com/style-guide" target="_blank" class="link-highlight">style guide</a> from scratch in my own environment. I also used it as a chance to <a href="http://ww-styleguide.amelia-lewis.com/" target="_blank" class="link-highlight">prototype</a> what wework.com will look like once Rivendell is fully rolled out. Actually building the patterns with HTML/CSS allowed me to further test the responsiveness of the patterns
 
 ### Integration
 
