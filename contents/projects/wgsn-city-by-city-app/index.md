@@ -6,7 +6,7 @@ type: Mobile App
 client: WGSN
 template: project.jade
 tagline: Editor-curated listings, travel guides and trip planning tools.
-role1: UX/UI Design
+role: UX/UI design
 clientname: WGSN
 clientlink: http://www.wgsn.com
 appstorelink: https://itunes.apple.com/us/app/city-by-city/id451178706?mt=8

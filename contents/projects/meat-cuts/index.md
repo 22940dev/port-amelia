@@ -6,8 +6,7 @@ type: Mobile App
 client: CLD
 template: project.jade
 tagline: Your number one destination for information about beef, lamb, veal and goat cuts.
-role1: UX/UI Design
-role2: Front-end development
+role: UX/UI design, front-end development
 clientname: Meat & Livestock Australia
 clientlink: http://www.mla.com.au/Home
 appstorelink: https://itunes.apple.com/us/app/meat-cuts/id904537057?mt=8

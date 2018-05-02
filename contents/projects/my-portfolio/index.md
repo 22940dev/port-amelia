@@ -4,8 +4,7 @@ title: My Portfolio
 date: 2012–2015
 type: Website
 template: project.jade
-role1: UX/UI Design
-role2: Front-end development
+role: UX/UI design, front-end development
 clientname: Myself
 websitelink: http://amelia-lewis.com/
 ---

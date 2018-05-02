@@ -6,13 +6,12 @@ type: Design System
 client: WeWork
 template: project.jade
 tagline: A component-based pattern library upon which WeWork builds on-brand, accessible and consistent products that embody our digital brand guidelines.
-role1: UX/UI Design
-role2: Prototype development
+role: UX/UI design, prototype development
 clientname: WeWork
 clientlink: http://www.wework.com
 websitelink: http://rivendell-docs.netlify.com/
 prevproject: glenda-graff
-nextproject: wgsn-brand-guide
+nextproject: wework-guest-wifi
 ---
 
 ### Foundations

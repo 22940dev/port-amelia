@@ -6,8 +6,7 @@ type: Web app
 client: WGSN
 template: project.jade
 tagline: A hub for creative teams to work together, utilizing WGSN's millions of exclusive assets.
-role1: UX/UI Design
-role2: Prototype development
+role: UX/UI design, prototype development
 clientname: WGSN
 clientlink: http://www.wgsn.com
 websitelink: http://wgsn-cherry-prototype.amelia-lewis.com

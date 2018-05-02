@@ -5,8 +5,7 @@ date: 2015
 type: Website
 template: project.jade
 tagline: A digital brand for the international actor.
-role1: UX/UI Design
-role2: Development
+role: UX/UI design, development
 clientname: Rupert Graves
 clientlink: http://rupert-graves.com/
 websitelink: http://rupert-graves.com/

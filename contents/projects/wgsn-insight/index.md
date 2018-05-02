@@ -6,8 +6,7 @@ type: Website
 client: WGSN
 template: project.jade
 tagline: A new product for WGSN, providing the C-suite and marketers with high-level information on future trends.
-role1: UX/UI Design
-role2: Prototype development
+role: UX/UI design, prototype development
 clientname: WGSN
 clientlink: http://www.wgsn.com
 websitelink: https://www.wgsn.com/insight/#/home

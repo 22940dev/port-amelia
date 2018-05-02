@@ -6,8 +6,7 @@ type: Website
 client: WeWork
 template: project.jade
 tagline: A new public face for the world's leading trend authority.
-role1: UX/UI Design
-role2: Prototype development
+role: UX/UI design, prototype development
 clientname: WeWork
 clientlink: http://www.wework.com
 websitelink: http://www.wework.com

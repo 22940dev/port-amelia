@@ -50,12 +50,9 @@ block content
             h4.text-grey Client
             a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.clientname
 
-          if page.metadata.role1
+          if page.metadata.role
             h4.text-grey Involvement
-          if page.metadata.role1
-            p= page.metadata.role1
-          if page.metadata.role2
-            p= page.metadata.role2
+            p= page.metadata.role
 
       .row
         .col-xs-12.block-bot-lg

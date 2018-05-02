@@ -2,8 +2,7 @@
 id: jr-cigars
 title: JR Cigars
 template: project.jade
-role1: UX/UI Design
-role2: Front-end development
+role: UX/UI design, front-end development
 clientname: JR Cigars
 clientlink: https://www.jrcigars.com/
 ---

@@ -2,8 +2,7 @@
 id: cosentyx
 title: Cosentyx
 template: project.jade
-role1: UX/UI Design
-role2: Front-end development
+role: UX/UI design, front-end development
 clientname: Novartis
 clientlink: https://www.novartis.com/
 ---

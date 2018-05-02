@@ -6,7 +6,7 @@ type: Mobile App
 client: WGSN
 template: project.jade
 tagline: From the runway to your phone, see the latest collections from New York, London, Milan and Paris.
-role1: UX/UI Design
+role: UX/UI design
 clientname: WGSN
 clientlink: http://www.wgsn.com
 appstorelink: https://itunes.apple.com/us/app/wgsn-catwalks/id1041086526?mt=8

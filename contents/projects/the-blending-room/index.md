@@ -5,8 +5,7 @@ date: 2015
 type: Website
 template: project.jade
 tagline: Everything you need to know about the latest cigar trends.
-role1: UX/UI Design
-role2: Front-end development
+role: UX/UI design, front-end development
 clientname: JR Cigars
 clientlink: https://www.jrcigars.com/
 websitelink: https://www.jrcigars.com/blending-room/

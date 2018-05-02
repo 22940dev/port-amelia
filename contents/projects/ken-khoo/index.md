@@ -2,8 +2,7 @@
 id: ken-khoo
 title: Ken Khoo
 template: project.jade
-role1: UX/UI Design
-role2: Development
+role: UX/UI design, development
 clientname: Ken Khoo
 clientlink: http://kenkhoo.net/
 websitelink: http://kenkhoo.net/

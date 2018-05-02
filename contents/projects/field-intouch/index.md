@@ -6,8 +6,7 @@ type: Tablet App
 client: CLD
 template: project.jade
 tagline: The next generation in field force mobility.
-role1: UX/UI Design
-role2: Front-end development
+role: UX/UI design, front-end development
 clientname: Imperial Tobacco
 clientlink: http://www.imperial-tobacco.com/
 clientname2: Novartis

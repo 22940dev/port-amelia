@@ -5,8 +5,7 @@ date: 2014
 type: Tablet App
 template: project.jade
 tagline: A streamlined solution tailored specifically to Novartis sales reps' needs.
-role1: UX/UI Design
-role2: Front-end Development
+role: UX/UI design, front-end development
 clientname: Novartis
 clientlink: https://www.novartis.com/
 prevproject: shoppernova

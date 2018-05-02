@@ -5,8 +5,7 @@ date: 2013–2014
 type: Website
 template: project.jade
 tagline: An elite event planner for Sydney's eastern suburbs.
-role1: UX/UI Design
-role2: Development
+role: UX/UI design, development
 clientname: Glenda Graff
 clientlink: http://glendagraff.com.au/
 websitelink: http://glendagraff.com.au/
