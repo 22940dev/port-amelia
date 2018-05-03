@@ -3,6 +3,9 @@ extends layout
 block append vars
   - bodyclass = 'project-list'
 
+block prepend title
+  | Projects · 
+
 mixin project-list-item(id, emoji, title, client, description, type, date, comingsoon)
   if comingsoon
     .project-list-item.coming-soon(id=id)
