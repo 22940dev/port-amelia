@@ -1,8 +1,55 @@
 .presentation
-	.section
+  font-size: 24px
 
-	.fp-controlArrow.fp-prev
-		border-color: transparent black transparent transparent !important
+  .ul-styled
+    li
+      padding: 0 0 0 18px
+      
+      &:before
+        top: calc((33px / 2) - 6px)
+        width: 30px
+        height: 12px
+  
+  .section
+    @extend .border-bottom
 
-	.fp-controlArrow.fp-next
-		border-color: transparent transparent transparent black !important
+  .fp-slidesNav
+    ul
+      text-align: center
+      opacity: 0.3
+
+      li a.active
+        span
+          width: 8px
+          height: 8px
+          margin: -4px 0 0 -4px
+
+  .fp-controlArrow
+    bottom: 20px
+    top: auto
+    margin: 0
+    border: none
+    width: 24px
+    height: 28px
+    transition: all 400ms
+
+    &:after
+      content: ""
+
+    &.fp-prev
+      left: calc(50% - 24px - 5px)
+
+      &:after
+        content: "←"
+
+    &.fp-next
+      right: calc(50% - 24px - 5px)
+
+      &:after
+        content: "→"
+
+  .puppy-break
+    background: $xlt-grey
+
+    .giphy-embed
+      margin: 0 auto

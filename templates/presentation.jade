@@ -4,20 +4,62 @@ block append vars
   - bodyclass = 'presentation'
 
 block prepend title
-  | #{ page.title + " · "}
+  | #{ page.title + " + "}
 
 block content
   section#fullpage
     .section
       .content-wrap
-        h1 Hey, I'm Amelia 👩🏻‍💻
-        p Product Designer
+        // p.text-smaller.text-grey= page.metadata.date
+        h1 Hey 
+          span= page.metadata.title
+          | , 
+          br
+          | I'm Amelia Lewis 👩🏻‍💻
+        p I'm a product designer and I want to work with you!
+    
     .section
-      .content-wrap: h2 Section 2
+      .content-wrap
+        h2 Some things about me:
+        ul.ul-styled
+          li I have five and a half years experience as a product designer, including in-house, agency and freelance
+          li I’ve designed and built responsive websites, content management systems and mobile apps 
+            span.text-smaller.text-grey (iOS and Android, native and hybrid)
+          li I can code 
+            span.text-smaller.text-grey (well… HTML and CSS, and enough JS to hack together a pretty snazzy prototype)
+          li I love design systems, and have created and managed two of them
+          li I've worked on consumer-facing and B2B products, as well as internal tools
+    
+    .section
+      .content-wrap
+        h2 What I'm looking for:
+        ul.ul-styled
+          li A badass design team 
+            span.text-smaller.text-grey (along with some awesome product and engineering friends)
+          li A company where design is valued and has a seat at the table
+          li Responsibility and accountability
+
     .section
       .slide: .content-wrap: h3 Slide 3a
       .slide: .content-wrap: h3 Slide 3b
       .slide: .content-wrap: h3 Slide 3c
       .slide: .content-wrap: h3 Slide 3d
+
+    .section.puppy-break
+      .content-wrap
+        h2.text-center Puppy break!
+        iframe.giphy-embed(src='https://giphy.com/embed/1pmrBjLapGSsw', width='384', height='480', frameborder='0', allowfullscreen='')
+
     .section
-      .content-wrap: h2 Section 4
+      .slide: .content-wrap: h3 Slide 4a
+      .slide: .content-wrap: h3 Slide 4b
+      .slide: .content-wrap: h3 Slide 4c
+      .slide: .content-wrap: h3 Slide 4d
+    
+    .section
+      .content-wrap
+        h2 Let's stay in touch!
+        ul.ul-bare
+          li: a.link-highlight(href="mailto:amelialewis01@gmail.com", target='_blank') amelialewis01@gmail.com
+          li: a.link-highlight.link-highlight-linkedin(href="https://www.linkedin.com/in/amelia-lewis/", target="_blank") www.linkedin.com/in/amelia-lewis/
+          li: a.link-highlight.link-highlight-twitter(href="https://twitter.com/Amelia_Lewis", target="_blank") @Amelia_Lewis

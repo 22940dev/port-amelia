@@ -111,6 +111,30 @@ p
   margin: 0
   padding: 0
 
+.ul-styled
+  list-style: none
+  padding: 0
+
+  li
+    position: relative
+    padding: 0 0 0 12px
+
+    &:not(:last-of-type)
+      margin: 0 0 0.5em
+    
+    &:before
+      content: ""
+      display: block
+      position: absolute
+      top: calc((25px / 2) - 4px)
+      left: 0
+      width: 20px
+      height: 8px
+      background: black
+      opacity: 0.15
+      transform: skew(-15deg)
+      border-radius: 1px
+
 a
   text-decoration: none
   color: inherit
