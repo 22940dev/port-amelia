@@ -9,9 +9,6 @@
         top: calc((33px / 2) - 6px)
         width: 30px
         height: 12px
-  
-  .section
-    @extend .border-bottom
 
   .fp-slidesNav
     ul
@@ -50,6 +47,26 @@
 
   .puppy-break
     background: $xlt-grey
+
+    &:before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 0
+      height: 0
+      border-top: 100px solid white
+      border-right: 100vw solid transparent
+
+    &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      right: 0
+      width: 0
+      height: 0
+      border-bottom: 100px solid white
+      border-left: 100vw solid transparent
 
     .giphy-embed
       margin: 0 auto
