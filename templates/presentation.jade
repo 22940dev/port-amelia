@@ -1,0 +1,23 @@
+extends layout
+
+block append vars
+  - bodyclass = 'presentation'
+
+block prepend title
+  | #{ page.title + " · "}
+
+block content
+  section#fullpage
+    .section
+      .content-wrap
+        h1 Hey, I'm Amelia 👩🏻‍💻
+        p Product Designer
+    .section
+      .content-wrap: h2 Section 2
+    .section
+      .slide: .content-wrap: h3 Slide 3a
+      .slide: .content-wrap: h3 Slide 3b
+      .slide: .content-wrap: h3 Slide 3c
+      .slide: .content-wrap: h3 Slide 3d
+    .section
+      .content-wrap: h2 Section 4

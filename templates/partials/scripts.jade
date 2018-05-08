@@ -21,3 +21,24 @@ script.
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-50157111-1');
+
+//- fullPage
+script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js")
+script.
+  $(document).ready(function() {
+    $('#fullpage').fullpage({      
+      // Navigation
+      menu: '#menu',
+      lockAnchors: false,
+      anchors:['pres-intro', 'secondPage'],
+      navigation: true,
+      navigationPosition: 'right',
+      slidesNavigation: false,
+
+      // Design
+      verticalCentered: true,
+      paddingTop: 80,
+      paddingBottom: 80,
+      controlArrows: true
+    });
+  });
