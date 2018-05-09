@@ -21,7 +21,7 @@
 .text-normal, p, li
   font-weight: 400
 
-.text-bold, h3, h4
+.text-bold, h3, h4, strong
   font-weight: 600
 
 .text-heavy, h1, h2
@@ -150,6 +150,7 @@ a
   z-index: 10
   overflow: hidden
   transition: all 400ms
+  cursor: pointer
 
   &:before
     content: ""
@@ -216,3 +217,9 @@ a
 
   &.link-highlight-codepen:hover:before
     background: $codepen
+
+code
+  background: #f5f2f0
+  color: slategray
+  padding: 0 5px
+  border-radius: 2px

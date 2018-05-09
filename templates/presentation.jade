@@ -18,6 +18,7 @@ block content
           | I'm Amelia Lewis 👩🏻‍💻
         p I'm a product designer and I want to work with you!
     
+    // Some things about me:
     .section
       .content-wrap
         h2 Some things about me:
@@ -25,41 +26,80 @@ block content
           li I have five and a half years experience as a product designer, including in-house, agency and freelance
           li I’ve designed and built responsive websites, content management systems and mobile apps 
             span.text-smaller.text-grey (iOS and Android, native and hybrid)
-          li I can code 
-            span.text-smaller.text-grey (well… HTML and CSS, and enough JS to hack together a pretty snazzy prototype)
-          li I love design systems, and have created and managed two of them
           li I've worked on consumer-facing and B2B products, as well as internal tools
+          li I ❤️ design systems, and have created and managed two of them
+          li I can 
+            code code
+            | &nbsp;
+            span.text-smaller.text-grey (well… HTML and CSS, and enough JS to hack together a pretty snazzy prototype)
+          if page.metadata.id == "the-infatuation"
+            li I'm an avid 
+              a.link-highlight.link-highlight-instagram(href="https://www.instagram.com/amelia_lewis/", target="_blank") #EEEEEATS
+              | -er 🍕
     
+    //- What I'm looking for:
     .section
       .content-wrap
         h2 What I'm looking for:
         ul.ul-styled
-          li A badass design team 
+          li A badass design team, big or small 
             span.text-smaller.text-grey (along with some awesome product and engineering friends)
           li A company where design is valued and has a seat at the table
           li Responsibility and accountability
 
+    //- Rivendell Design System
     .section
-      .slide: .content-wrap: h3 Slide 3a
+      .slide
+        .content-wrap
+          h4.text-grey Project #1 · WeWork
+          h1.text-tight Rivendell Design System
+          p A component-based pattern library upon which WeWork builds on-brand, accessible and consistent products that embody our digital brand guidelines.
+          br
+          p: a.link-highlight(href="#pr-project-1/1") Let's Go →
+    
+      .slide: img(src="/projects/rivendell-design-system/foundations-primary-color-variables.png")
+      .slide: img(src="/projects/rivendell-design-system/foundations-text-title-impact.png")
+      .slide: img(src="/projects/rivendell-design-system/components-buttons-short.png")
+      .slide: img(src="/projects/rivendell-design-system/audit.png")
+      .slide: img(src="/projects/rivendell-design-system/media-caption.png")
+      .slide: img(src="/projects/rivendell-design-system/masthead-3.png")
+      .slide: img(src="/projects/rivendell-design-system/logo-grid.png")
+      .slide: .img-scroller: img(src="/projects/rivendell-design-system/custom-buildout.jpg")
+      
+      .slide
+        .content-wrap
+          iframe.giphy-embed(src="https://giphy.com/embed/1pmrBjLapGSsw", width="384", height="480", frameborder="0", allowfullscreen="")
+
+    //- WGSN Rebrand & Style Guide
+    .section
+      .slide
+        .content-wrap
+          h4.text-grey Project #2 · WGSN
+          h1 Rebrand &amp; Style Guide
+          p: a.link-highlight(href="#pr-project-2/1") Let's Go →
+      
+      .slide: .content-wrap: h3 Slide 2b
+      .slide: .content-wrap: h3 Slide 2c
+      .slide: .content-wrap: h3 Slide 2d
+
+    //- WeWork Guest Wi-Fi
+    .section
+      .slide
+        .content-wrap
+          h4.text-grey Project #3 · WeWork
+          h1 Guest Wi-Fi
+          p: a.link-highlight(href="#pr-project-3/1") Let's Go →
+      
       .slide: .content-wrap: h3 Slide 3b
       .slide: .content-wrap: h3 Slide 3c
       .slide: .content-wrap: h3 Slide 3d
-
-    .section.puppy-break
-      .content-wrap
-        h2.text-center Puppy break!
-        iframe.giphy-embed(src='https://giphy.com/embed/1pmrBjLapGSsw', width='384', height='480', frameborder='0', allowfullscreen='')
-
-    .section
-      .slide: .content-wrap: h3 Slide 4a
-      .slide: .content-wrap: h3 Slide 4b
-      .slide: .content-wrap: h3 Slide 4c
-      .slide: .content-wrap: h3 Slide 4d
     
-    .section
-      .content-wrap
+    .section.contact
+      .content-wrap.text-center
         h2 Let's stay in touch!
         ul.ul-bare
           li: a.link-highlight(href="mailto:amelialewis01@gmail.com", target='_blank') amelialewis01@gmail.com
           li: a.link-highlight.link-highlight-linkedin(href="https://www.linkedin.com/in/amelia-lewis/", target="_blank") www.linkedin.com/in/amelia-lewis/
           li: a.link-highlight.link-highlight-twitter(href="https://twitter.com/Amelia_Lewis", target="_blank") @Amelia_Lewis
+        br
+        h2 😃

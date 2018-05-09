@@ -10,16 +10,64 @@
         width: 30px
         height: 12px
 
-  .fp-slidesNav
-    ul
-      text-align: center
-      opacity: 0.3
+  img
+    display: block
+    width: auto
+    height: auto
+    max-width: 100%
+    max-height: 100%
+    margin: 0 auto
 
-      li a.active
-        span
-          width: 8px
-          height: 8px
-          margin: -4px 0 0 -4px
+  .img-scroller
+    width: 80%
+    height: 80vh
+    overflow: scroll
+    margin: 0 auto
+    border: solid $lt-grey
+    border-width: 30px 1px 1px
+
+    img
+      width: 100%
+      max-height: none
+      transform: translate(0, 0)
+
+  .fp-slidesNav
+    bottom: 2px
+    opacity: 0
+    transform: translate(0, 10px)
+    transition: all 400ms
+
+    $fp-slidesNav-height: 10px
+    
+    ul
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      li
+        width: auto
+        height: $fp-slidesNav-height
+        flex-grow: 1
+        margin: 2px
+
+        a
+          span
+            top: 0
+            left: 0
+            width: 100%
+            height: $fp-slidesNav-height
+            margin: 0
+            border-radius: 0
+            opacity: 0.1
+          
+          &.active,
+          &:hover
+            span
+              width: 100%
+              height: $fp-slidesNav-height
+              margin: 0
+              border-radius: 0
+              opacity: 0.3
 
   .fp-controlArrow
     bottom: 20px
@@ -45,7 +93,7 @@
       &:after
         content: "→"
 
-  .puppy-break
+  .contact
     background: $xlt-grey
 
     &:before
@@ -58,15 +106,17 @@
       border-top: 100px solid white
       border-right: 100vw solid transparent
 
-    &:after
-      content: ""
-      position: absolute
-      bottom: 0
-      right: 0
-      width: 0
-      height: 0
-      border-bottom: 100px solid white
-      border-left: 100vw solid transparent
-
-    .giphy-embed
-      margin: 0 auto
+  .section
+    &.active
+      .fp-slidesNav
+        opacity: 1
+        transform: translate(0, 0)
+        transition-delay: 1000ms
+  
+  .slide
+    &.active
+      .img-scroller
+        img
+          transform: translate(0, calc(-100% + 80vh - 30px))
+          transition: all 10000ms linear
+          transition-delay: 1000ms

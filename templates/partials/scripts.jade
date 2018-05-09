@@ -2,6 +2,8 @@
 script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
 script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js")
 
+script(type="text/javascript", src="/js/main.js")
+
 //- wow
 script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
 script.
@@ -23,18 +25,20 @@ script.
   gtag('config', 'UA-50157111-1');
 
 //- fullPage
-script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js")
+script(type="text/javascript", src="/js/vendor/fullPage.js/2.9.7/vendor/scrolloverflow.min.js")
+script(type="text/javascript", src="/js/vendor/fullPage.js/2.9.7/jquery.fullpage.min.js")
 script.
   $(document).ready(function() {
     $('#fullpage').fullpage({      
       // Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors:['pr-hey', 'pr-about', 'pr-looking-for', 'pr-rivendell-design-system', 'puppy-break', 'pr-wgsn-design-system', 'pr-contact'],
+      anchors:['pr-hey', 'pr-about', 'pr-looking-for', 'pr-project-1', 'pr-project-2', 'pr-project-3', 'pr-contact'],
       navigation: true,
       navigationPosition: 'right',
       slidesNavigation: true,
       slidesNavPosition: 'bottom',
+      scrollOverflow: true,
 
       // Design
       verticalCentered: true,
