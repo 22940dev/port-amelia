@@ -1,5 +1,9 @@
 .sans-serif, p, li, a, h4, h1, h2, h3
-  font-family: 'Work Sans', sans-serif
+  font-family: 'Poppins', sans-serif
+  line-height: 1.4em
+
+.serif
+  font-family: 'Frank Ruhl Libre', sans-serif
   line-height: 1.4em
 
 
@@ -19,13 +23,13 @@
 
 // WEIGHT
 .text-normal, p, li
-  font-weight: 400
+  font-weight: 300
 
 .text-bold, h3, h4, strong
-  font-weight: 600
+  font-weight: 500
 
 .text-heavy, h1, h2
-  font-weight: 900
+  font-weight: 700
 
 
 // TRANSFORMATION
@@ -40,10 +44,13 @@
 
 
 // MARGINS
-h1, h2, h3, h4, ul, ol
+h1
+  margin: 0 0 0.1em
+
+h2, h3, h4, ul, ol
   margin: 0 0 0.5em
 
-p 
+p
   margin: 0 0 0.75em
 
 .text-tight
@@ -68,10 +75,10 @@ p
 
 @media (min-width: $screen-sm-min)
   h1
-    font-size: 3em
+    font-size: 8em
 
   h2
-    font-size: 1.8em
+    font-size: 3em
 
   h3
     font-size: 1.4em
@@ -91,7 +98,7 @@ p
   font-size: 0.6em
 
 .text-bigger
-  font-size: 1.3em
+  font-size: 1.4em
 
 .text-italic
   font-style: italic
@@ -121,7 +128,7 @@ p
 
     &:not(:last-of-type)
       margin: 0 0 0.5em
-    
+
     &:before
       content: ""
       display: block
@@ -145,7 +152,7 @@ a
   display: inline-block
   position: relative
   @extend .text-bold
-  margin: 0 -4px -6px
+  margin: 0 -4px -8px
   padding: 0 4px
   z-index: 10
   overflow: hidden
