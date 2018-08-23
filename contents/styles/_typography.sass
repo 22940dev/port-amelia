@@ -1,10 +1,8 @@
 .sans-serif, p, li, a, h4, h1, h2, h3
   font-family: 'Poppins', sans-serif
-  line-height: 1.4em
 
 .serif
   font-family: 'Frank Ruhl Libre', sans-serif
-  line-height: 1.4em
 
 
 // ALIGNMENT
@@ -59,10 +57,11 @@ p
 
 // SIZES
 h1
-  font-size: 2em
+  font-size: 5em
 
 h2
-  font-size: 1.6em
+  font-size: 2.4em
+  line-height: 1.3em
 
 h3
   font-size: 1.2em
@@ -78,10 +77,11 @@ p
     font-size: 8em
 
   h2
-    font-size: 3em
+    font-size: 4em
 
   h3
     font-size: 1.4em
+    line-height: 1.4em
 
 
 // STYLES
@@ -163,7 +163,7 @@ a
     content: ""
     display: block
     position: absolute
-    background: rgba(black, 0.1)
+    background: rgba(white, 0.2)
     top: 60%
     bottom: 1px
     left: 4px
@@ -178,7 +178,7 @@ a
     color: white
 
     &:before
-      background: black
+      background: $md-grey
       transform: scale(1.2, 2.8)
 
   &:focus
@@ -187,7 +187,7 @@ a
     outline-offset: -3px
 
   &.link-highlight-wsj:hover:before
-    background: black
+    background: $md-grey
 
   &.link-highlight-wework:hover:before
     background: #ffd16d
