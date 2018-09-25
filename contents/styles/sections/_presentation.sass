@@ -4,7 +4,7 @@
   .ul-styled
     li
       padding: 0 0 0 18px
-      
+
       &:before
         top: calc((33px / 2) - 6px)
         width: 30px
@@ -40,7 +40,7 @@
     transition: all 400ms
 
     $fp-slidesNav-height: 10px
-    
+
     ul
       display: flex
       flex-direction: row
@@ -61,7 +61,7 @@
             margin: 0
             border-radius: 0
             opacity: 0.1
-          
+
           &.active,
           &:hover
             span
@@ -96,7 +96,7 @@
         content: "→"
 
   .contact
-    background: $xlt-grey
+    background: rgba(white, 0.1)
 
     &:before
       content: ""
@@ -105,7 +105,7 @@
       left: 0
       width: 0
       height: 0
-      border-top: 100px solid white
+      border-top: 100px solid $dk-grey
       border-right: 100vw solid transparent
 
   .section
@@ -114,7 +114,7 @@
         opacity: 1
         transform: translate(0, 0)
         transition-delay: 1000ms
-  
+
   .slide
     &.active
       .img-scroller
