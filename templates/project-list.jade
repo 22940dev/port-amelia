@@ -4,12 +4,12 @@ block append vars
   - bodyclass = 'project-list'
 
 block prepend title
-  | Projects · 
+  | Work · 
 
-mixin project-list-item(id, emoji, title, client, description, type, date, comingsoon)
+mixin project-list-item(id, emoji, title, client, description, type, date, comingsoon, size)
   if comingsoon
     .project-list-item.coming-soon(id=id)
-      .project-img(style="background-image: url('/projects/" + id + "/project-tile.jpg')")
+      .project-img(style="background-image: url('/work/" + id + "/project-tile-sm.jpg')")
       .project-text
         .row
           .col-xs-12.col-md-4
@@ -31,8 +31,8 @@ mixin project-list-item(id, emoji, title, client, description, type, date, comin
               .line
 
   else
-    a.project-list-item(id=id href="/projects/" + id)
-      .project-img(style="background-image: url('/projects/" + id + "/project-tile-sm.jpg')")
+    a.project-list-item(id=id href="/work/" + id)
+      .project-img(style="background-image: url('/work/" + id + "/project-tile-sm.jpg')")
       .project-text
         .row
           .col-xs-12.col-md-4
@@ -60,7 +60,7 @@ block content
   section#project-list.block-ver-lg
     .content-wrap
       .row
-        .col-xs-12(style="z-index: 10;"): .h1-outer: h1 Projects
+        .col-xs-12(style="z-index: 10;"): .h1-outer: h1 Work
         .col-xs-12: +project-list-item("rivendell-design-system", "🏗", "Rivendell Design System", "WeWork", "A component-based pattern library upon which WeWork builds on-brand, accessible and consistent products that embody our digital brand guidelines.", "Design System", "2017–18", false)
         .col-xs-12: +project-list-item("wework-dot-com", "🏢", "WeWork.com", "WeWork", "", "Website", "2017–18", true)
         .col-xs-12: +project-list-item("wework-guest-wifi", "🖥", "Guest Wi-Fi", "WeWork", "A custom gated wi-fi experience for guests in WeWork spaces.", "Website", "2017", false)
