@@ -2,42 +2,47 @@
   .project-list-item
     display: block
     position: relative
-    height: calc(100% - 1rem)
-    @extend .border
-    box-shadow: 0 10 30px rgba(black, 0)
     transform: translate(0, 0)
     transition: all 400ms
-    margin: 0 0 1rem
+    margin: 0 0 5rem
     border-radius: 2px
     cursor: pointer
 
+    &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: -20px
+      width: calc(100% + 40px)
+      height: 84px
+      background: rgba(white, 0.1)
+      transform: scale(1, 0)
+      transform-origin: center bottom
+      transition: all 400ms
+
     .project-img
       width: 100%
-      height: 200px
-      background: $lt-grey no-repeat center
+      height: 240px
+      background: black no-repeat center
       background-size: cover
+      transform: rotate(0deg)
+      transition: all 400ms
+
+      @media (min-width: $screen-sm-min)
+        height: 460px
 
     .project-text
       position: relative
-      @extend .block-hor-md
-      @extend .block-bot-md
-      margin-top: -15px
-
-      h3
-        background: rgba(black, 0.8)
-        color: white
-        display: inline
-        box-shadow: 5px 0px 0 1px rgba(black, 0.8), -5px 0px 0 1px rgba(black, 0.8)
-        transition: all 400ms
+      @extend .block-ver-md
+      opacity: 0.8
+      transition: all 400ms
 
     &.coming-soon
-      background: $xlt-grey
+      pointer-events: none
 
       .coming-soon-flag
-        position: absolute
-        top: 10px
-        left: 10px
-        background: $md-grey
+        display: inline-block
+        background: rgba(white, 0.2)
         color: white
         @extend .text-smaller
         @extend .text-uppercase
@@ -47,7 +52,7 @@
         opacity: 0.4
 
       h3
-        opacity: 0.7
+        color: rgba(white, 0.3)
 
       .dummy-text
         margin-top: 12px
@@ -55,7 +60,7 @@
         .line
           height: 15px
           margin: 0 auto 8px 0
-          background: $lt-grey
+          background: rgba(white, 0.3)
 
           &:nth-of-type(1)
             width: 92%
@@ -70,13 +75,14 @@
             width: 50%
 
     &:not(.coming-soon):hover
-      box-shadow: 0 10px 30px rgba(black, 0.06)
-      transform: translate(0, -4px)
+      .project-img
+        transform: rotate(-0.5deg)
 
       .project-text
-        h3
-          background: rgba(black, 1)
-          box-shadow: 5px 0px 0 1px rgba(black, 1), -5px 0px 0 1px rgba(black, 1)
+        opacity: 1
+
+      &:after
+        transform: scale(1, 1)
 
 
 // @each $project in wgsn-insight, wgsn-brand-guide, wgsn-city-by-city-app, wgsn-workspace, wgsn-catwalks-app
