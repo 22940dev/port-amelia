@@ -4,84 +4,42 @@
     position: relative
     transform: translate(0, 0)
     transition: all 400ms
-    margin: 0 0 5rem
+    margin: 0 0 $spacer-lg
     border-radius: 2px
     cursor: pointer
 
-    &:after
-      content: ""
-      position: absolute
-      bottom: 0
-      left: -20px
-      width: calc(100% + 40px)
-      height: 84px
-      background: rgba(white, 0.1)
-      transform: scale(1, 0)
-      transform-origin: center bottom
-      transition: all 400ms
-
-    .project-img
-      width: 100%
-      height: 240px
-      background: black no-repeat center
-      background-size: cover
-      transform: rotate(0deg)
-      transition: all 400ms
-
-      @media (min-width: $screen-sm-min)
-        height: 460px
-
-    .project-text
+    h3
       position: relative
-      @extend .block-ver-md
-      opacity: 0.8
-      transition: all 400ms
+
+      &:after
+        content: ""
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: $primary
+        transform: scale(0, 1)
+        transform-origin: center left
+        transition: all 400ms
+        z-index: -1
 
     &.coming-soon
       pointer-events: none
 
       .coming-soon-flag
         display: inline-block
-        background: rgba(white, 0.2)
-        color: white
+        background: rgba(black, 0.2)
+        color: black
         @extend .text-smaller
         @extend .text-uppercase
         padding: 1px 3px 0
 
-      .project-img
-        opacity: 0.4
-
       h3
-        color: rgba(white, 0.3)
-
-      .dummy-text
-        margin-top: 12px
-
-        .line
-          height: 15px
-          margin: 0 auto 8px 0
-          background: rgba(white, 0.3)
-
-          &:nth-of-type(1)
-            width: 92%
-
-          &:nth-of-type(2)
-            width: 100%
-
-          &:nth-of-type(3)
-            width: 88%
-
-          &:nth-of-type(4)
-            width: 50%
+        color: rgba($black, 0.3)
 
     &:not(.coming-soon):hover
-      .project-img
-        transform: rotate(-0.5deg)
-
-      .project-text
-        opacity: 1
-
-      &:after
+      h3:after
         transform: scale(1, 1)
 
 

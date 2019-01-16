@@ -4,20 +4,18 @@ block append vars
   - bodyclass = 'index'
 
 block content
-  section#masthead.block-ver-lg
+  section#intro.block-ver-lg
     .content-wrap
       .row
         .col-xs-12
-          .masthead-intro
-            h1 Hi!
-            p.text-bigger
-              | I'm Amelia Lewis. I'm currently designing editorial tools at 
-              a.link-highlight.link-highlight-wsj(href="http://wsj.com", target="_blank") The Wall Street Journal
-              | . Previously, I designed products and design systems at   
-              a.link-highlight.link-highlight-wework(href="http://wework.com", target="_blank") WeWork
-              |  and 
-              a.link-highlight.link-highlight-wgsn(href="http://wgsn.com", target="_blank") WGSN
-              | .
-            p.text-bigger I love beautiful products, design systems and well-crafted CSS.
-            br
-            p.text-bigger: a.link-highlight(href="/work") Work →
+          p.text-bigger
+            | I'm Amelia Lewis. I'm currently designing editorial tools at 
+            a.link-highlight(href="http://wsj.com", target="_blank") The Wall Street Journal
+            | . Previously, I designed products and design systems at   
+            a.link-highlight(href="http://wework.com", target="_blank") WeWork
+            |  and 
+            a.link-highlight(href="http://wgsn.com", target="_blank") WGSN
+            | .
+          p.text-bigger I love beautiful products, design systems and well-crafted CSS.
+  
+  include project-list
