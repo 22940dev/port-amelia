@@ -57,13 +57,20 @@ html(lang='en')
       meta(name="msapplication-config", content="/styles/img/browserconfig.xml")
 
   body(class=bodyclass)
-    #content
-      block content
-    
-    footer.block-top-lg
+    header
       .content-wrap
         .row
           .col-xs-12
+            a.header--logo= locals.name
+    
+    #content
+      block content
+    
+    footer.block-ver-lg
+      .content-wrap
+        .row
+          .col-xs-12
+            h4 Contact
             a.link-highlight(href="mailto:amelialewis01@gmail.com", target='_blank') Email
             a.link-highlight(href="https://www.facebook.com/lewis.amelia", target="_blank") Facebook
             a.link-highlight(href="https://twitter.com/Amelia_Lewis", target="_blank") Twitter
@@ -75,7 +82,7 @@ html(lang='en')
             a.link-highlight(href="https://codepen.io/amelia-lewis/", target="_blank") Codepen
             //- a.link-highlight(href="https://www.dropbox.com/s/2hrhsn3asp1ysgp/Resume%E2%80%942018-04.pdf?dl=0", target="_blank") Résumé
 
-            .block-top-sm.block-bot-md
-              p.text-tight.text-smaller &copy; #{ new Date().getFullYear() } #{ locals.owner }. Website designed and built by me.
+            .block-top-lg
+              p.text-copyright &copy; #{ new Date().getFullYear() } #{ locals.owner }. Website designed and built by me.
 
     include partials/scripts
