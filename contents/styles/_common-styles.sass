@@ -20,7 +20,10 @@ hr
   border: none
   background: $lt-grey
   height: 1px
-  margin: 2 * $spacer-xl 0
+  margin: $spacer-xl 0
+
+  @media (min-width: $screen-sm-min)
+    margin: 2 * $spacer-xl 0
 
 .border
   border: 1px solid $lt-grey
