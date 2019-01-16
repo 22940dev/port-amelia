@@ -7,22 +7,16 @@ block prepend title
   | #{ page.title + " · "}
 
 block content
-  header.border-bottom.block-ver-md
-    .content-wrap
-      .row
-        .col-xs-12
-          a.link-highlight(href="/") ← Go Back
-
   section#project
     .content-wrap
       .row.block-top-xl
         .col-xs-12
           .h2-outer: h2(data-heading=page.metadata.client)= page.metadata.title
 
-    .header-img(style="background-image: url('/work/" + page.metadata.id + "/project-tile.jpg')")
+    //- .header-img(style="background-image: url('/work/" + page.metadata.id + "/project-tile.jpg')")
 
     .content-wrap
-      .row.block-ver-lg
+      .row.block-top-lg
         .col-xs-12.col-md-8
           if page.metadata.tagline
             .block-bot-md
@@ -54,12 +48,10 @@ block content
             h4.text-grey Involvement
             p= page.metadata.role
 
-      .row
-        .col-xs-12.block-bot-lg
-          hr
+      hr
 
-      .row
-        .col-xs-12.block-bot-xl!= typogr(page.html).typogrify()
+      .row.block-bot-xl
+        .col-xs-12!= typogr(page.html).typogrify()
 
     .row.border-top.border-bottom
       .content-wrap

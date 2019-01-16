@@ -9,13 +9,13 @@
       height: 540px
 
   h3
-    margin-top: 2em
+    margin-top: $spacer-xl
 
     &:first-child
       margin-top: 0
 
   .col-md-4 .link-highlight
-    margin-bottom: 0.75em
+    margin-bottom: $spacer-sm
 
   .project-content
     padding: 80px 60px
@@ -24,9 +24,9 @@
     width: 100%
 
     @media (min-width: $screen-sm-min)
-      width: calc(100% + 80px)
-      margin-left: -40px
+      width: calc(100% + calc(4 * #{$spacer-xl}))
+      margin-left: calc(-2 * #{$spacer-xl})
 
   p img
-    margin-top: 40px
-    margin-bottom: 40px
+    margin-top: $spacer-xl
+    margin-bottom: $spacer-xl

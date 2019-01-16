@@ -1,23 +1,5 @@
 // ====================
-// Layout
-// ====================
-.pull-left
-  float: left
-
-.pull-right
-  float: right
-
-.inline-block
-  display: inline-block !important
-
-.flex-center
-  display: flex
-  align-items: center
-  justify-content: center
-
-
-// ====================
-// BGs & Borders
+// BACKGROUNDS & BORDERS
 // ====================
 .bg-white
   background: white
@@ -33,16 +15,23 @@
   background: darken($dk-grey, 3)
   color: white
 
+hr
+  outline: none
+  border: none
+  background: $lt-grey
+  height: 1px
+  margin: 2 * $spacer-xl 0
+
 .border
-  border: 1px solid rgba(white, 0.1)
+  border: 1px solid $lt-grey
 
 @each $side in top, right, bottom, left
   .border-#{$side}
-    border-#{$side}: 1px solid rgba(white, 0.1)
+    border-#{$side}: 1px solid $lt-grey
 
 
 // ====================
-// Hiders
+// HIDERS
 // ====================
 .hidden-desktop
   display: block
@@ -58,7 +47,7 @@
 
 
 // ====================
-// Transitions
+// TRANSITIONS
 // ====================
 @for $i from 1 through 30
   .delay-#{$i * 50}
