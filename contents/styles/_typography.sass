@@ -36,10 +36,10 @@
 
 // MARGINS
 h1
-  margin: 0 0 0.1em
+  margin: 0 0 $spacer-md
 
 h2, h3, h4, ul, ol
-  margin: 0 0 0.5em
+  margin: 0 0 $spacer-sm
 
 p
   margin: 0 0 0.75em
@@ -64,6 +64,7 @@ h4
 
 p
   font-size: 1em
+  line-height: 1.45em
 
 @media (min-width: $screen-sm-min)
   h1
@@ -184,16 +185,3 @@ code
   color: slategray
   padding: 0 5px
   border-radius: 2px
-
-
-.h1-outer
-  margin-bottom: -37px
-
-  @media (min-width: $screen-sm-min)
-    margin-bottom: -71px
-
-.h2-outer
-  margin-bottom: -35px
-
-  @media (min-width: $screen-sm-min)
-    margin-bottom: -57px

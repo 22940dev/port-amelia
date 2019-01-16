@@ -1,22 +1,21 @@
 mixin project-list-item(id, emoji, title, client, description, type, date, comingsoon, size)
   if comingsoon
-    .project-list-item.coming-soon(id=id)
-      p.coming-soon-flag Coming Soon
-      h3= title
-      p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey.block-bot-sm
-        if client
-          span= client
-          span &nbsp;&middot;&nbsp;
+    .project-list-item.project-list-item--coming-soon(id=id)
+      h3.project-list-item--title= title
+      p.project-list-item--info
         span= date
+        if client
+          span &nbsp;&middot;&nbsp;
+          span= client
 
   else
     a.project-list-item(id=id href="/work/" + id)
-      h3= title
-      p.text-uppercase.text-smaller.text-spaced.text-tight.text-grey.block-bot-sm
-        if client
-          span= client
-          span &nbsp;&middot;&nbsp;
+      h3.project-list-item--title= title
+      p.project-list-item--info
         span= date
+        if client
+          span &nbsp;&middot;&nbsp;
+          span= client
         
   
 section#project-list.block-ver-lg
