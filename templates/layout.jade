@@ -13,7 +13,6 @@ html(lang='en')
         block title
           = locals.name
       
-      //- link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css")
       link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css")
       link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Libre+Franklin:500|Lora:400,700")
@@ -25,13 +24,13 @@ html(lang='en')
       meta(property="og:url", content="http://amelia-lewis.com/")
       meta(property="og:image", content="http://amelia-lewis.com/styles/img/og-image.jpg")
       meta(property="og:site_name", content="Amelia Lewis")
-      meta(property="og:description", content="Hey, I'm Amelia. I'm a product designer at WeWork based in New York City, previously at WGSN and Creative Licence Digital. I love beautiful products, design systems and well-crafted CSS.")
+      meta(property="og:description", content="I'm a product designer currently working on the next generation of editorial tools for The Wall Street Journal. Previously, I designed products and design systems at WeWork and WGSN. I love beautiful products, design systems and well-crafted CSS.")
 
       //- twitter
       meta(name="twitter:card", content="summary")
       meta(name="twitter:site", content="@amelia_lewis")
       meta(name="twitter:title", content="Amelia Lewis")
-      meta(name="twitter:description", content="Hey, I'm Amelia. I'm a product designer at WeWork based in New York City, previously at WGSN and Creative Licence Digital. I love beautiful products, design systems and well-crafted CSS.")
+      meta(name="twitter:description", content="I'm a product designer currently working on the next generation of editorial tools for The Wall Street Journal. Previously, I designed products and design systems at WeWork and WGSN. I love beautiful products, design systems and well-crafted CSS.")
       meta(name="twitter:image", content="http://amelia-lewis.com/styles/img/og-image.jpg")
             
       //- generics
@@ -82,6 +81,8 @@ html(lang='en')
             //- a.link-highlight(href="https://www.dropbox.com/s/2hrhsn3asp1ysgp/Resume%E2%80%942018-04.pdf?dl=0", target="_blank") Résumé
 
             .block-top-lg
-              p.text-copyright &copy; #{ new Date().getFullYear() } #{ locals.owner }. Website designed and built by me.
-
+              p.text-copyright Website designed and built by me. Last updated 
+                span#text-copyright--month
+                | &nbsp;#{ new Date().getDate() }, #{ new Date().getFullYear() }.
+    
     include partials/scripts

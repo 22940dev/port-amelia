@@ -7,3 +7,9 @@ script.
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'UA-50157111-1');
+
+//- Month name
+script.
+  var d = new Date();
+  var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  document.getElementById("text-copyright--month").innerHTML = months[d.getMonth()];
