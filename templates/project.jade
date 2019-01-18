@@ -32,21 +32,21 @@ block content
                 .block-bot-sm: a.link-highlight(href="#{page.metadata.websitelink}" target="_blank") Website&nbsp;&nbsp;→
 
         .col-xs-12.col-md-2.col-md-offset-2.col-lg-2.col-lg-offset-3.first-md
-          .block-bot-sm
+          .block-bot-md
             h4.text-grey Project Type
-            p= page.metadata.type
+            p.text-tight= page.metadata.type
           
-          .block-bot-sm
+          .block-bot-md
             h4.text-grey Date
-            p= page.metadata.date
+            p.text-tight= page.metadata.date
 
-          .block-bot-sm
+          .block-bot-md
             h4.text-grey Client
             a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.clientname
 
           if page.metadata.role
             h4.text-grey Involvement
-            p= page.metadata.role
+            p.text-tight= page.metadata.role
 
       .row.block-ver-xl
         .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3!= typogr(page.html).typogrify()
