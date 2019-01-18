@@ -5,7 +5,12 @@ header
     font-family: $sans-serif
     font-size: 1em
     @extend .text-grey
-    transition: all 400ms
+    transition: color 400ms
 
     &:hover
       color: $dk-grey
+
+    &:focus
+      outline-color: rgba(black, 0.1)
+      outline-width: 1px
+      outline-offset: -3px
