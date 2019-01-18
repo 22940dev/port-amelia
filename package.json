@@ -6,7 +6,8 @@
     "typogr": "0.5.x",
     "underscore": "1.4.x",
     "wintersmith": "^2.5.0",
-    "wintersmith-coffee": "^0.2.2"
+    "wintersmith-coffee": "^0.2.2",
+    "wintersmith-sassy": "^1.2.0"
   },
   "repository": "none"
 }
