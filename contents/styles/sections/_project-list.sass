@@ -52,15 +52,16 @@
           right: calc(-1 * #{$spacer-sm})
           transform: scale(1, 1)
 
-    &:not(.project-list-item--coming-soon):hover
-      transform: translate3d($spacer-sm, 0, 0)
+    .desktop &
+      &:not(.project-list-item--coming-soon):hover
+        transform: translate3d($spacer-sm, 0, 0)
 
-      &:after
-        opacity: 1
-        transform: translate3d(0, 0, 0)
+        &:after
+          opacity: 1
+          transform: translate3d(0, 0, 0)
 
-      .project-list-item--title:after
-        transform: translate3d(calc(-1 * #{$spacer-mlg}), 0, 0) scale(1, 1)
+        .project-list-item--title:after
+          transform: translate3d(calc(-1 * #{$spacer-mlg}), 0, 0) scale(1, 1)
 
     &:focus
       outline-color: rgba(black, 0.1)
