@@ -1,20 +1,3 @@
-// ====================
-// BACKGROUNDS & BORDERS
-// ====================
-.bg-white
-  background: white
-
-.bg-lt-grey
-  background: $lt-grey
-
-.bg-dk-grey
-  background: $dk-grey
-  color: white
-
-.bg-xdk-grey
-  background: darken($dk-grey, 3)
-  color: white
-
 hr
   outline: none
   border: none
@@ -31,28 +14,3 @@ hr
 @each $side in top, right, bottom, left
   .border-#{$side}
     border-#{$side}: 1px solid $lt-grey
-
-
-// ====================
-// HIDERS
-// ====================
-.hidden-desktop
-  display: block
-
-  @media (min-width: $screen-xs-min)
-    display: none
-
-.hidden-mobile
-  display: none
-
-  @media (min-width: $screen-xs-min)
-    display: block
-
-
-// ====================
-// TRANSITIONS
-// ====================
-@for $i from 1 through 30
-  .delay-#{$i * 50}
-    transition-delay: $i * 50ms !important
-    animation-delay: $i * 50ms !important
