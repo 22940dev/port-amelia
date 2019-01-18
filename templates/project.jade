@@ -25,11 +25,11 @@ block content
           if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
             .block-bot-md
               if page.metadata.appstorelink
-                .block-bot-sm: button.btn(href="#{page.metadata.appstorelink}" target="_blank") App Store →
+                .block-bot-sm: a.link-highlight(href="#{page.metadata.appstorelink}" target="_blank") App Store&nbsp;&nbsp;→
               if page.metadata.playstorelink
-                .block-bot-sm: button.btn(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store →
+                .block-bot-sm: a.link-highlight(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store&nbsp;&nbsp;→
               if page.metadata.websitelink
-                .block-bot-sm: button.btn(href="#{page.metadata.websitelink}" target="_blank") Website →
+                .block-bot-sm: a.link-highlight(href="#{page.metadata.websitelink}" target="_blank") Website&nbsp;&nbsp;→
 
         .col-xs-12.col-md-2.col-md-offset-2.col-lg-2.col-lg-offset-3.first-md
           .block-bot-sm
