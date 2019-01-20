@@ -10,8 +10,6 @@ role: UX/UI design, prototype development
 clientname: WeWork
 clientlink: http://www.wework.com
 websitelink: http://rivendell-docs.netlify.com/
-prevproject: glenda-graff
-nextproject: wework-guest-wifi
 ---
 
 ### Foundations
@@ -36,7 +34,7 @@ The idea was that the patterns would almost be "plug and play" blocks that anyon
 
 ### Responsiveness and Accessibility
 
-The patterns had to be robust, flexible and responsive. WeWork supports over 10 locales, so the patterns had to support any length of copy, and also make sense when localized (coming soon: right-to-left languages!). The patterns also had to be responsive to any viewport width or device type, as our users are split almost 50/50 across desktop and mobile, and I stressed tested the patterns vigorously to make sure all screen sizes were tended to. 
+The patterns had to be robust, flexible and responsive. WeWork supports over 10 locales, so the patterns had to support any length of copy, and also make sense when localized (coming soon: right-to-left languages!). The patterns also had to be responsive to any viewport width or device type, as our users are split almost 50/50 across desktop and mobile, and I stressed tested the patterns vigorously to make sure all screen sizes were tended to.
 
 With WeWork's ever-expanding audience, another high priority element of Rivendell was accessibility. We are dedicated to making sure the system is AA compliant—meaning colors were readable, inputs had labels, HTML syntax made sense, and so on.
 
@@ -48,11 +46,6 @@ To enable rapid prototyping (and some out-of-hours design exploration), I built 
 
 Over the last few months, I have led the integration and roll-out of Rivendell onto <a href="https://www.wework.com/" target="_blank" class="link-highlight">wework.com</a>. It's still a work in progress, but you can see that the core components, such as buttons, inputs and text styles, have been rolled out, and the patterns are slowly coming through too.
 
-
-<br />
-
 ---
-
-<br />
 
 <a href="http://roomfive.net/" target="_blank" class="link-highlight">Andrew Couldwell</a> was the lead and creative director for the Rivendell design system.

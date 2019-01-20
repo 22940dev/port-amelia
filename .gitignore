@@ -1,6 +1,3 @@
-
 *.sassc
 
 .DS_Store
-
-build

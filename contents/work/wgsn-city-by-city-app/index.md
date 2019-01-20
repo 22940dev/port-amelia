@@ -11,8 +11,6 @@ clientname: WGSN
 clientlink: http://www.wgsn.com
 appstorelink: https://itunes.apple.com/us/app/city-by-city/id451178706?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.citybycity
-prevproject: wgsn-workspace
-nextproject: wgsn-catwalks-app
 ---
 
 City by City is one of WGSN's staple sub-products, used heavily by the core group of <a href="https://www.wgsn.com/en/products/fashion/" target="_blank" class="link-highlight">Fashion</a> and <a href="https://www.wgsn.com/en/products/lifestyle-interiors/" target="_blank" class="link-highlight">Lifestyle &amp; Interiors</a> customers. It is somewhat of an editor-curated Yelp; hand-picked shopping, dining, accomodation and sightseeing choices from top cities around the world.

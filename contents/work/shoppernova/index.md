@@ -8,8 +8,6 @@ tagline: An undisputed leader in mobile marketing, location-based targeting and 
 role: UX/UI design
 clientname: Nova FM
 clientlink: http://www.nova969.com.au/nova969
-prevproject: the-blending-room
-nextproject: repassist
 ---
 
 ShopperNova is a location-based deals app that <a href="http://creativelicence.com.au/" target="_blank" class="link-highlight">CLD</a> made in association with <a href="http://www.nova969.com.au/nova969/" target="_blank" class="link-highlight">Nova FM</a>&mdash;one of Sydney’s largest commercial radio stations. It was one of the first apps to utilise Passbook, and enjoyed over 100,000 downloads from the App Store. Since its conception in 2012, ShopperNova allowed Nova to seamlessly move their content into the mobile space; a necessary move for radio in this day and age.

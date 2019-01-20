@@ -1,3 +1,17 @@
-body.index
-  header
-    display: none
+header
+  padding: $spacer-lg 0
+  z-index: 30
+
+  .header--logo
+    font-family: $sans-serif
+    font-size: 1em
+    @extend .text-grey
+    transition: color 400ms
+
+    &:hover
+      color: $dk-grey
+
+    &:focus
+      outline-color: rgba(black, 0.1)
+      outline-width: 1px
+      outline-offset: -3px

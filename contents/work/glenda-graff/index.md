@@ -9,13 +9,11 @@ role: UX/UI design, development
 clientname: Glenda Graff
 clientlink: http://glendagraff.com.au/
 websitelink: http://glendagraff.com.au/
-prevproject: repassist
-nextproject: rivendell-design-system
 ---
 
 Glenda Graff is an exclusive wedding and event planner based in Sydney's eastern suburbs. She caters to high end clients and needed a website that reflected the aesthetic of her events and was able to showcase large amounts of imagery.
 
-Since Glenda is a friend, this has been a great project for me to learn and grow over the last few years. Glenda has been happy for me to take creative control and the site has functioned largely as a passion project for me where I have been able to iterate the design and make it better as I've gotten better. 
+Since Glenda is a friend, this has been a great project for me to learn and grow over the last few years. Glenda has been happy for me to take creative control and the site has functioned largely as a passion project for me where I have been able to iterate the design and make it better as I've gotten better.
 
 ### My Approach
 

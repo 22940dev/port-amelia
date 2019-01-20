@@ -9,7 +9,7 @@
     "./plugins/paginator.coffee",
     "./plugins/sass.coffee",
     "./node_modules/wintersmith-coffee/",
-    "./node_modules/wintersmith-sass/"
+    "./node_modules/wintersmith-sassy/"
   ],
   "require": {
     "moment": "moment",

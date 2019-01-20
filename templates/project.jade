@@ -7,23 +7,17 @@ block prepend title
   | #{ page.title + " · "}
 
 block content
-  header.border-bottom.block-ver-md
-    .content-wrap
-      .row
-        .col-xs-12
-          a.link-highlight(href="/work") ← Back to Work
-
   section#project
     .content-wrap
       .row.block-top-xl
-        .col-xs-12
-          .h2-outer: h2(data-heading=page.metadata.client)= page.metadata.title
+        .col-xs-12.col-md-8.col-md-offset-2.col-lg-5.col-lg-offset-3
+          h2(data-heading=page.metadata.client)= page.metadata.title
 
-    .header-img(style="background-image: url('/work/" + page.metadata.id + "/project-tile.jpg')")
+    //- .header-img(style="background-image: url('/work/" + page.metadata.id + "/project-tile.jpg')")
 
     .content-wrap
       .row.block-ver-lg
-        .col-xs-12.col-md-8
+        .col-xs-12.col-md-4.col-lg-4
           if page.metadata.tagline
             .block-bot-md
               p.project-tagline.text-bigger.text-tight= page.metadata.tagline
@@ -31,41 +25,28 @@ block content
           if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
             .block-bot-md
               if page.metadata.appstorelink
-                .block-bot-sm: a.link-highlight(href="#{page.metadata.appstorelink}" target="_blank") App Store →
+                .block-bot-sm: a.link-highlight(href="#{page.metadata.appstorelink}" target="_blank") App Store&nbsp;&nbsp;→
               if page.metadata.playstorelink
-                .block-bot-sm: a.link-highlight(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store →
+                .block-bot-sm: a.link-highlight(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store&nbsp;&nbsp;→
               if page.metadata.websitelink
-                .block-bot-sm: a.link-highlight(href="#{page.metadata.websitelink}" target="_blank") Website →
+                .block-bot-sm: a.link-highlight(href="#{page.metadata.websitelink}" target="_blank") Website&nbsp;&nbsp;→
 
-        .col-xs-12.col-md-4.first-md
-          .block-bot-sm
+        .col-xs-12.col-md-2.col-md-offset-2.col-lg-2.col-lg-offset-3.first-md
+          .block-bot-md
             h4.text-grey Project Type
-            p= page.metadata.type
+            p.text-tight= page.metadata.type
           
-          .block-bot-sm
+          .block-bot-md
             h4.text-grey Date
-            p= page.metadata.date
+            p.text-tight= page.metadata.date
 
-          .block-bot-sm
+          .block-bot-md
             h4.text-grey Client
             a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.clientname
 
           if page.metadata.role
             h4.text-grey Involvement
-            p= page.metadata.role
+            p.text-tight= page.metadata.role
 
-      .row
-        .col-xs-12.block-bot-lg
-          hr
-
-      .row
-        .col-xs-12.block-bot-xl!= typogr(page.html).typogrify()
-
-    .row.border-top.border-bottom
-      .content-wrap
-        .row
-          .col-xs-6.block-ver-lg.border-right
-            a.link-highlight.link-back(href="/projects/#{page.metadata.prevproject}") ← Previous
-
-          .col-xs-6.block-ver-lg.text-right
-            a.link-highlight.link-forward(href="/projects/#{page.metadata.nextproject}") Next →
+      .row.block-ver-xl
+        .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3!= typogr(page.html).typogrify()
