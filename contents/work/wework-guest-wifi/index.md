@@ -9,8 +9,6 @@ tagline: A custom gated wi-fi experience for guests in WeWork spaces.
 role: UX/UI design, front-end development
 clientname: WeWork
 clientlink: http://www.wework.com
-prevproject: rivendell-design-system
-nextproject: wgsn-brand-guide
 ---
 
 In late-2017, WeWork's marketing team was presented with a great opportunity to set up guest wi-fi in all locations. The was beneficial both for the user, to help them learn more about WeWork (and get wi-fi), but also for the business to acquire leads.

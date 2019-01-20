@@ -10,8 +10,6 @@ role: UX/UI design, prototype development
 clientname: WeWork
 clientlink: http://www.wework.com
 websitelink: http://rivendell-docs.netlify.com/
-prevproject: glenda-graff
-nextproject: wework-guest-wifi
 ---
 
 ### Foundations

@@ -10,8 +10,6 @@ role: UX/UI design, prototype development
 clientname: WeWork
 clientlink: http://www.wework.com
 websitelink: http://www.wework.com
-prevproject: rivendell-design-system
-nextproject: wework-guest-wifi
 ---
 
 Coming Soon

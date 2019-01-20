@@ -11,8 +11,6 @@ clientname: Meat & Livestock Australia
 clientlink: http://www.mla.com.au/Home
 appstorelink: https://itunes.apple.com/us/app/meat-cuts/id904537057?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.mla.meatcuts&hl=en
-prevproject: wgsn-catwalks-app
-nextproject: the-blending-room
 ---
 
 Meat Cuts is an app I worked on at <a href="http://creativelicence.com.au/" target="_blank" class="link-highlight">CLD</a>, briefed by <a href="http://www.mla.com.au/Home" target="_blank" class="link-highlight">Meat &amp; Livestock Australia</a>. They wanted to create an app for users to learn all about various cuts of meat and how best to cook them, in a fun an interactive way. Our target user group was gourmet home cooks&mdash;largely, but not exclusively, in the young male demographic.

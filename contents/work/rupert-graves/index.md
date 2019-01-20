@@ -9,8 +9,6 @@ role: UX/UI design, development
 clientname: Rupert Graves
 clientlink: http://rupert-graves.com/
 websitelink: http://rupert-graves.com/
-prevproject: repassist
-nextproject: glenda-graff
 ---
 
 ### What is it?
