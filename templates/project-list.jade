@@ -7,6 +7,8 @@ mixin project-list-item(id, title, client, date, comingsoon)
         if client
           span &nbsp;&middot;&nbsp;
           span= client
+        span &nbsp;&middot;&nbsp;
+        span Case Study Coming Soon
 
   else
     a.project-list-item(id=id href="/work/" + id)
