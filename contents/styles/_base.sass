@@ -56,3 +56,22 @@ section
 
       &:first-of-type
         border-left: 1px solid rgba($lt-grey, 0.5)
+
+.dark-mode-trigger
+  position: fixed
+  display: flex
+  justify-content: center
+  align-items: center
+  bottom: $spacer-lg
+  left: $spacer-lg
+  width: $spacer-xl
+  height: $spacer-xl
+  border-radius: 50%
+  border: 1px solid $lt-grey
+  box-shadow: 0 4px 16px rgba($black, 0.1)
+  transition: all 400ms
+  cursor: pointer
+  z-index: 10
+
+  &:hover
+    box-shadow: 0 6px 16px rgba($black, 0.3)

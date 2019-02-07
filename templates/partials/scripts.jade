@@ -13,3 +13,12 @@ script.
   var d = new Date();
   var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   document.getElementById("text-copyright--month").innerHTML = months[d.getMonth()];
+
+//- Dark mode
+script.
+  var btn = document.querySelector('.dark-mode-trigger');
+  var body = document.querySelector('body');
+
+  btn.onclick = function() {
+    body.classList.toggle('dark-mode');
+  }
