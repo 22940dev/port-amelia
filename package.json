@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bower": "^1.8.6",
+    "jade": "^1.11.0",
     "moment": "^2.23.0",
     "sass": "^1.16.1",
     "typogr": "0.5.x",
