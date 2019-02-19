@@ -1,22 +1,53 @@
 extends layout
 
 block append vars
-  - bodyclass = 'article-detail'
+  - bodyclass = 'project'
 
 block prepend title
   | #{ page.title + " - "}
 
-//- block header
-//-   include author
-//-   h1= page.title
-//-   p.author
-//-     | #{ "Written by " }
-//-     mixin author(page.metadata.author)
-
 block content
-  article.article
-    section.content!= typogr(page.html).typogrify()
+  article.article    
+    section#project
+      .content-wrap
+        .row.block-top-xl
+          .col-xs-12.col-md-8.col-md-offset-2.col-lg-5.col-lg-offset-3
+            h2(data-heading=page.metadata.client)= page.metadata.title
 
-//- block prepend footer
-//-   div.nav
-//-     a(href=contents.index.url) « Full blog
+      //- .header-img(style="background-image: url('/work/" + page.metadata.id + "/project-tile.jpg')")
+
+      .content-wrap
+        .row.block-ver-lg
+          .col-xs-12.col-md-4.col-lg-4
+            if page.metadata.tagline
+              .block-bot-md
+                p.project-tagline.text-bigger.text-tight= page.metadata.tagline
+
+            if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
+              .block-bot-md
+                if page.metadata.appstorelink
+                  .block-bot-sm: a.link-highlight(href="#{page.metadata.appstorelink}" target="_blank") App Store&nbsp;&nbsp;→
+                if page.metadata.playstorelink
+                  .block-bot-sm: a.link-highlight(href="#{page.metadata.playstorelink}" target="_blank") Google Play Store&nbsp;&nbsp;→
+                if page.metadata.websitelink
+                  .block-bot-sm: a.link-highlight(href="#{page.metadata.websitelink}" target="_blank") Website&nbsp;&nbsp;→
+
+          .col-xs-12.col-md-2.col-md-offset-2.col-lg-2.col-lg-offset-3.first-md
+            .block-bot-md
+              h4.text-grey Project Type
+              p.text-tight= page.metadata.type
+            
+            .block-bot-md
+              h4.text-grey Date
+              p.text-tight= page.metadata.date
+
+            .block-bot-md
+              h4.text-grey Client
+              a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.clientname
+
+            if page.metadata.role
+              h4.text-grey Involvement
+              p.text-tight= page.metadata.role
+
+        .row.block-ver-xl
+          .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3!= typogr(page.html).typogrify()

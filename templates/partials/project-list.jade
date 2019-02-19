@@ -1,0 +1,45 @@
+mixin project-list-item(id, title, client, date, comingsoon)
+  if comingsoon
+    .project-list-item.project-list-item--coming-soon(id=id)
+      h3.project-list-item--title= title
+      p.project-list-item--info
+        span= date
+        if client
+          span &nbsp;&middot;&nbsp;
+          span= client
+        span &nbsp;&middot;&nbsp;
+        span Case Study Coming Soon
+
+  else
+    a.project-list-item(id=id href="/articles/" + id)
+      h3.project-list-item--title= title
+      p.project-list-item--info
+        span= date
+        if client
+          span &nbsp;&middot;&nbsp;
+          span= client
+        
+  
+section#project-list.block-ver-xl
+  .content-wrap
+    .row
+      .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
+        h4 Work
+        +project-list-item("stipple-design-system", "Stipple Design System", "Wall Street Journal", "2018–19", true)
+        +project-list-item("newsgrid", "NewsGrid", "Wall Street Journal", "2018–19", true)
+        +project-list-item("rivendell-design-system", "Rivendell Design System", "WeWork", "2017–18", false)
+        +project-list-item("wework-dot-com", "WeWork.com", "WeWork", "2017–18", true)
+        +project-list-item("wework-guest-wifi", "Guest Wi-Fi", "WeWork", "2017", false)
+        //- +project-list-item("wgsn-public-site", "WGSN Public Website", "2015", false)
+        //- +project-list-item("greekify", "Greekify", "Freelance", "2017", true)
+        +project-list-item("wgsn-brand-guide", "Rebrand & Style Guide", "WGSN", "2016", false)
+        +project-list-item("wgsn-insight", "Insight", "WGSN", "2016", false)
+        +project-list-item("wgsn-workspace", "Workspace & Image Library", "WGSN", "2016", false)
+        +project-list-item("wgsn-city-by-city-app", "City by City App", "WGSN", "2016", false)
+        +project-list-item("wgsn-catwalks-app", "Catwalks App", "WGSN", "2015–16", false)
+        +project-list-item("meat-cuts", "Meat Cuts", "MLA", "2014", false)
+        //- +project-list-item("the-blending-room", "The Blending Room", "JR Cigars", "2015", false)
+        +project-list-item("shoppernova", "ShopperNova", "Nova FM", "2014", false)
+        +project-list-item("repassist", "RepAssist", "Novartis", "2014", false)
+        //- +project-list-item("rupert-graves", "Rupert Graves", "Freelance", "2015", false)
+        +project-list-item("glenda-graff", "Glenda Graff", "Freelance", "2013–2014", false)
