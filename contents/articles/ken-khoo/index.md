@@ -1,7 +1,7 @@
 ---
 id: ken-khoo
 title: Ken Khoo
-template: article.jade
+template: article.pug
 role: UX/UI design, development
 clientname: Ken Khoo
 clientlink: http://kenkhoo.net/

@@ -3,7 +3,7 @@ id: repassist
 title: RepAssist
 date: 2014
 type: Tablet App
-template: article.jade
+template: article.pug
 tagline: A streamlined solution tailored specifically to Novartis sales reps' needs.
 role: UX/UI design, front-end development
 clientname: Novartis

@@ -4,7 +4,7 @@ title: Rivendell Design System
 date: 2017–18
 type: Design System
 client: WeWork
-template: article.jade
+template: article.pug
 tagline: A component-based pattern library upon which WeWork builds on-brand, accessible and consistent products that embody our digital brand guidelines.
 role: UX/UI design, prototype development
 clientname: WeWork

@@ -4,7 +4,7 @@ title: Insight
 date: 2016
 type: Website
 client: WGSN
-template: article.jade
+template: article.pug
 tagline: A new product for WGSN, providing the C-suite and marketers with high-level information on future trends.
 role: UX/UI design, prototype development
 clientname: WGSN

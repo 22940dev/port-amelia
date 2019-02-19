@@ -1,7 +1,7 @@
 ---
 id: jr-cigars
 title: JR Cigars
-template: article.jade
+template: article.pug
 role: UX/UI design, front-end development
 clientname: JR Cigars
 clientlink: https://www.jrcigars.com/

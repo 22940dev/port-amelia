@@ -4,7 +4,7 @@ title: Meat Cuts
 date: 2014
 type: Mobile App
 client: CLD
-template: article.jade
+template: article.pug
 tagline: Your number one destination for information about beef, lamb, veal and goat cuts.
 role: UX/UI design, front-end development
 clientname: Meat & Livestock Australia

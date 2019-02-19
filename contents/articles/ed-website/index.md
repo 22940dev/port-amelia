@@ -1,7 +1,7 @@
 ---
 id: ed-website
 title: Ed Website
-template: article.jade
+template: article.pug
 role: UX/UI design, front-end development
 clientname: Ed
 stagingwebsitelink: http://edapp.cldstaging.com.au/

@@ -4,7 +4,7 @@ title: WeWork Guest Wi-Fi
 date: 2017
 type: Website
 client: WeWork
-template: article.jade
+template: article.pug
 tagline: A custom gated wi-fi experience for guests in WeWork spaces.
 role: UX/UI design, front-end development
 clientname: WeWork

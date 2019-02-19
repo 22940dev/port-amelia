@@ -4,7 +4,7 @@ title: WGSN Public Site
 date: 2015
 type: Website
 client: WGSN
-template: article.jade
+template: article.pug
 tagline: A new public face for the world's leading trend authority.
 role: UX/UI design, prototype development
 clientname: WGSN
