@@ -3,7 +3,7 @@ id: rupert-graves
 title: Rupert Graves
 date: 2015
 type: Website
-template: article.jade
+template: article.pug
 tagline: A digital brand for the international actor.
 role: UX/UI design, development
 clientname: Rupert Graves

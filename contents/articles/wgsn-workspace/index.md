@@ -4,7 +4,7 @@ title: Workspace & Image Library
 date: 2015–2016
 type: Web app
 client: WGSN
-template: article.jade
+template: article.pug
 tagline: A hub for creative teams to work together, utilizing WGSN's millions of exclusive assets.
 role: UX/UI design, prototype development
 clientname: WGSN

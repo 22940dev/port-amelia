@@ -3,7 +3,7 @@ id: shoppernova
 title: ShopperNova
 date: 2014
 type: Mobile App
-template: article.jade
+template: article.pug
 tagline: An undisputed leader in mobile marketing, location-based targeting and data-collection.
 role: UX/UI design
 clientname: Nova FM

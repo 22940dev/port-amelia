@@ -1,7 +1,7 @@
 ---
 id: lets-go
 title: Let's Go
-template: article.jade
+template: article.pug
 role: UX/UI design, front-end development
 clientname: Novartis
 clientlink: https://www.novartis.com/

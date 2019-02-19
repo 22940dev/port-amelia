@@ -4,7 +4,7 @@ title: Field InTouch
 date: 2013–2015
 type: Tablet App
 client: CLD
-template: article.jade
+template: article.pug
 tagline: The next generation in field force mobility.
 role: UX/UI design, front-end development
 clientname: Imperial Tobacco

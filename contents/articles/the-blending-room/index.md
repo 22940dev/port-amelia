@@ -3,7 +3,7 @@ id: the-blending-room
 title: The Blending Room
 date: 2015
 type: Website
-template: article.jade
+template: article.pug
 tagline: Everything you need to know about the latest cigar trends.
 role: UX/UI design, front-end development
 clientname: JR Cigars

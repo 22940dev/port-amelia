@@ -4,7 +4,7 @@ title: Rebrand & Style Guide
 date: 2016
 type: Design System
 client: WGSN
-template: article.jade
+template: article.pug
 tagline: A fresh look, and a live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.
 role: UX/UI design, front-end development
 clientname: WGSN

@@ -4,7 +4,7 @@ title: City by City App
 date: 2016
 type: Mobile App
 client: WGSN
-template: article.jade
+template: article.pug
 tagline: Editor-curated listings, travel guides and trip planning tools.
 role: UX/UI design
 clientname: WGSN

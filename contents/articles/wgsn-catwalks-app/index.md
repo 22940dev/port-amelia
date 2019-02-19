@@ -4,7 +4,7 @@ title: Catwalks App
 date: 2015–2016
 type: Mobile App
 client: WGSN
-template: article.jade
+template: article.pug
 tagline: From the runway to your phone, see the latest collections from New York, London, Milan and Paris.
 role: UX/UI design
 clientname: WGSN

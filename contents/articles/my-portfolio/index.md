@@ -3,7 +3,7 @@ id: my-portfolio
 title: My Portfolio
 date: 2012–2015
 type: Website
-template: article.jade
+template: article.pug
 role: UX/UI design, front-end development
 clientname: Myself
 websitelink: http://amelia-lewis.com/
