@@ -96,7 +96,8 @@ html(lang='en')
 
             .block-top-lg
               p.text-copyright Website designed and built by me. Last updated 
-                span#text-copyright--month
-                | &nbsp;#{ new Date().getDate() }, #{ new Date().getFullYear() }.
+                - var today = new Date();
+                - var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+                span  #{monthNames[today.getMonth()]} #{today.getDate()}, #{today.getFullYear()}.
     
     include partials/scripts.pug
