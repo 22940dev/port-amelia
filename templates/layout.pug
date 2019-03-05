@@ -98,7 +98,8 @@ html(lang='en')
               p.text-copyright Website designed and built by me. Last updated 
                 - var today = new Date();
                 - var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-                span  #{monthNames[today.getMonth()]} #{today.getDate()}, #{today.getFullYear()}.
+                span.text-copyright--time at #{today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })} 
+                span.text-copyright--date on #{monthNames[today.getMonth()]} #{today.getDate()}, #{today.getFullYear()}.
     
     //- Device.js
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js")
