@@ -100,4 +100,13 @@ html(lang='en')
                 - var monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
                 span  #{monthNames[today.getMonth()]} #{today.getDate()}, #{today.getFullYear()}.
     
-    include partials/scripts.pug
+    //- Device.js
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js")
+
+    //- Global site tag (gtag.js) - Google Analytics
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-50157111-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-50157111-1');
