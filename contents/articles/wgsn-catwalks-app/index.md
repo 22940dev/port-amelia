@@ -25,9 +25,9 @@ My role in the initial version of this project was wire framing and interaction 
 
 For what seemed like such a simple app, some complexities arose regarding the way a user interacts with their workspace (which is not currently mobile-friendly), and the way we displayed and filtered through the collections.
 
-![WGSN Catwalks App](wgsn-catwalks-app-4.jpg "WGSN Catwalks App" data-lightbox="wgsn-catwalks-app")
+![WGSN Catwalks App](wgsn-catwalks-app-4.jpg "WGSN Catwalks App")
 
-![WGSN Catwalks App](wgsn-catwalks-app-3.jpg "WGSN Catwalks App" data-lightbox="wgsn-catwalks-app")
+![WGSN Catwalks App](wgsn-catwalks-app-3.png "WGSN Catwalks App")
 
 Through the visual design process, I played more of backseat role, mostly providing feedback to our visual designer and helping him shape the overall look and feel of the product. We were trying to create a slightly different feel to the rest of the branding, aiming for something that felt higher-end and more exclusive. He achieved this with the darker color scheme, more use of the serif font and the full-bleed images.
 

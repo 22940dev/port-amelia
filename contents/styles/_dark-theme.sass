@@ -1,0 +1,21 @@
+@media (prefers-color-scheme: dark)
+  body
+    background: $xdk-grey
+    color: white
+
+  .grid-lines .row > *
+    border-color: rgba($white, 0.05)
+
+  #project-list
+    .project-list-item--title:after
+      background: darken($primary, 10%)
+
+    .project-list-item--coming-soon
+      .project-list-item--title:after
+        background: rgba($lt-grey, 0.2)
+
+  .link-highlight:before
+    background: darken($primary, 10%)
+
+  hr
+    background: rgba(darken($primary, 10%), 0.2)

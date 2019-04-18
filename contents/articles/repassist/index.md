@@ -22,4 +22,4 @@ The UX and user flow of this app was probably one of the more complicated I've d
 
 In terms of visual design, I chose to keep the interface as clean and simple as possible to balance out the content-heavy screens. I kept the colour palette largely to white and greys, only using Novartis' brand colours sparingly, always with the purpose of providing information to the user about their input in the form of error messages and buttons.
 
-![RepAssist](repassist-1.jpg "RepAssist")
+![RepAssist](repassist.png "RepAssist")
