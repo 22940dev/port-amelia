@@ -29,4 +29,4 @@ The biggest challenge I faced in the design of Meat Cuts was fitting the animal 
 
 Meat Cuts was built as a hybrid web app.
 
-![Meat Cuts](meat-cuts-2.jpg "Meat Cuts")
+![Meat Cuts](meat-cuts.png "Meat Cuts")

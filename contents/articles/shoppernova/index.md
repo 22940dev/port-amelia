@@ -22,4 +22,4 @@ I wanted to create a fresher, cleaner look for ShopperNova while keeping it most
 
 I kept the user flow and screen content much the same, but decided to reorganise various sections, such as the menu, so that they made more sense and improved usability. My actual role in the project essentially allowed me to user test the app to bits over two years, so I was able to gain a lot of insight into what things worked and what didn’t.
 
-![ShopperNova](shoppernova-1.jpg "ShopperNova")
+![ShopperNova](shoppernova.png "ShopperNova")
