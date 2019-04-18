@@ -44,10 +44,11 @@ h2, h3, ul, ol, p
 
 // SIZES
 h1
-  font-size: 4em
+  font-size: 2.4em
+  line-height: 1.3em
 
 h2
-  font-size: 2.4em
+  font-size: 1.8em
   line-height: 1.3em
 
 h3
@@ -62,11 +63,12 @@ p
 
 @media (min-width: $screen-sm-min)
   h1
-    font-size: 8em
-
-  h2
     font-size: 4em
     line-height: 1.1em
+
+  h2
+    font-size: 2.4em
+    line-height: 1.2em
 
   h3
     font-size: 1.4em
@@ -157,12 +159,13 @@ a
     content: ""
     display: block
     position: absolute
-    background: rgba($primary, 0.5)
+    background: $primary
     top: 60%
     bottom: 1px
     left: 4px
     right: 4px
-    transform: scale(1, 1)
+    opacity: 0.5
+    transform: translate3d(0, 0, 0) scale(1, 1)
     transform-origin: center bottom
     transition: all 400ms
     pointer-events: none
@@ -170,8 +173,8 @@ a
 
   .desktop &
     &:hover:before
-      background: $primary
-      transform: scale(1.2, 2.8)
+      opacity: 1
+      transform: translate3d(0, 0, 0) scale(1.2, 2.8)
 
   &:focus
     outline-color: rgba(black, 0.1)
