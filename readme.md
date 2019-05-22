@@ -2,12 +2,12 @@
 
 This site is build using the default [wintersmith](https://github.com/jnordberg/wintersmith) template.
 
-### To Run
+### Run
 ```
 wintersmith preview
 ```
 
-### To Build
+### Build
 ```
 wintersmith build
 ```
