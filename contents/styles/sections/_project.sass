@@ -1,24 +1,16 @@
 .project
-  .header-img
-    width: 100%
-    height: 260px
-    background: black no-repeat center
-    background-size: cover
+  // .header-img
+  //   width: 100%
+  //   height: 260px
+  //   background: black no-repeat center
+  //   background-size: cover
+  //
+  //   @media (min-width: $screen-sm-min)
+  //     height: 540px
 
-    @media (min-width: $screen-sm-min)
-      height: 540px
-
-  h3
+  h2:not(:first-child),
+  h3:not(:first-child)
     margin-top: $spacer-xl
-
-    &:first-child
-      margin-top: 0
-
-  .col-md-4 .link-highlight
-    margin-bottom: $spacer-sm
-
-  .project-content
-    padding: 80px 60px
 
   img
     width: 100%
@@ -27,9 +19,21 @@
       width: calc(100% + calc(4 * #{$spacer-xl}))
       margin-left: calc(-2 * #{$spacer-xl})
 
+  img + em
+    display: block
+    font-family: $sans-serif
+    @extend .text-grey
+    @extend .text-smaller
+    margin: calc(-1 * #{$spacer-lg}) auto $spacer-lg 0
+    font-style: normal
+    background: white
+
+    @media (min-width: $screen-sm-min)
+      margin: calc(-1 * #{$spacer-xl}) auto $spacer-xl 0
+
   p img
-    margin-top: $spacer-md
-    margin-bottom: $spacer-md
+    margin-top: $spacer-lg
+    margin-bottom: $spacer-lg
 
     @media (min-width: $screen-sm-min)
       margin-top: $spacer-xl
