@@ -7,10 +7,14 @@ block prepend title
   | #{ page.title + " - "}
 
 block content
+  header
+    .content-wrap
+      a(href="/") Back
+    
   article.article    
     section
       .content-wrap
-        .row.block-top-xl.block-bot-md
+        .row.block-top-lg.block-bot-md
           .col-xs-12
             h1(data-heading=page.metadata.client)= page.metadata.title
 
@@ -32,7 +36,7 @@ block content
                 if page.metadata.websitelink
                   p.text-tight: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;→
                   
-            .block!= typogr(page.html).typogrify()
+            .block-bot-xl!= typogr(page.html).typogrify()
 
           .col-xs-12.col-md-5.col-md-offset-1.col-lg-3.col-lg-offset-1
             .block-bot-md

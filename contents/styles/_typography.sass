@@ -159,7 +159,7 @@ a
     display: block
     position: absolute
     background: $primary
-    height: 40%
+    height: 2px
     bottom: 0px
     left: 4px
     right: 4px
@@ -173,7 +173,10 @@ a
   .desktop &
     &:hover:before
       opacity: 1
-      transform: translate3d(0, 0, 0) scale(1.2, 2.8)
+      height: 100%
+      left: 0
+      right: 0
+      // transform: translate3d(0, 0, 0) scale(2, 20)
 
   &:focus
     outline-color: rgba(black, 0.1)
