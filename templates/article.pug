@@ -10,29 +10,31 @@ block content
   article.article    
     section
       .content-wrap
-        .row.block-top-xl
-          .col-xs-12.col-md-8.col-md-offset-2.col-lg-5.col-lg-offset-3
+        .row.block-top-xl.block-bot-md
+          .col-xs-12
             h1(data-heading=page.metadata.client)= page.metadata.title
 
       //- .header-img(style="background-image: url('/work/" + page.metadata.id + "/project-tile.jpg')")
 
       .content-wrap
-        .row.block-ver-lg
-          .col-xs-12.col-md-4.col-lg-4
+        .row
+          .col-xs-12.col-md-6.col-lg-8
             if page.metadata.tagline
               .block-bot-md
                 p.project-tagline.text-bigger.text-tight= page.metadata.tagline
 
             if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
-              .block-bot-md
+              .block-bot-lg
                 if page.metadata.appstorelink
                   p.text-tight: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;→
                 if page.metadata.playstorelink
                   p.text-tight: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;→
                 if page.metadata.websitelink
                   p.text-tight: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;→
+                  
+            .block!= typogr(page.html).typogrify()
 
-          .col-xs-12.col-md-2.col-md-offset-2.col-lg-2.col-lg-offset-3.first-md
+          .col-xs-12.col-md-5.col-md-offset-1.col-lg-3.col-lg-offset-1
             .block-bot-md
               h4.text-grey Project Type
               p.text-tight= page.metadata.type
@@ -48,6 +50,3 @@ block content
             if page.metadata.role
               h4.text-grey Involvement
               p.text-tight= page.metadata.role
-
-        .row.block-ver-xl
-          .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3!= typogr(page.html).typogrify()
