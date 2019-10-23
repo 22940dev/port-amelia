@@ -9,7 +9,7 @@ block prepend title
 block content
   header
     .content-wrap
-      a(href="/") Back
+      p: a.link-highlight(href="/") ← Back
     
   article.article    
     section
@@ -30,11 +30,11 @@ block content
             if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
               .block-bot-lg
                 if page.metadata.appstorelink
-                  p.text-tight: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;→
+                  p.text-tight: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;↗
                 if page.metadata.playstorelink
-                  p.text-tight: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;→
+                  p.text-tight: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;↗
                 if page.metadata.websitelink
-                  p.text-tight: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;→
+                  p.text-tight: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;↗
                   
             .block-bot-xl!= typogr(page.html).typogrify()
 
