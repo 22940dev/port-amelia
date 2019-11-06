@@ -24,7 +24,7 @@ block content
               .project-list-item.project-list-item--coming-soon(id=id)
                 h3.project-list-item--title= article.title
                 p.project-list-item--info
-                  span= moment.utc(article.date).format('DD MMMM YYYY')
+                  span= moment.utc(article.date).format('YYYY')
                   if article.metadata.client
                     span &nbsp;&middot;&nbsp;
                     span= article.metadata.client
@@ -35,7 +35,7 @@ block content
               a.project-list-item(id=id href=article.url)
                 h3.project-list-item--title= article.title
                 p.project-list-item--info
-                  span= moment.utc(article.date).format('DD MMMM YYYY')
+                  span= moment.utc(article.date).format('YYYY')
                   if article.metadata.client
                     span &nbsp;&middot;&nbsp;
                     span= article.metadata.client

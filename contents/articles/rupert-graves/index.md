@@ -1,13 +1,10 @@
 ---
-id: rupert-graves
 title: Rupert Graves
 date: 2019-02-01
 type: Website
 template: article.pug
 tagline: A digital brand for the international actor.
-role: UX/UI design, development
-clientname: Rupert Graves
-clientlink: http://rupert-graves.com/
+role: Web Design, Development
 websitelink: http://rupert-graves.com/
 ---
 

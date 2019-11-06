@@ -1,13 +1,11 @@
 ---
-id: wgsn-city-by-city-app
 title: City by City App
 date: 2016-06-01
 type: Mobile App
 client: WGSN
 template: article.pug
 tagline: Editor-curated listings, travel guides and trip planning tools.
-role: UX/UI design
-clientname: WGSN
+role: Product Design
 clientlink: http://www.wgsn.com
 appstorelink: https://itunes.apple.com/us/app/city-by-city/id451178706?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.citybycity

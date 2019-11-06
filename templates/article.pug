@@ -9,7 +9,7 @@ block prepend title
 block content
   header.block-ver-md
     .content-wrap
-      p: a.link-highlight(href="/") ← Back
+      p.block-top-md: a.link-highlight(href="/") ← Back
     
   article.article    
     section.block-top-lg
@@ -17,8 +17,6 @@ block content
         .row
           .col-xs-12
             h1= page.title
-
-      //- .header-img(style="background-image: url('/work/" + page.metadata.id + "/project-tile.jpg')")
 
       .content-wrap
         .row
@@ -45,15 +43,13 @@ block content
               p= page.metadata.type
             
             .block-bot-md
-              h4.text-grey Date
-              p= moment.utc(page.date).format('DD MMMM YYYY')
+              h4.text-grey Year
+              p= moment.utc(page.date).format('YYYY')
 
-            .block-bot-md
-              h4.text-grey Client
-              p
-                .link-squiggle
-                  a(href=page.metadata.clientlink target="_blank")= page.metadata.client
-                  include partials/squiggles/client
+            if page.metadata.client
+              .block-bot-md
+                h4.text-grey Client
+                p: a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.client
 
             if page.metadata.role
               h4.text-grey Role

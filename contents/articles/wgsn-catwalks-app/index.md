@@ -1,13 +1,11 @@
 ---
-id: wgsn-catwalks-app
 title: Catwalks App
 date: 2016-01-01
 type: Mobile App
 client: WGSN
 template: article.pug
 tagline: From the runway to your phone, see the latest collections from New York, London, Milan and Paris.
-role: UX/UI design
-clientname: WGSN
+role: Product Design
 clientlink: http://www.wgsn.com
 appstorelink: https://itunes.apple.com/us/app/wgsn-catwalks/id1041086526?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.wgsn.catwalkgallery&hl=en

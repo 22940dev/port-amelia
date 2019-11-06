@@ -1,13 +1,11 @@
 ---
-id: shoppernova
 title: ShopperNova
 date: 2014-04-01
 type: Mobile App
 client: Nova FM
 template: article.pug
 tagline: An undisputed leader in mobile marketing, location-based targeting and data-collection.
-role: UX/UI design
-clientname: Nova FM
+role: Product Design
 clientlink: http://www.nova969.com.au/nova969
 ---
 

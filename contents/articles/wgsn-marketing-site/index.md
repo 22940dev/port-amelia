@@ -1,18 +1,14 @@
 ---
-id: wgsn-public-site
-title: WGSN Public Site
+title: WGSN Marketing Site
 date: 2016-06-01
 type: Website
 client: WGSN
 template: article.pug
 tagline: A new public face for the world's leading trend authority.
-role: UX/UI design, prototype development
-clientname: WGSN
+role: UX/UI Design, Prototype Development
 clientlink: http://www.wgsn.com
 websitelink: http://www.wgsn.com
 ---
-
-### About
 
 When I started at <a href="http://wgsn.com/" target="_blank" class="link-highlight">WGSN</a>, the product and marketing teams were already well into the redesign of their non-subscriber site. The goal was to refresh the look of the site and pull together the various product sites under the new "single platform" approach.
 

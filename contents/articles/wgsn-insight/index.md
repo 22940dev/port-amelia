@@ -1,13 +1,11 @@
 ---
-id: wgsn-insight
 title: Insight
 date: 2016-10-01
 type: Website
 client: WGSN
 template: article.pug
 tagline: A new product for WGSN, providing the C-suite and marketers with high-level information on future trends.
-role: UX/UI design, prototype development
-clientname: WGSN
+role: Product Design, Prototype Development
 clientlink: http://www.wgsn.com
 websitelink: https://www.wgsn.com/insight/#/home
 ---

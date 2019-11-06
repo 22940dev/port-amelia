@@ -1,13 +1,11 @@
 ---
-id: wgsn-brand-guide
 title: Rebrand & Style Guide
 date: 2016-01-01
 type: Design System
 client: WGSN
 template: article.pug
 tagline: A fresh look, and a live inventory of UI components, brand guidelines, brand assets, code snippets and developer guidelines for WGSN products.
-role: UX/UI design, front-end development
-clientname: WGSN
+role: Product Design, Front-End Development
 clientlink: http://www.wgsn.com
 websitelink: http://wgsn-styleguide.amelia-lewis.com/
 ---
