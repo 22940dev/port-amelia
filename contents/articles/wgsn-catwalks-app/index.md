@@ -1,7 +1,7 @@
 ---
 id: wgsn-catwalks-app
 title: Catwalks App
-date: 2015–2016
+date: 2016-01-01
 type: Mobile App
 client: WGSN
 template: article.pug

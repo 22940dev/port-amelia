@@ -1,7 +1,7 @@
 ---
 id: wgsn-brand-guide
 title: Rebrand & Style Guide
-date: 2016
+date: 2016-01-01
 type: Design System
 client: WGSN
 template: article.pug

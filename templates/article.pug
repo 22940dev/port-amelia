@@ -7,16 +7,16 @@ block prepend title
   | #{ page.title + " - "}
 
 block content
-  header
+  header.block-ver-md
     .content-wrap
       p: a.link-highlight(href="/") ← Back
     
   article.article    
-    section
+    section.block-top-lg
       .content-wrap
-        .row.block-top-lg.block-bot-md
+        .row
           .col-xs-12
-            h1(data-heading=page.metadata.client)= page.metadata.title
+            h1= page.title
 
       //- .header-img(style="background-image: url('/work/" + page.metadata.id + "/project-tile.jpg')")
 
@@ -24,33 +24,37 @@ block content
         .row
           .col-xs-12.col-md-6.col-lg-8
             if page.metadata.tagline
-              .block-bot-md
-                p.project-tagline.text-bigger.text-tight= page.metadata.tagline
-
-            if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
               .block-bot-lg
-                if page.metadata.appstorelink
-                  p.text-tight: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;↗
-                if page.metadata.playstorelink
-                  p.text-tight: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;↗
-                if page.metadata.websitelink
-                  p.text-tight: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;↗
+                p.project-tagline.text-bigger.text-tight= page.metadata.tagline
                   
             .block-bot-xl!= typogr(page.html).typogrify()
 
           .col-xs-12.col-md-5.col-md-offset-1.col-lg-3.col-lg-offset-1
+            if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
+              .block-bot-md
+                h4.text-grey Link
+                if page.metadata.appstorelink
+                  p: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;↗
+                if page.metadata.playstorelink
+                  p: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;↗
+                if page.metadata.websitelink
+                  p: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;↗
+            
             .block-bot-md
-              h4.text-grey Project Type
-              p.text-tight= page.metadata.type
+              h4.text-grey Type
+              p= page.metadata.type
             
             .block-bot-md
               h4.text-grey Date
-              p.text-tight= page.metadata.date
+              p= moment.utc(page.date).format('DD MMMM YYYY')
 
             .block-bot-md
               h4.text-grey Client
-              p.text-tight: a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.clientname
+              p
+                .link-squiggle
+                  a(href=page.metadata.clientlink target="_blank")= page.metadata.client
+                  include partials/squiggles/client
 
             if page.metadata.role
-              h4.text-grey Involvement
+              h4.text-grey Role
               p.text-tight= page.metadata.role

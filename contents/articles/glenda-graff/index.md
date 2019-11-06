@@ -1,10 +1,10 @@
 ---
 id: glenda-graff
 title: Glenda Graff
-date: 2013–2014
+date: 2014-01-01
 type: Website
 template: article.pug
-tagline: An elite event planner for Sydney's eastern suburbs.
+tagline: A website for an elite event planner in Sydney's eastern suburbs.
 role: UX/UI design, development
 clientname: Glenda Graff
 clientlink: http://glendagraff.com.au/

@@ -1,7 +1,7 @@
 ---
 id: wework-dot-com
 title: WeWork.com
-date: 2017–18
+date: 2018-01-01
 type: Website
 client: WeWork
 template: article.pug
@@ -10,6 +10,7 @@ role: UX/UI design, prototype development
 clientname: WeWork
 clientlink: http://www.wework.com
 websitelink: http://www.wework.com
+comingsoon: true
 ---
 
 Coming Soon

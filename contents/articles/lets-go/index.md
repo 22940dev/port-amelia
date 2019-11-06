@@ -2,6 +2,8 @@
 id: lets-go
 title: Let's Go
 template: article.pug
+date: 2014-10-01
+client: Novartis
 role: UX/UI design, front-end development
 clientname: Novartis
 clientlink: https://www.novartis.com/

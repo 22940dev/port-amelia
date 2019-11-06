@@ -1,7 +1,7 @@
 ---
 id: wework-guest-wifi
 title: WeWork Guest Wi-Fi
-date: 2017
+date: 2017-01-01
 type: Website
 client: WeWork
 template: article.pug

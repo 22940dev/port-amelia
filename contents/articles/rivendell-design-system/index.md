@@ -1,7 +1,7 @@
 ---
 id: rivendell-design-system
 title: Rivendell Design System
-date: 2017–18
+date: 2017-10-01
 type: Design System
 client: WeWork
 template: article.pug

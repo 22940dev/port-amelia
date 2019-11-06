@@ -2,6 +2,8 @@
 id: momo-brasserie
 title: Momo Brasserie
 template: article.pug
+date: 2014-10-01
+type: Website
 role: UX/UI design, development
 clientname: Momo Brasserie
 clientlink: http://momobrasserie.com.au/

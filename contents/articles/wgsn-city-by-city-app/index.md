@@ -1,7 +1,7 @@
 ---
 id: wgsn-city-by-city-app
 title: City by City App
-date: 2016
+date: 2016-06-01
 type: Mobile App
 client: WGSN
 template: article.pug

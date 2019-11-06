@@ -1,7 +1,7 @@
 ---
 id: wgsn-public-site
 title: WGSN Public Site
-date: 2015
+date: 2016-06-01
 type: Website
 client: WGSN
 template: article.pug

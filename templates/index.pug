@@ -10,7 +10,32 @@ block content
         .col-xs-12.col-lg-10
           h1.masthead--intro
             | Amelia Lewis is a product designer currently working on design systems at 
-            a.link-highlight(href="http://squarespace.com", target="_blank") Squarespace
+            .link-squiggle
+              a(href="http://squarespace.com", target="_blank") Squarespace
+              include partials/squiggles/squarespace
             | .
   
-  include partials/project-list.pug
+  section#project-list.block-bot-xl
+    .content-wrap
+      .row
+        .col-xs-12
+          each article in articles    
+            if article.metadata.comingsoon
+              .project-list-item.project-list-item--coming-soon(id=id)
+                h3.project-list-item--title= article.title
+                p.project-list-item--info
+                  span= moment.utc(article.date).format('DD MMMM YYYY')
+                  if article.metadata.client
+                    span &nbsp;&middot;&nbsp;
+                    span= article.metadata.client
+                  span &nbsp;&middot;&nbsp;
+                  span Case Study Coming Soon
+
+            else
+              a.project-list-item(id=id href=article.url)
+                h3.project-list-item--title= article.title
+                p.project-list-item--info
+                  span= moment.utc(article.date).format('DD MMMM YYYY')
+                  if article.metadata.client
+                    span &nbsp;&middot;&nbsp;
+                    span= article.metadata.client

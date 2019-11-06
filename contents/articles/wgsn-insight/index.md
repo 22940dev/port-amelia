@@ -1,7 +1,7 @@
 ---
 id: wgsn-insight
 title: Insight
-date: 2016
+date: 2016-10-01
 type: Website
 client: WGSN
 template: article.pug

@@ -1,7 +1,7 @@
 ---
 id: wgsn-workspace
 title: Workspace & Image Library
-date: 2015–2016
+date: 2016-04-01
 type: Web app
 client: WGSN
 template: article.pug
