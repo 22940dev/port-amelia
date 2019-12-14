@@ -1,7 +1,7 @@
 extends layout.pug
 
 block append vars
-  - bodyclass = 'project'
+  - bodyclass = 'article'
 
 block prepend title
   | #{ page.title + " - "}
@@ -9,7 +9,7 @@ block prepend title
 block content
   header.block-ver-md
     .content-wrap
-      p.block-top-md: a.link-highlight(href="/") ← Back
+      p.block-top-md: a.link-highlight(href="/") Back
     
   article.article    
     section.block-top-lg
@@ -25,32 +25,33 @@ block content
               .block-bot-lg
                 p.project-tagline.text-bigger.text-tight= page.metadata.tagline
                   
-            .block-bot-xl!= typogr(page.html).typogrify()
+            .article--content.block-bot-xl!= typogr(page.html).typogrify()
 
           .col-xs-12.col-md-5.col-md-offset-1.col-lg-3.col-lg-offset-1
-            if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
+            .article--info
+              if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
+                .block-bot-md
+                  h4.text-grey Link
+                  if page.metadata.appstorelink
+                    p: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;↗
+                  if page.metadata.playstorelink
+                    p: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;↗
+                  if page.metadata.websitelink
+                    p: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;↗
+              
               .block-bot-md
-                h4.text-grey Link
-                if page.metadata.appstorelink
-                  p: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;↗
-                if page.metadata.playstorelink
-                  p: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;↗
-                if page.metadata.websitelink
-                  p: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;↗
-            
-            .block-bot-md
-              h4.text-grey Type
-              p= page.metadata.type
-            
-            .block-bot-md
-              h4.text-grey Year
-              p= moment.utc(page.date).format('YYYY')
-
-            if page.metadata.client
+                h4.text-grey Type
+                p= page.metadata.type
+              
               .block-bot-md
-                h4.text-grey Client
-                p: a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.client
+                h4.text-grey Year
+                p= moment.utc(page.date).format('YYYY')
 
-            if page.metadata.role
-              h4.text-grey Role
-              p.text-tight= page.metadata.role
+              if page.metadata.client
+                .block-bot-md
+                  h4.text-grey Client
+                  p: a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.client
+
+              if page.metadata.role
+                h4.text-grey Role
+                p.text-tight= page.metadata.role

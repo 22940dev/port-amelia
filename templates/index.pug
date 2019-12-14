@@ -15,12 +15,34 @@ block content
               include partials/squiggles/squarespace
             | .
   
-  section#project-list.block-bot-xl
+  section.block-bot-xl
+    .content-wrap
+      .row
+        .col-xs-12
+          each article in articles 
+            if article.metadata.featured
+              .project-list-item
+                .project-list-item--image
+                .row
+                  .col-xs-12.col-lg-6
+                    .link-squiggle
+                      a(id=id href=article.url): h3.project-list-item--title= article.title
+                      include partials/squiggles/#{id}
+                    p.project-list-item--info
+                      span= moment.utc(article.date).format('YYYY')
+                      if article.metadata.client
+                        span &nbsp;&middot;&nbsp;
+                        span= article.metadata.client
+                  .col-xs-12.col-lg-6
+                    p= article.metadata.tagline
+
+  
+  section.block-bot-xl
     .content-wrap
       .row
         .col-xs-12
           each article in articles    
-            if article.metadata.comingsoon
+            if article.metadata.comingsoon && !article.metadata.featured
               .project-list-item.project-list-item--coming-soon(id=id)
                 h3.project-list-item--title= article.title
                 p.project-list-item--info
@@ -31,7 +53,7 @@ block content
                   span &nbsp;&middot;&nbsp;
                   span Case Study Coming Soon
 
-            else
+            else if !article.metadata.comingsoon && !article.metadata.featured
               a.project-list-item(id=id href=article.url)
                 h3.project-list-item--title= article.title
                 p.project-list-item--info

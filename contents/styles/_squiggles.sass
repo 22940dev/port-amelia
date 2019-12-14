@@ -1,0 +1,43 @@
+.link-squiggle
+  display: inline-block
+  position: relative
+  cursor: pointer
+
+  .squiggle
+    position: absolute
+    z-index: -1
+    stroke: $lt-primary
+    stroke-width: 12
+    stroke-linecap: round
+    stroke-linejoin: round
+    transform: scale(0.68)
+    transform-origin: left top
+    transition: filter 500ms linear 0ms
+
+    &--squarespace
+      top: -10px
+      left: -5px
+      stroke-dasharray: 700
+      stroke-dashoffset: 700
+      transition: all 800ms
+      transition-timing-function: linear
+
+    &--stipple-design-system
+      top: 13px
+      left: -11px
+
+    &--newsroom-editorial-tools
+      top: 0
+      left: -14px
+
+    &.squiggle-client
+      top: 2px
+      left: -6px
+
+    @media (min-width: $screen-sm-min)
+      transform: scale(1)
+
+  &:hover
+    .squiggle
+      stroke-dashoffset: 0
+      // filter: hue-rotate(270deg)

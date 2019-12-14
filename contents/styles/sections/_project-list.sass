@@ -1,67 +1,41 @@
-#project-list
-  .project-list-item
-    display: block
+.project-list-item
+  display: block
+  position: relative
+  transform: translate3d(0, 0, 0)
+  transition: all 400ms
+  margin: 0 0 $spacer-xl
+  cursor: pointer
+
+  &--image
+    width: 100%
+    height: 560px
+    background: $lt-grey
+    margin: 0 0 $spacer-lg
+
+  &--title
     position: relative
-    transform: translate3d(0, 0, 0)
-    transition: all 400ms
-    margin: 0 0 $spacer-xl
-    cursor: pointer
+    display: inline-block
+  &--info
+    font-family: $monospace
+    @extend .text-grey
 
-    &:after
-      content: "→"
-      position: absolute
-      top: 0
-      right: $spacer-mlg
-      font-size: 1.4em
-      opacity: 0
-      transform: translate3d($spacer-mlg, 0, 0)
-      transition: all 400ms
+  &--coming-soon
+    pointer-events: none
 
-    &--title
-      position: relative
-      display: inline-block
-
-      &:after
-        content: ""
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        background: $primary
-        transform: translate3d(0, 0, 0) scale(0, 1)
-        transform-origin: center left
-        transition: all 400ms
-        z-index: -1
-
-    &--info
-      font-family: $monospace
+    .project-list-item--title
       @extend .text-grey
 
-    &--coming-soon
-      pointer-events: none
+      &:after
+        background: rgba($lt-grey, 0.5)
+        left: calc(-1 * #{$spacer-sm})
+        right: calc(-1 * #{$spacer-sm})
+        transform: scale(1, 1)
 
-      .project-list-item--title
-        @extend .text-grey
+  .desktop &
+    &:not(.project-list-item--coming-soon):hover
+      // TODO
 
-        &:after
-          background: rgba($lt-grey, 0.5)
-          left: calc(-1 * #{$spacer-sm})
-          right: calc(-1 * #{$spacer-sm})
-          transform: scale(1, 1)
-
-    .desktop &
-      &:not(.project-list-item--coming-soon):hover
-        transform: translate3d($spacer-sm, 0, 0)
-
-        &:after
-          opacity: 1
-          transform: translate3d(0, 0, 0)
-
-        .project-list-item--title:after
-          transform: translate3d(calc(-1 * #{$spacer-mlg}), 0, 0) scale(1, 1)
-
-    &:focus
-      outline-color: rgba(black, 0.1)
-      outline-width: 1px
-      outline-offset: -3px
+  &:focus
+    outline-color: rgba(black, 0.1)
+    outline-width: 1px
+    outline-offset: -3px
