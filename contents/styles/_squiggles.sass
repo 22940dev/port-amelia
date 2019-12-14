@@ -7,7 +7,7 @@
     position: absolute
     z-index: -1
     stroke: $lt-primary
-    stroke-width: 12
+    stroke-width: 8
     stroke-linecap: round
     stroke-linejoin: round
     transform: scale(0.68)
@@ -19,23 +19,35 @@
       left: -5px
       stroke-dasharray: 700
       stroke-dashoffset: 700
-      transition: all 800ms
-      transition-timing-function: linear
+      transition: stroke-dashoffset 800ms linear 0ms
 
     &--stipple-design-system
-      top: 13px
-      left: -11px
+      top: -16px
+      left: -35px
+      stroke-dasharray: 850
+      stroke-dashoffset: 850
+      transition: stroke-dashoffset 400ms linear 0ms
 
     &--newsroom-editorial-tools
       top: 0
       left: -14px
+      stroke-dasharray: 420
+      stroke-dashoffset: 420
+      transition: stroke-dashoffset 400ms linear 0ms
 
-    &.squiggle-client
-      top: 2px
-      left: -6px
+    &--rivendell-design-system
+      top: 11px
+      left: -20px
+      stroke-dasharray: 420
+      stroke-dashoffset: 420
+      transition: stroke-dashoffset 400ms linear 0ms
 
     @media (min-width: $screen-sm-min)
       transform: scale(1)
+
+  .mobile &
+    .squiggle
+      stroke-dashoffset: 0
 
   &:hover
     .squiggle

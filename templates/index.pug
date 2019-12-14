@@ -1,4 +1,5 @@
 extends layout.pug
+include partials/squiggles
 
 block append vars
   - bodyclass = 'index'
@@ -12,7 +13,7 @@ block content
             | Amelia Lewis is a product designer currently working on design systems at 
             .link-squiggle
               a(href="http://squarespace.com", target="_blank") Squarespace
-              include partials/squiggles/squarespace
+              +squiggle('squarespace')
             | .
   
   section.block-bot-xl
@@ -26,8 +27,8 @@ block content
                 .row
                   .col-xs-12.col-lg-6
                     .link-squiggle
-                      a(id=id href=article.url): h3.project-list-item--title= article.title
-                      include partials/squiggles/#{id}
+                      a(href=article.url): h3.project-list-item--title= article.title
+                      +squiggle(article.title.replace(/\s+/g, '-').toLowerCase())
                     p.project-list-item--info
                       span= moment.utc(article.date).format('YYYY')
                       if article.metadata.client
@@ -54,8 +55,10 @@ block content
                   span Case Study Coming Soon
 
             else if !article.metadata.comingsoon && !article.metadata.featured
-              a.project-list-item(id=id href=article.url)
-                h3.project-list-item--title= article.title
+              .project-list-item
+                .link-squiggle
+                  a(href=article.url): h3.project-list-item--title= article.title
+                  +squiggle(article.title.replace(/\s+/g, '-').toLowerCase())
                 p.project-list-item--info
                   span= moment.utc(article.date).format('YYYY')
                   if article.metadata.client

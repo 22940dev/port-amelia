@@ -21,15 +21,10 @@
 
   &--coming-soon
     pointer-events: none
+    cursor: not-allowed
 
     .project-list-item--title
       @extend .text-grey
-
-      &:after
-        background: rgba($lt-grey, 0.5)
-        left: calc(-1 * #{$spacer-sm})
-        right: calc(-1 * #{$spacer-sm})
-        transform: scale(1, 1)
 
   .desktop &
     &:not(.project-list-item--coming-soon):hover
