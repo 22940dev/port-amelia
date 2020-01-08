@@ -8,6 +8,7 @@ tagline: The next generation in field force mobility.
 role: UX/UI Design, Front-End Development
 clientlink: http://www.imperial-tobacco.com/
 appstorelink: https://itunes.apple.com/us/app/field-in-touch/id583253185?mt=8
+hidden: true
 ---
 
 Field InTouch is a versatile, modular platform providing sales forces with a single application for their core needs in the field. It is an iPad app and platform developed by <a href="http://creativelicence.com.au/" target="_blank" class="link-highlight">CLD</a>, and I regularly produced interactive slidedecks/mini-apps that are housed within in the app while I was there.

@@ -6,6 +6,7 @@ template: article.pug
 tagline: A website for an elite event planner in Sydney's eastern suburbs.
 role: Web Design, Development
 websitelink: http://glendagraff.com.au/
+hidden: true
 ---
 
 Glenda Graff is an exclusive wedding and event planner based in Sydney's eastern suburbs. She caters to high end clients and needed a website that reflected the aesthetic of her events and was able to showcase large amounts of imagery.

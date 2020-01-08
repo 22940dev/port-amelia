@@ -1,5 +1,5 @@
 ---
-title: Workspace & Image Library
+title: Workspace and Image Library
 date: 2016-04-01
 type: Web app
 client: WGSN

@@ -1,5 +1,5 @@
 ---
-title: Rebrand & Style Guide
+title: Rebrand and Style Guide
 date: 2016-01-01
 type: Design System
 client: WGSN

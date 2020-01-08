@@ -43,8 +43,8 @@ block content
       .row
         .col-xs-12
           each article in articles    
-            if article.metadata.comingsoon && !article.metadata.featured
-              .project-list-item.project-list-item--coming-soon(id=id)
+            if article.metadata.comingsoon && !article.metadata.featured && !article.metadata.hidden
+              .project-list-item.project-list-item--coming-soon
                 h3.project-list-item--title= article.title
                 p.project-list-item--info
                   span= moment.utc(article.date).format('YYYY')
@@ -54,7 +54,7 @@ block content
                   span &nbsp;&middot;&nbsp;
                   span Case Study Coming Soon
 
-            else if !article.metadata.comingsoon && !article.metadata.featured
+            else if !article.metadata.comingsoon && !article.metadata.featured && !article.metadata.hidden
               .project-list-item
                 .link-squiggle
                   a(href=article.url): h3.project-list-item--title= article.title

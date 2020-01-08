@@ -7,6 +7,7 @@ template: article.pug
 tagline: An app for Psoriasis patients to track their symptoms.
 role: Product Design
 clientlink: https://www.novartis.com/
+hidden: true
 ---
 
 Let's Go is an iOS app I'm currently working on. It's a place for Psoriasis patents who use the drug Cosentyx to find support and information about their condition.
