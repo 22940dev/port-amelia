@@ -8,9 +8,12 @@
 
   &--image
     width: 100%
-    height: 560px
+    height: 320px
     background: $lt-grey
     margin: 0 0 $spacer-lg
+
+    @media (min-width: $screen-sm-min)
+      height: 560px
 
   &--title
     position: relative
