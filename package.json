@@ -8,6 +8,7 @@
     "underscore": "1.4.x",
     "wintersmith": "^2.5.0",
     "wintersmith-coffee": "^0.2.2",
+    "wintersmith-livereload": "^1.0.1",
     "wintersmith-sassy": "^1.2.0"
   },
   "repository": "none"

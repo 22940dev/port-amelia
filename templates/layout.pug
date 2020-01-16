@@ -8,6 +8,8 @@ html(lang='en')
       meta(charset='utf-8')
       meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
       meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(charset='utf-8')
+      | !{ livereloadScript }
       
       title
         block title
@@ -55,8 +57,16 @@ html(lang='en')
       meta(name="msapplication-config", content="/styles/img/browserconfig.xml")
 
   body(class=bodyclass)    
-    #content
-      block content
+    header
+      .content-wrap
+        nav
+          .nav-item: a(href="/") Home
+          .nav-item: a(href="/about.html") About
+          .nav-item: a(href="/work.html") Work
+    
+    #content.block-ver-lg
+      .content-wrap
+        block content
     
     footer
       .content-wrap

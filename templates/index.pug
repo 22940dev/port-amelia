@@ -5,62 +5,59 @@ block append vars
   - bodyclass = 'index'
 
 block content
-  section.block-ver-xl
-    .content-wrap
-      .row
-        .col-xs-12.col-lg-10
-          h1.masthead--intro
-            | Amelia Lewis is a product designer currently working on design systems at 
-            .link-squiggle
-              a(href="http://squarespace.com", target="_blank") Squarespace
-              +squiggle('squarespace')
-            | .
+  section.block-top-lg.block-bot-xl
+    .row
+      .col-xs-12.col-lg-10
+        h1.masthead--intro
+          | Amelia Lewis is a product designer currently working on design systems at 
+          .link-squiggle
+            a(href="http://squarespace.com", target="_blank") Squarespace
+            +squiggle('squarespace')
+          | .
   
   section.block-bot-xl
-    .content-wrap
-      .row
-        .col-xs-12
-          each article in articles 
-            if article.metadata.featured
-              .project-list-item
-                .project-list-item--image
-                .row
-                  .col-xs-12.col-lg-6
-                    .link-squiggle
-                      a(href=article.url): h3.project-list-item--title= article.title
-                      +squiggle(article.title.replace(/\s+/g, '-').toLowerCase())
-                    p.project-list-item--info
-                      span= moment.utc(article.date).format('YYYY')
-                      if article.metadata.client
-                        span &nbsp;&middot;&nbsp;
-                        span= article.metadata.client
-                  .col-xs-12.col-lg-6
-                    p= article.metadata.tagline
+    .row
+      .col-xs-12
+        each article in articles 
+          if article.metadata.featured
+            .project-list-item
+              .project-list-item--image
+              .row
+                .col-xs-12.col-lg-6
+                  .link-squiggle
+                    a(href=article.url): h3.project-list-item--title= article.title
+                    +squiggle(article.title.replace(/\s+/g, '-').toLowerCase())
+                  p.project-list-item--info
+                    span= moment.utc(article.date).format('YYYY')
+                    if article.metadata.client
+                      span &nbsp;&middot;&nbsp;
+                      span= article.metadata.client
+                .col-xs-12.col-lg-6
+                  p= article.metadata.tagline
 
   
   section.block-bot-xl
-    .content-wrap
-      .row
-        .col-xs-12
-          each article in articles    
-            if article.metadata.comingsoon && !article.metadata.featured && !article.metadata.hidden
-              .project-list-item.project-list-item--coming-soon
-                h3.project-list-item--title= article.title
-                p.project-list-item--info
-                  span= moment.utc(article.date).format('YYYY')
-                  if article.metadata.client
-                    span &nbsp;&middot;&nbsp;
-                    span= article.metadata.client
+    .row
+      .col-xs-12
+        each article in articles    
+          if article.metadata.comingsoon && !article.metadata.featured && !article.metadata.hidden
+            .project-list-item.project-list-item--coming-soon
+              h3.project-list-item--title= article.title
+              p.project-list-item--info
+                span= moment.utc(article.date).format('YYYY')
+                if article.metadata.client
                   span &nbsp;&middot;&nbsp;
-                  span Case Study Coming Soon
+                  span= article.metadata.client
+                span &nbsp;&middot;&nbsp;
+                span Case Study Coming Soon
 
-            else if !article.metadata.comingsoon && !article.metadata.featured && !article.metadata.hidden
-              .project-list-item
-                .link-squiggle
-                  a(href=article.url): h3.project-list-item--title= article.title
-                  +squiggle(article.title.replace(/\s+/g, '-').toLowerCase())
-                p.project-list-item--info
-                  span= moment.utc(article.date).format('YYYY')
-                  if article.metadata.client
-                    span &nbsp;&middot;&nbsp;
-                    span= article.metadata.client
+          else if !article.metadata.comingsoon && !article.metadata.featured && !article.metadata.hidden
+            .project-list-item
+              .link-squiggle
+                a(href=article.url): h3.project-list-item--title= article.title
+                +squiggle(article.title.replace(/\s+/g, '-').toLowerCase())
+              p.project-list-item--info
+                span= moment.utc(article.date).format('YYYY')
+                if article.metadata.client
+                  span &nbsp;&middot;&nbsp;
+                  span= article.metadata.client
