@@ -5,9 +5,51 @@ block append vars
   - bodyclass = 'work'
 
 block content
+  - var articles = env.helpers.getArticles(contents);
+
   section.block-bot-xl
     .row
       .col-xs-12
-        p hello
         each article in articles 
-          p hi
+          if article.metadata.featured
+            .project-list-item
+              .project-list-item--image
+              .row
+                .col-xs-12.col-lg-6
+                  .link-squiggle
+                    a(href=article.url): h3.project-list-item--title= article.title
+                    +squiggle(article.title.replace(/\s+/g, '-').toLowerCase())
+                  p.project-list-item--info
+                    span= moment.utc(article.date).format('YYYY')
+                    if article.metadata.client
+                      span &nbsp;&middot;&nbsp;
+                      span= article.metadata.client
+                .col-xs-12.col-lg-6
+                  p= article.metadata.tagline
+
+  
+  section.block-bot-xl
+    .row
+      .col-xs-12
+        each article in articles    
+          if article.metadata.comingsoon && !article.metadata.featured && !article.metadata.hidden
+            .project-list-item.project-list-item--coming-soon
+              h3.project-list-item--title= article.title
+              p.project-list-item--info
+                span= moment.utc(article.date).format('YYYY')
+                if article.metadata.client
+                  span &nbsp;&middot;&nbsp;
+                  span= article.metadata.client
+                span &nbsp;&middot;&nbsp;
+                span Case Study Coming Soon
+
+          else if !article.metadata.comingsoon && !article.metadata.featured && !article.metadata.hidden
+            .project-list-item
+              .link-squiggle
+                a(href=article.url): h3.project-list-item--title= article.title
+                +squiggle(article.title.replace(/\s+/g, '-').toLowerCase())
+              p.project-list-item--info
+                span= moment.utc(article.date).format('YYYY')
+                if article.metadata.client
+                  span &nbsp;&middot;&nbsp;
+                  span= article.metadata.client
