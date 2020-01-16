@@ -1,8 +1,12 @@
 html
   margin: 0
   padding: 0
+  height: 100%
 
 body
+  display: flex
+  flex-direction: column
+  height: 100%
   background: $white
   color: $black
   position: relative
@@ -26,6 +30,7 @@ body
 #content
   position: relative
   z-index: 10
+  flex-grow: 1
 
 section
   position: relative
