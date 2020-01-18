@@ -1,22 +1,15 @@
 ---
-id: field-intouch
 title: Field InTouch
-date: 2013–2015
-type: Tablet App
-client: CLD
+date: 2015-01-01
+type: iPad App
+client: Imperial Tobacco
 template: article.pug
 tagline: The next generation in field force mobility.
-role: UX/UI design, front-end development
-clientname: Imperial Tobacco
+role: UX/UI Design, Front-End Development
 clientlink: http://www.imperial-tobacco.com/
-clientname2: Novartis
-clientlink2: https://www.novartis.com/
-clientname3: Suntory
-clientlink3: http://www.suntory.com/
 appstorelink: https://itunes.apple.com/us/app/field-in-touch/id583253185?mt=8
+hidden: true
 ---
-
-### What is it?
 
 Field InTouch is a versatile, modular platform providing sales forces with a single application for their core needs in the field. It is an iPad app and platform developed by <a href="http://creativelicence.com.au/" target="_blank" class="link-highlight">CLD</a>, and I regularly produced interactive slidedecks/mini-apps that are housed within in the app while I was there.
 
@@ -28,8 +21,8 @@ The majority of the work I did was for our largest client, <a href="http://www.i
 
 While I was generally working with branding dictated by the client/brand, I was able to push the boundaries with the visuals in order to make the decks as fun and exciting for the reps and their audiences.
 
-In these decks, the content is generally the promotion of a new product or feature, so my role was initally to come up with creative concepts for ways to represet this information, including questions with interactive answer mechanics and simple games.
+In these decks, the content is generally the promotion of a new product or feature, so my role was initially to come up with creative concepts for ways to represent this information, including questions with interactive answer mechanics and simple games.
 
-Technically, I was responsible for creating the entire front-end of each deck. I got to have a lot of fun experimenting with cool CSS features and animations, while still being careful to optmise for older generation iPads as well as newer ones. The FiT decks are Brunch apps, utilising Jade, Sass and CoffeeScript.
+Technically, I was responsible for creating the entire front-end of each deck. I got to have a lot of fun experimenting with cool CSS features and animations, while still being careful to optimise for older generation iPads as well as newer ones. The FiT decks are Brunch apps, utilising Jade, Sass and CoffeeScript.
 
 ![Field InTouch](field-intouch-1.jpg "Field InTouch")

@@ -1,13 +1,11 @@
 ---
-id: wgsn-workspace
-title: Workspace & Image Library
-date: 2015–2016
+title: Workspace and Image Library
+date: 2016-04-01
 type: Web app
 client: WGSN
 template: article.pug
 tagline: A hub for creative teams to work together, utilizing WGSN's millions of exclusive assets.
-role: UX/UI design, prototype development
-clientname: WGSN
+role: UX/UI Design, Prototype Development
 clientlink: http://www.wgsn.com
 websitelink: http://wgsn-cherry-prototype.amelia-lewis.com
 ---

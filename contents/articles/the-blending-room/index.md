@@ -1,14 +1,14 @@
 ---
-id: the-blending-room
 title: The Blending Room
-date: 2015
+date: 2015-06-01
 type: Website
+client: JR Cigars
 template: article.pug
 tagline: Everything you need to know about the latest cigar trends.
-role: UX/UI design, front-end development
-clientname: JR Cigars
+role: UX/UI Design, Front-End Development
 clientlink: https://www.jrcigars.com/
 websitelink: https://www.jrcigars.com/blending-room/
+hidden: true
 ---
 
 <a href="https://www.jrcigars.com/" target="_blank" class="link-highlight">JR Cigars</a> is the world's largest cigar e-commerce site, and <a href="http://creativelicence.com.au/" target="_blank" class="link-highlight">CLD</a> recently redesigned and rebuilt their platform. While I didn't play a huge role in the site design, I did do a number of feature updates and changes.

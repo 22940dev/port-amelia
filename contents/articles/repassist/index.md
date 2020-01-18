@@ -1,13 +1,13 @@
 ---
-id: repassist
 title: RepAssist
-date: 2014
+date: 2014-06-01
 type: Tablet App
+client: Novartis
 template: article.pug
 tagline: A streamlined solution tailored specifically to Novartis sales reps' needs.
-role: UX/UI design, front-end development
-clientname: Novartis
+role: Product Design
 clientlink: https://www.novartis.com/
+hidden: true
 ---
 
 RepAssist was a pre-existing iPhone app that <a href="http://www.novartis.com/" target="_blank" class="link-highlight">Novartis</a> had, and they came to us at <a href="http://creativelicence.com.au/" target="_blank" class="link-highlight">CLD</a> asking to rebuild the thing from the ground up. The old one was&mdash;to put it delicately&mdash;in dire need of a redesign.

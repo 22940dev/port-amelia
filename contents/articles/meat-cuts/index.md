@@ -1,13 +1,11 @@
 ---
-id: meat-cuts
 title: Meat Cuts
-date: 2014
+date: 2014-06-01
 type: Mobile App
-client: CLD
+client: Meat & Livestock Australia
 template: article.pug
 tagline: Your number one destination for information about beef, lamb, veal and goat cuts.
-role: UX/UI design, front-end development
-clientname: Meat & Livestock Australia
+role: Product Design, front-end development
 clientlink: http://www.mla.com.au/Home
 appstorelink: https://itunes.apple.com/us/app/meat-cuts/id904537057?mt=8
 playstorelink: https://play.google.com/store/apps/details?id=com.mla.meatcuts&hl=en

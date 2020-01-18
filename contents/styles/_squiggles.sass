@@ -1,0 +1,118 @@
+.link-squiggle
+  display: inline-block
+  position: relative
+  cursor: pointer
+
+  .squiggle
+    position: absolute
+    z-index: -1
+    stroke: $lt-primary
+    stroke-width: 8
+    stroke-linecap: round
+    stroke-linejoin: round
+    transform: scale(0.68)
+    transform-origin: left top
+    transition: filter 500ms linear 0ms
+
+    &--squarespace
+      top: -10px
+      left: -5px
+      stroke-dasharray: 700
+      stroke-dashoffset: 700
+      transition: stroke-dashoffset 800ms linear 0ms
+
+    &--stipple-design-system
+      top: -16px
+      left: -35px
+      stroke-dasharray: 850
+      stroke-dashoffset: 850
+      transition: stroke-dashoffset 400ms linear 0ms
+
+    &--newsroom-editorial-tools
+      top: 0
+      left: -14px
+      stroke-dasharray: 420
+      stroke-dashoffset: 420
+      transition: stroke-dashoffset 400ms linear 0ms
+
+    &--rivendell-design-system
+      top: 11px
+      left: -20px
+      stroke-dasharray: 420
+      stroke-dashoffset: 420
+      transition: stroke-dashoffset 300ms linear 0ms
+
+    &--city-by-city-app
+      top: 13px
+      left: -17px
+      stroke-dasharray: 300
+      stroke-dashoffset: 300
+      transition: stroke-dashoffset 400ms linear 0ms
+
+    &--insight
+      top: -11px
+      left: -24px
+      stroke-dasharray: 420
+      stroke-dashoffset: 420
+      transition: stroke-dashoffset 500ms linear 0ms
+
+    &--wework-guest-wi-fi
+      top: -3px
+      left: -24px
+      stroke-dasharray: 980
+      stroke-dashoffset: 980
+      transition: stroke-dashoffset 600ms linear 0ms
+
+    &--wgsn-marketing-site
+      top: 28px
+      left: 44px
+      stroke-dasharray: 420
+      stroke-dashoffset: -420
+      transition: stroke-dashoffset 300ms linear 0ms
+
+    &--rebrand-and-style-guide
+      top: 20px
+      left: -24px
+      stroke-dasharray: 540
+      stroke-dashoffset: 540
+      transition: stroke-dashoffset 500ms linear 0ms
+
+    &--catwalks-app
+      top: -3px
+      left: 32px
+      stroke-dasharray: 980
+      stroke-dashoffset: 980
+      transition: stroke-dashoffset 600ms linear 0ms
+
+    &--workspace-and-image-library
+      top: 28px
+      left: -28px
+      stroke-dasharray: 830
+      stroke-dashoffset: 830
+      transition: stroke-dashoffset 500ms linear 0ms
+
+    &--rupert-graves
+      top: -16px
+      left: -16px
+      stroke-dasharray: 980
+      stroke-dashoffset: 980
+      transition: stroke-dashoffset 600ms linear 0ms
+
+    &--meat-cuts
+      top: 20px
+      left: -44px
+      stroke-dasharray: 290
+      stroke-dashoffset: 290
+      transition: stroke-dashoffset 300ms linear 0ms
+
+    @media (min-width: $screen-sm-min)
+      transform: scale(1)
+
+  .mobile &
+    .squiggle
+      stroke-dashoffset: 0
+
+  &:hover
+    .squiggle
+      stroke-dashoffset: 0
+      // filter: hue-rotate(270deg)

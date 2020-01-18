@@ -1,19 +1,14 @@
 ---
-id: rupert-graves
 title: Rupert Graves
-date: 2015
+date: 2019-02-01
 type: Website
 template: article.pug
 tagline: A digital brand for the international actor.
-role: UX/UI design, development
-clientname: Rupert Graves
-clientlink: http://rupert-graves.com/
+role: Web Design, Development
 websitelink: http://rupert-graves.com/
 ---
 
-### What is it?
-
-This is—well, will be—the official website for UK actor, Rupert Graves. His <a href="http://rupert-graves.com/" class="link-highlight" target="_blank">current site</a> is rather dated, so we’ve been working to create something a little sexier and more modern.
+This is—well, will be—the official website for UK actor, Rupert Graves. His [current site](http://rupert-graves.com/) is rather dated, so we’ve been working to create something a little sexier and more modern.
 
 ### My Approach
 

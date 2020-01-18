@@ -1,0 +1,39 @@
+.project-list-item
+  display: block
+  position: relative
+  transform: translate3d(0, 0, 0)
+  transition: all 400ms
+  margin: 0 0 $spacer-xl
+  cursor: pointer
+
+  &--image
+    width: 100%
+    height: 320px
+    background: $lt-grey
+    margin: 0 0 $spacer-lg
+
+    @media (min-width: $screen-sm-min)
+      height: 560px
+
+  &--title
+    position: relative
+    display: inline-block
+  &--info
+    font-family: $monospace
+    @extend .text-grey
+
+  &--coming-soon
+    pointer-events: none
+    cursor: not-allowed
+
+    .project-list-item--title
+      @extend .text-grey
+
+  .desktop &
+    &:not(.project-list-item--coming-soon):hover
+      // TODO
+
+  &:focus
+    outline-color: rgba(black, 0.1)
+    outline-width: 1px
+    outline-offset: -3px

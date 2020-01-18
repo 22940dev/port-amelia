@@ -1,7 +1,7 @@
 extends layout.pug
 
 block append vars
-  - bodyclass = 'project'
+  - bodyclass = 'article'
 
 block prepend title
   | #{ page.title + " - "}
@@ -9,45 +9,43 @@ block prepend title
 block content
   article.article    
     section
-      .content-wrap
-        .row.block-top-xl
-          .col-xs-12.col-md-8.col-md-offset-2.col-lg-5.col-lg-offset-3
-            h1(data-heading=page.metadata.client)= page.metadata.title
+      .row
+        .col-xs-12
+          h1= page.title
 
-      //- .header-img(style="background-image: url('/work/" + page.metadata.id + "/project-tile.jpg')")
+      .row
+        .col-xs-12.col-md-6.col-lg-8
+          if page.metadata.tagline
+            .block-bot-lg
+              p.project-tagline.text-bigger.text-tight= page.metadata.tagline
+                
+          .article--content.block-bot-xl!= typogr(page.html).typogrify()
 
-      .content-wrap
-        .row.block-ver-lg
-          .col-xs-12.col-md-4.col-lg-4
-            if page.metadata.tagline
-              .block-bot-md
-                p.project-tagline.text-bigger.text-tight= page.metadata.tagline
-
+        .col-xs-12.col-md-5.col-md-offset-1.col-lg-3.col-lg-offset-1
+          .article--info
             if page.metadata.appstorelink || page.metadata.playstorelink || page.metadata.websitelink
               .block-bot-md
+                h4.text-grey Link
                 if page.metadata.appstorelink
-                  p.text-tight: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;→
+                  p: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;↗
                 if page.metadata.playstorelink
-                  p.text-tight: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;→
+                  p: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;↗
                 if page.metadata.websitelink
-                  p.text-tight: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;→
-
-          .col-xs-12.col-md-2.col-md-offset-2.col-lg-2.col-lg-offset-3.first-md
-            .block-bot-md
-              h4.text-grey Project Type
-              p.text-tight= page.metadata.type
+                  p: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;↗
             
             .block-bot-md
-              h4.text-grey Date
-              p.text-tight= page.metadata.date
-
+              h4.text-grey Type
+              p= page.metadata.type
+            
             .block-bot-md
-              h4.text-grey Client
-              p.text-tight: a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.clientname
+              h4.text-grey Year
+              p= moment.utc(page.date).format('YYYY')
+
+            if page.metadata.client
+              .block-bot-md
+                h4.text-grey Client
+                p: a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.client
 
             if page.metadata.role
-              h4.text-grey Involvement
+              h4.text-grey Role
               p.text-tight= page.metadata.role
-
-        .row.block-ver-xl
-          .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3!= typogr(page.html).typogrify()

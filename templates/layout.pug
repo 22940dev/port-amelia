@@ -8,6 +8,8 @@ html(lang='en')
       meta(charset='utf-8')
       meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
       meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(charset='utf-8')
+      | !{ livereloadScript }
       
       title
         block title
@@ -15,7 +17,7 @@ html(lang='en')
       
       link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css")
       link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css")
-      link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Libre+Franklin:500|Lora:400,700")
+      link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Rubik:400,700&display=swap")
       link(rel="stylesheet" type="text/css" href="/styles/style.css?v1.0")
 
       //- facebook
@@ -54,36 +56,22 @@ html(lang='en')
       meta(name="msapplication-TileImage", content="/styles/img/favicon-144.png")
       meta(name="msapplication-config", content="/styles/img/browserconfig.xml")
 
-  body(class=bodyclass)
+  body(class=bodyclass)    
     header
       .content-wrap
-        .row
-          .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
-            a.header--logo(href="/")= locals.name
-            
-    .grid-lines
-      .row
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
-        .col-xs-6.col-sm-3.col-md-2.col-lg-1
+        nav
+          .nav-item: a.link-highlight(href="/") Home
+          .nav-item: a.link-highlight(href="/about.html") About
+          .nav-item: a.link-highlight(href="/work.html") Work
     
-    #content
-      block content
+    #content.block-ver-xl
+      .content-wrap
+        block content
     
-    footer.block-ver-xl
+    footer
       .content-wrap
         .row
-          .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
-            h4 Contact
+          .col-xs-12
             a.link-highlight(href="mailto:amelialewis01@gmail.com", target='_blank') Email
             a.link-highlight(href="https://twitter.com/Amelia_Lewis", target="_blank") Twitter
             a.link-highlight(href="http://instagram.com/amelia_lewis", target="_blank") Instagram
@@ -93,7 +81,7 @@ html(lang='en')
             a.link-highlight(href="https://codepen.io/amelia-lewis/", target="_blank") Codepen
             a.link-highlight(href="https://www.notion.so/amelialewis/R-sum-Amelia-Lewis-7ce34fa0b78c4da4a537637f9cefbc2e", target="_blank") Résumé
 
-            .block-top-lg
+            .block-top-md.block-bot-lg
               p.text-copyright Website designed and built by me. Last updated on 
                 - var today = new Date();
                 - var localOffset = today.getTimezoneOffset() * 60000;

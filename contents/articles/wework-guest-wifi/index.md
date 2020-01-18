@@ -1,13 +1,11 @@
 ---
-id: wework-guest-wifi
 title: WeWork Guest Wi-Fi
-date: 2017
+date: 2017-01-01
 type: Website
 client: WeWork
 template: article.pug
 tagline: A custom gated wi-fi experience for guests in WeWork spaces.
-role: UX/UI design, front-end development
-clientname: WeWork
+role: Product Design, Front-End Development
 clientlink: http://www.wework.com
 ---
 

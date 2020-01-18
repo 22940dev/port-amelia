@@ -1,23 +1,18 @@
 extends layout.pug
+include partials/squiggles
 
 block append vars
-  - bodyclass = 'index'
+  - bodyclass = 'home'
 
 block content
-  section.block-ver-xl
-    .content-wrap
-      .row
-        .col-xs-12.col-md-8.col-md-offset-2.col-lg-6.col-lg-offset-3
-          p.text-bigger
-            | I'm a product designer working on design systems at 
-            a.link-highlight(href="http://squarespace.com", target="_blank") Squarespace
-            | . Previously, I worked on editorial tools for  
-            a.link-highlight(href="http://wsj.com", target="_blank") The Wall Street Journal
-            |  as well as products and design systems at   
-            a.link-highlight(href="http://wework.com", target="_blank") WeWork
-            |  and 
-            a.link-highlight(href="http://wgsn.com", target="_blank") WGSN
-            | .
-          p.text-bigger I love beautiful products, design systems and well-crafted CSS.
+  section
+    .row
+      .col-xs-12
+        h1.home--title
+          | Amelia Lewis is a product designer working on design systems at 
+          .link-squiggle
+            a(href="http://squarespace.com", target="_blank") Squarespace
+            +squiggle('squarespace')
+          | .
   
-  include partials/project-list.pug
+  
