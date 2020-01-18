@@ -145,6 +145,11 @@ a
   color: inherit
   cursor: pointer
 
+  &:focus
+    outline-color: $primary
+    outline-width: 2px
+    outline-offset: 2px
+
 .link-highlight
   position: relative
   overflow: hidden
@@ -168,12 +173,7 @@ a
     &:hover:before
       transform: scaleX(0)
       transform-origin: right center
-
-  &:focus
-    outline-color: rgba(black, 0.1)
-    outline-width: 1px
-    outline-offset: -3px
-
+      
 code
   background: $lt-grey
   color: $dk-grey
