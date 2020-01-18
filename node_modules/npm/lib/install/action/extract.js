@@ -5,7 +5,8 @@ const BB = require('bluebird')
 const figgyPudding = require('figgy-pudding')
 const stat = BB.promisify(require('graceful-fs').stat)
 const gentlyRm = BB.promisify(require('../../utils/gently-rm.js'))
-const mkdirp = BB.promisify(require('mkdirp'))
+const mkdirp = BB.promisify(require('gentle-fs').mkdir)
+const moduleName = require('../../utils/module-name.js')
 const moduleStagingPath = require('../module-staging-path.js')
 const move = require('../../utils/move.js')
 const npa = require('npm-package-arg')
@@ -113,7 +114,7 @@ function readBundled (pkg, staging, extractTo) {
 }
 
 function stageBundledModule (bundler, child, staging, parentPath) {
-  const stageFrom = path.join(parentPath, 'node_modules', child.package.name)
+  const stageFrom = path.join(parentPath, 'node_modules', moduleName(child))
   const stageTo = moduleStagingPath(staging, child)
 
   return BB.map(child.children, (child) => {
