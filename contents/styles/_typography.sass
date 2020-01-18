@@ -147,7 +147,6 @@ a
 
 .link-highlight
   position: relative
-  z-index: 10
   overflow: hidden
   cursor: pointer
 
@@ -156,22 +155,19 @@ a
     display: block
     position: absolute
     background: $primary
+    width: 100%
     height: 2px
-    bottom: 0
+    bottom: -2px
     left: 0
-    right: 0
-    opacity: 0.5
-    transform: translate3d(0, 0, 0) scale(1, 1)
-    transform-origin: center bottom
-    transition: all 300ms
+    transform: scaleX(1)
+    transform-origin: left center
+    transition: transform .3s cubic-bezier(.694,0,.335,1)
     pointer-events: none
-    z-index: -1
 
   .desktop &
     &:hover:before
-      opacity: 0.5
-      height: 100%
-      // transform: translate3d(0, 0, 0) scale(2, 20)
+      transform: scaleX(0)
+      transform-origin: right center
 
   &:focus
     outline-color: rgba(black, 0.1)
