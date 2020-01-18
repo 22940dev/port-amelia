@@ -1,0 +1,36 @@
+extends layout.pug
+include partials/squiggles
+
+block append vars
+  - bodyclass = 'about'
+
+block content
+  section.block-bot-lg
+    .row
+      .col-xs-12.col-md-8
+        p.text-bigger I am a product designer who sits at the intersection of design and engineering, with a background in user-centered design. I have a particular passion for design systems, design tools and design processes and how we use those things to build for the web. 
+        br
+        p.text-bigger Right now, I'm working on the design platforms team at Squarespace, building a design system to support our multi-product ecosystem. Prior to that, I designed editorial tools and systems for The Wall Street Journal.
+
+  section
+    .row.block-bot-md
+      .col-xs-12.col-md-4
+        h2 Experience
+      
+      .col-xs-12.col-md-8.block-top-sm
+        each job in locals.experience
+          .job-item.block-bot-md
+            h3= job.company
+            p= job.date
+            p= job.role
+
+    .row
+      .col-xs-12.col-md-4
+        h2 Education
+      
+      .col-xs-12.col-md-8.block-top-sm
+        each job in locals.education
+          .job-item.block-bot-md
+            h3= job.school
+            p= job.date
+            p= job.degree

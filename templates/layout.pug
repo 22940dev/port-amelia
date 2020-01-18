@@ -60,11 +60,10 @@ html(lang='en')
     header
       .content-wrap
         nav
-          .nav-item: a.link-highlight(href="/") Home
-          .nav-item: a.link-highlight(href="/about.html") About
-          .nav-item: a.link-highlight(href="/work.html") Work
+          each item in locals.nav
+            .nav-item: a.link-highlight(href=item.url)= item.name
     
-    #content.block-ver-xl
+    #content.block-top-lg.block-bot-xl
       .content-wrap
         block content
     
@@ -81,7 +80,7 @@ html(lang='en')
             a.link-highlight(href="https://codepen.io/amelia-lewis/", target="_blank") Codepen
             a.link-highlight(href="https://www.notion.so/amelialewis/R-sum-Amelia-Lewis-7ce34fa0b78c4da4a537637f9cefbc2e", target="_blank") Résumé
 
-            .block-top-md.block-bot-lg
+            .block-ver-md
               p.text-copyright Website designed and built by me. Last updated on 
                 - var today = new Date();
                 - var localOffset = today.getTimezoneOffset() * 60000;

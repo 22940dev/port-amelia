@@ -1,10 +1,8 @@
 .project-list-item
   display: block
   position: relative
-  transform: translate3d(0, 0, 0)
   transition: all 400ms
   margin: 0 0 $spacer-xl
-  cursor: pointer
 
   &--image
     width: 100%
@@ -18,6 +16,7 @@
   &--title
     position: relative
     display: inline-block
+  
   &--info
     font-family: $monospace
     @extend .text-grey
@@ -32,8 +31,3 @@
   .desktop &
     &:not(.project-list-item--coming-soon):hover
       // TODO
-
-  &:focus
-    outline-color: rgba(black, 0.1)
-    outline-width: 1px
-    outline-offset: -3px

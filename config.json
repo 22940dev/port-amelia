@@ -3,7 +3,58 @@
     "url": "http://amelia.design",
     "name": "Amelia Lewis",
     "owner": "Amelia Lewis",
-    "description": "Portfolio of Amelia Lewis"
+    "description": "Portfolio of Amelia Lewis",
+    "nav" : [
+      {
+        "name": "Home",
+        "description": "Home Page",
+        "url": "/"
+      },
+      {
+        "name": "About",
+        "description": "About ",
+        "url": "/about.html"
+      },
+      {
+        "name": "Work",
+        "description": "Work",
+        "url": "/work.html"
+      }
+    ],
+    "experience" : [
+      {
+        "company": "Squarespace",
+        "date": "August 2019 – Present",
+        "role": "Product Designer, Design Systems"
+      },
+      {
+        "company": "The Wall Street Journal",
+        "date": "July 2018 – July 2019",
+        "role": "Product Designer"
+      },
+      {
+        "company": "WeWork",
+        "date": "July 2017 – May 2018",
+        "role": "Product Designer"
+      },
+      {
+        "company": "WGSN",
+        "date": "October 2015 – July 2017",
+        "role": "Product Designer"
+      },
+      {
+        "company": "Creative Licence Digital",
+        "date": "January 2013 – October 2015",
+        "role": "UX/UI Designer"
+      }
+    ],
+    "education" : [
+      {
+        "school": "The University of Sydney",
+        "date": "2010 – 2012",
+        "degree": "Bachelor of Design Computing"
+      }
+    ]
   },
   "plugins": [
     "./plugins/paginator.coffee",
@@ -26,6 +77,7 @@
   },
   "ignore": [
     ".DS_Store",
-    "*.s[ac]ss"
+    "*.s[ac]ss",
+    "/node_modules"
   ]
 }

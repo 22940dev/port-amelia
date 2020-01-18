@@ -1,8 +1,0 @@
-extends layout.pug
-include partials/squiggles
-
-block append vars
-  - bodyclass = 'page'
-
-block content
-  div!= typogr(page.html).typogrify()

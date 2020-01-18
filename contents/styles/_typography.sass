@@ -30,7 +30,6 @@
 .text-capitalize
   text-transform: capitalize
 
-
 // MARGINS
 h1, h4
   margin: 0 0 $spacer-md
@@ -69,10 +68,6 @@ p
   h2
     font-size: 2.4em
     line-height: 1.2em
-
-  h3
-    font-size: 2em
-    line-height: 1.4em
 
 
 // STYLES
@@ -145,9 +140,13 @@ a
   color: inherit
   cursor: pointer
 
+  &:focus
+    outline-color: $primary
+    outline-width: 2px
+    outline-offset: 2px
+
 .link-highlight
   position: relative
-  overflow: hidden
   cursor: pointer
 
   &:before
@@ -168,12 +167,7 @@ a
     &:hover:before
       transform: scaleX(0)
       transform-origin: right center
-
-  &:focus
-    outline-color: rgba(black, 0.1)
-    outline-width: 1px
-    outline-offset: -3px
-
+      
 code
   background: $lt-grey
   color: $dk-grey
