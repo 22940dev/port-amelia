@@ -8,12 +8,15 @@ role: Web Design, Development
 websitelink: http://rupert-graves.com/
 ---
 
-This is—well, will be—the official website for UK actor, Rupert Graves. His [current site](http://rupert-graves.com/) is rather dated, so we’ve been working to create something a little sexier and more modern.
+Rupert is an actor based in the UK with a decades-long resume under his belt. While his old, fan-maintained website was [truly glorious](https://web.archive.org/web/20161011054251/https://www.rupert-graves.com/), 2019 meant time for a change.
 
-### My Approach
+I designed and built the site myself from scratch, using [Jekyll](https://jekyllrb.com/).
 
-This is still very much a work in progress. I’ve been through a few iterations but I’m yet to settle on something that I love. It’s been interesting researching similar sites, and trying to decide what content is actually worth having on here as opposed to what’s available elsewhere on the web.
+![Home Page](new-1.jpg "Home Page")
+*Home page*
 
-I’m essentially creating a visual brand for Rupert, so I want it to be something that stands out and looks great.
+![Listing Page](new-2.jpg "Listing Page")
+*Listing page*
 
-![Rupert Graves](rupert-graves-1.jpg "Rupert Graves")
+![Old Site](old.jpg "Old Site")
+*R.I.P. old website 😢*

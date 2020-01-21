@@ -1,13 +1,4 @@
 .article
-  .header-img
-    width: 100%
-    height: 260px
-    background: black no-repeat center
-    background-size: cover
-
-    @media (min-width: $screen-sm-min)
-      height: 540px
-
   &--info
     position: sticky
     top: $spacer-xl
@@ -40,5 +31,15 @@
     margin-bottom: $spacer-md
 
     @media (min-width: $screen-sm-min)
-      margin-top: $spacer-xl
-      margin-bottom: $spacer-xl
+      margin-top: $spacer-lg
+      margin-bottom: $spacer-lg
+
+  p img + em
+    display: block
+    @extend .text-grey
+    @extend .text-smaller
+    font-style: normal
+    margin: -1 * $spacer-md 0 $spacer-lg
+
+    @media (min-width: $screen-sm-min)
+      margin: -1 * $spacer-lg 0 $spacer-lg

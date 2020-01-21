@@ -7,7 +7,7 @@ template: article.pug
 tagline: A new suite of editorial tools for The Wall Street Journal newsroom for planning, image management, charting, sending push alerts and authoring.
 role: Product Design, Front-End Development
 clientlink: http://www.wsj.com
-featured: true
+comingsoon: true
 ---
 
 ## NewsGrid
