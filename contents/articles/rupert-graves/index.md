@@ -19,4 +19,4 @@ I designed and built the site myself from scratch, using [Jekyll](https://jekyll
 *Listing page*
 
 ![Old Site](old.jpg "Old Site")
-*R.I.P. old website 😢*
+*R.I.P. you special, special website*

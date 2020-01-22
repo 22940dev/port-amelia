@@ -2,17 +2,17 @@
 title: Rivendell Design System
 date: 2017-10-01
 type: Design System
-client: WeWork
+company: WeWork
 template: article.pug
 tagline: A component-based pattern library upon which WeWork builds on-brand, accessible and consistent products that embody our digital brand guidelines.
 role: Product Design, Prototype Development
-clientlink: http://www.wework.com
+companylink: http://www.wework.com
 websitelink: http://rivendell-docs.netlify.com/
 ---
 
 ## Foundations
 
-WeWork's <a href="http://digital-foundations.netlify.com/" target="_blank" class="link-highlight">Digital Foundations</a> seek to unify the design language across all of the company's digital properties. The evolution of these foundations for the wework.com is the <a href="http://rivendell-docs.netlify.com/" target="_blank" class="link-highlight">Rivendell</a> design system. While the foundations include elements such as color, typography, tone of voice and accessibility guidelines, Rivendell takes those to the next level with a set of reusable components and patterns.
+WeWork's [Digital Foundations](http://digital-foundations.netlify.com/) seek to unify the design language across all of the company's digital properties. The evolution of these foundations for the wework.com is the [Rivendell](http://rivendell-docs.netlify.com/) design system. While the foundations include elements such as color, typography, tone of voice and accessibility guidelines, Rivendell takes those to the next level with a set of reusable components and patterns.
 
 ## Patterns
 
@@ -38,12 +38,12 @@ With WeWork's ever-expanding audience, another high priority element of Rivendel
 
 ## Prototyping
 
-To enable rapid prototyping (and some out-of-hours design exploration), I built this <a href="http://ww-styleguide.amelia-lewis.com/style-guide" target="_blank" class="link-highlight">style guide</a> from scratch in my own environment. I also used it as a chance to <a href="http://ww-styleguide.amelia-lewis.com/" target="_blank" class="link-highlight">prototype</a> what wework.com will look like once Rivendell is fully rolled out. Actually building the patterns with HTML/CSS allowed me to further test the responsiveness of the patterns
+To enable rapid prototyping (and some out-of-hours design exploration), I built this [style guide]("http://ww-styleguide.amelia-lewis.com/style-guide) from scratch in my own environment. I also used it as a chance to [prototype](http://ww-styleguide.amelia-lewis.com/) what wework.com will look like once Rivendell is fully rolled out. Actually building the patterns with HTML/CSS allowed me to further test the responsiveness of the patterns
 
 ## Integration
 
-Over the last few months, I have led the integration and roll-out of Rivendell onto <a href="https://www.wework.com/" target="_blank" class="link-highlight">wework.com</a>. It's still a work in progress, but you can see that the core components, such as buttons, inputs and text styles, have been rolled out, and the patterns are slowly coming through too.
+Over the last few months, I have led the integration and roll-out of Rivendell onto [wework.com](https://www.wework.com/). It's still a work in progress, but you can see that the core components, such as buttons, inputs and text styles, have been rolled out, and the patterns are slowly coming through too.
 
 ---
 
-<a href="http://roomfive.net/" target="_blank" class="link-highlight">Andrew Couldwell</a> was the lead and creative director for the Rivendell design system.
+[Andrew Couldwell](http://roomfive.net/) was the lead and creative director for the Rivendell design system.

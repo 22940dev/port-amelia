@@ -14,7 +14,7 @@ Let's Go is an iOS app I'm currently working on. It's a place for Psoriasis pate
 
 The process has been a little tricky, as the brief has continued to change throughout to meet the needs of various teams within Novartis, but we have now settled on both the content and visual design. Let's Go is a native iOS app for iPhone and iPad, and is about half way through development.
 
-### My Approach
+## My Approach
 
 The design process for Let's Go has been a bit unusual because I was given (dated) designs for an existing app, which is now forming a section of our app, as well as a new set of branding which included the rainbow bursts pictured above. I absolutely loved the rainbow bursts and knew they had to be worked into the designs in a great way.
 

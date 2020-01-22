@@ -4,7 +4,7 @@ block append vars
   - bodyclass = 'article'
 
 block prepend title
-  | #{ page.title + " - "}
+  | #{ page.title + " • "}
 
 block content
   article.article    
@@ -27,21 +27,31 @@ block content
               .block-bot-md
                 h4.text-grey Link
                 if page.metadata.appstorelink
-                  p: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;&nbsp;↗
+                  p: a.link-highlight(href=page.metadata.appstorelink target="_blank") App Store&nbsp;↝
                 if page.metadata.playstorelink
-                  p: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;&nbsp;↗
+                  p: a.link-highlight(href=page.metadata.playstorelink target="_blank") Google Play Store&nbsp;↝
                 if page.metadata.websitelink
-                  p: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;&nbsp;↗
+                  p: a.link-highlight(href=page.metadata.websitelink target="_blank") Website&nbsp;↝
             
             .block-bot-md
               h4.text-grey Year
               p= moment.utc(page.date).format('YYYY')
 
+            if page.metadata.company
+              .block-bot-md
+                h4.text-grey Company
+                p
+                  a.link-highlight(href=page.metadata.companylink target="_blank")= page.metadata.company
+                    | &nbsp;↝
+            
             if page.metadata.client
               .block-bot-md
                 h4.text-grey Client
-                p: a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.client
+                p
+                  a.link-highlight(href=page.metadata.clientlink target="_blank")= page.metadata.client
+                    | &nbsp;↝
 
             if page.metadata.role
-              h4.text-grey Role
-              p.text-tight= page.metadata.role
+              .block-bot-md
+                h4.text-grey Role
+                p.text-tight= page.metadata.role
